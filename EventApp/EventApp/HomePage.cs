@@ -41,5 +41,10 @@ namespace EventApp
         {
 
         }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); // Kleinei tin Efarmogh
+        }
     }
 }
