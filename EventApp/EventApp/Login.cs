@@ -59,7 +59,27 @@ namespace EventApp
             connection.Close();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        
+
+        private void txt_Username_Click(object sender, EventArgs e)
+        {
+            txt_Username.Clear();
+            //pictureBox2.BackgroundImage = Properties.Resources.ic_person_24px;
+            //panel3.BackColor = Color.FromArgb(87, 96, 122);
+            //txt_Username.ForeColor = Color.FromArgb(87, 96, 122);
+
+            //pictureBox2.BackgroundImage = Properties.Resources.ic_lock_24px;
+            //panel4.BackColor = Color.WhiteSmoke;
+            //txt_Password.ForeColor = Color.WhiteSmoke;
+        }
+
+        private void txt_Password_Click(object sender, EventArgs e)
+        {
+            txt_Password.Clear();
+            txt_Password.PasswordChar = '*';
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             Registration re = new Registration();

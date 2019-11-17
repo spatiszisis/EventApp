@@ -49,5 +49,23 @@ namespace EventApp
             }
             
         }
+
+        private void txt_Username_Click(object sender, EventArgs e)
+        {
+            txt_Username.Clear();
+            
+        }
+
+        private void txt_Password_Click(object sender, EventArgs e)
+        {
+            txt_Password.Clear();
+            txt_Password.PasswordChar = '*';
+        }
+
+        private void txt_Email_Click(object sender, EventArgs e)
+        {
+            txt_Email.Clear();
+          
+        }
     }
 }
