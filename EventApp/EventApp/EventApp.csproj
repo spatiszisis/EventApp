@@ -150,5 +150,8 @@
   <ItemGroup>
     <None Include="Resources\ic_mail_outline_24px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_1895421D1UY7qaw1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

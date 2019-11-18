@@ -51,5 +51,11 @@ namespace EventApp
         {
 
         }
+
+        private void Home_MouseHover(object sender, EventArgs e)
+        {
+            Home.BackColor = Color.Salmon;
+            Home.ForeColor = Color.Black;
+        }
     }
 }

@@ -152,6 +152,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.logo);
             this.panel2.Controls.Add(this.Contact);
             this.panel2.Controls.Add(this.About_Us);
@@ -166,48 +167,64 @@
             // 
             // Contact
             // 
-            this.Contact.Location = new System.Drawing.Point(38, 495);
+            this.Contact.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Contact.ForeColor = System.Drawing.Color.Snow;
+            this.Contact.Location = new System.Drawing.Point(0, 517);
             this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(93, 32);
+            this.Contact.Size = new System.Drawing.Size(165, 50);
             this.Contact.TabIndex = 4;
             this.Contact.Text = "Contact";
             this.Contact.UseVisualStyleBackColor = true;
             // 
             // About_Us
             // 
-            this.About_Us.Location = new System.Drawing.Point(38, 415);
+            this.About_Us.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.About_Us.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.About_Us.ForeColor = System.Drawing.Color.Snow;
+            this.About_Us.Location = new System.Drawing.Point(0, 442);
             this.About_Us.Name = "About_Us";
-            this.About_Us.Size = new System.Drawing.Size(93, 32);
+            this.About_Us.Size = new System.Drawing.Size(165, 46);
             this.About_Us.TabIndex = 3;
             this.About_Us.Text = "About us";
             this.About_Us.UseVisualStyleBackColor = true;
             // 
             // Help
             // 
-            this.Help.Location = new System.Drawing.Point(38, 341);
+            this.Help.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Help.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Help.ForeColor = System.Drawing.Color.Snow;
+            this.Help.Location = new System.Drawing.Point(0, 362);
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(93, 32);
+            this.Help.Size = new System.Drawing.Size(165, 51);
             this.Help.TabIndex = 2;
             this.Help.Text = "Help";
             this.Help.UseVisualStyleBackColor = true;
             // 
             // Create_Event
             // 
-            this.Create_Event.Location = new System.Drawing.Point(38, 268);
+            this.Create_Event.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Create_Event.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Create_Event.ForeColor = System.Drawing.Color.Snow;
+            this.Create_Event.Location = new System.Drawing.Point(0, 281);
             this.Create_Event.Name = "Create_Event";
-            this.Create_Event.Size = new System.Drawing.Size(93, 32);
+            this.Create_Event.Size = new System.Drawing.Size(165, 52);
             this.Create_Event.TabIndex = 1;
             this.Create_Event.Text = "Create Event";
             this.Create_Event.UseVisualStyleBackColor = true;
             // 
             // Home
             // 
-            this.Home.Location = new System.Drawing.Point(38, 193);
+            this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Home.ForeColor = System.Drawing.Color.Snow;
+            this.Home.Location = new System.Drawing.Point(0, 191);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(93, 32);
+            this.Home.Size = new System.Drawing.Size(165, 59);
             this.Home.TabIndex = 0;
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = true;
+            this.Home.MouseHover += new System.EventHandler(this.Home_MouseHover);
             // 
             // panel3
             // 
@@ -265,7 +282,7 @@
             this.logo.Image = global::EventApp.Properties.Resources.oie_1895421D1UY7qaw;
             this.logo.Location = new System.Drawing.Point(0, 0);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(165, 158);
+            this.logo.Size = new System.Drawing.Size(161, 158);
             this.logo.TabIndex = 5;
             this.logo.TabStop = false;
             this.logo.Click += new System.EventHandler(this.pictureBox2_Click);

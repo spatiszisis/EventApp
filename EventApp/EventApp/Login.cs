@@ -17,7 +17,7 @@ namespace EventApp
         public Login()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\Data.accdb;
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\Data.accdb;
                                             Persist Security Info=False;";
         }
 
