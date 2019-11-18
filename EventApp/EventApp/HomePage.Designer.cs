@@ -37,6 +37,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SidePanel = new System.Windows.Forms.Panel();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.Contact = new System.Windows.Forms.Button();
             this.About_Us = new System.Windows.Forms.Button();
             this.Help = new System.Windows.Forms.Button();
@@ -47,12 +49,11 @@
             this.Settings = new System.Windows.Forms.Button();
             this.Search = new System.Windows.Forms.Button();
             this.Logout = new System.Windows.Forms.Button();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,6 +154,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.SidePanel);
             this.panel2.Controls.Add(this.logo);
             this.panel2.Controls.Add(this.Contact);
             this.panel2.Controls.Add(this.About_Us);
@@ -165,65 +167,112 @@
             this.panel2.Size = new System.Drawing.Size(165, 635);
             this.panel2.TabIndex = 2;
             // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.Salmon;
+            this.SidePanel.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.SidePanel.Location = new System.Drawing.Point(0, 191);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(10, 59);
+            this.SidePanel.TabIndex = 4;
+            this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // logo
+            // 
+            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.logo.Image = global::EventApp.Properties.Resources.oie_1895421D1UY7qaw;
+            this.logo.Location = new System.Drawing.Point(0, 0);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(161, 158);
+            this.logo.TabIndex = 5;
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Contact
             // 
             this.Contact.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Contact.ForeColor = System.Drawing.Color.Snow;
-            this.Contact.Location = new System.Drawing.Point(0, 517);
+            this.Contact.Image = global::EventApp.Properties.Resources.icons8_mail_contact_24;
+            this.Contact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Contact.Location = new System.Drawing.Point(10, 515);
             this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(165, 50);
+            this.Contact.Size = new System.Drawing.Size(155, 50);
             this.Contact.TabIndex = 4;
             this.Contact.Text = "Contact";
             this.Contact.UseVisualStyleBackColor = true;
+            this.Contact.Click += new System.EventHandler(this.Contact_Click);
+            this.Contact.MouseLeave += new System.EventHandler(this.Contact_MouseLeave);
+            this.Contact.MouseHover += new System.EventHandler(this.Contact_MouseHover);
             // 
             // About_Us
             // 
             this.About_Us.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.About_Us.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.About_Us.ForeColor = System.Drawing.Color.Snow;
-            this.About_Us.Location = new System.Drawing.Point(0, 442);
+            this.About_Us.Image = global::EventApp.Properties.Resources.icons8_about_24;
+            this.About_Us.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.About_Us.Location = new System.Drawing.Point(10, 440);
             this.About_Us.Name = "About_Us";
-            this.About_Us.Size = new System.Drawing.Size(165, 46);
+            this.About_Us.Size = new System.Drawing.Size(155, 46);
             this.About_Us.TabIndex = 3;
             this.About_Us.Text = "About us";
             this.About_Us.UseVisualStyleBackColor = true;
+            this.About_Us.Click += new System.EventHandler(this.About_Us_Click);
+            this.About_Us.MouseLeave += new System.EventHandler(this.About_Us_MouseLeave);
+            this.About_Us.MouseHover += new System.EventHandler(this.About_Us_MouseHover);
             // 
             // Help
             // 
             this.Help.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Help.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Help.ForeColor = System.Drawing.Color.Snow;
-            this.Help.Location = new System.Drawing.Point(0, 362);
+            this.Help.Image = global::EventApp.Properties.Resources.icons8_help_24;
+            this.Help.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Help.Location = new System.Drawing.Point(10, 360);
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(165, 51);
+            this.Help.Size = new System.Drawing.Size(155, 51);
             this.Help.TabIndex = 2;
             this.Help.Text = "Help";
             this.Help.UseVisualStyleBackColor = true;
+            this.Help.Click += new System.EventHandler(this.Help_Click);
+            this.Help.MouseLeave += new System.EventHandler(this.Help_MouseLeave);
+            this.Help.MouseHover += new System.EventHandler(this.Help_MouseHover);
             // 
             // Create_Event
             // 
             this.Create_Event.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Create_Event.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Create_Event.ForeColor = System.Drawing.Color.Snow;
-            this.Create_Event.Location = new System.Drawing.Point(0, 281);
+            this.Create_Event.Image = global::EventApp.Properties.Resources.icons8_create_24;
+            this.Create_Event.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Create_Event.Location = new System.Drawing.Point(10, 279);
             this.Create_Event.Name = "Create_Event";
-            this.Create_Event.Size = new System.Drawing.Size(165, 52);
+            this.Create_Event.Size = new System.Drawing.Size(155, 52);
             this.Create_Event.TabIndex = 1;
             this.Create_Event.Text = "Create Event";
+            this.Create_Event.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Create_Event.UseVisualStyleBackColor = true;
+            this.Create_Event.Click += new System.EventHandler(this.Create_Event_Click);
+            this.Create_Event.MouseLeave += new System.EventHandler(this.Create_Event_MouseLeave);
+            this.Create_Event.MouseHover += new System.EventHandler(this.Create_Event_MouseHover_1);
             // 
             // Home
             // 
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Home.ForeColor = System.Drawing.Color.Snow;
-            this.Home.Location = new System.Drawing.Point(0, 191);
+            this.Home.Image = global::EventApp.Properties.Resources.icons8_home_24;
+            this.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Home.Location = new System.Drawing.Point(10, 191);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(165, 59);
+            this.Home.Size = new System.Drawing.Size(155, 59);
             this.Home.TabIndex = 0;
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = true;
+            this.Home.Click += new System.EventHandler(this.Home_Click);
+            this.Home.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Home_MouseClick);
+            this.Home.MouseLeave += new System.EventHandler(this.Home_MouseLeave);
             this.Home.MouseHover += new System.EventHandler(this.Home_MouseHover);
             // 
             // panel3
@@ -276,17 +325,6 @@
             this.Logout.UseVisualStyleBackColor = true;
             this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
-            // logo
-            // 
-            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logo.Image = global::EventApp.Properties.Resources.oie_1895421D1UY7qaw;
-            this.logo.Location = new System.Drawing.Point(0, 0);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(161, 158);
-            this.logo.TabIndex = 5;
-            this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -314,9 +352,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -344,5 +382,6 @@
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.Button Logout;
         private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Panel SidePanel;
     }
 }

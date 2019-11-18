@@ -28,7 +28,8 @@ namespace EventApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            connection.Open();
+            
+             connection.Open();
 
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
