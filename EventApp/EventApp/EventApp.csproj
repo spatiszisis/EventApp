@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -167,6 +168,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-mail-contact-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_power_settings_new_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_power_settings_new_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_settings_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-drop-down-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,11 +42,6 @@ namespace EventApp
 
         }
 
-        private void Logout_Click(object sender, EventArgs e)
-        {
-            Application.Exit(); // Kleinei tin Efarmogh
-        }
-
          private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -54,13 +49,13 @@ namespace EventApp
 
         private void Home_MouseHover(object sender, EventArgs e)
         {
-            Home.BackColor = Color.Salmon;  //allagei xrwma otan pernas to pontiki panw apto koumpi 
+            Home.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
             Home.ForeColor = Color.Black;
         }
         
         private void Home_MouseLeave(object sender, EventArgs e)
         {
-            Home.BackColor = Color.DimGray;  //epanafora tou xrwmatos otan fygei to pontiki
+            Home.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
             Home.ForeColor = Color.Snow;
         }
 
@@ -89,12 +84,12 @@ namespace EventApp
 
         private void Create_Event_MouseHover_1(object sender, EventArgs e)
         {
-            Create_Event.BackColor = Color.Salmon;  //allagei xrwma otan pernas to pontiki panw apto koumpi 
+            Create_Event.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
             Create_Event.ForeColor = Color.Black;
         }
         private void Create_Event_MouseLeave(object sender, EventArgs e)
         {
-            Create_Event.BackColor = Color.DimGray;  //epanafora tou xrwmatos otan fygei to pontiki
+            Create_Event.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
             Create_Event.ForeColor = Color.Snow;
         } 
 
@@ -106,13 +101,13 @@ namespace EventApp
         
         private void Help_MouseHover(object sender, EventArgs e)
         {
-            Help.BackColor = Color.Salmon;  //allagei xrwma otan pernas to pontiki panw apto koumpi 
+            Help.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
             Help.ForeColor = Color.Black;
         }
 
         private void Help_MouseLeave(object sender, EventArgs e)
         {
-            Help.BackColor = Color.DimGray;  //epanafora tou xrwmatos otan fygei to pontiki
+            Help.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
             Help.ForeColor = Color.Snow;
         }
         
@@ -124,13 +119,13 @@ namespace EventApp
 
         private void About_Us_MouseHover(object sender, EventArgs e)
         {
-            About_Us.BackColor = Color.Salmon;   
+            About_Us.BackColor = Color.FromArgb(85, 61, 69);   
             About_Us.ForeColor = Color.Black;
         }
         
         private void About_Us_MouseLeave(object sender, EventArgs e)
         {
-            About_Us.BackColor = Color.DimGray;  
+            About_Us.BackColor = Color.FromArgb(87, 96, 122);  
             About_Us.ForeColor = Color.Snow;
         }
 
@@ -142,14 +137,19 @@ namespace EventApp
 
         private void Contact_MouseHover(object sender, EventArgs e)
         {
-            Contact.BackColor = Color.Salmon;
+            Contact.BackColor = Color.FromArgb(85, 61, 69);
             Contact.ForeColor = Color.Black;
         }
 
         private void Contact_MouseLeave(object sender, EventArgs e)
         {
-            Contact.BackColor = Color.DimGray;
+            Contact.BackColor = Color.FromArgb(87, 96, 122);
             Contact.ForeColor = Color.Snow;
+        }
+
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); // Kleinei tin Efarmogh
         }
     }
 }

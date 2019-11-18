@@ -63,6 +63,16 @@ namespace EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _67091909_420668218790060_6866743294223712256_n {
+            get {
+                object obj = ResourceManager.GetObject("67091909_420668218790060_6866743294223712256_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_lock_24px {
             get {
                 object obj = ResourceManager.GetObject("ic_lock_24px", resourceCulture);
@@ -93,6 +103,46 @@ namespace EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_power_settings_new_24px {
+            get {
+                object obj = ResourceManager.GetObject("ic_power_settings_new_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_power_settings_new_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("ic_power_settings_new_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_search_24px {
+            get {
+                object obj = ResourceManager.GetObject("ic_search_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_settings_24px {
+            get {
+                object obj = ResourceManager.GetObject("ic_settings_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_about_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-about-24", resourceCulture);
@@ -106,6 +156,16 @@ namespace EventApp.Properties {
         internal static System.Drawing.Bitmap icons8_create_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-create-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_drop_down_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-drop-down-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +196,16 @@ namespace EventApp.Properties {
         internal static System.Drawing.Bitmap icons8_mail_contact_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-mail-contact-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_male_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-male-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
