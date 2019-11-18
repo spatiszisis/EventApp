@@ -89,5 +89,15 @@ namespace EventApp.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_1895421D1UY7qaw {
+            get {
+                object obj = ResourceManager.GetObject("oie_1895421D1UY7qaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

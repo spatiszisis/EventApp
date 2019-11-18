@@ -127,4 +127,7 @@
   <data name="ic_mail_outline_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_mail_outline_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="oie_1895421D1UY7qaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oie_1895421D1UY7qaw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

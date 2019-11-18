@@ -46,5 +46,10 @@ namespace EventApp
         {
             Application.Exit(); // Kleinei tin Efarmogh
         }
+
+         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
