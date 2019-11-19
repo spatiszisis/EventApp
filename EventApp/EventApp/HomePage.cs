@@ -15,6 +15,10 @@ namespace EventApp
         public HomePage()
         {
             InitializeComponent();
+            SidePanel.Height = Home.Height; // 
+            SidePanel.Top = Home.Top; //
+            pictureBox1.BringToFront(); // gia na einai i eikona mprosta (ayto na to allakseis kai na baleis panel zisi)
+            panel1.BringToFront(); // gia na einai mprosta to pinakaki (kai ayto tha allaksi zisi)
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -63,6 +67,8 @@ namespace EventApp
         {
             SidePanel.Height = Home.Height;
             SidePanel.Top = Home.Top;
+            pictureBox1.BringToFront(); // gia na einai i eikona mprosta (ayto na to allakseis kai na baleis panel zisi)
+            panel1.BringToFront(); // gia na einai mprosta to pinakaki (kai ayto tha allaksi zisi)
         }
 
 
@@ -115,6 +121,7 @@ namespace EventApp
         {
             SidePanel.Height = About_Us.Height;
             SidePanel.Top = About_Us.Top;
+            about_Us_Panel.BringToFront(); // otan pathseis panv fernei to panel tou about us
         }
 
         private void About_Us_MouseHover(object sender, EventArgs e)

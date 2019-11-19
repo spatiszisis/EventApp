@@ -36,33 +36,34 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.SidePanel = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.User_label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.WelcomeLabel = new System.Windows.Forms.Label();
-            this.NameLabel = new System.Windows.Forms.Label();
-            this.MorePic = new System.Windows.Forms.PictureBox();
-            this.UserPic = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxSettings = new System.Windows.Forms.PictureBox();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            this.SidePanel = new System.Windows.Forms.Panel();
             this.logo = new System.Windows.Forms.PictureBox();
             this.Contact = new System.Windows.Forms.Button();
             this.About_Us = new System.Windows.Forms.Button();
             this.Help = new System.Windows.Forms.Button();
             this.Create_Event = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.MorePic = new System.Windows.Forms.PictureBox();
+            this.UserPic = new System.Windows.Forms.PictureBox();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.User_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.about_Us_Panel = new EventApp.About_Us();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MorePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,101 +178,6 @@
             this.panel2.Size = new System.Drawing.Size(165, 694);
             this.panel2.TabIndex = 2;
             // 
-            // SidePanel
-            // 
-            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.SidePanel.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.SidePanel.Location = new System.Drawing.Point(0, 191);
-            this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 59);
-            this.SidePanel.TabIndex = 4;
-            this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.panel3.Controls.Add(this.MorePic);
-            this.panel3.Controls.Add(this.UserPic);
-            this.panel3.Controls.Add(this.NameLabel);
-            this.panel3.Controls.Add(this.WelcomeLabel);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.User_label);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(165, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1090, 56);
-            this.panel3.TabIndex = 3;
-            // 
-            // User_label
-            // 
-            this.User_label.AutoSize = true;
-            this.User_label.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.User_label.Location = new System.Drawing.Point(466, 31);
-            this.User_label.Name = "User_label";
-            this.User_label.Size = new System.Drawing.Size(0, 13);
-            this.User_label.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.textBox1.Location = new System.Drawing.Point(31, 11);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 33);
-            this.textBox1.TabIndex = 4;
-            // 
-            // WelcomeLabel
-            // 
-            this.WelcomeLabel.AutoSize = true;
-            this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.WelcomeLabel.Location = new System.Drawing.Point(751, 17);
-            this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(96, 24);
-            this.WelcomeLabel.TabIndex = 6;
-            this.WelcomeLabel.Text = "Welcome:";
-            // 
-            // NameLabel
-            // 
-            this.NameLabel.AutoSize = true;
-            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.NameLabel.Location = new System.Drawing.Point(853, 17);
-            this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(108, 24);
-            this.NameLabel.TabIndex = 7;
-            this.NameLabel.Text = "Zisis Spatis ";
-            // 
-            // MorePic
-            // 
-            this.MorePic.Image = global::EventApp.Properties.Resources.icons8_drop_down_24;
-            this.MorePic.Location = new System.Drawing.Point(1042, 17);
-            this.MorePic.Name = "MorePic";
-            this.MorePic.Size = new System.Drawing.Size(24, 24);
-            this.MorePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.MorePic.TabIndex = 10;
-            this.MorePic.TabStop = false;
-            // 
-            // UserPic
-            // 
-            this.UserPic.Image = global::EventApp.Properties.Resources.icons8_user_male_30;
-            this.UserPic.Location = new System.Drawing.Point(987, 14);
-            this.UserPic.Name = "UserPic";
-            this.UserPic.Size = new System.Drawing.Size(30, 30);
-            this.UserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.UserPic.TabIndex = 9;
-            this.UserPic.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::EventApp.Properties.Resources.ic_search_24px;
-            this.pictureBox2.Location = new System.Drawing.Point(324, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 33);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBoxSettings
             // 
             this.pictureBoxSettings.Image = global::EventApp.Properties.Resources.ic_settings_24px;
@@ -292,6 +198,16 @@
             this.pictureBoxExit.TabIndex = 4;
             this.pictureBoxExit.TabStop = false;
             this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.SidePanel.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.SidePanel.Location = new System.Drawing.Point(0, 191);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(10, 59);
+            this.SidePanel.TabIndex = 4;
+            this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // logo
             // 
@@ -396,15 +312,109 @@
             this.Home.MouseLeave += new System.EventHandler(this.Home_MouseLeave);
             this.Home.MouseHover += new System.EventHandler(this.Home_MouseHover);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.panel3.Controls.Add(this.MorePic);
+            this.panel3.Controls.Add(this.UserPic);
+            this.panel3.Controls.Add(this.NameLabel);
+            this.panel3.Controls.Add(this.WelcomeLabel);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.User_label);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(165, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1090, 56);
+            this.panel3.TabIndex = 3;
+            // 
+            // MorePic
+            // 
+            this.MorePic.Image = global::EventApp.Properties.Resources.icons8_drop_down_24;
+            this.MorePic.Location = new System.Drawing.Point(1042, 17);
+            this.MorePic.Name = "MorePic";
+            this.MorePic.Size = new System.Drawing.Size(24, 24);
+            this.MorePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.MorePic.TabIndex = 10;
+            this.MorePic.TabStop = false;
+            // 
+            // UserPic
+            // 
+            this.UserPic.Image = global::EventApp.Properties.Resources.icons8_user_male_30;
+            this.UserPic.Location = new System.Drawing.Point(987, 14);
+            this.UserPic.Name = "UserPic";
+            this.UserPic.Size = new System.Drawing.Size(30, 30);
+            this.UserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.UserPic.TabIndex = 9;
+            this.UserPic.TabStop = false;
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.NameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.NameLabel.Location = new System.Drawing.Point(853, 17);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(108, 24);
+            this.NameLabel.TabIndex = 7;
+            this.NameLabel.Text = "Zisis Spatis ";
+            // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.AutoSize = true;
+            this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.WelcomeLabel.Location = new System.Drawing.Point(751, 17);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(96, 24);
+            this.WelcomeLabel.TabIndex = 6;
+            this.WelcomeLabel.Text = "Welcome:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::EventApp.Properties.Resources.ic_search_24px;
+            this.pictureBox2.Location = new System.Drawing.Point(324, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 33);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.textBox1.Location = new System.Drawing.Point(31, 11);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(276, 33);
+            this.textBox1.TabIndex = 4;
+            // 
+            // User_label
+            // 
+            this.User_label.AutoSize = true;
+            this.User_label.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.User_label.Location = new System.Drawing.Point(466, 31);
+            this.User_label.Name = "User_label";
+            this.User_label.Size = new System.Drawing.Size(0, 13);
+            this.User_label.TabIndex = 3;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::EventApp.Properties.Resources._67091909_420668218790060_6866743294223712256_n;
-            this.pictureBox1.Location = new System.Drawing.Point(151, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(165, 51);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1104, 647);
+            this.pictureBox1.Size = new System.Drawing.Size(1104, 644);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // about_Us_Panel
+            // 
+            this.about_Us_Panel.BackColor = System.Drawing.Color.White;
+            this.about_Us_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.about_Us_Panel.Location = new System.Drawing.Point(165, 51);
+            this.about_Us_Panel.Name = "about_Us_Panel";
+            this.about_Us_Panel.Size = new System.Drawing.Size(1100, 643);
+            this.about_Us_Panel.TabIndex = 4;
             // 
             // HomePage
             // 
@@ -415,6 +425,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.about_Us_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HomePage";
@@ -424,14 +435,14 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MorePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -465,5 +476,6 @@
         private System.Windows.Forms.PictureBox UserPic;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label WelcomeLabel;
+        private About_Us about_Us_Panel;
     }
 }
