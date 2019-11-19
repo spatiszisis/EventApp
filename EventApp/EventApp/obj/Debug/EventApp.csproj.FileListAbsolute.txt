@@ -12,7 +12,6 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\Even
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe.config
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.pdb
-C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Login.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
@@ -20,3 +19,17 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.exe
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.pdb
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe.config
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.pdb
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.exe
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
