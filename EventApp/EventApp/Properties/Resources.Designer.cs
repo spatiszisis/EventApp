@@ -73,6 +73,16 @@ namespace EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_33 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 33", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_lock_24px {
             get {
                 object obj = ResourceManager.GetObject("ic_lock_24px", resourceCulture);
@@ -216,6 +226,16 @@ namespace EventApp.Properties {
         internal static System.Drawing.Bitmap oie_1895421D1UY7qaw {
             get {
                 object obj = ResourceManager.GetObject("oie_1895421D1UY7qaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Repeat_Grid_23 {
+            get {
+                object obj = ResourceManager.GetObject("Repeat Grid 23", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

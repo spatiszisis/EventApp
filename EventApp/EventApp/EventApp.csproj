@@ -62,12 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About_Us.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="About_Us.Designer.cs">
-      <DependentUpon>About_Us.cs</DependentUpon>
-    </Compile>
     <Compile Include="DataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -93,9 +87,24 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="About_Us.resx">
-      <DependentUpon>About_Us.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="UserControlAboutUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAboutUs.Designer.cs">
+      <DependentUpon>UserControlAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCreateEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCreateEvent.Designer.cs">
+      <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlΗοme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlΗοme.Designer.cs">
+      <DependentUpon>UserControlΗοme.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +123,15 @@
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAboutUs.resx">
+      <DependentUpon>UserControlAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCreateEvent.resx">
+      <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlΗοme.resx">
+      <DependentUpon>UserControlΗοme.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataDataSet.xsc">
       <DependentUpon>DataDataSet.xsd</DependentUpon>
@@ -195,6 +213,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-user-male-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat Grid 23.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

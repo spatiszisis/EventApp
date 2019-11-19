@@ -28,13 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxSettings = new System.Windows.Forms.PictureBox();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
@@ -53,9 +46,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.User_label = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.about_Us_Panel = new EventApp.About_Us();
-            this.panel1.SuspendLayout();
+            this.userControlAboutUs1 = new EventApp.UserControlAboutUs();
+            this.userControlCreateEvent1 = new EventApp.UserControlCreateEvent();
+            this.userControlΗοme1 = new EventApp.UserControlΗοme();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
@@ -64,101 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MorePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(763, 178);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(263, 272);
-            this.panel1.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "And I\'m in the mood for";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "In";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Anything",
-            "Party",
-            "Film",
-            "Festivals",
-            "Tournament",
-            "Game or Competition",
-            "Trip",
-            "Tour",
-            "Seminar or Talk",
-            "Other"});
-            this.comboBox3.Location = new System.Drawing.Point(38, 183);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 3;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Thessaloniki",
-            "Athens",
-            "Patra",
-            "Larisa",
-            "Ioannina",
-            "Volos",
-            "Herakleion"});
-            this.comboBox2.Location = new System.Drawing.Point(38, 118);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 2;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Any date"});
-            this.comboBox1.Location = new System.Drawing.Point(38, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "I want to go out";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -174,14 +73,16 @@
             this.panel2.Controls.Add(this.Home);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(165, 694);
+            this.panel2.Size = new System.Drawing.Size(220, 854);
             this.panel2.TabIndex = 2;
             // 
             // pictureBoxSettings
             // 
             this.pictureBoxSettings.Image = global::EventApp.Properties.Resources.ic_settings_24px;
-            this.pictureBoxSettings.Location = new System.Drawing.Point(71, 644);
+            this.pictureBoxSettings.Location = new System.Drawing.Point(95, 793);
+            this.pictureBoxSettings.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxSettings.Name = "pictureBoxSettings";
             this.pictureBoxSettings.Size = new System.Drawing.Size(38, 37);
             this.pictureBoxSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -191,7 +92,8 @@
             // pictureBoxExit
             // 
             this.pictureBoxExit.Image = global::EventApp.Properties.Resources.ic_power_settings_new_24px1;
-            this.pictureBoxExit.Location = new System.Drawing.Point(10, 644);
+            this.pictureBoxExit.Location = new System.Drawing.Point(13, 793);
+            this.pictureBoxExit.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxExit.Name = "pictureBoxExit";
             this.pictureBoxExit.Size = new System.Drawing.Size(38, 37);
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -203,22 +105,23 @@
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.SidePanel.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.SidePanel.Location = new System.Drawing.Point(0, 191);
+            this.SidePanel.Location = new System.Drawing.Point(0, 235);
+            this.SidePanel.Margin = new System.Windows.Forms.Padding(4);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 59);
+            this.SidePanel.Size = new System.Drawing.Size(13, 73);
             this.SidePanel.TabIndex = 4;
-            this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // logo
             // 
             this.logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.logo.Image = global::EventApp.Properties.Resources.oie_1895421D1UY7qaw;
             this.logo.Location = new System.Drawing.Point(0, 0);
+            this.logo.Margin = new System.Windows.Forms.Padding(4);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(165, 158);
+            this.logo.Size = new System.Drawing.Size(220, 194);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.logo.TabIndex = 5;
             this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Contact
             // 
@@ -228,9 +131,10 @@
             this.Contact.ForeColor = System.Drawing.Color.Snow;
             this.Contact.Image = global::EventApp.Properties.Resources.icons8_mail_contact_24;
             this.Contact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Contact.Location = new System.Drawing.Point(10, 440);
+            this.Contact.Location = new System.Drawing.Point(13, 542);
+            this.Contact.Margin = new System.Windows.Forms.Padding(4);
             this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(155, 50);
+            this.Contact.Size = new System.Drawing.Size(207, 62);
             this.Contact.TabIndex = 4;
             this.Contact.Text = "Contact";
             this.Contact.UseVisualStyleBackColor = true;
@@ -246,9 +150,10 @@
             this.About_Us.ForeColor = System.Drawing.Color.Snow;
             this.About_Us.Image = global::EventApp.Properties.Resources.icons8_about_24;
             this.About_Us.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.About_Us.Location = new System.Drawing.Point(12, 384);
+            this.About_Us.Location = new System.Drawing.Point(16, 473);
+            this.About_Us.Margin = new System.Windows.Forms.Padding(4);
             this.About_Us.Name = "About_Us";
-            this.About_Us.Size = new System.Drawing.Size(155, 46);
+            this.About_Us.Size = new System.Drawing.Size(204, 57);
             this.About_Us.TabIndex = 3;
             this.About_Us.Text = "About us";
             this.About_Us.UseVisualStyleBackColor = true;
@@ -264,9 +169,10 @@
             this.Help.ForeColor = System.Drawing.Color.Snow;
             this.Help.Image = global::EventApp.Properties.Resources.icons8_help_24;
             this.Help.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Help.Location = new System.Drawing.Point(12, 323);
+            this.Help.Location = new System.Drawing.Point(16, 398);
+            this.Help.Margin = new System.Windows.Forms.Padding(4);
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(155, 51);
+            this.Help.Size = new System.Drawing.Size(204, 63);
             this.Help.TabIndex = 2;
             this.Help.Text = "Help";
             this.Help.UseVisualStyleBackColor = true;
@@ -282,9 +188,10 @@
             this.Create_Event.ForeColor = System.Drawing.Color.Snow;
             this.Create_Event.Image = global::EventApp.Properties.Resources.icons8_create_24;
             this.Create_Event.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Create_Event.Location = new System.Drawing.Point(12, 261);
+            this.Create_Event.Location = new System.Drawing.Point(16, 321);
+            this.Create_Event.Margin = new System.Windows.Forms.Padding(4);
             this.Create_Event.Name = "Create_Event";
-            this.Create_Event.Size = new System.Drawing.Size(155, 52);
+            this.Create_Event.Size = new System.Drawing.Size(204, 64);
             this.Create_Event.TabIndex = 1;
             this.Create_Event.Text = "Create Event";
             this.Create_Event.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -301,14 +208,14 @@
             this.Home.ForeColor = System.Drawing.Color.Snow;
             this.Home.Image = global::EventApp.Properties.Resources.icons8_home_24;
             this.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Home.Location = new System.Drawing.Point(12, 192);
+            this.Home.Location = new System.Drawing.Point(16, 236);
+            this.Home.Margin = new System.Windows.Forms.Padding(4);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(155, 59);
+            this.Home.Size = new System.Drawing.Size(204, 73);
             this.Home.TabIndex = 0;
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = true;
             this.Home.Click += new System.EventHandler(this.Home_Click);
-            this.Home.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Home_MouseClick);
             this.Home.MouseLeave += new System.EventHandler(this.Home_MouseLeave);
             this.Home.MouseHover += new System.EventHandler(this.Home_MouseHover);
             // 
@@ -323,15 +230,17 @@
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.User_label);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(165, 0);
+            this.panel3.Location = new System.Drawing.Point(220, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1090, 56);
+            this.panel3.Size = new System.Drawing.Size(1453, 69);
             this.panel3.TabIndex = 3;
             // 
             // MorePic
             // 
             this.MorePic.Image = global::EventApp.Properties.Resources.icons8_drop_down_24;
-            this.MorePic.Location = new System.Drawing.Point(1042, 17);
+            this.MorePic.Location = new System.Drawing.Point(1389, 21);
+            this.MorePic.Margin = new System.Windows.Forms.Padding(4);
             this.MorePic.Name = "MorePic";
             this.MorePic.Size = new System.Drawing.Size(24, 24);
             this.MorePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -341,7 +250,8 @@
             // UserPic
             // 
             this.UserPic.Image = global::EventApp.Properties.Resources.icons8_user_male_30;
-            this.UserPic.Location = new System.Drawing.Point(987, 14);
+            this.UserPic.Location = new System.Drawing.Point(1316, 17);
+            this.UserPic.Margin = new System.Windows.Forms.Padding(4);
             this.UserPic.Name = "UserPic";
             this.UserPic.Size = new System.Drawing.Size(30, 30);
             this.UserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -353,9 +263,10 @@
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.NameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.NameLabel.Location = new System.Drawing.Point(853, 17);
+            this.NameLabel.Location = new System.Drawing.Point(1137, 21);
+            this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(108, 24);
+            this.NameLabel.Size = new System.Drawing.Size(142, 29);
             this.NameLabel.TabIndex = 7;
             this.NameLabel.Text = "Zisis Spatis ";
             // 
@@ -364,75 +275,79 @@
             this.WelcomeLabel.AutoSize = true;
             this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.WelcomeLabel.Location = new System.Drawing.Point(751, 17);
+            this.WelcomeLabel.Location = new System.Drawing.Point(1001, 21);
+            this.WelcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(96, 24);
+            this.WelcomeLabel.Size = new System.Drawing.Size(121, 29);
             this.WelcomeLabel.TabIndex = 6;
             this.WelcomeLabel.Text = "Welcome:";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::EventApp.Properties.Resources.ic_search_24px;
-            this.pictureBox2.Location = new System.Drawing.Point(324, 11);
+            this.pictureBox2.Location = new System.Drawing.Point(425, 13);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 51);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.textBox1.Location = new System.Drawing.Point(31, 11);
+            this.textBox1.Location = new System.Drawing.Point(41, 14);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 33);
+            this.textBox1.Size = new System.Drawing.Size(367, 40);
             this.textBox1.TabIndex = 4;
             // 
             // User_label
             // 
             this.User_label.AutoSize = true;
             this.User_label.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.User_label.Location = new System.Drawing.Point(466, 31);
+            this.User_label.Location = new System.Drawing.Point(621, 38);
+            this.User_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.User_label.Name = "User_label";
-            this.User_label.Size = new System.Drawing.Size(0, 13);
+            this.User_label.Size = new System.Drawing.Size(0, 17);
             this.User_label.TabIndex = 3;
             // 
-            // pictureBox1
+            // userControlAboutUs1
             // 
-            this.pictureBox1.Image = global::EventApp.Properties.Resources._67091909_420668218790060_6866743294223712256_n;
-            this.pictureBox1.Location = new System.Drawing.Point(165, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1104, 644);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.userControlAboutUs1.Location = new System.Drawing.Point(220, 63);
+            this.userControlAboutUs1.Name = "userControlAboutUs1";
+            this.userControlAboutUs1.Size = new System.Drawing.Size(1453, 791);
+            this.userControlAboutUs1.TabIndex = 6;
             // 
-            // about_Us_Panel
+            // userControlCreateEvent1
             // 
-            this.about_Us_Panel.BackColor = System.Drawing.Color.White;
-            this.about_Us_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.about_Us_Panel.Location = new System.Drawing.Point(165, 51);
-            this.about_Us_Panel.Name = "about_Us_Panel";
-            this.about_Us_Panel.Size = new System.Drawing.Size(1100, 643);
-            this.about_Us_Panel.TabIndex = 4;
+            this.userControlCreateEvent1.Location = new System.Drawing.Point(220, 63);
+            this.userControlCreateEvent1.Name = "userControlCreateEvent1";
+            this.userControlCreateEvent1.Size = new System.Drawing.Size(1453, 791);
+            this.userControlCreateEvent1.TabIndex = 5;
+            // 
+            // userControlΗοme1
+            // 
+            this.userControlΗοme1.Location = new System.Drawing.Point(220, 63);
+            this.userControlΗοme1.Name = "userControlΗοme1";
+            this.userControlΗοme1.Size = new System.Drawing.Size(1453, 791);
+            this.userControlΗοme1.TabIndex = 4;
             // 
             // HomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1255, 694);
+            this.ClientSize = new System.Drawing.Size(1673, 854);
+            this.Controls.Add(this.userControlAboutUs1);
+            this.Controls.Add(this.userControlCreateEvent1);
+            this.Controls.Add(this.userControlΗοme1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.about_Us_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).EndInit();
@@ -443,21 +358,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.MorePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Contact;
         private System.Windows.Forms.Button About_Us;
@@ -476,6 +381,8 @@
         private System.Windows.Forms.PictureBox UserPic;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label WelcomeLabel;
-        private About_Us about_Us_Panel;
+        private UserControlΗοme userControlΗοme1;
+        private UserControlCreateEvent userControlCreateEvent1;
+        private UserControlAboutUs userControlAboutUs1;
     }
 }
