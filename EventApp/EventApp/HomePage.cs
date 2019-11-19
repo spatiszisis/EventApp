@@ -15,7 +15,8 @@ namespace EventApp
         public HomePage()
         {
             InitializeComponent();
-            SidePanel.Height = Create_Event.Height;
+            SidePanel.Height = Home.Height;
+            SidePanel.Top = Home.Top;
             userControlΗοme1.BringToFront();
         }
 
