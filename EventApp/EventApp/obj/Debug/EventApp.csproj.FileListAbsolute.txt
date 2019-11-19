@@ -33,3 +33,4 @@ D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\Ev
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache

@@ -16,10 +16,7 @@ namespace EventApp
         {
             InitializeComponent();
             SidePanel.Height = Create_Event.Height;
-            userControlCreateEvent1.BringToFront();
-            SidePanel.Height = Home.Height;
             userControlΗοme1.BringToFront();
-            userControlAboutUs1.BringToFront();
         }
 
         private void Home_MouseHover(object sender, EventArgs e)
