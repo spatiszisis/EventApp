@@ -87,6 +87,18 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlContact.Designer.cs">
+      <DependentUpon>UserControlContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlHelp.Designer.cs">
+      <DependentUpon>UserControlHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlAboutUs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +135,12 @@
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlContact.resx">
+      <DependentUpon>UserControlContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlHelp.resx">
+      <DependentUpon>UserControlHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlAboutUs.resx">
       <DependentUpon>UserControlAboutUs.cs</DependentUpon>

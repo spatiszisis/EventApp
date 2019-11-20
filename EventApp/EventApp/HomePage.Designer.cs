@@ -49,6 +49,8 @@
             this.userControlAboutUs1 = new EventApp.UserControlAboutUs();
             this.userControlCreateEvent1 = new EventApp.UserControlCreateEvent();
             this.userControlΗοme1 = new EventApp.UserControlΗοme();
+            this.userControlContact1 = new EventApp.UserControlContact();
+            this.userControlHelp1 = new EventApp.UserControlHelp();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
@@ -333,11 +335,32 @@
             this.userControlΗοme1.Size = new System.Drawing.Size(1453, 791);
             this.userControlΗοme1.TabIndex = 4;
             // 
+            // userControlContact1
+            // 
+            this.userControlContact1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.userControlContact1.Location = new System.Drawing.Point(220, 63);
+            this.userControlContact1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlContact1.Name = "userControlContact1";
+            this.userControlContact1.Size = new System.Drawing.Size(1453, 791);
+            this.userControlContact1.TabIndex = 7;
+            // 
+            // userControlHelp1
+            // 
+            this.userControlHelp1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlHelp1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.userControlHelp1.Location = new System.Drawing.Point(220, 63);
+            this.userControlHelp1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.userControlHelp1.Name = "userControlHelp1";
+            this.userControlHelp1.Size = new System.Drawing.Size(1453, 791);
+            this.userControlHelp1.TabIndex = 6;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1673, 854);
+            this.Controls.Add(this.userControlHelp1);
+            this.Controls.Add(this.userControlContact1);
             this.Controls.Add(this.userControlAboutUs1);
             this.Controls.Add(this.userControlCreateEvent1);
             this.Controls.Add(this.userControlΗοme1);
@@ -384,5 +407,7 @@
         private UserControlΗοme userControlΗοme1;
         private UserControlCreateEvent userControlCreateEvent1;
         private UserControlAboutUs userControlAboutUs1;
+        private UserControlContact userControlContact1;
+        private UserControlHelp userControlHelp1;
     }
 }

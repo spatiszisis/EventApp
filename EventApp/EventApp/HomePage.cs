@@ -61,6 +61,7 @@ namespace EventApp
         {
             SidePanel.Height = Help.Height;
             SidePanel.Top = Help.Top;
+            userControlHelp1.BringToFront();
         }
         
         private void Help_MouseHover(object sender, EventArgs e)
@@ -98,6 +99,7 @@ namespace EventApp
         {
             SidePanel.Height = Contact.Height;
             SidePanel.Top = Contact.Top;
+            userControlContact1.BringToFront();
         }
 
         private void Contact_MouseHover(object sender, EventArgs e)
