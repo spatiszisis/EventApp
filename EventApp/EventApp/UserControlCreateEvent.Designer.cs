@@ -29,21 +29,23 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.title_txt = new System.Windows.Forms.TextBox();
+            this.description_txt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.path_txt = new System.Windows.Forms.TextBox();
+            this.loadimage_btn = new System.Windows.Forms.Button();
+            this.picImage_box = new System.Windows.Forms.PictureBox();
+            this.save_btn = new System.Windows.Forms.Button();
+            this.discard_btn = new System.Windows.Forms.Button();
+            this.time_txt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.type_box = new System.Windows.Forms.ComboBox();
+            this.category_box = new System.Windows.Forms.ComboBox();
+            this.location_txt = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage_box)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,44 +59,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Basic info";
             // 
-            // textBox1
+            // title_txt
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(87, 176);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(473, 43);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "\r\n  Event Title";
+            this.title_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.title_txt.Location = new System.Drawing.Point(87, 176);
+            this.title_txt.Multiline = true;
+            this.title_txt.Name = "title_txt";
+            this.title_txt.Size = new System.Drawing.Size(473, 43);
+            this.title_txt.TabIndex = 1;
+            this.title_txt.Text = "\r\n  Event Title";
             // 
-            // textBox2
+            // description_txt
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(87, 348);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(473, 152);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(87, 255);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 43);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "\r\n  Type\r\n";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(349, 255);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(211, 43);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "\r\n  Category\r\n";
+            this.description_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.description_txt.Location = new System.Drawing.Point(87, 348);
+            this.description_txt.Multiline = true;
+            this.description_txt.Name = "description_txt";
+            this.description_txt.Size = new System.Drawing.Size(473, 152);
+            this.description_txt.TabIndex = 2;
             // 
             // label2
             // 
@@ -107,36 +89,85 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Location";
             // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(87, 629);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(473, 43);
-            this.textBox4.TabIndex = 7;
-            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.location_txt);
+            this.panel1.Controls.Add(this.category_box);
+            this.panel1.Controls.Add(this.type_box);
+            this.panel1.Controls.Add(this.dateTimePicker);
+            this.panel1.Controls.Add(this.path_txt);
+            this.panel1.Controls.Add(this.loadimage_btn);
+            this.panel1.Controls.Add(this.picImage_box);
+            this.panel1.Controls.Add(this.save_btn);
+            this.panel1.Controls.Add(this.discard_btn);
+            this.panel1.Controls.Add(this.time_txt);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.title_txt);
+            this.panel1.Controls.Add(this.description_txt);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1453, 791);
             this.panel1.TabIndex = 8;
+            // 
+            // path_txt
+            // 
+            this.path_txt.Location = new System.Drawing.Point(708, 550);
+            this.path_txt.Name = "path_txt";
+            this.path_txt.Size = new System.Drawing.Size(482, 22);
+            this.path_txt.TabIndex = 18;
+            // 
+            // loadimage_btn
+            // 
+            this.loadimage_btn.Location = new System.Drawing.Point(708, 596);
+            this.loadimage_btn.Name = "loadimage_btn";
+            this.loadimage_btn.Size = new System.Drawing.Size(104, 52);
+            this.loadimage_btn.TabIndex = 17;
+            this.loadimage_btn.Text = "Load Image";
+            this.loadimage_btn.UseVisualStyleBackColor = true;
+            this.loadimage_btn.Click += new System.EventHandler(this.loadimage_btn_Click);
+            // 
+            // picImage_box
+            // 
+            this.picImage_box.Location = new System.Drawing.Point(708, 320);
+            this.picImage_box.Name = "picImage_box";
+            this.picImage_box.Size = new System.Drawing.Size(482, 215);
+            this.picImage_box.TabIndex = 16;
+            this.picImage_box.TabStop = false;
+            // 
+            // save_btn
+            // 
+            this.save_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.save_btn.Location = new System.Drawing.Point(1021, 687);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(169, 53);
+            this.save_btn.TabIndex = 15;
+            this.save_btn.Text = "Save/Continue";
+            this.save_btn.UseVisualStyleBackColor = false;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
+            // 
+            // discard_btn
+            // 
+            this.discard_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(122)))));
+            this.discard_btn.Location = new System.Drawing.Point(750, 687);
+            this.discard_btn.Name = "discard_btn";
+            this.discard_btn.Size = new System.Drawing.Size(169, 53);
+            this.discard_btn.TabIndex = 14;
+            this.discard_btn.Text = "Discard";
+            this.discard_btn.UseVisualStyleBackColor = false;
+            this.discard_btn.Click += new System.EventHandler(this.discard_btn_Click);
+            // 
+            // time_txt
+            // 
+            this.time_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.time_txt.Location = new System.Drawing.Point(708, 228);
+            this.time_txt.Multiline = true;
+            this.time_txt.Name = "time_txt";
+            this.time_txt.Size = new System.Drawing.Size(482, 43);
+            this.time_txt.TabIndex = 11;
+            this.time_txt.Text = "Time";
             // 
             // label3
             // 
@@ -149,65 +180,68 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Date and Time";
             // 
-            // textBox6
+            // dateTimePicker
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(708, 163);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(211, 43);
-            this.textBox6.TabIndex = 9;
-            this.textBox6.Text = "\r\n  Event Start\r\n";
+            this.dateTimePicker.Location = new System.Drawing.Point(708, 176);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(295, 22);
+            this.dateTimePicker.TabIndex = 19;
             // 
-            // textBox7
+            // type_box
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(708, 237);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(211, 43);
-            this.textBox7.TabIndex = 10;
-            this.textBox7.Text = "\r\n Event Ends\r\n";
+            this.type_box.FormattingEnabled = true;
+            this.type_box.Items.AddRange(new object[] {
+            "Attraction",
+            "Camp,Trip, or Retreat",
+            "Class, Training, or Workshop",
+            "Concert or Performance",
+            "Conference",
+            "Convention",
+            "Dinner or Gala",
+            "Festival",
+            "Game or Competition",
+            "Meeting or Networking Event",
+            "Party or Social Gathering",
+            "Rally",
+            "Tour"});
+            this.type_box.Location = new System.Drawing.Point(87, 283);
+            this.type_box.Name = "type_box";
+            this.type_box.Size = new System.Drawing.Size(211, 24);
+            this.type_box.TabIndex = 20;
+            this.type_box.Text = "Type";
             // 
-            // textBox8
+            // category_box
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(979, 163);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(211, 43);
-            this.textBox8.TabIndex = 11;
-            this.textBox8.Text = "\r\n  Start Time\r\n";
+            this.category_box.FormattingEnabled = true;
+            this.category_box.Items.AddRange(new object[] {
+            "Business & Professional",
+            "Family & Education",
+            "Fashion & Beauty",
+            "Film, Media & Entertainment",
+            "Food & Drink",
+            "Health & Wellness",
+            "Home & Lifestyle",
+            "Music",
+            "Science & Technoology",
+            "Seasocal & Holiday"});
+            this.category_box.Location = new System.Drawing.Point(349, 283);
+            this.category_box.Name = "category_box";
+            this.category_box.Size = new System.Drawing.Size(211, 24);
+            this.category_box.TabIndex = 21;
+            this.category_box.Text = "Category";
             // 
-            // textBox9
+            // location_txt
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(979, 237);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(211, 43);
-            this.textBox9.TabIndex = 12;
-            this.textBox9.Text = "\r\n  End Time\r\n";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(122)))));
-            this.button2.Location = new System.Drawing.Point(750, 687);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 53);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Discard";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.button3.Location = new System.Drawing.Point(1021, 687);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(169, 53);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Save/Continue";
-            this.button3.UseVisualStyleBackColor = false;
+            this.location_txt.AutoCompleteCustomSource.AddRange(new string[] {
+            "Thessaloniki",
+            "Athina",
+            "Patra"});
+            this.location_txt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.location_txt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.location_txt.Location = new System.Drawing.Point(87, 662);
+            this.location_txt.Name = "location_txt";
+            this.location_txt.Size = new System.Drawing.Size(436, 22);
+            this.location_txt.TabIndex = 22;
             // 
             // UserControlCreateEvent
             // 
@@ -218,6 +252,7 @@
             this.Size = new System.Drawing.Size(1453, 791);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage_box)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,19 +260,20 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox title_txt;
+        private System.Windows.Forms.TextBox description_txt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button save_btn;
+        private System.Windows.Forms.Button discard_btn;
+        private System.Windows.Forms.TextBox time_txt;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button loadimage_btn;
+        private System.Windows.Forms.PictureBox picImage_box;
+        private System.Windows.Forms.TextBox path_txt;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.ComboBox category_box;
+        private System.Windows.Forms.ComboBox type_box;
+        private System.Windows.Forms.TextBox location_txt;
     }
 }

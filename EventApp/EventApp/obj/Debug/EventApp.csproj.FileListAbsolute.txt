@@ -49,3 +49,20 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasilo
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.exe
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.EventDisplay.resources

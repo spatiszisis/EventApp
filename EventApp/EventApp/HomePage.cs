@@ -37,6 +37,7 @@ namespace EventApp
             SidePanel.Height = Home.Height;
             SidePanel.Top = Home.Top;
             userControlΗοme1.BringToFront();
+            
         }
 
         private void Create_Event_Click(object sender, EventArgs e)
