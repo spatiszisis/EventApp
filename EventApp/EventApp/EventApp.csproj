@@ -67,12 +67,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="EventDisplay.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="EventDisplay.Designer.cs">
-      <DependentUpon>EventDisplay.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,15 +112,18 @@
     <Compile Include="UserControlCreateEvent.Designer.cs">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlShowEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlShowEvent.Designer.cs">
+      <DependentUpon>UserControlShowEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlΗοme.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlΗοme.Designer.cs">
       <DependentUpon>UserControlΗοme.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="EventDisplay.resx">
-      <DependentUpon>EventDisplay.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlCreateEvent.resx">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlShowEvent.resx">
+      <DependentUpon>UserControlShowEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlΗοme.resx">
       <DependentUpon>UserControlΗοme.cs</DependentUpon>

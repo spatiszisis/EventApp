@@ -26,17 +26,12 @@ namespace EventApp
         {
             try
             {
-                byte[] picImage_box = null;
-                FileStream fstream = new FileStream(this.path_txt.Text,FileMode.Open, FileAccess.Read);
-                BinaryReader br = new BinaryReader(fstream);
-                picImage_box = br.ReadBytes((int)fstream.Length);
-
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
                 command.CommandText = "INSERT INTO Events ([Title] , [Category] , [Type], [Description] , [Image] , [Location] , [Day] , [Time] )" + " VALUES (@Title,@Category,@Type,@Description,@Image,@Location,@Day,@Time)";
                 command.Parameters.AddWithValue("@Title", title_txt.Text);
-                command.Parameters.AddWithValue("@Category", category_box);
-                command.Parameters.AddWithValue("@Type", type_box);
+                command.Parameters.AddWithValue("@Category", category_box.Text);
+                command.Parameters.AddWithValue("@Type", type_box.Text);
                 command.Parameters.AddWithValue("@Description", description_txt.Text);
                 command.Parameters.AddWithValue("@Image", picImage_box);
                 command.Parameters.AddWithValue("@Location", location_txt.Text);
@@ -44,13 +39,16 @@ namespace EventApp
                 command.Parameters.AddWithValue("@Time", time_txt.Text);
                 command.Connection = connection;
 
-
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Dispose();
-                this.Hide();
-                EventDisplay ed = new EventDisplay();
-                
+                if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvent"))
+                {
+                    UserControlShowEvent scse = new UserControlShowEvent();
+                    scse.Dock = DockStyle.Fill;
+                    HomePage.Instance.PnlContainer.Controls.Add(scse);
+                }
+                HomePage.Instance.PnlContainer.Controls["UserControlShowEvent"].BringToFront();
                 connection.Close();
             }
             catch (Exception ex)
@@ -67,7 +65,6 @@ namespace EventApp
             if(dlg.ShowDialog() == DialogResult.OK)
             {
                 string picPath = dlg.FileName.ToString();
-                path_txt.Text = picPath;
                 picImage_box.ImageLocation = picPath;
             }
         }
@@ -81,7 +78,6 @@ namespace EventApp
             location_txt.Text = null;
             dateTimePicker = null;
             time_txt.Text = null;
-            path_txt.Text = null;
             picImage_box = null;
         }
     }

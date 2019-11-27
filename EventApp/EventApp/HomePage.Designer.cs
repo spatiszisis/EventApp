@@ -46,12 +46,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.User_label = new System.Windows.Forms.Label();
-            this.userControlHelp1 = new EventApp.UserControlHelp();
-            this.userControlContact1 = new EventApp.UserControlContact();
-            this.userControlAboutUs1 = new EventApp.UserControlAboutUs();
-            this.userControlCreateEvent1 = new EventApp.UserControlCreateEvent();
-            this.userControlΗοme1 = new EventApp.UserControlΗοme();
-            this.eventDisplay1 = new EventApp.EventDisplay();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
@@ -315,64 +310,20 @@
             this.User_label.Size = new System.Drawing.Size(0, 17);
             this.User_label.TabIndex = 3;
             // 
-            // userControlHelp1
+            // panelContainer
             // 
-            this.userControlHelp1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControlHelp1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.userControlHelp1.Location = new System.Drawing.Point(220, 63);
-            this.userControlHelp1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.userControlHelp1.Name = "userControlHelp1";
-            this.userControlHelp1.Size = new System.Drawing.Size(1453, 791);
-            this.userControlHelp1.TabIndex = 6;
-            // 
-            // userControlContact1
-            // 
-            this.userControlContact1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.userControlContact1.Location = new System.Drawing.Point(220, 63);
-            this.userControlContact1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.userControlContact1.Name = "userControlContact1";
-            this.userControlContact1.Size = new System.Drawing.Size(1453, 791);
-            this.userControlContact1.TabIndex = 7;
-            // 
-            // userControlAboutUs1
-            // 
-            this.userControlAboutUs1.Location = new System.Drawing.Point(220, 63);
-            this.userControlAboutUs1.Name = "userControlAboutUs1";
-            this.userControlAboutUs1.Size = new System.Drawing.Size(1453, 791);
-            this.userControlAboutUs1.TabIndex = 6;
-            // 
-            // userControlCreateEvent1
-            // 
-            this.userControlCreateEvent1.Location = new System.Drawing.Point(220, 63);
-            this.userControlCreateEvent1.Name = "userControlCreateEvent1";
-            this.userControlCreateEvent1.Size = new System.Drawing.Size(1453, 791);
-            this.userControlCreateEvent1.TabIndex = 5;
-            // 
-            // userControlΗοme1
-            // 
-            this.userControlΗοme1.Location = new System.Drawing.Point(220, 63);
-            this.userControlΗοme1.Name = "userControlΗοme1";
-            this.userControlΗοme1.Size = new System.Drawing.Size(1453, 791);
-            this.userControlΗοme1.TabIndex = 4;
-            // 
-            // eventDisplay1
-            // 
-            this.eventDisplay1.Location = new System.Drawing.Point(220, 63);
-            this.eventDisplay1.Name = "eventDisplay1";
-            this.eventDisplay1.Size = new System.Drawing.Size(1453, 791);
-            this.eventDisplay1.TabIndex = 8;
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(220, 69);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1453, 785);
+            this.panelContainer.TabIndex = 4;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1673, 854);
-            this.Controls.Add(this.eventDisplay1);
-            this.Controls.Add(this.userControlHelp1);
-            this.Controls.Add(this.userControlContact1);
-            this.Controls.Add(this.userControlAboutUs1);
-            this.Controls.Add(this.userControlCreateEvent1);
-            this.Controls.Add(this.userControlΗοme1);
+            this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -380,6 +331,7 @@
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.HomePage_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSettings)).EndInit();
@@ -413,11 +365,6 @@
         private System.Windows.Forms.PictureBox UserPic;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label WelcomeLabel;
-        private UserControlΗοme userControlΗοme1;
-        private UserControlCreateEvent userControlCreateEvent1;
-        private UserControlAboutUs userControlAboutUs1;
-        private UserControlContact userControlContact1;
-        private UserControlHelp userControlHelp1;
-        private EventDisplay eventDisplay1;
+        private System.Windows.Forms.Panel panelContainer;
     }
 }

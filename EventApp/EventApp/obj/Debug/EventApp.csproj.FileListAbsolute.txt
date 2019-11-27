@@ -65,4 +65,4 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.exe
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.pdb
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
-C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.EventDisplay.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvent.resources

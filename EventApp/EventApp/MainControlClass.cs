@@ -9,7 +9,7 @@ namespace EventApp
 {
     class MainControlClass
     {
-        public static void showControl(System.Windows.Forms.Control control, System.Windows.Forms.Control Content)
+        public static void showControl(Control control, Control Content)
         {
             Content.Controls.Clear();
 
