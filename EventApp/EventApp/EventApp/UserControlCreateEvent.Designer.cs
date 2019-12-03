@@ -42,9 +42,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.title_txt = new System.Windows.Forms.TextBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.picImage_box = new System.Windows.Forms.PictureBox();
             this.time_txt = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picImage_box)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.picBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
             // category_box
@@ -81,7 +82,7 @@
             this.loadimage_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadimage_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
             this.loadimage_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loadimage_btn.Location = new System.Drawing.Point(963, 544);
+            this.loadimage_btn.Location = new System.Drawing.Point(956, 565);
             this.loadimage_btn.Name = "loadimage_btn";
             this.loadimage_btn.Size = new System.Drawing.Size(173, 52);
             this.loadimage_btn.TabIndex = 34;
@@ -128,7 +129,7 @@
             this.save_btn.TabIndex = 30;
             this.save_btn.Text = "Save/Continue";
             this.save_btn.UseVisualStyleBackColor = false;
-            this.save_btn.Click += new System.EventHandler(this.save_btn_Click_1);
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // panel2
             // 
@@ -231,20 +232,12 @@
             // dateTimePicker
             // 
             this.dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker.Location = new System.Drawing.Point(801, 162);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(295, 22);
             this.dateTimePicker.TabIndex = 36;
-            // 
-            // picImage_box
-            // 
-            this.picImage_box.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picImage_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picImage_box.Location = new System.Drawing.Point(801, 306);
-            this.picImage_box.Name = "picImage_box";
-            this.picImage_box.Size = new System.Drawing.Size(482, 215);
-            this.picImage_box.TabIndex = 33;
-            this.picImage_box.TabStop = false;
+            this.dateTimePicker.Value = new System.DateTime(2019, 12, 3, 0, 0, 0, 0);
             // 
             // time_txt
             // 
@@ -260,10 +253,29 @@
             this.time_txt.Text = "Time";
             this.time_txt.Click += new System.EventHandler(this.time_txt_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(513, 740);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 17);
+            this.label4.TabIndex = 38;
+            // 
+            // picBox
+            // 
+            this.picBox.Location = new System.Drawing.Point(801, 267);
+            this.picBox.Name = "picBox";
+            this.picBox.Size = new System.Drawing.Size(473, 271);
+            this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox.TabIndex = 39;
+            this.picBox.TabStop = false;
+            // 
             // UserControlCreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.picBox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.category_box);
             this.Controls.Add(this.loadimage_btn);
             this.Controls.Add(this.panel3);
@@ -278,11 +290,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.title_txt);
             this.Controls.Add(this.dateTimePicker);
-            this.Controls.Add(this.picImage_box);
             this.Controls.Add(this.time_txt);
             this.Name = "UserControlCreateEvent";
             this.Size = new System.Drawing.Size(1453, 791);
-            ((System.ComponentModel.ISupportInitialize)(this.picImage_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,7 +315,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox title_txt;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
-        private System.Windows.Forms.PictureBox picImage_box;
         private System.Windows.Forms.TextBox time_txt;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox picBox;
     }
 }

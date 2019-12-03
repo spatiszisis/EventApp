@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
 using Connect;
+using System.Drawing.Imaging;
 
 namespace EventApp
 {
@@ -50,50 +51,18 @@ namespace EventApp
 
         //Arxi Click Method gia ta koumpia
 
-        private void save_btn_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                OleDbCommand command = new OleDbCommand();
-                command.CommandType = CommandType.Text;
-                command.CommandText = "insert into Events ([Title] , [Category] , [Description] , [Image] , [LocationID] , [Day] , [Time] )" + " VALUES (@Title,@Category,@Description,@Image,@LocationID,@Day,@Time)";
-                command.Parameters.AddWithValue("@Title", title_txt.Text);
-                command.Parameters.AddWithValue("@Category", category_box.Text);
-                command.Parameters.AddWithValue("@Description", description_txt.Text);
-                command.Parameters.AddWithValue("@Image", SavePhoto());
-                command.Parameters.AddWithValue("@LocationID", location_txt.Text);
-                command.Parameters.AddWithValue("@Day", dateTimePicker.Text);
-                command.Parameters.AddWithValue("@Time", time_txt.Text);
-                command.Connection = connection;
 
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Dispose();
-                MessageBox.Show("Event Saved! ");
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error " + ex);
-            }
-        }
 
-        private byte[] SavePhoto()
-        {
-            MemoryStream ms = new MemoryStream();
-            picImage_box.Image.Save(ms, picImage_box.Image.RawFormat);
-            return ms.GetBuffer();
-        }
 
         private void loadimage_btn_Click(object sender, EventArgs e)
         {
             try
             {
                 OpenFileDialog dlg = new OpenFileDialog();
-                dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
-                if(dlg.ShowDialog() == DialogResult.OK)
+                //dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
+                if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    picImage_box.Image = new Bitmap(dlg.FileName);
+                    picBox.Image = Image.FromFile(dlg.FileName);
                 }
             }
             catch (Exception)
@@ -121,7 +90,49 @@ namespace EventApp
             HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
         }
 
-       
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+
+            //MemoryStream ms = new MemoryStream();
+            //picImage_box.Image.Save(ms, ImageFormat.Png);
+            //byte[] photo = ms.GetBuffer();
+
+            OleDbCommand command = new OleDbCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "insert into Events (title,category,description,[Day],[Time],location,[Image]) values (@Title, @Category, @Description, @Day, @Time, @Location, @Image)";
+            command.Connection = connection;
+            byte[] yourPhoto = imageToByteArray(picBox.Image);
+            command.Parameters.AddWithValue("@Title", title_txt.Text);
+            command.Parameters.AddWithValue("@Category", category_box.Text);
+            command.Parameters.AddWithValue("@Description", description_txt.Text);
+            command.Parameters.Add("@Day", OleDbType.Date).Value = dateTimePicker.Value;
+            command.Parameters.AddWithValue("@Time", time_txt.Text);
+            command.Parameters.AddWithValue("@Location", location_txt.Text);
+            command.Parameters.AddWithValue("@Image", yourPhoto);
+            connection.Open();
+            try
+            {
+                command.ExecuteNonQuery();
+                MessageBox.Show("Event Saved! ");
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+                connection.Close();
+            }
+            finally
+            {
+
+            }
+        }
+        public byte[] imageToByteArray(Image iImage)
+        {
+            MemoryStream mMemoryStream = new MemoryStream();
+            iImage.Save(mMemoryStream, ImageFormat.Png);
+            return mMemoryStream.ToArray();
+        }
+
 
         //Telos Click Method gia ta koumpia
     }
