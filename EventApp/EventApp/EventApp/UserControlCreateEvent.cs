@@ -51,64 +51,33 @@ namespace EventApp
 
         //Arxi Click Method gia ta koumpia
 
-
-
-
         private void loadimage_btn_Click(object sender, EventArgs e)
         {
-            try
-            {
                 OpenFileDialog dlg = new OpenFileDialog();
-                //dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
+                dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    picBox.Image = Image.FromFile(dlg.FileName);
+                    picBox.Image = new Bitmap(dlg.FileName);
                 }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
         }
 
-        private void discard_btn_Click_1(object sender, EventArgs e)
-        {
-            //title_txt.Text = null;
-            //category_box = null;
-            //description_txt.Text = null;
-            //location_txt.Text = null;
-            //dateTimePicker = null;
-            //time_txt.Text = null;
-            //picImage_box.Image = null;
-
-            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))
-            {
-                UserControlShowEventPreview scse = new UserControlShowEventPreview();
-                scse.Dock = DockStyle.Fill;
-                HomePage.Instance.PnlContainer.Controls.Add(scse);
-            }
-            HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
-        }
-
+        
         private void save_btn_Click(object sender, EventArgs e)
         {
 
-            //MemoryStream ms = new MemoryStream();
-            //picImage_box.Image.Save(ms, ImageFormat.Png);
-            //byte[] photo = ms.GetBuffer();
-
+           
             OleDbCommand command = new OleDbCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "insert into Events (title,category,description,[Day],[Time],location,[Image]) values (@Title, @Category, @Description, @Day, @Time, @Location, @Image)";
+            command.CommandText = "insert into Events (title,category,description,[Day],[Time],location) values (@Title, @Category, @Description, @Day, @Time, @Location)";
             command.Connection = connection;
-            byte[] yourPhoto = imageToByteArray(picBox.Image);
             command.Parameters.AddWithValue("@Title", title_txt.Text);
             command.Parameters.AddWithValue("@Category", category_box.Text);
             command.Parameters.AddWithValue("@Description", description_txt.Text);
             command.Parameters.Add("@Day", OleDbType.Date).Value = dateTimePicker.Value;
             command.Parameters.AddWithValue("@Time", time_txt.Text);
             command.Parameters.AddWithValue("@Location", location_txt.Text);
-            command.Parameters.AddWithValue("@Image", yourPhoto);
+            //command.Parameters.AddWithValue("@Image", savePhoto());
+
             connection.Open();
             try
             {
@@ -123,16 +92,37 @@ namespace EventApp
             }
             finally
             {
-
+                title_txt.Clear();
+                category_box.Text = "Please Select";
+                description_txt.Clear();
+                dateTimePicker = null;
+                time_txt.Clear();
+                location_txt.Clear();
+                picBox.Image = null;
             }
         }
-        public byte[] imageToByteArray(Image iImage)
+
+        /*
+        private byte[] savePhoto()
         {
-            MemoryStream mMemoryStream = new MemoryStream();
-            iImage.Save(mMemoryStream, ImageFormat.Png);
-            return mMemoryStream.ToArray();
+            MemoryStream ms = new MemoryStream();
+            picBox.Image.Save(ms, picBox.Image.RawFormat);
+            return ms.GetBuffer();
+        }
+        */
+
+        private void preview_btn_Click(object sender, EventArgs e)
+        {
+            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))
+            {
+                UserControlShowEventPreview scse = new UserControlShowEventPreview();
+                scse.Dock = DockStyle.Fill;
+                HomePage.Instance.PnlContainer.Controls.Add(scse);
+            }
+            HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
         }
 
+        
 
         //Telos Click Method gia ta koumpia
     }

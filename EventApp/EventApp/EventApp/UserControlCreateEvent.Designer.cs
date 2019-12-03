@@ -31,7 +31,7 @@
             this.category_box = new System.Windows.Forms.ComboBox();
             this.loadimage_btn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.discard_btn = new System.Windows.Forms.Button();
+            this.preview_btn = new System.Windows.Forms.Button();
             this.save_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -99,21 +99,21 @@
             this.panel3.Size = new System.Drawing.Size(300, 3);
             this.panel3.TabIndex = 35;
             // 
-            // discard_btn
+            // preview_btn
             // 
-            this.discard_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.discard_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(122)))));
-            this.discard_btn.FlatAppearance.BorderSize = 0;
-            this.discard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.discard_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.discard_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.discard_btn.Location = new System.Drawing.Point(801, 673);
-            this.discard_btn.Name = "discard_btn";
-            this.discard_btn.Size = new System.Drawing.Size(169, 53);
-            this.discard_btn.TabIndex = 29;
-            this.discard_btn.Text = "Discard";
-            this.discard_btn.UseVisualStyleBackColor = false;
-            this.discard_btn.Click += new System.EventHandler(this.discard_btn_Click_1);
+            this.preview_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.preview_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(122)))));
+            this.preview_btn.FlatAppearance.BorderSize = 0;
+            this.preview_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.preview_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.preview_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.preview_btn.Location = new System.Drawing.Point(801, 673);
+            this.preview_btn.Name = "preview_btn";
+            this.preview_btn.Size = new System.Drawing.Size(169, 53);
+            this.preview_btn.TabIndex = 29;
+            this.preview_btn.Text = "Preview";
+            this.preview_btn.UseVisualStyleBackColor = false;
+            this.preview_btn.Click += new System.EventHandler(this.preview_btn_Click);
             // 
             // save_btn
             // 
@@ -263,6 +263,7 @@
             // 
             // picBox
             // 
+            this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picBox.Location = new System.Drawing.Point(801, 267);
             this.picBox.Name = "picBox";
             this.picBox.Size = new System.Drawing.Size(473, 271);
@@ -279,7 +280,7 @@
             this.Controls.Add(this.category_box);
             this.Controls.Add(this.loadimage_btn);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.discard_btn);
+            this.Controls.Add(this.preview_btn);
             this.Controls.Add(this.save_btn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -304,7 +305,7 @@
         private System.Windows.Forms.ComboBox category_box;
         private System.Windows.Forms.Button loadimage_btn;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button discard_btn;
+        private System.Windows.Forms.Button preview_btn;
         private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
