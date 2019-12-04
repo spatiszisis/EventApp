@@ -255,6 +255,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(513, 740);
             this.label4.Name = "label4";
@@ -263,6 +264,7 @@
             // 
             // picBox
             // 
+            this.picBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picBox.Location = new System.Drawing.Point(801, 267);
             this.picBox.Name = "picBox";

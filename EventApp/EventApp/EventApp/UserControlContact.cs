@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Mail;
+using System.Net.Mime;
 
 namespace EventApp
 {
@@ -17,24 +20,51 @@ namespace EventApp
             InitializeComponent();
         }
 
-        private void nameTxt_Click(object sender, EventArgs e)
-        {
-            nameTxt.Clear();
-        }
-
         private void emailTxt_Click(object sender, EventArgs e)
         {
             emailTxt.Clear();
         }
 
-        private void numberTxt_Click(object sender, EventArgs e)
+        private void subjectTxt_Click(object sender, EventArgs e)
         {
-            numberTxt.Clear();
+            subjectTxt.Clear();
         }
 
         private void messageTxt_Click(object sender, EventArgs e)
         {
             messageTxt.Clear();
         }
+
+        private void sendBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.EnableSsl = true;
+                client.Timeout = 10000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential("adopseteam@gmail.com", "Aa1234567.");
+                MailMessage msg = new MailMessage();
+                msg.To.Add("adopseteam@gmail.com");
+                msg.From = new MailAddress(emailTxt.Text);
+                msg.Subject = subjectTxt.Text;
+                msg.Body = messageTxt.Text;
+                client.Send(msg);
+                MessageBox.Show("Successfully Sent. ");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                emailTxt.Text = "example@gmail.com";
+                subjectTxt.Text = "Give an subject";
+                messageTxt.Text = "Leave your message...";
+            }
+        }
+
+       
     }
 }
