@@ -37,7 +37,7 @@
             // dayTxt
             // 
             this.dayTxt.AutoSize = true;
-            this.dayTxt.Location = new System.Drawing.Point(275, 181);
+            this.dayTxt.Location = new System.Drawing.Point(275, 188);
             this.dayTxt.Name = "dayTxt";
             this.dayTxt.Size = new System.Drawing.Size(24, 17);
             this.dayTxt.TabIndex = 0;
