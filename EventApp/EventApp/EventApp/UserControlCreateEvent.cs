@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
 using Connect;
+using System.Drawing.Imaging;
 
 namespace EventApp
 {
@@ -50,68 +51,68 @@ namespace EventApp
 
         //Arxi Click Method gia ta koumpia
 
-        private void save_btn_Click_1(object sender, EventArgs e)
+        private void loadimage_btn_Click(object sender, EventArgs e)
         {
+                OpenFileDialog dlg = new OpenFileDialog();
+                dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    picBox.Image = new Bitmap(dlg.FileName);
+                }
+        }
+
+        
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+
+           
+            OleDbCommand command = new OleDbCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "insert into Events (title,category,description,[Day],[Time],location) values (@Title, @Category, @Description, @Day, @Time, @Location)";
+            command.Connection = connection;
+            command.Parameters.AddWithValue("@Title", title_txt.Text);
+            command.Parameters.AddWithValue("@Category", category_box.Text);
+            command.Parameters.AddWithValue("@Description", description_txt.Text);
+            command.Parameters.Add("@Day", OleDbType.Date).Value = dateTimePicker.Value;
+            command.Parameters.AddWithValue("@Time", time_txt.Text);
+            command.Parameters.AddWithValue("@Location", location_txt.Text);
+            //command.Parameters.AddWithValue("@Image", savePhoto());
+
+            connection.Open();
             try
             {
-                OleDbCommand command = new OleDbCommand();
-                command.CommandType = CommandType.Text;
-                command.CommandText = "insert into Events ([Title] , [Category] , [Description] , [Image] , [LocationID] , [Day] , [Time] )" + " VALUES (@Title,@Category,@Description,@Image,@LocationID,@Day,@Time)";
-                command.Parameters.AddWithValue("@Title", title_txt.Text);
-                command.Parameters.AddWithValue("@Category", category_box.Text);
-                command.Parameters.AddWithValue("@Description", description_txt.Text);
-                command.Parameters.AddWithValue("@Image", SavePhoto());
-                command.Parameters.AddWithValue("@LocationID", location_txt.Text);
-                command.Parameters.AddWithValue("@Day", dateTimePicker.Text);
-                command.Parameters.AddWithValue("@Time", time_txt.Text);
-                command.Connection = connection;
-
-                connection.Open();
                 command.ExecuteNonQuery();
-                connection.Dispose();
                 MessageBox.Show("Event Saved! ");
                 connection.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex);
+                connection.Close();
+            }
+            finally
+            {
+                title_txt.Clear();
+                category_box.Text = "Please Select";
+                description_txt.Clear();
+                dateTimePicker = null;
+                time_txt.Clear();
+                location_txt.Clear();
+                picBox.Image = null;
             }
         }
 
-        private byte[] SavePhoto()
+        /*
+        private byte[] savePhoto()
         {
             MemoryStream ms = new MemoryStream();
-            picImage_box.Image.Save(ms, picImage_box.Image.RawFormat);
+            picBox.Image.Save(ms, picBox.Image.RawFormat);
             return ms.GetBuffer();
         }
+        */
 
-        private void loadimage_btn_Click(object sender, EventArgs e)
+        private void preview_btn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                OpenFileDialog dlg = new OpenFileDialog();
-                dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
-                if(dlg.ShowDialog() == DialogResult.OK)
-                {
-                    picImage_box.Image = new Bitmap(dlg.FileName);
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-
-        private void discard_btn_Click_1(object sender, EventArgs e)
-        {
-            //title_txt.Text = null;
-            //category_box = null;
-            //description_txt.Text = null;
-            //location_txt.Text = null;
-            //dateTimePicker = null;
-            //time_txt.Text = null;
-            //picImage_box.Image = null;
-
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))
             {
                 UserControlShowEventPreview scse = new UserControlShowEventPreview();
@@ -121,7 +122,7 @@ namespace EventApp
             HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
         }
 
-       
+        
 
         //Telos Click Method gia ta koumpia
     }

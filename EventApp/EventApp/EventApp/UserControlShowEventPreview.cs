@@ -44,7 +44,7 @@ namespace EventApp
                     dateTxt.Text = reader["Day"].ToString();
                     timeTxt.Text = reader["Time"].ToString();
                     categoryTxt.Text = reader["Category"].ToString();
-                    locationTxt.Text = reader["LocationID"].ToString();
+                    locationTxt.Text = reader["Location"].ToString();
                    // imagePictureBox.Image = LoadPhoto()
                 }
                 reader.Close();

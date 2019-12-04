@@ -34,9 +34,9 @@
             this.searchBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.categoryCombo = new System.Windows.Forms.ComboBox();
+            this.cityCombo = new System.Windows.Forms.ComboBox();
+            this.dayCombo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,9 +61,9 @@
             this.panel1.Controls.Add(this.searchBtn);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.categoryCombo);
+            this.panel1.Controls.Add(this.cityCombo);
+            this.panel1.Controls.Add(this.dayCombo);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(869, 201);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
@@ -108,12 +108,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "In";
             // 
-            // comboBox3
+            // categoryCombo
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox3.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.categoryCombo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.categoryCombo.ForeColor = System.Drawing.Color.Gray;
+            this.categoryCombo.FormattingEnabled = true;
+            this.categoryCombo.Items.AddRange(new object[] {
             "Anything",
             "All Events",
             "Concerts",
@@ -130,19 +130,19 @@
             "Politics",
             "Technology",
             "Other"});
-            this.comboBox3.Location = new System.Drawing.Point(51, 234);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(241, 32);
-            this.comboBox3.TabIndex = 3;
-            this.comboBox3.Text = "Anything";
+            this.categoryCombo.Location = new System.Drawing.Point(51, 234);
+            this.categoryCombo.Margin = new System.Windows.Forms.Padding(4);
+            this.categoryCombo.Name = "categoryCombo";
+            this.categoryCombo.Size = new System.Drawing.Size(241, 32);
+            this.categoryCombo.TabIndex = 3;
+            this.categoryCombo.Text = "Anything";
             // 
-            // comboBox2
+            // cityCombo
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cityCombo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.cityCombo.ForeColor = System.Drawing.Color.Gray;
+            this.cityCombo.FormattingEnabled = true;
+            this.cityCombo.Items.AddRange(new object[] {
             "Thessaloniki",
             "Athens",
             "Patra",
@@ -150,30 +150,30 @@
             "Ioannina",
             "Volos",
             "Herakleion"});
-            this.comboBox2.Location = new System.Drawing.Point(51, 145);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(241, 32);
-            this.comboBox2.TabIndex = 2;
-            this.comboBox2.Text = "City";
+            this.cityCombo.Location = new System.Drawing.Point(51, 145);
+            this.cityCombo.Margin = new System.Windows.Forms.Padding(4);
+            this.cityCombo.Name = "cityCombo";
+            this.cityCombo.Size = new System.Drawing.Size(241, 32);
+            this.cityCombo.TabIndex = 2;
+            this.cityCombo.Text = "City";
             // 
-            // comboBox1
+            // dayCombo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.dayCombo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.dayCombo.ForeColor = System.Drawing.Color.Gray;
+            this.dayCombo.FormattingEnabled = true;
+            this.dayCombo.Items.AddRange(new object[] {
             "Any date",
             "Today",
             "This Week",
             "This Weekend ",
             "This Month"});
-            this.comboBox1.Location = new System.Drawing.Point(51, 65);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 32);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Any date";
+            this.dayCombo.Location = new System.Drawing.Point(51, 65);
+            this.dayCombo.Margin = new System.Windows.Forms.Padding(4);
+            this.dayCombo.Name = "dayCombo";
+            this.dayCombo.Size = new System.Drawing.Size(241, 32);
+            this.dayCombo.TabIndex = 1;
+            this.dayCombo.Text = "Any date";
             // 
             // label1
             // 
@@ -209,9 +209,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox categoryCombo;
+        private System.Windows.Forms.ComboBox cityCombo;
+        private System.Windows.Forms.ComboBox dayCombo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button searchBtn;
     }
