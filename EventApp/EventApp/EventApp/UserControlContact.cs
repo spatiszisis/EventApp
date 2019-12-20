@@ -44,7 +44,7 @@ namespace EventApp
                 client.Timeout = 10000;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("adopseteam@gmail.com", "Aa1234567.");
+                client.Credentials = new NetworkCredential("adopseteam@gmail.com", "Asd123456.");
                 MailMessage msg = new MailMessage();
                 msg.To.Add("adopseteam@gmail.com");
                 msg.From = new MailAddress(emailTxt.Text);
@@ -64,7 +64,5 @@ namespace EventApp
                 messageTxt.Text = "Leave your message...";
             }
         }
-
-       
     }
 }

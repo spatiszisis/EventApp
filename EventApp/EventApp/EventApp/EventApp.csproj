@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessFormToGoogleAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessFormToGoogleAccount.Designer.cs">
+      <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -147,6 +153,9 @@
     <Compile Include="UserControlΗοme.Designer.cs">
       <DependentUpon>UserControlΗοme.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccessFormToGoogleAccount.resx">
+      <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
