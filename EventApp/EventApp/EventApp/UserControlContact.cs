@@ -46,8 +46,8 @@ namespace EventApp
                 client.UseDefaultCredentials = false;
                 client.Credentials = new NetworkCredential("adopseteam@gmail.com", "Asd123456.");
                 MailMessage msg = new MailMessage();
-                msg.To.Add("adopseteam@gmail.com");
-                msg.From = new MailAddress(emailTxt.Text);
+                msg.To.Add(emailTxt.Text);
+                msg.From = new MailAddress("adopseteam@gmail.com"); 
                 msg.Subject = subjectTxt.Text;
                 msg.Body = messageTxt.Text;
                 client.Send(msg);

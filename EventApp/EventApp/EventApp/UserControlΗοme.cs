@@ -21,15 +21,14 @@ namespace EventApp
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-
-            UserControlShowEvents us = new UserControlShowEvents();
-
-            us.date = dayCombo.SelectedItem.ToString();
-            us.city = cityCombo.SelectedItem.ToString();
-            us.category = categoryCombo.SelectedItem.ToString();
-
-            us.Show();
-
+            using(UserControlShowEvents us = new UserControlShowEvents())
+            {
+                us.date = dayCombo.Text;
+                us.city = cityCombo.Text;
+                us.category = categoryCombo.Text;
+                us.Show();
+            }
+            
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
             {
                 UserControlShowEvents scse = new UserControlShowEvents();
