@@ -28,38 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dayTxt = new System.Windows.Forms.Label();
-            this.cityTxt = new System.Windows.Forms.Label();
-            this.moodTxt = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
-            // 
-            // dayTxt
-            // 
-            this.dayTxt.AutoSize = true;
-            this.dayTxt.Location = new System.Drawing.Point(275, 188);
-            this.dayTxt.Name = "dayTxt";
-            this.dayTxt.Size = new System.Drawing.Size(24, 17);
-            this.dayTxt.TabIndex = 0;
-            this.dayTxt.Text = "....";
-            // 
-            // cityTxt
-            // 
-            this.cityTxt.AutoSize = true;
-            this.cityTxt.Location = new System.Drawing.Point(275, 246);
-            this.cityTxt.Name = "cityTxt";
-            this.cityTxt.Size = new System.Drawing.Size(24, 17);
-            this.cityTxt.TabIndex = 1;
-            this.cityTxt.Text = "....";
-            // 
-            // moodTxt
-            // 
-            this.moodTxt.AutoSize = true;
-            this.moodTxt.Location = new System.Drawing.Point(275, 306);
-            this.moodTxt.Name = "moodTxt";
-            this.moodTxt.Size = new System.Drawing.Size(24, 17);
-            this.moodTxt.TabIndex = 2;
-            this.moodTxt.Text = "....";
             // 
             // label2
             // 
@@ -74,14 +45,21 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "Events";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 395);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1453, 396);
+            this.flowLayoutPanel1.TabIndex = 25;
+            // 
             // UserControlShowEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.moodTxt);
-            this.Controls.Add(this.cityTxt);
-            this.Controls.Add(this.dayTxt);
             this.Name = "UserControlShowEvents";
             this.Size = new System.Drawing.Size(1453, 791);
             this.Load += new System.EventHandler(this.UserControlShowEvents_Load);
@@ -91,10 +69,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label dayTxt;
-        private System.Windows.Forms.Label cityTxt;
-        private System.Windows.Forms.Label moodTxt;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

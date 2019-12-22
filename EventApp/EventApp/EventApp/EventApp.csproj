@@ -48,6 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -72,6 +73,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventShowPanelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventShowPanelUserControl.Designer.cs">
+      <DependentUpon>EventShowPanelUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -155,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="AccessFormToGoogleAccount.resx">
       <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventShowPanelUserControl.resx">
+      <DependentUpon>EventShowPanelUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

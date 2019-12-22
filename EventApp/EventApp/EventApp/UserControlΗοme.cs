@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Controls;
 using Connect;
 
 namespace EventApp
 {
-    public partial class UserControlΗοme : UserControl
+    public partial class UserControlΗοme : System.Windows.Forms.UserControl
     {
         Connect1 con = new Connect1();
         public UserControlΗοme()
@@ -21,13 +22,7 @@ namespace EventApp
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            using(UserControlShowEvents us = new UserControlShowEvents())
-            {
-                us.date = dayCombo.Text;
-                us.city = cityCombo.Text;
-                us.category = categoryCombo.Text;
-                us.Show();
-            }
+            
             
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
             {

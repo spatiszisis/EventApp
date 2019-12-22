@@ -157,3 +157,4 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.exe
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.pdb
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
