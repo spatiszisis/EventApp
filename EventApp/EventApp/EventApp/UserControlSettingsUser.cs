@@ -61,16 +61,6 @@ namespace EventApp
                 }
                 reader.Close();
                 connection.Close();
-
-                usernameTxt.Text = Username;
-                passwordTxt.Text = Password;
-                emailTxt.Text = Email;
-                firstnameTxt.Text = FirstName;
-                lastnameTxt.Text = LastName;
-                locationTxt.Text = Location;
-
-                
-
             }
             catch (Exception ex)
             {
@@ -85,8 +75,8 @@ namespace EventApp
             {
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "update Users set Username=@Username Password=@Password Email=@Email FirstName=@FirstName LastName=@LastName Location=@Location where UsersID= ";
-                command.Parameters.AddWithValue("@Username", usernameTxt.Text);
+                command.CommandText = "Update Users SET [Password] = @Password, [Email] = @Email, [FirstName] = @FirstName, [LastName] = @LastName, [Location] = @Location WHERE [UsersID] = @UserID ";
+                command.Parameters.AddWithValue("@UserID", this.UserID);
                 command.Parameters.AddWithValue("@Password", passwordTxt.Text);
                 command.Parameters.AddWithValue("@Email", emailTxt.Text);
                 command.Parameters.AddWithValue("@FirstName", firstnameTxt.Text);
@@ -96,56 +86,17 @@ namespace EventApp
 
                 connection.Open();
                 command.ExecuteNonQuery();
-                connection.Dispose();
-              
+                //connection.Dispose();
+                MessageBox.Show("The settings was updated! ");
                 connection.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex);
+                connection.Close();
             }
         }
 
-        private void saveBtn_Click(object sender, EventArgs e)
-        {
-            Username = usernameTxt.Text;
-            Password = passwordTxt.Text;
-            Email = emailTxt.Text;
-            FirstName = firstnameTxt.Text;
-            LastName = lastnameTxt.Text;
-            Location = locationTxt.Text;
-           try
-           {
-               connection.Open();
-               OleDbCommand command = new OleDbCommand();
-               command.CommandType = CommandType.Text;
-               command.Parameters.AddWithValue("UsersID", UserID);
-               command.Parameters.AddWithValue("Username", Username);
-               command.Parameters.AddWithValue("Password", Password);
-               command.Parameters.AddWithValue("Email", Email);
-               command.Parameters.AddWithValue("FirstName", FirstName);
-               command.Parameters.AddWithValue("LastName", LastName);
-               command.Parameters.AddWithValue("Location", Location);
-               command.Connection = connection;
-               command.CommandText = "UPDATE Users SET [Username]= ? , [Password]= ? , [Email]= ? , [FirstName]= ? , [LastName]= ? , [Location]= ?  WHERE [UsersID]= ? ";
-              
-
-
-               command.ExecuteNonQuery();
-               connection.Dispose();
-
-               MessageBox.Show("Data Saved! ");
-
-               connection.Close();
-           }
-           catch (Exception ex)
-           {
-               MessageBox.Show("Error " + ex);
-           }
-            
-        }
     }
 
-        
-    
 }

@@ -88,7 +88,7 @@
             this.loadimage_btn.TabIndex = 34;
             this.loadimage_btn.Text = "Load Image";
             this.loadimage_btn.UseVisualStyleBackColor = false;
-            this.loadimage_btn.Click += new System.EventHandler(this.loadimage_btn_Click);
+            
             // 
             // panel3
             // 
@@ -272,6 +272,7 @@
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox.TabIndex = 39;
             this.picBox.TabStop = false;
+            
             // 
             // UserControlCreateEvent
             // 

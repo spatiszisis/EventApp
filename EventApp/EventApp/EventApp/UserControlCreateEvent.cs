@@ -18,6 +18,7 @@ namespace EventApp
     {
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
+
         public UserControlCreateEvent()
         {
             InitializeComponent();
@@ -51,37 +52,45 @@ namespace EventApp
 
         //Arxi Click Method gia ta koumpia
 
-        private void loadimage_btn_Click(object sender, EventArgs e)
-        {
-                OpenFileDialog dlg = new OpenFileDialog();
-                dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
-                if (dlg.ShowDialog() == DialogResult.OK)
-                {
-                    picBox.Image = new Bitmap(dlg.FileName);
-                }
-        }
+        
 
+        /*private byte[] savePhoto()
+        {
+            MemoryStream ms = new MemoryStream();
+            picBox.Image.Save(ms, picBox.Image.RawFormat);
+            return ms.GetBuffer();
+        }
+        private void picBox_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                picBox.Image = new Bitmap(dlg.FileName);
+            }
+        }*/
         
         private void save_btn_Click(object sender, EventArgs e)
         {
 
-           
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "insert into Events (title,category,description,[Day],[Time],location) values (@Title, @Category, @Description, @Day, @Time, @Location)";
-            command.Connection = connection;
-            command.Parameters.AddWithValue("@Title", title_txt.Text);
-            command.Parameters.AddWithValue("@Category", category_box.Text);
-            command.Parameters.AddWithValue("@Description", description_txt.Text);
-            command.Parameters.Add("@Day", OleDbType.Date).Value = dateTimePicker.Value;
-            command.Parameters.AddWithValue("@Time", time_txt.Text);
-            command.Parameters.AddWithValue("@Location", location_txt.Text);
-            //command.Parameters.AddWithValue("@Image", savePhoto());
-
-            connection.Open();
             try
             {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.CommandType = CommandType.Text;
+                command.CommandText = "insert into Events ([Title],[Category],[Description],[Day],[Time],[Location],[Images]) values (@Title, @Category, @Description, @Day, @Time, @Location, @Images)";
+                command.Connection = connection;
+                command.Parameters.AddWithValue("@Title", title_txt.Text);
+                command.Parameters.AddWithValue("@Category", category_box.Text);
+                command.Parameters.AddWithValue("@Description", description_txt.Text);
+                command.Parameters.Add("@Day", OleDbType.Date).Value = dateTimePicker.Value;
+                command.Parameters.AddWithValue("@Time", time_txt.Text);
+                command.Parameters.AddWithValue("@Location", location_txt.Text);
+                //command.Parameters.AddWithValue("@Images", savePhoto());
+
                 command.ExecuteNonQuery();
+                //command.Dispose();
                 MessageBox.Show("Event Saved! ");
                 connection.Close();
             }
@@ -102,15 +111,6 @@ namespace EventApp
             }
         }
 
-        /*
-        private byte[] savePhoto()
-        {
-            MemoryStream ms = new MemoryStream();
-            picBox.Image.Save(ms, picBox.Image.RawFormat);
-            return ms.GetBuffer();
-        }
-        */
-
         private void preview_btn_Click(object sender, EventArgs e)
         {
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))
@@ -122,7 +122,6 @@ namespace EventApp
             HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
         }
 
-        
 
         //Telos Click Method gia ta koumpia
     }

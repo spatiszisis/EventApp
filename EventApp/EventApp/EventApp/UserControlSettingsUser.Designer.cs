@@ -219,7 +219,7 @@
             this.saveBtn.TabIndex = 37;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = false;
-            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+            
             // 
             // UserControlSettingsUser
             // 
