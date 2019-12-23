@@ -55,6 +55,8 @@
             this.category_box.ForeColor = System.Drawing.Color.Gray;
             this.category_box.FormattingEnabled = true;
             this.category_box.Items.AddRange(new object[] {
+            "Anything",
+            "All Events",
             "Concerts",
             "Comedy",
             "Education",
@@ -88,7 +90,6 @@
             this.loadimage_btn.TabIndex = 34;
             this.loadimage_btn.Text = "Load Image";
             this.loadimage_btn.UseVisualStyleBackColor = false;
-            
             // 
             // panel3
             // 
@@ -152,14 +153,26 @@
             // location_txt
             // 
             this.location_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.location_txt.AutoCompleteCustomSource.AddRange(new string[] {
+            "Thessaloniki",
+            "Athens",
+            "Patra",
+            "Larisa",
+            "Ioannina",
+            "Volos",
+            "Herakleion",
+            "Kavala",
+            "Giannena",
+            "Aleksandroupoli"});
+            this.location_txt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.location_txt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.location_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.location_txt.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
             this.location_txt.ForeColor = System.Drawing.Color.Gray;
             this.location_txt.Location = new System.Drawing.Point(180, 623);
             this.location_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.location_txt.Multiline = true;
             this.location_txt.Name = "location_txt";
-            this.location_txt.Size = new System.Drawing.Size(473, 30);
+            this.location_txt.Size = new System.Drawing.Size(473, 29);
             this.location_txt.TabIndex = 27;
             this.location_txt.Text = "Search for location";
             this.location_txt.Click += new System.EventHandler(this.location_txt_Click);
@@ -272,7 +285,6 @@
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox.TabIndex = 39;
             this.picBox.TabStop = false;
-            
             // 
             // UserControlCreateEvent
             // 

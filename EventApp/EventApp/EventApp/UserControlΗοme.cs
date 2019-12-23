@@ -19,11 +19,17 @@ namespace EventApp
         {
             InitializeComponent();
         }
-
+        public static string SetValueDay = "";
+        public static string SetValueLocation = "";
+        public static string SetValueCategory = "";
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            
-            
+            //SetValueDay = dateTimePicker1.Text;
+            SetValueLocation = locationCombo.Text;
+            SetValueCategory = categoryCombo.Text;
+            UserControlShowEvents us = new UserControlShowEvents();
+            us.Show();
+
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
             {
                 UserControlShowEvents scse = new UserControlShowEvents();
