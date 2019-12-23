@@ -19,6 +19,8 @@ namespace EventApp
         public string date, city, category;
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
+
+
         public UserControlShowEvents()
         {
             InitializeComponent();
@@ -28,9 +30,10 @@ namespace EventApp
 
         private void UserControlShowEvents_Load(object sender, EventArgs e)
         {
-            
+
             try
             {
+
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 OleDbCommand command1 = new OleDbCommand();
@@ -38,26 +41,23 @@ namespace EventApp
                 command1.Connection = connection;
                 string query = "select * from Events";
                 string query1 = "select count(*) from Events";
-                DataSet data = new DataSet();
                 command.CommandText = query;
                 command1.CommandText = query1;
                 int countEvents = (int)command1.ExecuteScalar();
-
 
                 OleDbDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    EventShowPanelUserControl[] listitems = new EventShowPanelUserControl[countEvents];
-                    for (int i = 0; i < listitems.Length; i++)
+                    EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                    for (int i = 0; i < countEvents; i++)
                     {
-                        listitems[i] = new EventShowPanelUserControl();
-
-                        listitems[i].Title      = reader["Title"].ToString();
-                        listitems[i].Location   = reader["Location"].ToString();
-                        listitems[i].Day        = reader["Day"].ToString();
-                        listitems[i].Time       = reader["Time"].ToString();
-                        listitems[i].BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+                        
+                        listitems.Title = reader["Title"].ToString();
+                        listitems.Location = reader["Location"].ToString();
+                        listitems.Day = reader["Day"].ToString();
+                        listitems.Time = reader["Time"].ToString();
+                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanel1.Controls.Count < 0)
                         {
@@ -65,7 +65,7 @@ namespace EventApp
                         }
                         else
                         {
-                            flowLayoutPanel1.Controls.Add(listitems[i]);
+                            flowLayoutPanel1.Controls.Add(listitems);
                         }
                     }
                 }
@@ -78,31 +78,6 @@ namespace EventApp
                 MessageBox.Show(ex + " ");
             }
         }
-
-        /*private void populateItems()
-        {
-            EventShowPanelUserControl[] listitems = new EventShowPanelUserControl[10];
-
-            for (int i = 0; i < listitems.Length; i++)
-            {
-                listitems[i] = new EventShowPanelUserControl();
-
-                listitems[i].Title = "MPAAS";
-                listitems[i].Location = "asda";
-                listitems[i].Day = "asdssssss";
-                listitems[i].Time = "12:00";
-                listitems[i].BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-
-                if (flowLayoutPanel1.Controls.Count < 0)
-                {
-                    flowLayoutPanel1.Controls.Clear();
-                }
-                else
-                {
-                    flowLayoutPanel1.Controls.Add(listitems[i]);
-                }
-            }
-        }*/
 
     }
 }
