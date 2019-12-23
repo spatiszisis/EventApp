@@ -30,20 +30,21 @@ namespace EventApp
             try
             {
                 
+                connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 OleDbCommand command1 = new OleDbCommand();
                 command.Connection = connection;
                 command1.Connection = connection;
                 string query = "select * from Events where [Category] = @Category and [Location] = @Location";
-                command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueCategory);
                 command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueLocation);
+                //command.Parameters.AddWithValue("@Day", UserControlΗοme.SetValueDay);  and [Day] = @Day 
+                command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueCategory);
                 string query1 = "select count(*) from Events";
                 command.CommandText = query;
                 command1.CommandText = query1;
-                connection.Open();
                 int countEvents = (int)command1.ExecuteScalar();
-
                 OleDbDataReader reader = command.ExecuteReader();
+
                 while (reader.Read())
                 {
                     EventShowPanelUserControl listitems = new EventShowPanelUserControl();
@@ -66,9 +67,7 @@ namespace EventApp
                         }
                     }
                 }
-                connection.Dispose();
-                
-                
+                //connection.Dispose();
                 reader.Close();
                 connection.Close();
             }

@@ -24,7 +24,7 @@ namespace EventApp
         public static string SetValueCategory = "";
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            //SetValueDay = dateTimePicker1.Text;
+            //SetValueDay = dateTimePicker1.Value;
             SetValueLocation = locationCombo.Text;
             SetValueCategory = categoryCombo.Text;
             UserControlShowEvents us = new UserControlShowEvents();
