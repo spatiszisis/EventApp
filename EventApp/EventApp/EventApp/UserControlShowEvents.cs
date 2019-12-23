@@ -33,17 +33,22 @@ namespace EventApp
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
+                OleDbCommand command1 = new OleDbCommand();
                 command.Connection = connection;
+                command1.Connection = connection;
                 string query = "select * from Events";
+                string query1 = "select count(*) from Events";
                 DataSet data = new DataSet();
-                //string countRows = "select count(*) from Events";
                 command.CommandText = query;
+                command1.CommandText = query1;
+                int countEvents = (int)command1.ExecuteScalar();
+
 
                 OleDbDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    EventShowPanelUserControl[] listitems = new EventShowPanelUserControl[10];
+                    EventShowPanelUserControl[] listitems = new EventShowPanelUserControl[countEvents];
                     for (int i = 0; i < listitems.Length; i++)
                     {
                         listitems[i] = new EventShowPanelUserControl();
