@@ -22,7 +22,8 @@ namespace EventApp
             InitializeComponent();
             connection.ConnectionString = con.ConnectString;
         }
-
+        public static string username = "";
+        public static string password = "";
         private void button1_Click(object sender, EventArgs e)
         {
             int UserID = 0;
@@ -65,21 +66,8 @@ namespace EventApp
             reader.Close();
             if (count == 1)
             {
-                
-                command2.CommandText = "CREATE TABLE LoggedInUser([UsersID] int , [Username] text , [Password] text , [Email] text , [FirstName] text , [LastName] text , [Location] text )";
-                command2.ExecuteNonQuery();
-                //MessageBox.Show("Username and password is correct");
-                
-                command3.CommandText = "INSERT INTO LoggedInUser ( [UsersID] , [Username] , [Password] , [Email] , [FirstName] , [LastName] , [Location] ) VALUES (@UserID,@Usernname,@Password,@Email,@FirstName,@LastName,@Location)";
-                command3.Parameters.AddWithValue("@UserID", UserID);
-                command3.Parameters.AddWithValue("@Usernname", Username);
-                command3.Parameters.AddWithValue("@Password", Password);
-                command3.Parameters.AddWithValue("@Email", Email);
-                command3.Parameters.AddWithValue("@FirstName", FirstName);
-                command3.Parameters.AddWithValue("@LastName", LastName);
-                command3.Parameters.AddWithValue("@Location", Location);
-                command3.ExecuteNonQuery();
-
+                username = txt_Username.Text;
+                password = txt_Password.Text;
                 connection.Close();
                 connection.Dispose();
                 this.Hide();
@@ -119,24 +107,6 @@ namespace EventApp
         private void closeFromLogin_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Kleinei tin Efarmogh
-            connection.ConnectionString = con.ConnectString;
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "DROP TABLE LoggedInUser; ";
-            try { 
-                command.Connection = connection;
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-                connection.Dispose();
-            }
-            catch(System.Data.OleDb.OleDbException) 
-            {   
-                connection.Close();
-                connection.Dispose();
-                Application.Exit();
-            }
-           
         }
     }
 }

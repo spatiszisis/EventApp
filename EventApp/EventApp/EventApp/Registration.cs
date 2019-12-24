@@ -22,7 +22,7 @@ namespace EventApp
             connection.ConnectionString = con.ConnectString;
         }
 
-
+        
         private void button1_Click(object sender, EventArgs e)
         {   //elegxos an yparxei hdh xrhsths idios
             connection.ConnectionString = con.ConnectString;
@@ -66,7 +66,7 @@ namespace EventApp
                
                     command.ExecuteNonQuery();
                     connection.Close();
-                    //connection.Dispose();
+          
                     //dhmiourgia session
                     int UserID = 0;
                     String Username = "";
@@ -78,11 +78,7 @@ namespace EventApp
 
 
                     OleDbCommand command1 = new OleDbCommand();
-                    OleDbCommand command2 = new OleDbCommand();
-                    OleDbCommand command3 = new OleDbCommand();
                     command1.Connection = connection;
-                    command2.Connection = connection;
-                    command3.Connection = connection;
                     connection.Open();
                     command1.CommandText = "select * from Users where Username='" + txt_Username.Text + "' and Password= '" + txt_Password.Text + "'";
 
@@ -107,21 +103,8 @@ namespace EventApp
                     reader.Close();
                     if (count == 1)
                     {
-
-                        command2.CommandText = "CREATE TABLE LoggedInUser([UsersID] int , [Username] text , [Password] text , [Email] text , [FirstName] text , [LastName] text , [Location] text )";
-                        command2.ExecuteNonQuery();
-                        //MessageBox.Show("Username and password is correct");
-
-                        command3.CommandText = "INSERT INTO LoggedInUser ( [UsersID] , [Username] , [Password] , [Email] , [FirstName] , [LastName] , [Location] ) VALUES (@UserID,@Usernname,@Password,@Email,@FirstName,@LastName,@Location)";
-                        command3.Parameters.AddWithValue("@UserID", UserID);
-                        command3.Parameters.AddWithValue("@Usernname", Username);
-                        command3.Parameters.AddWithValue("@Password", Password);
-                        command3.Parameters.AddWithValue("@Email", Email);
-                        command3.Parameters.AddWithValue("@FirstName", FirstName);
-                        command3.Parameters.AddWithValue("@LastName", LastName);
-                        command3.Parameters.AddWithValue("@Location", Location);
-                        command3.ExecuteNonQuery();
-
+                        Login.username = txt_Username.Text;
+                        Login.password = txt_Password.Text;
                         connection.Close();
                         connection.Dispose();
                         this.Hide();
@@ -160,25 +143,6 @@ namespace EventApp
         private void closeFromRegistration_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Kleinei tin Efarmogh
-            connection.ConnectionString = con.ConnectString;
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "DROP TABLE LoggedInUser; ";
-            try
-            {
-                command.Connection = connection;
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-                connection.Dispose();
-            }
-            catch (System.Data.OleDb.OleDbException)
-            {
-                
-                connection.Close();
-                connection.Dispose();
-                Application.Exit();
-            }
         }
     }
 }

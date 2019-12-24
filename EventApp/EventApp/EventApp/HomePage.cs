@@ -45,7 +45,7 @@ namespace EventApp
             InitializeComponent();
             connection.ConnectionString = con.ConnectString;
 
-            String Username = "";
+           /* String Username = "";
             OleDbCommand command = new OleDbCommand();
             command.CommandType = CommandType.Text;
             command.CommandText = "SELECT [Username] FROM [LoggedInUser]";
@@ -55,8 +55,9 @@ namespace EventApp
             while (reader.Read())
             { Username = (String)reader["Username"]; }
             connection.Close();
-            connection.Dispose();
-            NameLabel.Text = Username;
+            connection.Dispose();*/
+            NameLabel.Text = Login.username;
+            //NameLabel.Text = Registration.username;
         }
 
         

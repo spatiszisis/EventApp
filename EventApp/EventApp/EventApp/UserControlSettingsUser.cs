@@ -22,51 +22,38 @@ namespace EventApp
             InitializeComponent();
             connection.ConnectionString = con.ConnectString;
         }
-        public int UserID = 0;
-        public String Username = "";
-        public String Password = "";
-        public String Email = "";
-        public String FirstName = "";
-        public String LastName = "";
-        public String Location = "";
-
+        
         private void UserControlSettingsUser_Load(object sender, EventArgs e)
         {
+            usernameTxt.Text = Login.username;
+            passwordTxt.Text = Login.password;
 
             try
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                string query = "select * from LoggedInUser";
-                command.CommandText = query;
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.Connection = connection;
+                string query = "select * from Users where [Username] = @Username and [Password] = @Password";
+                cmd.Parameters.AddWithValue("@Username", Login.username);
+                cmd.Parameters.AddWithValue("@Password", Login.password);
+                cmd.CommandText = query;
+                OleDbDataReader reader = cmd.ExecuteReader();
 
-                OleDbDataReader reader = command.ExecuteReader();
-                 
                 while (reader.Read())
                 {
-                    UserID = (int)reader["UsersID"];
-                    Username = (String)reader["Username"];
-                    usernameTxt.Text = reader["Username"].ToString();
-                    Password = (String)reader["Password"];
-                    passwordTxt.Text = reader["Password"].ToString();
-                    if (!DBNull.Value.Equals(reader["Email"]))
-                    { Email = (String)reader["Email"]; }
-                    if (!DBNull.Value.Equals(reader["FirstName"]))
-                    { FirstName = (String)reader["FirstName"]; }
-                    if (!DBNull.Value.Equals(reader["LastName"]))
-                    { LastName = (String)reader["LastName"]; }
-                    if (!DBNull.Value.Equals(reader["Location"]))
-                    { Location = (String)reader["Location"]; }
+                    emailTxt.Text = reader["Email"].ToString();
+                    firstnameTxt.Text = reader["FirstName"].ToString();
+                    lastnameTxt.Text = reader["LastName"].ToString();
+                    locationTxt.Text = reader["Location"].ToString();
                 }
+
                 reader.Close();
                 connection.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error " + ex);
+                MessageBox.Show(ex + " ");
             }
-
         }
 
         private void editBtn_Click(object sender, EventArgs e)
@@ -75,9 +62,9 @@ namespace EventApp
             {
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "Update Users SET [Password] = @Password, [Email] = @Email, [FirstName] = @FirstName, [LastName] = @LastName, [Location] = @Location WHERE [UsersID] = @UserID ";
-                command.Parameters.AddWithValue("@UserID", this.UserID);
-                command.Parameters.AddWithValue("@Password", passwordTxt.Text);
+                command.CommandText = "Update Users SET [Username] = @Username, [Password] = @Password, [Email] = @Email, [FirstName] = @FirstName, [LastName] = @LastName, [Location] = @Location WHERE [Username] = @Username and [Password] = @Password";
+                command.Parameters.AddWithValue("@Username", Login.username);
+                command.Parameters.AddWithValue("@Password", Login.password);
                 command.Parameters.AddWithValue("@Email", emailTxt.Text);
                 command.Parameters.AddWithValue("@FirstName", firstnameTxt.Text);
                 command.Parameters.AddWithValue("@LastName", lastnameTxt.Text);
