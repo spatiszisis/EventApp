@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Connect;
+using System.Data.OleDb;
 
 namespace EventApp
 {
     public partial class EventShowPanelUserControl : UserControl
     {
+        private OleDbConnection connection = new OleDbConnection();
+        Connect1 con = new Connect1();
         public EventShowPanelUserControl()
         {
             InitializeComponent();
+            connection.ConnectionString = con.ConnectString;
         }
 
         private string _title;
@@ -22,7 +27,7 @@ namespace EventApp
         private string _day;
         private string _time;
         private Image _icon;
-
+        public static string title = "";
         public string Title
         {
             get { return _title; }
@@ -62,5 +67,20 @@ namespace EventApp
         {
             this.BackColor = Color.White;
         }
+
+        private void EventShowPanelUserControl_Click(object sender, EventArgs e)
+        {
+
+            title = Title;
+
+            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))
+            {
+                UserControlShowEventPreview scse = new UserControlShowEventPreview();
+                scse.Dock = DockStyle.Fill;
+                HomePage.Instance.PnlContainer.Controls.Add(scse);
+            }
+            HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
+        }
+
     }
 }

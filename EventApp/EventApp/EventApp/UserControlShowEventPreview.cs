@@ -32,19 +32,20 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                string query = "select * from Events";
+                string query = "select * from Events where [Title] = @Title";
+                command.Parameters.AddWithValue("@Title", EventShowPanelUserControl.title);
                 command.CommandText = query;
 
                 OleDbDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    titleTxt.Text = reader["Title"].ToString();
-                    descriptionTxt.Text = reader["Description"].ToString();
-                    dateTxt.Text = reader["Day"].ToString();
-                    timeTxt.Text = reader["Time"].ToString();
-                    categoryTxt.Text = reader["Category"].ToString();
-                    locationTxt.Text = reader["Location"].ToString();
+                    titleTxt.Text           = reader["Title"].ToString();
+                    descriptionTxt.Text     = reader["Description"].ToString();
+                    dateTxt.Text            = reader["Day"].ToString();
+                    timeTxt.Text            = reader["Time"].ToString();
+                    categoryTxt.Text        = reader["Category"].ToString();
+                    locationTxt.Text        = reader["Location"].ToString();
                    // imagePictureBox.Image = LoadPhoto()
                 }
                 reader.Close();

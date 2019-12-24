@@ -73,13 +73,13 @@ namespace EventApp
         
         private void save_btn_Click(object sender, EventArgs e)
         {
-
+            EventShowPanelUserControl.title = title_txt.Text;
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into Events ([Title],[Category],[Description],[Day],[Time],[Location],[Images]) values (@Title, @Category, @Description, @Day, @Time, @Location, @Images)";
+                command.CommandText = "insert into Events ([Title],[Category],[Description],[Day],[Time],[Location]) values (@Title, @Category, @Description, @Day, @Time, @Location)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Title", title_txt.Text);
                 command.Parameters.AddWithValue("@Category", category_box.Text);

@@ -91,6 +91,7 @@
             this.Controls.Add(this.picImage);
             this.Name = "EventShowPanelUserControl";
             this.Size = new System.Drawing.Size(212, 275);
+            this.Click += new System.EventHandler(this.EventShowPanelUserControl_Click);
             this.MouseEnter += new System.EventHandler(this.EventShowPanelUserControl_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.EventShowPanelUserControl_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();

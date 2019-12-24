@@ -36,9 +36,9 @@ namespace EventApp
                 command.Connection = connection;
                 command1.Connection = connection;
                 string query = "select * from Events where [Category] = @Category and [Location] = @Location";
-                command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueLocation);
+                command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueCategory);
                 //command.Parameters.AddWithValue("@Day", UserControlΗοme.SetValueDay);  and [Day] = @Day 
-                command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueCategory);
+                command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueLocation);
                 string query1 = "select count(*) from Events";
                 command.CommandText = query;
                 command1.CommandText = query1;
@@ -50,11 +50,11 @@ namespace EventApp
                     EventShowPanelUserControl listitems = new EventShowPanelUserControl();
                     for (int i = 0; i < countEvents; i++)
                     {
-                        
-                        listitems.Title = reader["Title"].ToString();
-                        listitems.Location = reader["Location"].ToString();
-                        listitems.Day = reader["Day"].ToString();
-                        listitems.Time = reader["Time"].ToString();
+                        listitems.Title     = reader["Title"].ToString();
+                        listitems.Location  = reader["Location"].ToString();
+                        listitems.Day       = reader["Day"].ToString();
+                        listitems.Time      = reader["Time"].ToString();
+                        //listitems.Icon = reader["Images"].ToString();
                         listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanel1.Controls.Count < 0)
@@ -67,7 +67,7 @@ namespace EventApp
                         }
                     }
                 }
-                //connection.Dispose();
+                connection.Dispose();
                 reader.Close();
                 connection.Close();
             }

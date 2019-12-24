@@ -43,7 +43,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.locationTxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.saveBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -207,25 +206,10 @@
             this.label7.TabIndex = 35;
             this.label7.Text = "Location";
             // 
-            // saveBtn
-            // 
-            this.saveBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.saveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(122)))));
-            this.saveBtn.FlatAppearance.BorderSize = 0;
-            this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveBtn.Location = new System.Drawing.Point(645, 582);
-            this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(190, 60);
-            this.saveBtn.TabIndex = 37;
-            this.saveBtn.Text = "Save";
-            this.saveBtn.UseVisualStyleBackColor = false;
-            
-            // 
             // UserControlSettingsUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.locationTxt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lastnameTxt);
@@ -267,6 +251,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox locationTxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button saveBtn;
     }
 }

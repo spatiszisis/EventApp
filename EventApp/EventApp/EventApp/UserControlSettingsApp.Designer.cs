@@ -32,6 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.onvalue = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.checkboxchangeborderstyleform = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,11 +77,33 @@
             this.onvalue.UseVisualStyleBackColor = true;
             this.onvalue.CheckedChanged += new System.EventHandler(this.onvalue_CheckedChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.label3.Location = new System.Drawing.Point(91, 336);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(292, 29);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Change the Borderformstyle: ";
+            // 
+            // checkboxchangeborderstyleform
+            // 
+            this.checkboxchangeborderstyleform.Location = new System.Drawing.Point(409, 334);
+            this.checkboxchangeborderstyleform.Name = "checkboxchangeborderstyleform";
+            this.checkboxchangeborderstyleform.Size = new System.Drawing.Size(18, 31);
+            this.checkboxchangeborderstyleform.TabIndex = 21;
+            this.checkboxchangeborderstyleform.UseVisualStyleBackColor = true;
+            this.checkboxchangeborderstyleform.CheckedChanged += new System.EventHandler(this.checkboxchangeborderstyleform_CheckedChanged);
+            // 
             // UserControlSettingsApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.checkboxchangeborderstyleform);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.onvalue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -97,5 +121,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox onvalue;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkboxchangeborderstyleform;
     }
 }
