@@ -48,6 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -62,10 +63,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessFormToGoogleAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessFormToGoogleAccount.Designer.cs">
+      <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventShowPanelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventShowPanelUserControl.Designer.cs">
+      <DependentUpon>EventShowPanelUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -87,6 +100,24 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlContact.Designer.cs">
+      <DependentUpon>UserControlContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFavList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFavList.Designer.cs">
+      <DependentUpon>UserControlFavList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlHelp.Designer.cs">
+      <DependentUpon>UserControlHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlAboutUs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,12 +130,42 @@
     <Compile Include="UserControlCreateEvent.Designer.cs">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlSettingsApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSettingsApp.Designer.cs">
+      <DependentUpon>UserControlSettingsApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSettingsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSettingsUser.Designer.cs">
+      <DependentUpon>UserControlSettingsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlShowEventPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlShowEventPreview.Designer.cs">
+      <DependentUpon>UserControlShowEventPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlShowEvents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlShowEvents.Designer.cs">
+      <DependentUpon>UserControlShowEvents.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlΗοme.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlΗοme.Designer.cs">
       <DependentUpon>UserControlΗοme.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccessFormToGoogleAccount.resx">
+      <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventShowPanelUserControl.resx">
+      <DependentUpon>EventShowPanelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,11 +185,32 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlContact.resx">
+      <DependentUpon>UserControlContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFavList.resx">
+      <DependentUpon>UserControlFavList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlHelp.resx">
+      <DependentUpon>UserControlHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlAboutUs.resx">
       <DependentUpon>UserControlAboutUs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlCreateEvent.resx">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSettingsApp.resx">
+      <DependentUpon>UserControlSettingsApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSettingsUser.resx">
+      <DependentUpon>UserControlSettingsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlShowEventPreview.resx">
+      <DependentUpon>UserControlShowEventPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlShowEvents.resx">
+      <DependentUpon>UserControlShowEvents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlΗοme.resx">
       <DependentUpon>UserControlΗοme.cs</DependentUpon>
@@ -219,6 +301,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Repeat Grid 23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_keyboard_arrow_down_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Connect\Connect.csproj">
+      <Project>{8262b6aa-6504-4180-95b9-5ca20ed2b2a8}</Project>
+      <Name>Connect</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

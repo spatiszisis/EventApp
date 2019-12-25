@@ -16,5 +16,10 @@ namespace EventApp
         {
             InitializeComponent();
         }
+
+        private void UserControlAboutUs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
