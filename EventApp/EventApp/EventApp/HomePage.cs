@@ -16,10 +16,7 @@ namespace EventApp
     public partial class HomePage : Form
 
     {
-
         static HomePage _obj;
-       
-
         public static HomePage Instance
         {
             get
@@ -44,23 +41,11 @@ namespace EventApp
         {
             InitializeComponent();
             connection.ConnectionString = con.ConnectString;
-
-           /* String Username = "";
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT [Username] FROM [LoggedInUser]";
-            command.Connection = connection;
-            connection.Open();
-            OleDbDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            { Username = (String)reader["Username"]; }
-            connection.Close();
-            connection.Dispose();*/
             NameLabel.Text = Login.username;
             //NameLabel.Text = Registration.username;
         }
 
-        
+
         private void HomePage_Load(object sender, EventArgs e)
         {
             _obj = this;
@@ -77,7 +62,7 @@ namespace EventApp
             Home.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
             Home.ForeColor = Color.Black;
         }
-        
+
         private void Home_MouseLeave(object sender, EventArgs e)
         {
             Home.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
@@ -93,8 +78,8 @@ namespace EventApp
         {
             Create_Event.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
             Create_Event.ForeColor = Color.Snow;
-        } 
-        
+        }
+
         private void Help_MouseHover(object sender, EventArgs e)
         {
             Help.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
@@ -106,16 +91,16 @@ namespace EventApp
             Help.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
             Help.ForeColor = Color.Snow;
         }
-        
+
         private void About_Us_MouseHover(object sender, EventArgs e)
         {
-            About_Us.BackColor = Color.FromArgb(85, 61, 69);   
+            About_Us.BackColor = Color.FromArgb(85, 61, 69);
             About_Us.ForeColor = Color.Black;
         }
-        
+
         private void About_Us_MouseLeave(object sender, EventArgs e)
         {
-            About_Us.BackColor = Color.FromArgb(87, 96, 122);  
+            About_Us.BackColor = Color.FromArgb(87, 96, 122);
             About_Us.ForeColor = Color.Snow;
         }
 
@@ -162,6 +147,11 @@ namespace EventApp
         //Arxi Click Method gia na allazei panel
         private void Home_Click(object sender, EventArgs e)
         {
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connection;
+            connection.Open();
+            //connection.Close();
+
             SidePanel.Height = Home.Height;
             SidePanel.Top = Home.Top;
             UserControlΗοme uc = new UserControlΗοme();
@@ -240,59 +230,15 @@ namespace EventApp
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit(); // Kleinei tin Efarmogh
-            connection.ConnectionString = con.ConnectString;
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "DROP TABLE LoggedInUser; ";
-            try
-            {
-                command.Connection = connection;
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-                connection.Dispose();
-            }
-            catch (System.Data.OleDb.OleDbException)
-            { 
-                connection.Close();
-                connection.Dispose();
-                Application.Exit();
-            }
+
+            Application.Exit();
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
-        { 
-            connection.ConnectionString = con.ConnectString;
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "DROP TABLE LoggedInUser; ";
-
-            try 
-            { 
-                 command.Connection = connection;
-                 connection.Open();
-                 command.ExecuteNonQuery();
-                 connection.Close();
-                 connection.Dispose();
-                 this.Hide();
-                 Login lgform = new Login();
-                 lgform.Show();
-
-
-            }
-            catch (System.Data.OleDb.OleDbException)
-            {
-                 connection.Close();
-                 connection.Dispose();
-                 this.Hide();
-                 Login lgform = new Login();
-                 lgform.Show();
-            }
-            
-           
-           
-           
+        {
+                this.Hide();
+                Login lgform = new Login();
+                lgform.Show();
         }
 
         //Telos Exit, Log Out  
@@ -314,11 +260,11 @@ namespace EventApp
             command.Connection = connection;
             connection.Open();
 
-            if(searchTxt.Text != null)
+            if (searchTxt.Text != null)
             {
                 OleDbDataReader reader = command.ExecuteReader();
                 while (reader.Read())
-                { 
+                {
                     //to afisa....auto einai gia to search
                 }
             }

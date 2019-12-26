@@ -67,15 +67,31 @@ namespace EventApp
                         }
                     }
                 }
-                connection.Dispose();
                 reader.Close();
-                connection.Close();
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex + " ");
             }
+            finally
+            {
+                connection.Close();
+                
+            }
         }
+        
 
+        private void closeBack_Click(object sender, EventArgs e)
+        {
+            
+            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlΗοme"))
+            {
+                UserControlΗοme scse = new UserControlΗοme();
+                scse.Dock = DockStyle.Fill;
+                HomePage.Instance.PnlContainer.Controls.Add(scse);
+            }
+            HomePage.Instance.PnlContainer.Controls["UserControlΗοme"].BringToFront();
+        }
     }
 }

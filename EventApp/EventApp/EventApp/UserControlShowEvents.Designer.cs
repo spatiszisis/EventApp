@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlShowEvents));
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.closeBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -54,11 +56,24 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1453, 276);
             this.flowLayoutPanel1.TabIndex = 25;
             // 
+            // closeBack
+            // 
+            this.closeBack.FlatAppearance.BorderSize = 0;
+            this.closeBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBack.Image = ((System.Drawing.Image)(resources.GetObject("closeBack.Image")));
+            this.closeBack.Location = new System.Drawing.Point(3, 3);
+            this.closeBack.Name = "closeBack";
+            this.closeBack.Size = new System.Drawing.Size(75, 58);
+            this.closeBack.TabIndex = 26;
+            this.closeBack.UseVisualStyleBackColor = true;
+            this.closeBack.Click += new System.EventHandler(this.closeBack_Click);
+            // 
             // UserControlShowEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.closeBack);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label2);
             this.Name = "UserControlShowEvents";
@@ -72,5 +87,6 @@
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button closeBack;
     }
 }

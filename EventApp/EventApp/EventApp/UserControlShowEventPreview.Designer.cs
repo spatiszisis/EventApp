@@ -44,6 +44,7 @@
             this.dateTxt = new System.Windows.Forms.Label();
             this.titleTxt = new System.Windows.Forms.Label();
             this.categoryTxt = new System.Windows.Forms.Label();
+            this.closeBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,10 +204,23 @@
             this.categoryTxt.TabIndex = 28;
             this.categoryTxt.Text = "Category";
             // 
+            // closeBack
+            // 
+            this.closeBack.FlatAppearance.BorderSize = 0;
+            this.closeBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBack.Image = ((System.Drawing.Image)(resources.GetObject("closeBack.Image")));
+            this.closeBack.Location = new System.Drawing.Point(3, 3);
+            this.closeBack.Name = "closeBack";
+            this.closeBack.Size = new System.Drawing.Size(75, 58);
+            this.closeBack.TabIndex = 29;
+            this.closeBack.UseVisualStyleBackColor = true;
+            this.closeBack.Click += new System.EventHandler(this.closeBack_Click);
+            // 
             // UserControlShowEventPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.closeBack);
             this.Controls.Add(this.categoryTxt);
             this.Controls.Add(this.timeTxt);
             this.Controls.Add(this.descriptionTxt);
@@ -248,5 +262,6 @@
         private System.Windows.Forms.Label dateTxt;
         private System.Windows.Forms.Label titleTxt;
         private System.Windows.Forms.Label categoryTxt;
+        private System.Windows.Forms.Button closeBack;
     }
 }

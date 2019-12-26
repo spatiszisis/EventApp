@@ -14,14 +14,17 @@ namespace EventApp
 {
     public partial class UserControlΗοme : System.Windows.Forms.UserControl
     {
+        public static string SetValueDay = "";
+        public static string SetValueLocation = "";
+        public static string SetValueCategory = "";
         Connect1 con = new Connect1();
         public UserControlΗοme()
         {
             InitializeComponent();
+            SetValueDay = "";
+            SetValueLocation = "";
+            SetValueCategory = "";
         }
-        public static string SetValueDay = "";
-        public static string SetValueLocation = "";
-        public static string SetValueCategory = "";
         private void searchBtn_Click(object sender, EventArgs e)
         {
             //SetValueDay = dateTimePicker1.Value;

@@ -40,20 +40,25 @@ namespace EventApp
 
                 while (reader.Read())
                 {
-                    titleTxt.Text           = reader["Title"].ToString();
-                    descriptionTxt.Text     = reader["Description"].ToString();
-                    dateTxt.Text            = reader["Day"].ToString();
-                    timeTxt.Text            = reader["Time"].ToString();
-                    categoryTxt.Text        = reader["Category"].ToString();
-                    locationTxt.Text        = reader["Location"].ToString();
-                   // imagePictureBox.Image = LoadPhoto()
+                    titleTxt.Text = reader["Title"].ToString();
+                    descriptionTxt.Text = reader["Description"].ToString();
+                    dateTxt.Text = reader["Day"].ToString();
+                    timeTxt.Text = reader["Time"].ToString();
+                    categoryTxt.Text = reader["Category"].ToString();
+                    locationTxt.Text = reader["Location"].ToString();
+                    // imagePictureBox.Image = LoadPhoto()
                 }
                 reader.Close();
-                connection.Close();
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex);
+            }
+            finally
+            {
+                connection.Close();
+               
             }
         }
 
@@ -61,6 +66,18 @@ namespace EventApp
         {
             MemoryStream ms = new MemoryStream(photo);
             return Image.FromStream(ms);
+        }
+
+        private void closeBack_Click(object sender, EventArgs e)
+        {
+            
+            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
+            {
+                UserControlShowEvents scse = new UserControlShowEvents();
+                scse.Dock = DockStyle.Fill;
+                HomePage.Instance.PnlContainer.Controls.Add(scse);
+            }
+            HomePage.Instance.PnlContainer.Controls["UserControlShowEvents"].BringToFront();
         }
     }
 }
