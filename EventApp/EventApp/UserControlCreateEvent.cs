@@ -18,6 +18,7 @@ namespace EventApp
     {
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
+        public String imgpath = "";
 
         public UserControlCreateEvent()
         {
@@ -52,34 +53,28 @@ namespace EventApp
 
         //Arxi Click Method gia ta koumpia
 
-        
-
-        /*private byte[] savePhoto()
+        private byte[] ImageToByte(Image image, System.Drawing.Imaging.ImageFormat format)
         {
             MemoryStream ms = new MemoryStream();
-            picBox.Image.Save(ms, picBox.Image.RawFormat);
-            return ms.GetBuffer();
+            image.Save(ms, format);
+            return ms.ToArray();
         }
-        private void picBox_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
 
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                picBox.Image = new Bitmap(dlg.FileName);
-            }
-        }*/
-        
+
+
+
         private void save_btn_Click(object sender, EventArgs e)
         {
+            Bitmap bm = new Bitmap(picBox.Image);
+            byte[] imagebt = ImageToByte(bm, System.Drawing.Imaging.ImageFormat.Jpeg);
+
             EventShowPanelUserControl.title = title_txt.Text;
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into Events ([Title],[Category],[Description],[Day],[Time],[Location]) values (@Title, @Category, @Description, @Day, @Time, @Location)";
+                command.CommandText = "insert into Events ([Title],[Category],[Description],[Day],[Time],[Location],[images]) values (@Title, @Category, @Description, @Day, @Time, @Location, @Images)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Title", title_txt.Text);
                 command.Parameters.AddWithValue("@Category", category_box.Text);
@@ -87,7 +82,7 @@ namespace EventApp
                 command.Parameters.Add("@Day", OleDbType.Date).Value = dateTimePicker.Value;
                 command.Parameters.AddWithValue("@Time", time_txt.Text);
                 command.Parameters.AddWithValue("@Location", location_txt.Text);
-                //command.Parameters.AddWithValue("@Images", savePhoto());
+                command.Parameters.AddWithValue("@Images", imagebt);
 
                 command.ExecuteNonQuery();
                 //command.Dispose();
@@ -120,6 +115,17 @@ namespace EventApp
                 HomePage.Instance.PnlContainer.Controls.Add(scse);
             }
             HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
+        }
+
+        private void loadimage_btn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                imgpath = dlg.FileName.ToString();
+                picBox.ImageLocation = imgpath;
+            }
         }
 
 

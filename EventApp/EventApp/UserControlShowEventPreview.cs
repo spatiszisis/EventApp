@@ -17,12 +17,21 @@ namespace EventApp
     {
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
+        Image icon;
 
         public UserControlShowEventPreview()
         {
             InitializeComponent();
             Connect1 c = new Connect1 ();
             connection.ConnectionString = con.ConnectString;
+        }
+
+
+        private Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
         }
 
         private void UserControlShowEventPreview_Load(object sender, EventArgs e)
@@ -46,7 +55,8 @@ namespace EventApp
                     timeTxt.Text            = reader["Time"].ToString();
                     categoryTxt.Text        = reader["Category"].ToString();
                     locationTxt.Text        = reader["Location"].ToString();
-                   // imagePictureBox.Image = LoadPhoto()
+                    icon = byteArrayToImage((byte[])reader["Images"]);
+                    imagePictureBox.Image = icon;
                 }
                 reader.Close();
                 connection.Close();
@@ -57,10 +67,5 @@ namespace EventApp
             }
         }
 
-        private Image LoadPhoto(byte[] photo)
-        {
-            MemoryStream ms = new MemoryStream(photo);
-            return Image.FromStream(ms);
-        }
     }
 }

@@ -158,3 +158,29 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.pdb
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete

@@ -18,13 +18,21 @@ namespace EventApp
     {
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
-        
+        Image icon;
+
         public UserControlShowEvents()
         {
             InitializeComponent();
             connection.ConnectionString = con.ConnectString;
         }
-        
+
+        private Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
+        }
+
         private void UserControlShowEvents_Load(object sender, EventArgs e)
         {
             try
@@ -54,7 +62,8 @@ namespace EventApp
                         listitems.Location  = reader["Location"].ToString();
                         listitems.Day       = reader["Day"].ToString();
                         listitems.Time      = reader["Time"].ToString();
-                        //listitems.Icon = reader["Images"].ToString();
+                        icon = byteArrayToImage((byte[])reader["images"]);
+                        listitems.Icon = icon;
                         listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanel1.Controls.Count < 0)
