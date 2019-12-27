@@ -8,31 +8,41 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using Connect;
 
 namespace EventApp
 {
     public partial class Login : Form
     {
         private OleDbConnection connection = new OleDbConnection();
+        Connect1 con = new Connect1();
+        
         public Login()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\Data.accdb;
-                                            Persist Security Info=False;";
+            connection.ConnectionString = con.ConnectString;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        public static string username = "";
+        public static string password = "";
         private void button1_Click(object sender, EventArgs e)
         {
+            int UserID = 0;
+            String Username = "";
+            String Password = "";
+            String Email = "";
+            String FirstName = "";
+            String LastName = "";
+            String Location = "";
             
-             connection.Open();
+
+            connection.Open();
 
             OleDbCommand command = new OleDbCommand();
+            OleDbCommand command2 = new OleDbCommand();
+            OleDbCommand command3 = new OleDbCommand();
             command.Connection = connection;
+            command2.Connection = connection;
+            command3.Connection = connection;
             command.CommandText = "select * from Users where Username='" + txt_Username.Text + "' and Password= '" + txt_Password.Text + "'";
 
             OleDbDataReader reader = command.ExecuteReader();
@@ -40,16 +50,30 @@ namespace EventApp
             while (reader.Read())
             {
                 count++;
+                
+                UserID = (int)reader["UsersID"];
+                Username = (String)reader["Username"];
+                Password = (String)reader["Password"];
+                if (!DBNull.Value.Equals(reader["Email"]))
+                {  Email = (String)reader["Email"];         }
+                if (!DBNull.Value.Equals(reader["FirstName"]))
+                {  FirstName = (String)reader["FirstName"]; }
+                if (!DBNull.Value.Equals(reader["LastName"])) 
+                {  LastName = (String)reader["LastName"];   }
+                if (!DBNull.Value.Equals(reader["Location"]))
+                {  Location = (String)reader["Location"];   }
             }
-
+            reader.Close();
             if (count == 1)
             {
-                //MessageBox.Show("Username and password is correct");
+                username = txt_Username.Text;
+                password = txt_Password.Text;
                 connection.Close();
                 connection.Dispose();
                 this.Hide();
                 HomePage f2 = new HomePage();
                 f2.Show();
+
             }
             else
             {
@@ -60,19 +84,12 @@ namespace EventApp
             connection.Close();
         }
 
-        
 
         private void txt_Username_Click(object sender, EventArgs e)
         {
             txt_Username.Clear();
-            //pictureBox2.BackgroundImage = Properties.Resources.ic_person_24px;
-            //panel3.BackColor = Color.FromArgb(87, 96, 122);
-            //txt_Username.ForeColor = Color.FromArgb(87, 96, 122);
-
-            //pictureBox2.BackgroundImage = Properties.Resources.ic_lock_24px;
-            //panel4.BackColor = Color.WhiteSmoke;
-            //txt_Password.ForeColor = Color.WhiteSmoke;
         }
+
 
         private void txt_Password_Click(object sender, EventArgs e)
         {
@@ -85,6 +102,11 @@ namespace EventApp
             this.Hide();
             Registration re = new Registration();
             re.Show();
+        }
+
+        private void closeFromLogin_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); // Kleinei tin Efarmogh
         }
     }
 }
