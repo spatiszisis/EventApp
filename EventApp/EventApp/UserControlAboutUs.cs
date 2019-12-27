@@ -19,7 +19,7 @@ namespace EventApp
 
         private void UserControlAboutUs_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

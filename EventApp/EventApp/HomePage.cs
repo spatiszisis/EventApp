@@ -320,13 +320,20 @@ namespace EventApp
             {
                 OleDbDataReader reader = command.ExecuteReader();
                 while (reader.Read())
-                { 
-                    //to afisa....auto einai gia to search
-                }
+                {
+                    // edo arxizo
+                    
+                // edo teleino
             }
-            connection.Close();
+            }
+            connection.Close(); // ayto meta to bgazo
         }
 
+        private void searchTxt_TextChanged(object sender, EventArgs e)
+        {
+            //
+        }
+        
 
         //Telos Alla Properties 
     }
