@@ -12,6 +12,7 @@ namespace EventApp
 {
     public partial class UserControlAboutUs : UserControl
     {
+        private UserControlSettingsApp us;
         public UserControlAboutUs()
         {
             InitializeComponent();
@@ -19,7 +20,20 @@ namespace EventApp
 
         private void UserControlAboutUs_Load(object sender, EventArgs e)
         {
-           
+
+           /* if (color = 1)
+            {
+                this.BackColor = Color.White;
+            }
+            else if (us.color = 0) 
+            {
+                this.BackColor = Color.Black;
+            }
+            if (this.BackColor = Color.White)
+            {
+                this.BackColor = Color.White;
+            }*/
         }
+       
     }
 }
