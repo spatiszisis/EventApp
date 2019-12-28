@@ -25,8 +25,17 @@ namespace EventApp
         
         private void UserControlSettingsUser_Load(object sender, EventArgs e)
         {
-            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
-                                                                      // Gia tin auksomoiosh thw grammatoseiras
+            // gia to dark mode
+            int c = (int)UserControlSettingsApp.color;
+            if (c == 0)
+            {
+                this.BackColor = Color.Black;
+            }
+            else if (c == 1)
+            {
+                this.BackColor = Color.White;
+            }
+            // Gia tin auksomoiosh thw grammatoseiras
             int g = (int)UserControlSettingsApp.gram;
             if (g == 0)
             {
