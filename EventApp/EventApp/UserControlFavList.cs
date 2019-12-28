@@ -16,5 +16,10 @@ namespace EventApp
         {
             InitializeComponent();
         }
+
+        private void UserControlFavList_Load(object sender, EventArgs e)
+        {
+            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
+        }
     }
 }

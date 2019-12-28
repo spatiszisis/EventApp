@@ -127,8 +127,10 @@ namespace EventApp
                 picBox.ImageLocation = imgpath;
             }
         }
-
-
         //Telos Click Method gia ta koumpia
+        private void UserControlCreateEvent_Load(object sender, EventArgs e)
+        {
+            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace EventApp
 
         private void UserControlHelp_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
         }
 
         private void label12_Click(object sender, EventArgs e)

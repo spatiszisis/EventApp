@@ -35,6 +35,7 @@ namespace EventApp
 
         private void UserControlShowEvents_Load(object sender, EventArgs e)
         {
+            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
             try
             {
                 

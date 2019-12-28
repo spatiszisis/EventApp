@@ -25,6 +25,7 @@ namespace EventApp
         
         private void UserControlSettingsUser_Load(object sender, EventArgs e)
         {
+            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
             usernameTxt.Text = Login.username;
             passwordTxt.Text = Login.password;
 

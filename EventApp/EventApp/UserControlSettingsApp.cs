@@ -25,7 +25,8 @@ namespace EventApp
         public UserControlShowEvents us9 = new UserControlShowEvents();
         public UserControlΗοme us10 = new UserControlΗοme();
         */
-        public static int color;
+        public static int color; // Gia to xrwma
+        public static int gram; // Gia tin grammatoseira
         public UserControlSettingsApp()
         {
             InitializeComponent();
@@ -64,6 +65,7 @@ namespace EventApp
                 //HomePage hp = new HomePage();
                 FormBorderStyle = FormBorderStyle.Sizable;
                 // Auksisi tis grammatoseiras
+                gram = 0;
                 label2.Font = new Font("Arial", 14, FontStyle.Bold);
                 label3.Font = new Font("Arial", 14, FontStyle.Bold);
                 
@@ -71,6 +73,7 @@ namespace EventApp
             else
             {
                 // Meiwsei tis grammatoseiras
+                gram = 1;
                 label2.Font = new Font("Arial", 12, FontStyle.Bold);
                 label3.Font = new Font("Arial", 12, FontStyle.Bold);
             }

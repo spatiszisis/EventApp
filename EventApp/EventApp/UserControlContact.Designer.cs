@@ -46,9 +46,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label2.Location = new System.Drawing.Point(120, 73);
+            this.label2.Location = new System.Drawing.Point(90, 59);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 58);
+            this.label2.Size = new System.Drawing.Size(220, 46);
             this.label2.TabIndex = 2;
             this.label2.Text = "Get in Touch";
             // 
@@ -57,10 +58,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label1.Location = new System.Drawing.Point(127, 129);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(95, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 17);
+            this.label1.Size = new System.Drawing.Size(259, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Leave your message and we\'ll get back to you shortly";
             // 
@@ -70,10 +70,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label5.Location = new System.Drawing.Point(125, 264);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(94, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 29);
+            this.label5.Size = new System.Drawing.Size(126, 23);
             this.label5.TabIndex = 6;
             this.label5.Text = "Email address :";
             // 
@@ -83,10 +82,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label6.Location = new System.Drawing.Point(125, 447);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(94, 363);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 29);
+            this.label6.Size = new System.Drawing.Size(87, 23);
             this.label6.TabIndex = 7;
             this.label6.Text = "Message :";
             // 
@@ -96,10 +94,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label7.Location = new System.Drawing.Point(125, 348);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(94, 283);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 29);
+            this.label7.Size = new System.Drawing.Size(76, 23);
             this.label7.TabIndex = 8;
             this.label7.Text = "Subject :";
             // 
@@ -109,11 +106,10 @@
             this.messageTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.messageTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.messageTxt.ForeColor = System.Drawing.Color.Gray;
-            this.messageTxt.Location = new System.Drawing.Point(130, 480);
-            this.messageTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.messageTxt.Location = new System.Drawing.Point(98, 390);
             this.messageTxt.Multiline = true;
             this.messageTxt.Name = "messageTxt";
-            this.messageTxt.Size = new System.Drawing.Size(772, 134);
+            this.messageTxt.Size = new System.Drawing.Size(579, 109);
             this.messageTxt.TabIndex = 12;
             this.messageTxt.Text = "Leave your message...";
             this.messageTxt.Click += new System.EventHandler(this.messageTxt_Click);
@@ -125,10 +121,9 @@
             this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sendBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
             this.sendBtn.ForeColor = System.Drawing.Color.White;
-            this.sendBtn.Location = new System.Drawing.Point(130, 654);
-            this.sendBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.sendBtn.Location = new System.Drawing.Point(98, 531);
             this.sendBtn.Name = "sendBtn";
-            this.sendBtn.Size = new System.Drawing.Size(113, 45);
+            this.sendBtn.Size = new System.Drawing.Size(85, 37);
             this.sendBtn.TabIndex = 13;
             this.sendBtn.Text = "Send";
             this.sendBtn.UseVisualStyleBackColor = false;
@@ -138,9 +133,10 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(130, 149);
+            this.panel1.Location = new System.Drawing.Point(98, 121);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(521, 3);
+            this.panel1.Size = new System.Drawing.Size(391, 2);
             this.panel1.TabIndex = 14;
             // 
             // subjectTxt
@@ -149,11 +145,11 @@
             this.subjectTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.subjectTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.subjectTxt.ForeColor = System.Drawing.Color.Gray;
-            this.subjectTxt.Location = new System.Drawing.Point(130, 390);
-            this.subjectTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.subjectTxt.Location = new System.Drawing.Point(98, 317);
+            this.subjectTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.subjectTxt.Multiline = true;
             this.subjectTxt.Name = "subjectTxt";
-            this.subjectTxt.Size = new System.Drawing.Size(330, 30);
+            this.subjectTxt.Size = new System.Drawing.Size(248, 24);
             this.subjectTxt.TabIndex = 15;
             this.subjectTxt.Text = "Give an subject";
             this.subjectTxt.Click += new System.EventHandler(this.subjectTxt_Click);
@@ -164,18 +160,18 @@
             this.emailTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.emailTxt.ForeColor = System.Drawing.Color.Gray;
-            this.emailTxt.Location = new System.Drawing.Point(130, 305);
-            this.emailTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailTxt.Location = new System.Drawing.Point(98, 248);
+            this.emailTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emailTxt.Multiline = true;
             this.emailTxt.Name = "emailTxt";
-            this.emailTxt.Size = new System.Drawing.Size(330, 30);
+            this.emailTxt.Size = new System.Drawing.Size(248, 24);
             this.emailTxt.TabIndex = 16;
             this.emailTxt.Text = "example@gmail.com";
             this.emailTxt.Click += new System.EventHandler(this.emailTxt_Click);
             // 
             // UserControlContact
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.emailTxt);
             this.Controls.Add(this.subjectTxt);
@@ -188,9 +184,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlContact";
-            this.Size = new System.Drawing.Size(1453, 791);
+            this.Size = new System.Drawing.Size(1090, 643);
+            this.Load += new System.EventHandler(this.UserControlContact_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

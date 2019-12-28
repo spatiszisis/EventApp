@@ -64,5 +64,10 @@ namespace EventApp
                 messageTxt.Text = "Leave your message...";
             }
         }
+
+        private void UserControlContact_Load(object sender, EventArgs e)
+        {
+            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
+        }
     }
 }

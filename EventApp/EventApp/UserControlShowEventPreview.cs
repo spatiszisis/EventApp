@@ -36,6 +36,7 @@ namespace EventApp
 
         private void UserControlShowEventPreview_Load(object sender, EventArgs e)
         {
+            this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
             try
             {
                 connection.Open();
