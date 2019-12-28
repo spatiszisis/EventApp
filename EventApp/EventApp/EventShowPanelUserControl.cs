@@ -16,6 +16,7 @@ namespace EventApp
     {
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
+        public int eventid = 0;
         public EventShowPanelUserControl()
         {
             InitializeComponent();
@@ -72,6 +73,44 @@ namespace EventApp
         {
 
             title = Title;
+
+            //Kanei anazitisi gia na parei to EventID kai to UserID wste na ta emfanizei sta Recomended
+
+            try
+            {
+                connection.Open();
+
+                OleDbCommand command1 = new OleDbCommand();
+                command1.CommandType = CommandType.Text;
+                command1.CommandText = "select * from Events where [Title] = @Title";
+                command1.Parameters.AddWithValue("@Title", title);
+                command1.Connection = connection;
+
+                OleDbDataReader reader = command1.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    eventid = (int)reader["EventsID"];
+                }
+
+                reader.Close();
+
+
+                OleDbCommand command = new OleDbCommand();
+                command.CommandType = CommandType.Text;
+                command.CommandText = "insert into DataUser ([UserID],[EventID]) values (@UserID, @EventID)";
+                command.Parameters.AddWithValue("@UserID", Login.UserID);
+                command.Parameters.AddWithValue("@EventID", eventid);
+                command.Connection = connection;
+
+                command.ExecuteNonQuery();
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + " ");
+            }
 
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))
             {
