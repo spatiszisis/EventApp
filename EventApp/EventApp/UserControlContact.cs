@@ -68,6 +68,20 @@ namespace EventApp
         private void UserControlContact_Load(object sender, EventArgs e)
         {
             this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
+            // Gia tin auksomoiosh thw grammatoseiras
+            int g = (int)UserControlSettingsApp.gram;
+            if (g == 0)
+            {
+                label5.Font = new Font("Arial", 16, FontStyle.Bold);
+                label6.Font = new Font("Arial", 16, FontStyle.Bold);
+                label7.Font = new Font("Arial", 16, FontStyle.Bold);
+            }
+            else if (g == 1)
+            {
+                label5.Font = new Font("Arial", 14, FontStyle.Bold);
+                label6.Font = new Font("Arial", 14, FontStyle.Bold);
+                label7.Font = new Font("Arial", 14, FontStyle.Bold);
+            }
         }
     }
 }
