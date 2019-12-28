@@ -58,18 +58,17 @@ namespace EventApp
                     locationTxt.Text        = reader["Location"].ToString();
                     icon = byteArrayToImage((byte[])reader["Images"]);
                     imagePictureBox.Image = icon;
+                    EventId = (int)reader["EventsID"];
                 }
                 reader.Close();
+                connection.Close();
+                connection.Dispose();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex);
             }
-            finally
-            {
-                connection.Close();
-                connection.Dispose();
-            }
+            
         }
 
         private void favlist_button_Click(object sender, EventArgs e)
