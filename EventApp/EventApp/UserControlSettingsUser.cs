@@ -26,6 +26,28 @@ namespace EventApp
         private void UserControlSettingsUser_Load(object sender, EventArgs e)
         {
             this.BackColor = UserControlSettingsApp.DefaultBackColor; // gia to dark mode
+                                                                      // Gia tin auksomoiosh thw grammatoseiras
+            int g = (int)UserControlSettingsApp.gram;
+            if (g == 0)
+            {
+                label4.Font = new Font("Arial", 16, FontStyle.Bold);
+                label1.Font = new Font("Arial", 22, FontStyle.Bold);
+                label5.Font = new Font("Arial", 11, FontStyle.Bold);
+                label7.Font = new Font("Arial", 11, FontStyle.Bold);
+                label2.Font = new Font("Arial", 11, FontStyle.Bold);
+                label3.Font = new Font("Arial", 11, FontStyle.Bold);
+                label6.Font = new Font("Arial", 11, FontStyle.Bold);
+            }
+            else if (g == 1)
+            {
+                label4.Font = new Font("Arial", 12, FontStyle.Bold);
+                label1.Font = new Font("Arial", 16, FontStyle.Bold);
+                label6.Font = new Font("Arial", 8, FontStyle.Bold);
+                label5.Font = new Font("Arial", 8, FontStyle.Bold);
+                label7.Font = new Font("Arial", 8, FontStyle.Bold);
+                label2.Font = new Font("Arial", 8, FontStyle.Bold);
+                label3.Font = new Font("Arial", 8, FontStyle.Bold);
+            }
             usernameTxt.Text = Login.username;
             passwordTxt.Text = Login.password;
 
