@@ -18,6 +18,8 @@ namespace EventApp
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
         Image icon;
+        public int UserId = 0;
+        public int EventId = 0;
 
         public UserControlShowEventPreview()
         {
@@ -57,6 +59,7 @@ namespace EventApp
                     locationTxt.Text        = reader["Location"].ToString();
                     icon = byteArrayToImage((byte[])reader["Images"]);
                     imagePictureBox.Image = icon;
+                    EventId = (int)reader["EventsID"];
                 }
                 reader.Close();
                 connection.Close();
@@ -67,5 +70,29 @@ namespace EventApp
             }
         }
 
+        private void favlist_button_Click_1(object sender, EventArgs e)
+        {
+      
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.CommandType = CommandType.Text;
+                command.CommandText = "insert into FavList ( [EventID], [UserID]) values ( @Eventid, @Userid)";
+                command.Connection = connection;
+                command.Parameters.AddWithValue("@Eventid", EventId);
+                command.Parameters.AddWithValue("@Userid", Login.UserID);
+
+                command.ExecuteNonQuery();
+                //command.Dispose();
+                MessageBox.Show("Saved to favorite! ");
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+                connection.Close();
+            }
+        }
     }
 }

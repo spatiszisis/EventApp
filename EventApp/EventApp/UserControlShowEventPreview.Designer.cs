@@ -44,6 +44,7 @@
             this.dateTxt = new System.Windows.Forms.Label();
             this.titleTxt = new System.Windows.Forms.Label();
             this.categoryTxt = new System.Windows.Forms.Label();
+            this.favlist_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,7 @@
             this.star5Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star5Btn.Image = ((System.Drawing.Image)(resources.GetObject("star5Btn.Image")));
             this.star5Btn.Location = new System.Drawing.Point(899, 437);
-            this.star5Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star5Btn.Margin = new System.Windows.Forms.Padding(2);
             this.star5Btn.Name = "star5Btn";
             this.star5Btn.Size = new System.Drawing.Size(56, 28);
             this.star5Btn.TabIndex = 25;
@@ -87,7 +88,7 @@
             this.star4Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star4Btn.Image = ((System.Drawing.Image)(resources.GetObject("star4Btn.Image")));
             this.star4Btn.Location = new System.Drawing.Point(838, 437);
-            this.star4Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star4Btn.Margin = new System.Windows.Forms.Padding(2);
             this.star4Btn.Name = "star4Btn";
             this.star4Btn.Size = new System.Drawing.Size(56, 28);
             this.star4Btn.TabIndex = 24;
@@ -98,7 +99,7 @@
             this.star3Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star3Btn.Image = ((System.Drawing.Image)(resources.GetObject("star3Btn.Image")));
             this.star3Btn.Location = new System.Drawing.Point(778, 437);
-            this.star3Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star3Btn.Margin = new System.Windows.Forms.Padding(2);
             this.star3Btn.Name = "star3Btn";
             this.star3Btn.Size = new System.Drawing.Size(56, 28);
             this.star3Btn.TabIndex = 23;
@@ -109,7 +110,7 @@
             this.star2Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star2Btn.Image = ((System.Drawing.Image)(resources.GetObject("star2Btn.Image")));
             this.star2Btn.Location = new System.Drawing.Point(717, 437);
-            this.star2Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star2Btn.Margin = new System.Windows.Forms.Padding(2);
             this.star2Btn.Name = "star2Btn";
             this.star2Btn.Size = new System.Drawing.Size(56, 28);
             this.star2Btn.TabIndex = 22;
@@ -132,7 +133,7 @@
             this.star1Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star1Btn.Image = ((System.Drawing.Image)(resources.GetObject("star1Btn.Image")));
             this.star1Btn.Location = new System.Drawing.Point(656, 437);
-            this.star1Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star1Btn.Margin = new System.Windows.Forms.Padding(2);
             this.star1Btn.Name = "star1Btn";
             this.star1Btn.Size = new System.Drawing.Size(56, 28);
             this.star1Btn.TabIndex = 20;
@@ -142,7 +143,7 @@
             // 
             this.goBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.goBtn.Location = new System.Drawing.Point(778, 533);
-            this.goBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.goBtn.Margin = new System.Windows.Forms.Padding(2);
             this.goBtn.Name = "goBtn";
             this.goBtn.Size = new System.Drawing.Size(93, 41);
             this.goBtn.TabIndex = 19;
@@ -153,7 +154,7 @@
             // 
             this.wantBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.wantBtn.Location = new System.Drawing.Point(656, 533);
-            this.wantBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wantBtn.Margin = new System.Windows.Forms.Padding(2);
             this.wantBtn.Name = "wantBtn";
             this.wantBtn.Size = new System.Drawing.Size(95, 41);
             this.wantBtn.TabIndex = 18;
@@ -176,7 +177,7 @@
             // 
             this.imagePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imagePictureBox.Location = new System.Drawing.Point(142, 130);
-            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.imagePictureBox.Name = "imagePictureBox";
             this.imagePictureBox.Size = new System.Drawing.Size(465, 268);
             this.imagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -219,10 +220,27 @@
             this.categoryTxt.TabIndex = 28;
             this.categoryTxt.Text = "Category";
             // 
+            // favlist_button
+            // 
+            this.favlist_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.favlist_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.favlist_button.FlatAppearance.BorderSize = 0;
+            this.favlist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.favlist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.favlist_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.favlist_button.Image = ((System.Drawing.Image)(resources.GetObject("favlist_button.Image")));
+            this.favlist_button.Location = new System.Drawing.Point(988, 36);
+            this.favlist_button.Name = "favlist_button";
+            this.favlist_button.Size = new System.Drawing.Size(45, 36);
+            this.favlist_button.TabIndex = 30;
+            this.favlist_button.UseVisualStyleBackColor = false;
+            this.favlist_button.Click += new System.EventHandler(this.favlist_button_Click_1);
+            // 
             // UserControlShowEventPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.favlist_button);
             this.Controls.Add(this.categoryTxt);
             this.Controls.Add(this.timeTxt);
             this.Controls.Add(this.descriptionTxt);
@@ -238,7 +256,7 @@
             this.Controls.Add(this.imagePictureBox);
             this.Controls.Add(this.dateTxt);
             this.Controls.Add(this.titleTxt);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControlShowEventPreview";
             this.Size = new System.Drawing.Size(1090, 643);
             this.Load += new System.EventHandler(this.UserControlShowEventPreview_Load);
@@ -265,5 +283,6 @@
         private System.Windows.Forms.Label dateTxt;
         private System.Windows.Forms.Label titleTxt;
         private System.Windows.Forms.Label categoryTxt;
+        private System.Windows.Forms.Button favlist_button;
     }
 }

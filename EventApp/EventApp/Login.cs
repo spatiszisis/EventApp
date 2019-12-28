@@ -24,9 +24,10 @@ namespace EventApp
         }
         public static string username = "";
         public static string password = "";
+        public static int UserID = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            int UserID = 0;
+            
             String Username = "";
             String Password = "";
             String Email = "";
