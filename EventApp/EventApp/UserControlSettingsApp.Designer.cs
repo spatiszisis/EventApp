@@ -34,6 +34,8 @@
             this.onvalue = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.checkboxchangeborderstyleform = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,21 +99,31 @@
             this.checkboxchangeborderstyleform.UseVisualStyleBackColor = true;
             this.checkboxchangeborderstyleform.CheckedChanged += new System.EventHandler(this.checkboxchangeborderstyleform_CheckedChanged);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.onvalue);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.checkboxchangeborderstyleform);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1453, 785);
+            this.panel2.TabIndex = 22;
+            // 
             // UserControlSettingsApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.checkboxchangeborderstyleform);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.onvalue);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
             this.Name = "UserControlSettingsApp";
             this.Size = new System.Drawing.Size(1453, 785);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -123,5 +135,6 @@
         private System.Windows.Forms.CheckBox onvalue;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkboxchangeborderstyleform;
+        private System.Windows.Forms.Panel panel2;
     }
 }

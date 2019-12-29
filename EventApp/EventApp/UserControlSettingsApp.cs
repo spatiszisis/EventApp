@@ -13,8 +13,8 @@ namespace EventApp
     public partial class UserControlSettingsApp : UserControl
     {
         private FormBorderStyle FormBorderStyle;
-        public static int color; // Gia to xrwma
-        public static int gram; // Gia tin grammatoseira
+        public static int color = 1; // Gia to xrwma
+        public static int gram = 1; // Gia tin grammatoseira
         public UserControlSettingsApp()
         {
             InitializeComponent();

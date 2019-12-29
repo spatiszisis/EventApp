@@ -46,7 +46,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridViewEvents = new System.Windows.Forms.DataGridView();
             this.deleteBtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEvents)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -257,7 +259,7 @@
             this.deleteBtn.FlatAppearance.BorderSize = 0;
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.deleteBtn.Location = new System.Drawing.Point(1016, 510);
+            this.deleteBtn.Location = new System.Drawing.Point(1016, 514);
             this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(138, 37);
@@ -265,28 +267,38 @@
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.dataGridViewEvents);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.locationTxt);
+            this.panel2.Controls.Add(this.lastnameTxt);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.firstnameTxt);
+            this.panel2.Controls.Add(this.passwordTxt);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.emailTxt);
+            this.panel2.Controls.Add(this.editBtn);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.usernameTxt);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.deleteBtn);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1453, 785);
+            this.panel2.TabIndex = 40;
+            // 
             // UserControlSettingsUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridViewEvents);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.locationTxt);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.lastnameTxt);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.firstnameTxt);
-            this.Controls.Add(this.passwordTxt);
-            this.Controls.Add(this.emailTxt);
-            this.Controls.Add(this.editBtn);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.usernameTxt);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -294,8 +306,9 @@
             this.Size = new System.Drawing.Size(1453, 785);
             this.Load += new System.EventHandler(this.UserControlSettingsUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEvents)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -319,5 +332,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridViewEvents;
         private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Panel panel2;
     }
 }
