@@ -56,13 +56,13 @@ namespace EventApp
                     timeTxt.Text            = reader["Time"].ToString();
                     categoryTxt.Text        = reader["Category"].ToString();
                     locationTxt.Text        = reader["Location"].ToString();
-                    icon = byteArrayToImage((byte[])reader["Images"]);
-                    imagePictureBox.Image = icon;
-                    EventId = (int)reader["EventsID"];
+                    icon                    = byteArrayToImage((byte[])reader["Images"]);
+                    imagePictureBox.Image   = icon;
+                    EventId                 = (int)reader["EventsID"];
                 }
                 reader.Close();
                 connection.Close();
-                connection.Dispose();
+               
             }
             catch (Exception ex)
             {
@@ -78,7 +78,7 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into FavList ( [EventID], [UserID]) values ( @Eventid, @Userid)";
+                command.CommandText = "insert into FavList ( [EventID], [UserID]) values (@Eventid, @Userid)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Eventid", EventId);
                 command.Parameters.AddWithValue("@Userid", Login.UserID);

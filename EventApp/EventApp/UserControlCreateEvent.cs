@@ -50,9 +50,6 @@ namespace EventApp
 
         //Telos Clear Method gia ta text
 
-
-        //Arxi Click Method gia ta koumpia
-
         private byte[] ImageToByte(Image image, System.Drawing.Imaging.ImageFormat format)
         {
             MemoryStream ms = new MemoryStream();
@@ -60,14 +57,14 @@ namespace EventApp
             return ms.ToArray();
         }
 
-        //public static string date = "";
+
         private void save_btn_Click(object sender, EventArgs e)
         {
             Bitmap bm = new Bitmap(picBox.Image);
             byte[] imagebt = ImageToByte(bm, System.Drawing.Imaging.ImageFormat.Jpeg);
 
             EventShowPanelUserControl.title = title_txt.Text;
-            //date = dateTimePicker.Value.ToString("dd-MM-yyyy");
+            
             try
             {
                 connection.Open();
@@ -128,8 +125,5 @@ namespace EventApp
                 picBox.ImageLocation = imgpath;
             }
         }
-
-
-        //Telos Click Method gia ta koumpia
     }
 }

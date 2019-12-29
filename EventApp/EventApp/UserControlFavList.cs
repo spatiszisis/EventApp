@@ -37,7 +37,6 @@ namespace EventApp
         {
             try
             {
-
                 connection.Open();
 
                 OleDbCommand command1 = new OleDbCommand();
@@ -63,13 +62,13 @@ namespace EventApp
                     while (reader2.Read())
                     {
 
-                        listitems.Title = reader2["Title"].ToString();
-                        listitems.Location = reader2["Location"].ToString();
-                        listitems.Day = reader2["Day"].ToString();
-                        listitems.Time = reader2["Time"].ToString();
-                        icon = byteArrayToImage((byte[])reader2["images"]);
-                        listitems.Icon = icon;
-                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+                        listitems.Title         = reader2["Title"].ToString();
+                        listitems.Location      = reader2["Location"].ToString();
+                        listitems.Day           = reader2["Day"].ToString();
+                        listitems.Time          = reader2["Time"].ToString();
+                        icon                    = byteArrayToImage((byte[])reader2["images"]);
+                        listitems.Icon          = icon;
+                        listitems.BorderStyle   = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanelFav.Controls.Count < 0)
                         {
