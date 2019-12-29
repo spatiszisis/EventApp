@@ -228,6 +228,8 @@ namespace EventApp
         }
         private void managerBtn_Click(object sender, EventArgs e)
         {
+            SidePanel.Height = Contact.Height;
+            SidePanel.Top = Contact.Top;
             UserControlManage uc = new UserControlManage();
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
