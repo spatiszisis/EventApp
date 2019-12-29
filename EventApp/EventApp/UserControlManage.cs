@@ -174,13 +174,15 @@ namespace EventApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlManage"))
+           
+            //this.Refresh();
+            /*if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlManage"))
             {
                 UserControlManage scse = new UserControlManage();
                 scse.Dock = DockStyle.Fill;
                 HomePage.Instance.PnlContainer.Controls.Add(scse);
             }
-            HomePage.Instance.PnlContainer.Controls["UserControlManage"].BringToFront();
+            HomePage.Instance.PnlContainer.Controls["UserControlManage"].BringToFront();*/
         }
 
         private void button2_Click(object sender, EventArgs e)
