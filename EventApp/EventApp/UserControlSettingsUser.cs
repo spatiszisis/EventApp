@@ -25,6 +25,42 @@ namespace EventApp
         
         private void UserControlSettingsUser_Load(object sender, EventArgs e)
         {
+
+            //Dark Mode
+            int c = (int)UserControlSettingsApp.color;
+            if (c == 0)
+            {
+                this.BackColor = Color.Black;
+            }
+            else if (c == 1)
+            {
+                this.BackColor = Color.White;
+            }
+
+            //Grammatoseira
+            int g = (int)UserControlSettingsApp.gram;
+            if (g == 0)
+            {
+                label4.Font = new Font("Arial", 16, FontStyle.Bold);
+                label1.Font = new Font("Arial", 22, FontStyle.Bold);
+                label5.Font = new Font("Arial", 11, FontStyle.Bold);
+                label7.Font = new Font("Arial", 11, FontStyle.Bold);
+                label2.Font = new Font("Arial", 11, FontStyle.Bold);
+                label3.Font = new Font("Arial", 11, FontStyle.Bold);
+                label6.Font = new Font("Arial", 11, FontStyle.Bold);
+            }
+            else if (g == 1)
+            {
+                label4.Font = new Font("Arial", 12, FontStyle.Bold);
+                label1.Font = new Font("Arial", 16, FontStyle.Bold);
+                label6.Font = new Font("Arial", 8, FontStyle.Bold);
+                label5.Font = new Font("Arial", 8, FontStyle.Bold);
+                label7.Font = new Font("Arial", 8, FontStyle.Bold);
+                label2.Font = new Font("Arial", 8, FontStyle.Bold);
+                label3.Font = new Font("Arial", 8, FontStyle.Bold);
+            }
+
+            dataGridViewEvents.DataSource = GetEventsList();
             usernameTxt.Text = Login.username;
             passwordTxt.Text = Login.password;
 
@@ -81,6 +117,42 @@ namespace EventApp
             {
                 MessageBox.Show("Error " + ex);
                 connection.Close();
+            }
+        }
+
+        private DataTable GetEventsList()
+        {
+            DataTable dtEvents = new DataTable();
+
+            try
+            {
+                connection.Open();
+
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                string query = "select * from Events where [UserID] = @UserID";
+                command.Parameters.AddWithValue("@UserID", Login.UserID);
+                command.CommandText = query;
+
+                OleDbDataReader reader = command.ExecuteReader();
+
+                dtEvents.Load(reader);
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + "");
+            }
+
+            return dtEvents;
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow item in this.dataGridViewEvents.SelectedRows)
+            {
+                dataGridViewEvents.Rows.RemoveAt(item.Index);
             }
         }
 

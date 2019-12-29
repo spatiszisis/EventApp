@@ -24,7 +24,6 @@ namespace EventApp
         public UserControlShowEventPreview()
         {
             InitializeComponent();
-            Connect1 c = new Connect1 ();
             connection.ConnectionString = con.ConnectString;
         }
 
@@ -38,6 +37,17 @@ namespace EventApp
 
         private void UserControlShowEventPreview_Load(object sender, EventArgs e)
         {
+            //Dark Mode
+            int c = (int)UserControlSettingsApp.color;
+            if (c == 0)
+            {
+                this.BackColor = Color.Black;
+            }
+            else if (c == 1)
+            {
+                this.BackColor = Color.White;
+            }
+
             try
             {
                 connection.Open();
@@ -57,28 +67,29 @@ namespace EventApp
                     timeTxt.Text            = reader["Time"].ToString();
                     categoryTxt.Text        = reader["Category"].ToString();
                     locationTxt.Text        = reader["Location"].ToString();
-                    icon = byteArrayToImage((byte[])reader["Images"]);
-                    imagePictureBox.Image = icon;
-                    EventId = (int)reader["EventsID"];
+                    icon                    = byteArrayToImage((byte[])reader["Images"]);
+                    imagePictureBox.Image   = icon;
+                    EventId                 = (int)reader["EventsID"];
                 }
                 reader.Close();
                 connection.Close();
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex);
             }
+            
         }
 
-        private void favlist_button_Click_1(object sender, EventArgs e)
+        private void favlist_button_Click(object sender, EventArgs e)
         {
-      
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into FavList ( [EventID], [UserID]) values ( @Eventid, @Userid)";
+                command.CommandText = "insert into FavList ( [EventID], [UserID]) values (@Eventid, @Userid)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Eventid", EventId);
                 command.Parameters.AddWithValue("@Userid", Login.UserID);

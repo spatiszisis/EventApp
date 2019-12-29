@@ -20,8 +20,6 @@ namespace EventApp
         Image icon;
         public int userid = 0;
         public int Eventid = 0;
-
-
         public UserControlFavList()
         {
             InitializeComponent();
@@ -37,12 +35,22 @@ namespace EventApp
 
         private void UserControlFavList_Load(object sender, EventArgs e)
         {
+            //Dark Mode
+            int c = (int)UserControlSettingsApp.color;
+            if (c == 0)
+            {
+                this.BackColor = Color.Black;
+            }
+            else if (c == 1)
+            {
+                this.BackColor = Color.White;
+            }
+
             try
             {
-
                 connection.Open();
-                 
-                OleDbCommand command1 = new OleDbCommand();               
+
+                OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection;
                 string query1 = "select * from FavList where [UserID] = @Userid";
                 command1.Parameters.AddWithValue("@Userid", Login.UserID);
@@ -65,25 +73,25 @@ namespace EventApp
                     while (reader2.Read())
                     {
 
-                        listitems.Title = reader2["Title"].ToString();
-                        listitems.Location = reader2["Location"].ToString();
-                        listitems.Day = reader2["Day"].ToString();
-                        listitems.Time = reader2["Time"].ToString();
-                        icon = byteArrayToImage((byte[])reader2["images"]);
-                        listitems.Icon = icon;
-                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+                        listitems.Title         = reader2["Title"].ToString();
+                        listitems.Location      = reader2["Location"].ToString();
+                        listitems.Day           = reader2["Day"].ToString();
+                        listitems.Time          = reader2["Time"].ToString();
+                        icon                    = byteArrayToImage((byte[])reader2["images"]);
+                        listitems.Icon          = icon;
+                        listitems.BorderStyle   = System.Windows.Forms.BorderStyle.Fixed3D;
 
-                        if (flowLayoutPanel1.Controls.Count < 0)
+                        if (flowLayoutPanelFav.Controls.Count < 0)
                         {
-                            flowLayoutPanel1.Controls.Clear();
+                            flowLayoutPanelFav.Controls.Clear();
                         }
                         else
                         {
-                            flowLayoutPanel1.Controls.Add(listitems);
+                            flowLayoutPanelFav.Controls.Add(listitems);
                         }
 
                     }
-                    reader2.Close();     
+                    reader2.Close();
                 }
                 connection.Dispose();
                 reader.Close();

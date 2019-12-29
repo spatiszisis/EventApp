@@ -64,5 +64,33 @@ namespace EventApp
                 messageTxt.Text = "Leave your message...";
             }
         }
+
+        private void UserControlContact_Load(object sender, EventArgs e)
+        {
+            //Dark Mode
+            int c = (int)UserControlSettingsApp.color;
+            if (c == 0)
+            {
+                this.BackColor = Color.Black;
+            }
+            else if (c == 1)
+            {
+                this.BackColor = Color.White;
+            }
+            //Grammatoseira
+            int g = (int)UserControlSettingsApp.gram;
+            if (g == 0)
+            {
+                label5.Font = new Font("Arial", 16, FontStyle.Bold);
+                label6.Font = new Font("Arial", 16, FontStyle.Bold);
+                label7.Font = new Font("Arial", 16, FontStyle.Bold);
+            }
+            else if (g == 1)
+            {
+                label5.Font = new Font("Arial", 14, FontStyle.Bold);
+                label6.Font = new Font("Arial", 14, FontStyle.Bold);
+                label7.Font = new Font("Arial", 14, FontStyle.Bold);
+            }
+        }
     }
 }

@@ -44,20 +44,8 @@ namespace EventApp
         {
             InitializeComponent();
             connection.ConnectionString = con.ConnectString;
-
-           /* String Username = "";
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT [Username] FROM [LoggedInUser]";
-            command.Connection = connection;
-            connection.Open();
-            OleDbDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            { Username = (String)reader["Username"]; }
-            connection.Close();
-            connection.Dispose();*/
             NameLabel.Text = Login.username;
-            //NameLabel.Text = Registration.username;
+            managerBtn.Visible = false;
         }
 
         
@@ -68,6 +56,11 @@ namespace EventApp
             UserControlΗοme uc = new UserControlΗοme();
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
+
+            if(Login.isAdmin == true)
+            {
+                managerBtn.Visible = true;
+            }
         }
 
         //Start Properties button
@@ -233,6 +226,15 @@ namespace EventApp
             PnlContainer.Controls.Add(uc);
             uc.BringToFront();
         }
+        private void managerBtn_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = managerBtn.Height;
+            SidePanel.Top = managerBtn.Top;
+            UserControlManage uc = new UserControlManage();
+            uc.Dock = DockStyle.Fill;
+            PnlContainer.Controls.Add(uc);
+            uc.BringToFront();
+        }
 
         //Telos Click Method gia na allazei panel
 
@@ -240,61 +242,17 @@ namespace EventApp
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit(); // Kleinei tin Efarmogh
-          /*connection.ConnectionString = con.ConnectString;
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "DROP TABLE LoggedInUser; ";
-            try
-            {
-                command.Connection = connection;
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-                connection.Dispose();
-            }
-            catch (System.Data.OleDb.OleDbException)
-            { 
-                connection.Close();
-                connection.Dispose();
-                Application.Exit();
-            }*/
+            Application.Exit(); 
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
         { 
-          /*connection.ConnectionString = con.ConnectString;
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "DROP TABLE LoggedInUser; ";
-
-            try 
-            { 
-                 command.Connection = connection;
-                 connection.Open();
-                 command.ExecuteNonQuery();
-                 connection.Close();
-                 connection.Dispose();*/
+         
                  this.Hide();
                  Login.username = "";
                  Login.password = "";
                  Login lgform = new Login();
                  lgform.Show();
-
-
-           /*}
-            catch (System.Data.OleDb.OleDbException)
-            {
-                 connection.Close();
-                 connection.Dispose();
-                 this.Hide();
-                 Login lgform = new Login();
-                 lgform.Show();
-            }*/
-            
-           
-           
-           
         }
 
         //Telos Exit, Log Out  
@@ -326,6 +284,7 @@ namespace EventApp
             }
             connection.Close();
         }
+
 
 
         //Telos Alla Properties 

@@ -13,7 +13,8 @@ namespace EventApp
     public partial class UserControlSettingsApp : UserControl
     {
         private FormBorderStyle FormBorderStyle;
-
+        public static int color = 1; // Gia to xrwma
+        public static int gram = 1; // Gia tin grammatoseira
         public UserControlSettingsApp()
         {
             InitializeComponent();
@@ -23,15 +24,12 @@ namespace EventApp
         {
             if(onvalue.Checked == true)
             {
-                UserControlAboutUs us1 = new UserControlAboutUs();
-                
-
-                us1.BackColor = Color.FromArgb(34, 36, 49);
-                
-                
+                color = 0;
+                this.BackColor = Color.Black;
             }
             else
             {
+                color = 1;
                 this.BackColor = Color.White;
             }
         }
@@ -40,9 +38,18 @@ namespace EventApp
         {
             if (checkboxchangeborderstyleform.Checked == true)
             {
-                //HomePage hp = new HomePage();
                 FormBorderStyle = FormBorderStyle.Sizable;
-                
+                // Auksisi tis grammatoseiras
+                gram = 0;
+                label2.Font = new Font("Arial", 14, FontStyle.Bold);
+                label3.Font = new Font("Arial", 14, FontStyle.Bold);
+            }
+            else
+            {
+                // Meiwsei tis grammatoseiras
+                gram = 1;
+                label2.Font = new Font("Arial", 12, FontStyle.Bold);
+                label3.Font = new Font("Arial", 12, FontStyle.Bold);
             }
         }
     }

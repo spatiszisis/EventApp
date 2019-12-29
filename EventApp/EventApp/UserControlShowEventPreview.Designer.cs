@@ -53,10 +53,9 @@
             this.timeTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.timeTxt.AutoSize = true;
             this.timeTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
-            this.timeTxt.Location = new System.Drawing.Point(650, 181);
-            this.timeTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.timeTxt.Location = new System.Drawing.Point(867, 220);
             this.timeTxt.Name = "timeTxt";
-            this.timeTxt.Size = new System.Drawing.Size(56, 22);
+            this.timeTxt.Size = new System.Drawing.Size(69, 29);
             this.timeTxt.TabIndex = 27;
             this.timeTxt.Text = "Time";
             // 
@@ -65,10 +64,9 @@
             this.descriptionTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.descriptionTxt.AutoSize = true;
             this.descriptionTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
-            this.descriptionTxt.Location = new System.Drawing.Point(136, 449);
-            this.descriptionTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.descriptionTxt.Location = new System.Drawing.Point(181, 550);
             this.descriptionTxt.Name = "descriptionTxt";
-            this.descriptionTxt.Size = new System.Drawing.Size(117, 22);
+            this.descriptionTxt.Size = new System.Drawing.Size(145, 29);
             this.descriptionTxt.TabIndex = 26;
             this.descriptionTxt.Text = "Description";
             // 
@@ -76,10 +74,10 @@
             // 
             this.star5Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star5Btn.Image = ((System.Drawing.Image)(resources.GetObject("star5Btn.Image")));
-            this.star5Btn.Location = new System.Drawing.Point(899, 437);
-            this.star5Btn.Margin = new System.Windows.Forms.Padding(2);
+            this.star5Btn.Location = new System.Drawing.Point(1199, 535);
+            this.star5Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.star5Btn.Name = "star5Btn";
-            this.star5Btn.Size = new System.Drawing.Size(56, 28);
+            this.star5Btn.Size = new System.Drawing.Size(75, 34);
             this.star5Btn.TabIndex = 25;
             this.star5Btn.UseVisualStyleBackColor = true;
             // 
@@ -87,10 +85,10 @@
             // 
             this.star4Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star4Btn.Image = ((System.Drawing.Image)(resources.GetObject("star4Btn.Image")));
-            this.star4Btn.Location = new System.Drawing.Point(838, 437);
-            this.star4Btn.Margin = new System.Windows.Forms.Padding(2);
+            this.star4Btn.Location = new System.Drawing.Point(1117, 535);
+            this.star4Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.star4Btn.Name = "star4Btn";
-            this.star4Btn.Size = new System.Drawing.Size(56, 28);
+            this.star4Btn.Size = new System.Drawing.Size(75, 34);
             this.star4Btn.TabIndex = 24;
             this.star4Btn.UseVisualStyleBackColor = true;
             // 
@@ -98,10 +96,10 @@
             // 
             this.star3Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star3Btn.Image = ((System.Drawing.Image)(resources.GetObject("star3Btn.Image")));
-            this.star3Btn.Location = new System.Drawing.Point(778, 437);
-            this.star3Btn.Margin = new System.Windows.Forms.Padding(2);
+            this.star3Btn.Location = new System.Drawing.Point(1037, 535);
+            this.star3Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.star3Btn.Name = "star3Btn";
-            this.star3Btn.Size = new System.Drawing.Size(56, 28);
+            this.star3Btn.Size = new System.Drawing.Size(75, 34);
             this.star3Btn.TabIndex = 23;
             this.star3Btn.UseVisualStyleBackColor = true;
             // 
@@ -109,10 +107,10 @@
             // 
             this.star2Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star2Btn.Image = ((System.Drawing.Image)(resources.GetObject("star2Btn.Image")));
-            this.star2Btn.Location = new System.Drawing.Point(717, 437);
-            this.star2Btn.Margin = new System.Windows.Forms.Padding(2);
+            this.star2Btn.Location = new System.Drawing.Point(956, 535);
+            this.star2Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.star2Btn.Name = "star2Btn";
-            this.star2Btn.Size = new System.Drawing.Size(56, 28);
+            this.star2Btn.Size = new System.Drawing.Size(75, 34);
             this.star2Btn.TabIndex = 22;
             this.star2Btn.UseVisualStyleBackColor = true;
             // 
@@ -121,10 +119,9 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(652, 402);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(869, 492);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 22);
+            this.label4.Size = new System.Drawing.Size(88, 29);
             this.label4.TabIndex = 21;
             this.label4.Text = "Rating";
             // 
@@ -132,20 +129,20 @@
             // 
             this.star1Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.star1Btn.Image = ((System.Drawing.Image)(resources.GetObject("star1Btn.Image")));
-            this.star1Btn.Location = new System.Drawing.Point(656, 437);
-            this.star1Btn.Margin = new System.Windows.Forms.Padding(2);
+            this.star1Btn.Location = new System.Drawing.Point(875, 535);
+            this.star1Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.star1Btn.Name = "star1Btn";
-            this.star1Btn.Size = new System.Drawing.Size(56, 28);
+            this.star1Btn.Size = new System.Drawing.Size(75, 34);
             this.star1Btn.TabIndex = 20;
             this.star1Btn.UseVisualStyleBackColor = true;
             // 
             // goBtn
             // 
             this.goBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.goBtn.Location = new System.Drawing.Point(778, 533);
-            this.goBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.goBtn.Location = new System.Drawing.Point(1037, 653);
+            this.goBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.goBtn.Name = "goBtn";
-            this.goBtn.Size = new System.Drawing.Size(93, 41);
+            this.goBtn.Size = new System.Drawing.Size(124, 50);
             this.goBtn.TabIndex = 19;
             this.goBtn.Text = "Θα πάω";
             this.goBtn.UseVisualStyleBackColor = true;
@@ -153,10 +150,10 @@
             // wantBtn
             // 
             this.wantBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wantBtn.Location = new System.Drawing.Point(656, 533);
-            this.wantBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.wantBtn.Location = new System.Drawing.Point(875, 653);
+            this.wantBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.wantBtn.Name = "wantBtn";
-            this.wantBtn.Size = new System.Drawing.Size(95, 41);
+            this.wantBtn.Size = new System.Drawing.Size(127, 50);
             this.wantBtn.TabIndex = 18;
             this.wantBtn.Text = "Ενδιαφέρομαι ";
             this.wantBtn.UseVisualStyleBackColor = true;
@@ -166,20 +163,19 @@
             this.locationTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.locationTxt.AutoSize = true;
             this.locationTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
-            this.locationTxt.Location = new System.Drawing.Point(650, 238);
-            this.locationTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.locationTxt.Location = new System.Drawing.Point(867, 290);
             this.locationTxt.Name = "locationTxt";
-            this.locationTxt.Size = new System.Drawing.Size(91, 22);
+            this.locationTxt.Size = new System.Drawing.Size(114, 29);
             this.locationTxt.TabIndex = 17;
             this.locationTxt.Text = "Location";
             // 
             // imagePictureBox
             // 
             this.imagePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imagePictureBox.Location = new System.Drawing.Point(142, 130);
-            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.imagePictureBox.Location = new System.Drawing.Point(189, 157);
+            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imagePictureBox.Name = "imagePictureBox";
-            this.imagePictureBox.Size = new System.Drawing.Size(465, 268);
+            this.imagePictureBox.Size = new System.Drawing.Size(620, 330);
             this.imagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.imagePictureBox.TabIndex = 16;
             this.imagePictureBox.TabStop = false;
@@ -189,10 +185,9 @@
             this.dateTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTxt.AutoSize = true;
             this.dateTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.dateTxt.Location = new System.Drawing.Point(650, 130);
-            this.dateTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.dateTxt.Location = new System.Drawing.Point(867, 157);
             this.dateTxt.Name = "dateTxt";
-            this.dateTxt.Size = new System.Drawing.Size(52, 22);
+            this.dateTxt.Size = new System.Drawing.Size(64, 29);
             this.dateTxt.TabIndex = 15;
             this.dateTxt.Text = "Date";
             // 
@@ -201,10 +196,9 @@
             this.titleTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.titleTxt.AutoSize = true;
             this.titleTxt.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.titleTxt.Location = new System.Drawing.Point(134, 68);
-            this.titleTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.titleTxt.Location = new System.Drawing.Point(179, 81);
             this.titleTxt.Name = "titleTxt";
-            this.titleTxt.Size = new System.Drawing.Size(85, 37);
+            this.titleTxt.Size = new System.Drawing.Size(100, 46);
             this.titleTxt.TabIndex = 14;
             this.titleTxt.Text = "Title";
             // 
@@ -213,10 +207,9 @@
             this.categoryTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.categoryTxt.AutoSize = true;
             this.categoryTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
-            this.categoryTxt.Location = new System.Drawing.Point(650, 294);
-            this.categoryTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.categoryTxt.Location = new System.Drawing.Point(867, 359);
             this.categoryTxt.Name = "categoryTxt";
-            this.categoryTxt.Size = new System.Drawing.Size(95, 22);
+            this.categoryTxt.Size = new System.Drawing.Size(116, 29);
             this.categoryTxt.TabIndex = 28;
             this.categoryTxt.Text = "Category";
             // 
@@ -229,16 +222,17 @@
             this.favlist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.favlist_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.favlist_button.Image = ((System.Drawing.Image)(resources.GetObject("favlist_button.Image")));
-            this.favlist_button.Location = new System.Drawing.Point(988, 36);
+            this.favlist_button.Location = new System.Drawing.Point(1214, 84);
+            this.favlist_button.Margin = new System.Windows.Forms.Padding(4);
             this.favlist_button.Name = "favlist_button";
-            this.favlist_button.Size = new System.Drawing.Size(45, 36);
-            this.favlist_button.TabIndex = 30;
+            this.favlist_button.Size = new System.Drawing.Size(60, 44);
+            this.favlist_button.TabIndex = 31;
             this.favlist_button.UseVisualStyleBackColor = false;
-            this.favlist_button.Click += new System.EventHandler(this.favlist_button_Click_1);
+            this.favlist_button.Click += new System.EventHandler(this.favlist_button_Click);
             // 
             // UserControlShowEventPreview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.favlist_button);
             this.Controls.Add(this.categoryTxt);
@@ -256,9 +250,9 @@
             this.Controls.Add(this.imagePictureBox);
             this.Controls.Add(this.dateTxt);
             this.Controls.Add(this.titleTxt);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlShowEventPreview";
-            this.Size = new System.Drawing.Size(1090, 643);
+            this.Size = new System.Drawing.Size(1453, 785);
             this.Load += new System.EventHandler(this.UserControlShowEventPreview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).EndInit();
             this.ResumeLayout(false);

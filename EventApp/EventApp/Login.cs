@@ -24,10 +24,11 @@ namespace EventApp
         }
         public static string username = "";
         public static string password = "";
+        public static Boolean isAdmin;
         public static int UserID = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             String Username = "";
             String Password = "";
             String Email = "";
@@ -35,7 +36,6 @@ namespace EventApp
             String LastName = "";
             String Location = "";
             
-
             connection.Open();
 
             OleDbCommand command = new OleDbCommand();
@@ -63,8 +63,11 @@ namespace EventApp
                 {  LastName = (String)reader["LastName"];   }
                 if (!DBNull.Value.Equals(reader["Location"]))
                 {  Location = (String)reader["Location"];   }
+                isAdmin = (Boolean)reader["isAdmin"]; 
             }
+
             reader.Close();
+
             if (count == 1)
             {
                 username = txt_Username.Text;

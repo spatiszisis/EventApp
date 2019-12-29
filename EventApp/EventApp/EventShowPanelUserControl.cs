@@ -16,7 +16,6 @@ namespace EventApp
     {
         private OleDbConnection connection = new OleDbConnection();
         Connect1 con = new Connect1();
-        public int eventid = 0;
         public EventShowPanelUserControl()
         {
             InitializeComponent();
@@ -69,6 +68,9 @@ namespace EventApp
             this.BackColor = Color.White;
         }
 
+        public int userid = 0;
+        public static int eventid = 0;
+
         private void EventShowPanelUserControl_Click(object sender, EventArgs e)
         {
 
@@ -95,21 +97,23 @@ namespace EventApp
 
                 reader.Close();
 
-
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
                 command.CommandText = "insert into DataUser ([UserID],[EventID]) values (@UserID, @EventID)";
-                command.Parameters.AddWithValue("@UserID", Login.UserID);
+                command.Parameters.AddWithValue("@UserID", userid);
                 command.Parameters.AddWithValue("@EventID", eventid);
                 command.Connection = connection;
 
                 command.ExecuteNonQuery();
-
-                connection.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex + " ");
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
             }
 
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))

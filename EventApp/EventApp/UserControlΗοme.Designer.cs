@@ -49,7 +49,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1453, 791);
+            this.pictureBox1.Size = new System.Drawing.Size(1453, 785);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -65,7 +65,7 @@
             this.panel1.Controls.Add(this.categoryCombo);
             this.panel1.Controls.Add(this.locationCombo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(869, 201);
+            this.panel1.Location = new System.Drawing.Point(869, 198);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(451, 377);
@@ -187,7 +187,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlΗοme";
-            this.Size = new System.Drawing.Size(1453, 791);
+            this.Size = new System.Drawing.Size(1453, 785);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

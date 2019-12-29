@@ -71,10 +71,10 @@
             "Politics",
             "Technology",
             "Other"});
-            this.category_box.Location = new System.Drawing.Point(135, 206);
-            this.category_box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.category_box.Location = new System.Drawing.Point(181, 223);
+            this.category_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.category_box.Name = "category_box";
-            this.category_box.Size = new System.Drawing.Size(356, 29);
+            this.category_box.Size = new System.Drawing.Size(473, 35);
             this.category_box.TabIndex = 37;
             this.category_box.Text = "Categories";
             // 
@@ -85,10 +85,10 @@
             this.loadimage_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadimage_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
             this.loadimage_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loadimage_btn.Location = new System.Drawing.Point(717, 459);
-            this.loadimage_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loadimage_btn.Location = new System.Drawing.Point(956, 562);
+            this.loadimage_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loadimage_btn.Name = "loadimage_btn";
-            this.loadimage_btn.Size = new System.Drawing.Size(130, 42);
+            this.loadimage_btn.Size = new System.Drawing.Size(173, 52);
             this.loadimage_btn.TabIndex = 34;
             this.loadimage_btn.Text = "Load Image";
             this.loadimage_btn.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.panel3.Location = new System.Drawing.Point(601, 98);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(801, 118);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(225, 2);
+            this.panel3.Size = new System.Drawing.Size(300, 2);
             this.panel3.TabIndex = 35;
             // 
             // preview_btn
@@ -112,10 +112,10 @@
             this.preview_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.preview_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.preview_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.preview_btn.Location = new System.Drawing.Point(601, 547);
-            this.preview_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.preview_btn.Location = new System.Drawing.Point(801, 670);
+            this.preview_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.preview_btn.Name = "preview_btn";
-            this.preview_btn.Size = new System.Drawing.Size(127, 43);
+            this.preview_btn.Size = new System.Drawing.Size(169, 53);
             this.preview_btn.TabIndex = 29;
             this.preview_btn.Text = "Preview";
             this.preview_btn.UseVisualStyleBackColor = false;
@@ -129,10 +129,10 @@
             this.save_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.save_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
             this.save_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.save_btn.Location = new System.Drawing.Point(806, 547);
-            this.save_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.save_btn.Location = new System.Drawing.Point(1075, 670);
+            this.save_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(156, 43);
+            this.save_btn.Size = new System.Drawing.Size(208, 53);
             this.save_btn.TabIndex = 30;
             this.save_btn.Text = "Save/Continue";
             this.save_btn.UseVisualStyleBackColor = false;
@@ -142,20 +142,20 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.panel2.Location = new System.Drawing.Point(135, 487);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(181, 550);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(225, 2);
+            this.panel2.Size = new System.Drawing.Size(300, 2);
             this.panel2.TabIndex = 32;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(135, 98);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(181, 122);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(225, 2);
+            this.panel1.Size = new System.Drawing.Size(300, 2);
             this.panel1.TabIndex = 31;
             // 
             // location_txt
@@ -174,13 +174,12 @@
             "Aleksandroupoli"});
             this.location_txt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.location_txt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.location_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.location_txt.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
+            this.location_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.location_txt.ForeColor = System.Drawing.Color.Gray;
-            this.location_txt.Location = new System.Drawing.Point(135, 506);
-            this.location_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.location_txt.Location = new System.Drawing.Point(180, 614);
+            this.location_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.location_txt.Name = "location_txt";
-            this.location_txt.Size = new System.Drawing.Size(355, 23);
+            this.location_txt.Size = new System.Drawing.Size(473, 30);
             this.location_txt.TabIndex = 27;
             this.location_txt.Text = "Search for location";
             this.location_txt.Click += new System.EventHandler(this.location_txt_Click);
@@ -188,14 +187,13 @@
             // description_txt
             // 
             this.description_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.description_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.description_txt.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
+            this.description_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.description_txt.ForeColor = System.Drawing.Color.Gray;
-            this.description_txt.Location = new System.Drawing.Point(135, 259);
-            this.description_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.description_txt.Location = new System.Drawing.Point(181, 288);
+            this.description_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.description_txt.Multiline = true;
             this.description_txt.Name = "description_txt";
-            this.description_txt.Size = new System.Drawing.Size(355, 124);
+            this.description_txt.Size = new System.Drawing.Size(473, 153);
             this.description_txt.TabIndex = 22;
             this.description_txt.Text = "Add Description...";
             this.description_txt.Click += new System.EventHandler(this.description_txt_Click);
@@ -206,10 +204,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label2.Location = new System.Drawing.Point(128, 442);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(171, 494);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 46);
+            this.label2.Size = new System.Drawing.Size(196, 58);
             this.label2.TabIndex = 26;
             this.label2.Text = "Location";
             // 
@@ -219,10 +216,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label3.Location = new System.Drawing.Point(593, 53);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(791, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 46);
+            this.label3.Size = new System.Drawing.Size(305, 58);
             this.label3.TabIndex = 25;
             this.label3.Text = "Date and Time";
             // 
@@ -232,24 +228,22 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label1.Location = new System.Drawing.Point(128, 53);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(171, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 46);
+            this.label1.Size = new System.Drawing.Size(221, 58);
             this.label1.TabIndex = 23;
             this.label1.Text = "Basic info";
             // 
             // title_txt
             // 
             this.title_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.title_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.title_txt.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.title_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.title_txt.ForeColor = System.Drawing.Color.Gray;
-            this.title_txt.Location = new System.Drawing.Point(135, 132);
-            this.title_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.title_txt.Location = new System.Drawing.Point(181, 159);
+            this.title_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.title_txt.Multiline = true;
             this.title_txt.Name = "title_txt";
-            this.title_txt.Size = new System.Drawing.Size(355, 24);
+            this.title_txt.Size = new System.Drawing.Size(473, 30);
             this.title_txt.TabIndex = 24;
             this.title_txt.Text = "Event Title";
             this.title_txt.Click += new System.EventHandler(this.title_txt_Click);
@@ -258,24 +252,23 @@
             // 
             this.dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker.Location = new System.Drawing.Point(601, 132);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker.Location = new System.Drawing.Point(801, 159);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(222, 20);
+            this.dateTimePicker.Size = new System.Drawing.Size(295, 22);
             this.dateTimePicker.TabIndex = 36;
             this.dateTimePicker.Value = new System.DateTime(2019, 12, 3, 0, 0, 0, 0);
             // 
             // time_txt
             // 
             this.time_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.time_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.time_txt.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
+            this.time_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.time_txt.ForeColor = System.Drawing.Color.Gray;
-            this.time_txt.Location = new System.Drawing.Point(601, 174);
-            this.time_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.time_txt.Location = new System.Drawing.Point(801, 207);
+            this.time_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.time_txt.Multiline = true;
             this.time_txt.Name = "time_txt";
-            this.time_txt.Size = new System.Drawing.Size(355, 24);
+            this.time_txt.Size = new System.Drawing.Size(473, 30);
             this.time_txt.TabIndex = 28;
             this.time_txt.Text = "Time";
             this.time_txt.Click += new System.EventHandler(this.time_txt_Click);
@@ -284,27 +277,26 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(385, 601);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(513, 737);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.Size = new System.Drawing.Size(0, 17);
             this.label4.TabIndex = 38;
             // 
             // picBox
             // 
             this.picBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picBox.Location = new System.Drawing.Point(601, 217);
-            this.picBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBox.Location = new System.Drawing.Point(801, 263);
+            this.picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(355, 221);
+            this.picBox.Size = new System.Drawing.Size(473, 272);
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox.TabIndex = 39;
             this.picBox.TabStop = false;
             // 
             // UserControlCreateEvent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.label4);
@@ -323,9 +315,10 @@
             this.Controls.Add(this.title_txt);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.time_txt);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlCreateEvent";
-            this.Size = new System.Drawing.Size(1090, 643);
+            this.Size = new System.Drawing.Size(1453, 785);
+            this.Load += new System.EventHandler(this.UserControlCreateEvent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

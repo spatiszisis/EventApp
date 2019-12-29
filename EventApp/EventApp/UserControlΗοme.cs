@@ -27,8 +27,7 @@ namespace EventApp
             //SetValueDay = dateTimePicker1.Value;
             SetValueLocation = locationCombo.Text;
             SetValueCategory = categoryCombo.Text;
-            UserControlShowEvents us = new UserControlShowEvents();
-            us.Show();
+            
 
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
             {

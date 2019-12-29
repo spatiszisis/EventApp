@@ -34,13 +34,15 @@
             this.onvalue = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.checkboxchangeborderstyleform = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(96, 154);
+            this.panel1.Location = new System.Drawing.Point(96, 151);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 3);
             this.panel1.TabIndex = 17;
@@ -51,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label1.Location = new System.Drawing.Point(86, 93);
+            this.label1.Location = new System.Drawing.Point(86, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 58);
             this.label1.TabIndex = 16;
@@ -97,21 +99,31 @@
             this.checkboxchangeborderstyleform.UseVisualStyleBackColor = true;
             this.checkboxchangeborderstyleform.CheckedChanged += new System.EventHandler(this.checkboxchangeborderstyleform_CheckedChanged);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.onvalue);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.checkboxchangeborderstyleform);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1453, 785);
+            this.panel2.TabIndex = 22;
+            // 
             // UserControlSettingsApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.checkboxchangeborderstyleform);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.onvalue);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
             this.Name = "UserControlSettingsApp";
-            this.Size = new System.Drawing.Size(1453, 791);
+            this.Size = new System.Drawing.Size(1453, 785);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -123,5 +135,6 @@
         private System.Windows.Forms.CheckBox onvalue;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkboxchangeborderstyleform;
+        private System.Windows.Forms.Panel panel2;
     }
 }

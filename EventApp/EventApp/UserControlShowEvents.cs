@@ -36,10 +36,21 @@ namespace EventApp
 
         private void UserControlShowEvents_Load(object sender, EventArgs e)
         {
+            //Dark Mode
+            int c = (int)UserControlSettingsApp.color;
+            if (c == 0)
+            {
+                this.BackColor = Color.Black;
+            }
+            else if (c == 1)
+            {
+                this.BackColor = Color.White;
+            }
             try
             {
                 
                 connection.Open();
+                //Emfanisi apo to DataUser me vasi ta click tou xristi
 
                 OleDbCommand command2 = new OleDbCommand();
                 command2.Connection = connection;
@@ -88,6 +99,8 @@ namespace EventApp
                 }
                 reader2.Close();
 
+                //Emfanisi tou search erwtimatos apo to homepage
+
                 OleDbCommand command = new OleDbCommand();
                 OleDbCommand command1 = new OleDbCommand();
                 command.Connection = connection;
@@ -107,13 +120,13 @@ namespace EventApp
                     EventShowPanelUserControl listitems = new EventShowPanelUserControl();
                     for (int i = 0; i < countEvents; i++)
                     {
-                        listitems.Title     = reader["Title"].ToString();
-                        listitems.Location  = reader["Location"].ToString();
-                        listitems.Day       = reader["Day"].ToString();
-                        listitems.Time      = reader["Time"].ToString();
-                        icon = byteArrayToImage((byte[])reader["images"]);
-                        listitems.Icon = icon;
-                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+                        listitems.Title         = reader["Title"].ToString();
+                        listitems.Location      = reader["Location"].ToString();
+                        listitems.Day           = reader["Day"].ToString();
+                        listitems.Time          = reader["Time"].ToString();
+                        icon                    = byteArrayToImage((byte[])reader["images"]);
+                        listitems.Icon          = icon;
+                        listitems.BorderStyle   = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanel1.Controls.Count < 0)
                         {
@@ -125,13 +138,18 @@ namespace EventApp
                         }
                     }
                 }
-                connection.Dispose();
                 reader.Close();
-                connection.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex + " ");
+            }
+            finally
+            {
+                UserControlΗοme.SetValueLocation = "";
+                UserControlΗοme.SetValueCategory = "";
+                connection.Close();
+                connection.Dispose();
             }
         }
 

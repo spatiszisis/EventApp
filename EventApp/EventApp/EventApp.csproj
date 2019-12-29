@@ -130,6 +130,12 @@
     <Compile Include="UserControlCreateEvent.Designer.cs">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlManage.Designer.cs">
+      <DependentUpon>UserControlManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlSettingsApp.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlCreateEvent.resx">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlManage.resx">
+      <DependentUpon>UserControlManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlSettingsApp.resx">
       <DependentUpon>UserControlSettingsApp.cs</DependentUpon>
