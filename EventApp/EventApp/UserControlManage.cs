@@ -94,19 +94,104 @@ namespace EventApp
             return dtEvents;
         }
 
-        
-
-        private void delete_btn_Click(object sender, EventArgs e)
+        private void deleteUsersBtn_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow item in this.dataGridViewUsers.SelectedRows)
+            int selectedIndex = dataGridViewUsers.SelectedRows[0].Index;
+            if (selectedIndex != -1)
             {
-                dataGridViewUsers.Rows.RemoveAt(item.Index);
+                String selected = dataGridViewUsers.SelectedRows[0].Cells[0].Value.ToString();
+                int id = Convert.ToInt32(selected);
+                deleteUsers(id);
             }
+        }
 
-            foreach (DataGridViewRow item in this.dataGridViewEvents.SelectedRows)
+        private void deleteEventsBtn_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = dataGridViewEvents.SelectedRows[0].Index;
+            if (selectedIndex != -1)
             {
-                dataGridViewEvents.Rows.RemoveAt(item.Index);
+                String selected = dataGridViewEvents.SelectedRows[0].Cells[0].Value.ToString();
+                int id = Convert.ToInt32(selected);
+                deleteEvents(id);
             }
+            
+        }
+        private void deleteUsers(int id)
+        {
+            try
+            {
+                connection.Open();
+
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                string query = "delete * from Users where [UsersID] = " + id + "";
+                command.CommandText = query;
+
+                //PROMPT FOR CONFIRMATION BEFORE DELETING
+                if (MessageBox.Show(@"Are you sure to permanently delete this?", @"DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show(@"Successfully deleted");
+                    }
+                }
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                connection.Close();
+            }
+        }
+
+        private void deleteEvents(int id)
+        {
+            try
+            {
+                connection.Open();
+
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                string query = "delete * from Events where [EventsID] = " + id + "";
+                command.CommandText = query;
+
+                //PROMPT FOR CONFIRMATION BEFORE DELETING
+                if (MessageBox.Show(@"Are you sure to permanently delete this?", @"DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show(@"Successfully deleted");
+                    }
+                }
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                connection.Close();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlManage"))
+            {
+                UserControlManage scse = new UserControlManage();
+                scse.Dock = DockStyle.Fill;
+                HomePage.Instance.PnlContainer.Controls.Add(scse);
+            }
+            HomePage.Instance.PnlContainer.Controls["UserControlManage"].BringToFront();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlManage"))
+            {
+                UserControlManage scse = new UserControlManage();
+                scse.Dock = DockStyle.Fill;
+                HomePage.Instance.PnlContainer.Controls.Add(scse);
+            }
+            HomePage.Instance.PnlContainer.Controls["UserControlManage"].BringToFront();
         }
     }
 }
