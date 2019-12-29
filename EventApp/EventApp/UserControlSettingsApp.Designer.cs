@@ -72,7 +72,7 @@
             // 
             // onvalue
             // 
-            this.onvalue.Location = new System.Drawing.Point(286, 256);
+            this.onvalue.Location = new System.Drawing.Point(504, 254);
             this.onvalue.Name = "onvalue";
             this.onvalue.Size = new System.Drawing.Size(18, 31);
             this.onvalue.TabIndex = 19;
@@ -92,7 +92,7 @@
             // 
             // checkboxchangeborderstyleform
             // 
-            this.checkboxchangeborderstyleform.Location = new System.Drawing.Point(409, 334);
+            this.checkboxchangeborderstyleform.Location = new System.Drawing.Point(504, 334);
             this.checkboxchangeborderstyleform.Name = "checkboxchangeborderstyleform";
             this.checkboxchangeborderstyleform.Size = new System.Drawing.Size(18, 31);
             this.checkboxchangeborderstyleform.TabIndex = 21;
