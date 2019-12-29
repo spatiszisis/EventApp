@@ -25,11 +25,11 @@ namespace EventApp
         public UserControlShowEvents us9 = new UserControlShowEvents();
         public UserControlΗοme us10 = new UserControlΗοme();
         */
-        public static int color; // Gia to xrwma
-        public static int gram; // Gia tin grammatoseira
+        public static int color = 1; // Gia to xrwma
+        public static int gram = 1; // Gia tin grammatoseira
         public UserControlSettingsApp()
         {
-            InitializeComponent();
+            InitializeComponent();   
         }
 
         private void onvalue_CheckedChanged(object sender, EventArgs e)
