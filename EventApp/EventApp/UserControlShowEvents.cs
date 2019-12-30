@@ -153,5 +153,13 @@ namespace EventApp
             }
         }
 
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            UserControlΗοme.SetValueLocation = "";
+            UserControlΗοme.SetValueCategory = "";
+            UserControlΗοme uc = new UserControlΗοme();
+            this.Dispose();
+            uc.Show();
+        }
     }
 }

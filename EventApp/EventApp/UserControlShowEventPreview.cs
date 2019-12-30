@@ -105,5 +105,10 @@ namespace EventApp
                 connection.Close();
             }
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
