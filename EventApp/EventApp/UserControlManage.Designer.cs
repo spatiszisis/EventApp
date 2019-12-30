@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlManage));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.dataGridViewEvents = new System.Windows.Forms.DataGridView();
-            this.delete_btn = new System.Windows.Forms.Button();
+            this.deleteUsersBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.deleteEventsBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEvents)).BeginInit();
             this.panel1.SuspendLayout();
@@ -95,45 +99,50 @@
             // 
             // dataGridViewUsers
             // 
+            this.dataGridViewUsers.AllowUserToDeleteRows = false;
             this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUsers.Location = new System.Drawing.Point(48, 216);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.RowHeadersWidth = 51;
             this.dataGridViewUsers.RowTemplate.Height = 24;
-            this.dataGridViewUsers.Size = new System.Drawing.Size(1171, 150);
+            this.dataGridViewUsers.Size = new System.Drawing.Size(1171, 179);
             this.dataGridViewUsers.TabIndex = 28;
             // 
             // dataGridViewEvents
             // 
+            this.dataGridViewEvents.AllowUserToDeleteRows = false;
             this.dataGridViewEvents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEvents.Location = new System.Drawing.Point(50, 501);
             this.dataGridViewEvents.Name = "dataGridViewEvents";
             this.dataGridViewEvents.RowHeadersWidth = 51;
             this.dataGridViewEvents.RowTemplate.Height = 24;
-            this.dataGridViewEvents.Size = new System.Drawing.Size(1169, 150);
+            this.dataGridViewEvents.Size = new System.Drawing.Size(1169, 177);
             this.dataGridViewEvents.TabIndex = 29;
             // 
-            // delete_btn
+            // deleteUsersBtn
             // 
-            this.delete_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.delete_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.delete_btn.FlatAppearance.BorderSize = 0;
-            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
-            this.delete_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.delete_btn.Location = new System.Drawing.Point(50, 689);
-            this.delete_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(208, 53);
-            this.delete_btn.TabIndex = 31;
-            this.delete_btn.Text = "Delete";
-            this.delete_btn.UseVisualStyleBackColor = false;
-            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
+            this.deleteUsersBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.deleteUsersBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.deleteUsersBtn.FlatAppearance.BorderSize = 0;
+            this.deleteUsersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteUsersBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.deleteUsersBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deleteUsersBtn.Location = new System.Drawing.Point(1011, 167);
+            this.deleteUsersBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteUsersBtn.Name = "deleteUsersBtn";
+            this.deleteUsersBtn.Size = new System.Drawing.Size(208, 44);
+            this.deleteUsersBtn.TabIndex = 31;
+            this.deleteUsersBtn.Text = "Delete Users";
+            this.deleteUsersBtn.UseVisualStyleBackColor = false;
+            this.deleteUsersBtn.Click += new System.EventHandler(this.deleteUsersBtn_Click);
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.delete_btn);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.deleteEventsBtn);
+            this.panel1.Controls.Add(this.deleteUsersBtn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dataGridViewEvents);
             this.panel1.Controls.Add(this.label3);
@@ -144,6 +153,47 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1453, 785);
             this.panel1.TabIndex = 32;
+            // 
+            // deleteEventsBtn
+            // 
+            this.deleteEventsBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.deleteEventsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.deleteEventsBtn.FlatAppearance.BorderSize = 0;
+            this.deleteEventsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteEventsBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.deleteEventsBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deleteEventsBtn.Location = new System.Drawing.Point(1011, 452);
+            this.deleteEventsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteEventsBtn.Name = "deleteEventsBtn";
+            this.deleteEventsBtn.Size = new System.Drawing.Size(208, 44);
+            this.deleteEventsBtn.TabIndex = 32;
+            this.deleteEventsBtn.Text = "Delete Events";
+            this.deleteEventsBtn.UseVisualStyleBackColor = false;
+            this.deleteEventsBtn.Click += new System.EventHandler(this.deleteEventsBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(930, 166);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.TabIndex = 33;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(930, 451);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 44);
+            this.button2.TabIndex = 34;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // UserControlManage
             // 
@@ -169,7 +219,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridViewUsers;
         private System.Windows.Forms.DataGridView dataGridViewEvents;
-        private System.Windows.Forms.Button delete_btn;
+        private System.Windows.Forms.Button deleteUsersBtn;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button deleteEventsBtn;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

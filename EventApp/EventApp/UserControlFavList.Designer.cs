@@ -39,10 +39,9 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.panel1.Location = new System.Drawing.Point(68, 134);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(91, 165);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(338, 2);
+            this.panel1.Size = new System.Drawing.Size(450, 3);
             this.panel1.TabIndex = 19;
             // 
             // label1
@@ -51,20 +50,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.label1.Location = new System.Drawing.Point(59, 84);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(79, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(334, 46);
+            this.label1.Size = new System.Drawing.Size(420, 58);
             this.label1.TabIndex = 18;
             this.label1.Text = "Your favorite events";
             // 
             // flowLayoutPanelFav
             // 
             this.flowLayoutPanelFav.AutoScroll = true;
-            this.flowLayoutPanelFav.Location = new System.Drawing.Point(13, 166);
-            this.flowLayoutPanelFav.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelFav.Location = new System.Drawing.Point(3, 257);
             this.flowLayoutPanelFav.Name = "flowLayoutPanelFav";
-            this.flowLayoutPanelFav.Size = new System.Drawing.Size(1063, 436);
+            this.flowLayoutPanelFav.Size = new System.Drawing.Size(1426, 276);
             this.flowLayoutPanelFav.TabIndex = 28;
             // 
             // panel2
@@ -74,19 +71,17 @@
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1090, 638);
+            this.panel2.Size = new System.Drawing.Size(1453, 785);
             this.panel2.TabIndex = 29;
             // 
             // UserControlFavList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlFavList";
-            this.Size = new System.Drawing.Size(1090, 638);
+            this.Size = new System.Drawing.Size(1453, 785);
             this.Load += new System.EventHandler(this.UserControlFavList_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
