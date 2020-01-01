@@ -133,6 +133,7 @@ namespace EventApp
                     if (command.ExecuteNonQuery() > 0)
                     {
                         MessageBox.Show(@"Successfully deleted");
+                        dataGridViewUsers.Refresh();
                     }
                 }
                 connection.Close();
@@ -161,6 +162,7 @@ namespace EventApp
                     if (command.ExecuteNonQuery() > 0)
                     {
                         MessageBox.Show(@"Successfully deleted");
+                        dataGridViewEvents.Refresh();
                     }
                 }
                 connection.Close();
@@ -174,26 +176,14 @@ namespace EventApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-            //this.Refresh();
-            /*if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlManage"))
-            {
-                UserControlManage scse = new UserControlManage();
-                scse.Dock = DockStyle.Fill;
-                HomePage.Instance.PnlContainer.Controls.Add(scse);
-            }
-            HomePage.Instance.PnlContainer.Controls["UserControlManage"].BringToFront();*/
+            UserControlManage scse = new UserControlManage();
+            scse.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlManage"))
-            {
-                UserControlManage scse = new UserControlManage();
-                scse.Dock = DockStyle.Fill;
-                HomePage.Instance.PnlContainer.Controls.Add(scse);
-            }
-            HomePage.Instance.PnlContainer.Controls["UserControlManage"].BringToFront();
+            UserControlManage scse = new UserControlManage();
+            scse.Show();
         }
     }
 }

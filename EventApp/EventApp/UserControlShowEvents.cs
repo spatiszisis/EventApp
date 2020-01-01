@@ -105,40 +105,79 @@ namespace EventApp
                 OleDbCommand command1 = new OleDbCommand();
                 command.Connection = connection;
                 command1.Connection = connection;
-                string query = "select * from Events where [Category] = @Category and [Location] = @Location";
-                command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueCategory);
-                //command.Parameters.AddWithValue("@Day", UserControlΗοme.SetValueDay);  and [Day] = @Day 
-                command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueLocation);
-                string query1 = "select count(*) from Events";
-                command.CommandText = query;
-                command1.CommandText = query1;
-                int countEvents = (int)command1.ExecuteScalar();
-                OleDbDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
+                string a = "All Events";
+                if (UserControlΗοme.SetValueCategory.Equals(a))
                 {
-                    EventShowPanelUserControl listitems = new EventShowPanelUserControl();
-                    for (int i = 0; i < countEvents; i++)
-                    {
-                        listitems.Title         = reader["Title"].ToString();
-                        listitems.Location      = reader["Location"].ToString();
-                        listitems.Day           = reader["Day"].ToString();
-                        listitems.Time          = reader["Time"].ToString();
-                        icon                    = byteArrayToImage((byte[])reader["images"]);
-                        listitems.Icon          = icon;
-                        listitems.BorderStyle   = System.Windows.Forms.BorderStyle.Fixed3D;
+                    string query = "select * from Events";
+                    string query1 = "select count(*) from Events";
+                    command.CommandText = query;
+                    command1.CommandText = query1;
+                    int countEvents = (int)command1.ExecuteScalar();
+                    OleDbDataReader reader = command.ExecuteReader();
 
-                        if (flowLayoutPanel1.Controls.Count < 0)
+                    while (reader.Read())
+                    {
+                        EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                        for (int i = 0; i < countEvents; i++)
                         {
-                            flowLayoutPanel1.Controls.Clear();
-                        }
-                        else
-                        {
-                            flowLayoutPanel1.Controls.Add(listitems);
+                            listitems.Title         = reader["Title"].ToString();
+                            listitems.Location      = reader["Location"].ToString();
+                            listitems.Day           = reader["Day"].ToString();
+                            listitems.Time          = reader["Time"].ToString();
+                            icon                    = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon          = icon;
+                            listitems.BorderStyle   = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                            if (flowLayoutPanel1.Controls.Count < 0)
+                            {
+                                flowLayoutPanel1.Controls.Clear();
+                            }
+                            else
+                            {
+                                flowLayoutPanel1.Controls.Add(listitems);
+                            }
                         }
                     }
+                    reader.Close();
                 }
-                reader.Close();
+                else
+                {
+                    string query = "select * from Events where [Category] = @Category and [Day] = @Day and [Location] = @Location";
+                    command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueCategory);
+                    command.Parameters.AddWithValue("@Day", UserControlΗοme.SetValueDay);   
+                    command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueLocation);
+                    string query1 = "select count(*) from Events";
+                    command.CommandText = query;
+                    command1.CommandText = query1;
+                    int countEvents = (int)command1.ExecuteScalar();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                        for (int i = 0; i < countEvents; i++)
+                        {
+                            listitems.Title             = reader["Title"].ToString();
+                            listitems.Location          = reader["Location"].ToString();
+                            listitems.Day               = reader["Day"].ToString();
+                            listitems.Time              = reader["Time"].ToString();
+                            icon                        = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon              = icon;
+                            listitems.BorderStyle       = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                            if (flowLayoutPanel1.Controls.Count < 0)
+                            {
+                                flowLayoutPanel1.Controls.Clear();
+                            }
+                            else
+                            {
+                                flowLayoutPanel1.Controls.Add(listitems);
+                            }
+                        }
+                    }
+                    reader.Close();
+                }
+                
             }
             catch (Exception ex)
             {
@@ -146,8 +185,6 @@ namespace EventApp
             }
             finally
             {
-                UserControlΗοme.SetValueLocation = "";
-                UserControlΗοme.SetValueCategory = "";
                 connection.Close();
                 connection.Dispose();
             }
@@ -155,11 +192,12 @@ namespace EventApp
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            UserControlΗοme.SetValueLocation = "";
-            UserControlΗοme.SetValueCategory = "";
+            UserControlΗοme.SetValueLocation = null;
+            UserControlΗοme.SetValueCategory = null;
             UserControlΗοme uc = new UserControlΗοme();
             this.Dispose();
             uc.Show();
+            
         }
     }
 }
