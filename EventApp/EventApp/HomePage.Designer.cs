@@ -76,7 +76,7 @@
             this.panel2.Controls.Add(this.Home);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 854);
             this.panel2.TabIndex = 2;
@@ -90,7 +90,7 @@
             this.managerBtn.Image = ((System.Drawing.Image)(resources.GetObject("managerBtn.Image")));
             this.managerBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.managerBtn.Location = new System.Drawing.Point(13, 612);
-            this.managerBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.managerBtn.Margin = new System.Windows.Forms.Padding(4);
             this.managerBtn.Name = "managerBtn";
             this.managerBtn.Size = new System.Drawing.Size(207, 62);
             this.managerBtn.TabIndex = 6;
@@ -146,7 +146,7 @@
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.SidePanel.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.SidePanel.Location = new System.Drawing.Point(0, 235);
-            this.SidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SidePanel.Margin = new System.Windows.Forms.Padding(4);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(13, 73);
             this.SidePanel.TabIndex = 4;
@@ -156,7 +156,7 @@
             this.logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.logo.Image = global::EventApp.Properties.Resources.oie_1895421D1UY7qaw;
             this.logo.Location = new System.Drawing.Point(0, 0);
-            this.logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logo.Margin = new System.Windows.Forms.Padding(4);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(220, 194);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -172,7 +172,7 @@
             this.Contact.Image = global::EventApp.Properties.Resources.icons8_mail_contact_24;
             this.Contact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Contact.Location = new System.Drawing.Point(13, 542);
-            this.Contact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Contact.Margin = new System.Windows.Forms.Padding(4);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(207, 62);
             this.Contact.TabIndex = 4;
@@ -191,7 +191,7 @@
             this.About_Us.Image = global::EventApp.Properties.Resources.icons8_about_24;
             this.About_Us.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.About_Us.Location = new System.Drawing.Point(15, 473);
-            this.About_Us.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.About_Us.Margin = new System.Windows.Forms.Padding(4);
             this.About_Us.Name = "About_Us";
             this.About_Us.Size = new System.Drawing.Size(204, 57);
             this.About_Us.TabIndex = 3;
@@ -210,7 +210,7 @@
             this.Help.Image = global::EventApp.Properties.Resources.icons8_help_24;
             this.Help.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Help.Location = new System.Drawing.Point(15, 398);
-            this.Help.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Help.Margin = new System.Windows.Forms.Padding(4);
             this.Help.Name = "Help";
             this.Help.Size = new System.Drawing.Size(204, 63);
             this.Help.TabIndex = 2;
@@ -229,7 +229,7 @@
             this.Create_Event.Image = global::EventApp.Properties.Resources.icons8_create_24;
             this.Create_Event.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Create_Event.Location = new System.Drawing.Point(15, 321);
-            this.Create_Event.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Create_Event.Margin = new System.Windows.Forms.Padding(4);
             this.Create_Event.Name = "Create_Event";
             this.Create_Event.Size = new System.Drawing.Size(204, 64);
             this.Create_Event.TabIndex = 1;
@@ -249,7 +249,7 @@
             this.Home.Image = global::EventApp.Properties.Resources.icons8_home_24;
             this.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Home.Location = new System.Drawing.Point(15, 236);
-            this.Home.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Home.Margin = new System.Windows.Forms.Padding(4);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(204, 64);
             this.Home.TabIndex = 0;
@@ -267,7 +267,7 @@
             this.panel3.Controls.Add(this.User_label);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(220, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1453, 69);
             this.panel3.TabIndex = 3;
@@ -414,7 +414,7 @@
             this.WelcomeLabel.AutoSize = true;
             this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.WelcomeLabel.Location = new System.Drawing.Point(87, 21);
+            this.WelcomeLabel.Location = new System.Drawing.Point(33, 23);
             this.WelcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WelcomeLabel.Name = "WelcomeLabel";
             this.WelcomeLabel.Size = new System.Drawing.Size(121, 29);
@@ -426,7 +426,7 @@
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.NameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.NameLabel.Location = new System.Drawing.Point(227, 21);
+            this.NameLabel.Location = new System.Drawing.Point(202, 22);
             this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(0, 29);

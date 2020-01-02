@@ -69,6 +69,12 @@
     <Compile Include="AccessFormToGoogleAccount.Designer.cs">
       <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="AuthenticationContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthenticationContact.Designer.cs">
+      <DependentUpon>AuthenticationContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -168,6 +174,9 @@
     </Compile>
     <EmbeddedResource Include="AccessFormToGoogleAccount.resx">
       <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthenticationContact.resx">
+      <DependentUpon>AuthenticationContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventShowPanelUserControl.resx">
       <DependentUpon>EventShowPanelUserControl.cs</DependentUpon>
