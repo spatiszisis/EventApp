@@ -41,16 +41,13 @@ namespace EventApp
                 label20.Font = new Font("Arial", 11, FontStyle.Bold);
                 label21.Font = new Font("Arial", 11, FontStyle.Bold);
                 label22.Font = new Font("Arial", 11, FontStyle.Bold);
-                label23.Font = new Font("Arial", 11, FontStyle.Bold);
                 label13.Font = new Font("Arial", 11, FontStyle.Regular);
                 label12.Font = new Font("Arial", 11, FontStyle.Regular);
                 label11.Font = new Font("Arial", 11, FontStyle.Regular);
                 label10.Font = new Font("Arial", 11, FontStyle.Regular);
                 label5.Font = new Font("Arial", 11, FontStyle.Regular);
                 label7.Font = new Font("Arial", 11, FontStyle.Regular);
-                label9.Font = new Font("Arial", 11, FontStyle.Regular);
                 label14.Font = new Font("Arial", 11, FontStyle.Regular);
-                label15.Font = new Font("Arial", 11, FontStyle.Regular);
                 label16.Font = new Font("Arial", 11, FontStyle.Regular);
             }
             else if (g == 1)
@@ -63,16 +60,13 @@ namespace EventApp
                 label20.Font = new Font("Arial", 9, FontStyle.Bold);
                 label21.Font = new Font("Arial", 9, FontStyle.Bold);
                 label22.Font = new Font("Arial", 9, FontStyle.Bold);
-                label23.Font = new Font("Arial", 9, FontStyle.Bold);
                 label13.Font = new Font("Arial", 9, FontStyle.Regular);
                 label12.Font = new Font("Arial", 9, FontStyle.Regular);
                 label11.Font = new Font("Arial", 9, FontStyle.Regular);
                 label10.Font = new Font("Arial", 9, FontStyle.Regular);
                 label5.Font = new Font("Arial", 9, FontStyle.Regular);
                 label7.Font = new Font("Arial", 9, FontStyle.Regular);
-                label9.Font = new Font("Arial", 9, FontStyle.Regular);
                 label14.Font = new Font("Arial", 9, FontStyle.Regular);
-                label15.Font = new Font("Arial", 9, FontStyle.Regular);
                 label16.Font = new Font("Arial", 9, FontStyle.Regular);
             }
         }
