@@ -28,7 +28,6 @@ namespace EventApp
         
         private void button1_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 MailMessage mail = new MailMessage(txt_Username.Text, "adopseteam@gmail.com", UserControlContact.Subject, UserControlContact.Body);
@@ -69,7 +68,6 @@ namespace EventApp
 
         private void txt_Password_TextChanged(object sender, EventArgs e)
         {
-            
             txt_Password.PasswordChar = '*';
         }
     }
