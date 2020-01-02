@@ -108,7 +108,7 @@ namespace EventApp
                         connection.Close();
                         connection.Dispose();
                         this.Hide();
-                        HomePage f2 = new HomePage();
+                        Login f2 = new Login();
                         f2.Show();
                         connection.Close();
                     }
