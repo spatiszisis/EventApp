@@ -35,34 +35,18 @@ namespace EventApp
             messageTxt.Clear();
         }
 
+        public static string Username = "";
+        public static string Subject = "";
+        public static string Body = "";
+
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                client.EnableSsl = true;
-                client.Timeout = 10000;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("adopseteam@gmail.com", "Asd123456.");
-                MailMessage msg = new MailMessage();
-                msg.To.Add(emailTxt.Text);
-                msg.From = new MailAddress("adopseteam@gmail.com"); 
-                msg.Subject = subjectTxt.Text;
-                msg.Body = messageTxt.Text;
-                client.Send(msg);
-                MessageBox.Show("Successfully Sent. ");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                emailTxt.Text = "example@gmail.com";
-                subjectTxt.Text = "Give an subject";
-                messageTxt.Text = "Leave your message...";
-            }
+            Username = emailTxt.Text;
+            Subject = subjectTxt.Text;
+            Body = messageTxt.Text;
+
+            AuthenticationContact au = new AuthenticationContact();
+            au.Show();
         }
 
         private void UserControlContact_Load(object sender, EventArgs e)

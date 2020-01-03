@@ -10,6 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Connect;
+using System.Threading.Tasks;
+using System.Data.OleDb;
+using System.IO;
+using Connect;
+using System.Windows.Documents;
 
 namespace EventApp
 {
@@ -18,7 +23,7 @@ namespace EventApp
     {
 
         static HomePage _obj;
-       
+
 
         public static HomePage Instance
         {
@@ -48,7 +53,7 @@ namespace EventApp
             managerBtn.Visible = false;
         }
 
-        
+
         private void HomePage_Load(object sender, EventArgs e)
         {
             _obj = this;
@@ -57,7 +62,7 @@ namespace EventApp
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
 
-            if(Login.isAdmin == true)
+            if (Login.isAdmin == true)
             {
                 managerBtn.Visible = true;
             }
@@ -70,7 +75,7 @@ namespace EventApp
             Home.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
             Home.ForeColor = Color.Black;
         }
-        
+
         private void Home_MouseLeave(object sender, EventArgs e)
         {
             Home.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
@@ -86,8 +91,8 @@ namespace EventApp
         {
             Create_Event.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
             Create_Event.ForeColor = Color.Snow;
-        } 
-        
+        }
+
         private void Help_MouseHover(object sender, EventArgs e)
         {
             Help.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
@@ -99,16 +104,16 @@ namespace EventApp
             Help.BackColor = Color.FromArgb(87, 96, 122);  //epanafora tou xrwmatos otan fygei to pontiki
             Help.ForeColor = Color.Snow;
         }
-        
+
         private void About_Us_MouseHover(object sender, EventArgs e)
         {
-            About_Us.BackColor = Color.FromArgb(85, 61, 69);   
+            About_Us.BackColor = Color.FromArgb(85, 61, 69);
             About_Us.ForeColor = Color.Black;
         }
-        
+
         private void About_Us_MouseLeave(object sender, EventArgs e)
         {
-            About_Us.BackColor = Color.FromArgb(87, 96, 122);  
+            About_Us.BackColor = Color.FromArgb(87, 96, 122);
             About_Us.ForeColor = Color.Snow;
         }
 
@@ -242,17 +247,17 @@ namespace EventApp
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
-        { 
-         
-                 this.Hide();
-                 Login.username = "";
-                 Login.password = "";
-                 Login lgform = new Login();
-                 lgform.Show();
+        {
+
+            this.Hide();
+            Login.username = "";
+            Login.password = "";
+            Login lgform = new Login();
+            lgform.Show();
         }
 
         //Telos Exit, Log Out  
@@ -264,29 +269,108 @@ namespace EventApp
             searchTxt.Clear();
         }
 
+        Image icon;
+
+        private Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
+        }
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            connection.ConnectionString = con.ConnectString;
-            OleDbCommand command = new OleDbCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT * FROM Events";
-            command.Connection = connection;
-            connection.Open();
 
-            if(searchTxt.Text != null)
+            /*if (searchTxt.Text != null)
             {
+                connection.ConnectionString = con.ConnectString;
+                OleDbCommand command = new OleDbCommand();
+                OleDbCommand command1 = new OleDbCommand();
+                command.CommandType = CommandType.Text;
+                command.Connection = connection;
+                connection.Open();
+
+                string query = "select * from Events where [Category] = @Category and [Location] = @Location";
+                command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueCategory);
+                command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueLocation);
+                string query1 = "select count(*) from Events";
+                command.CommandText = query;
+                command1.CommandText = query1;
+                int countEvents = (int)command1.ExecuteScalar();
                 OleDbDataReader reader = command.ExecuteReader();
+
                 while (reader.Read())
-                { 
-                    //to afisa....auto einai gia to search
+                {
+                    EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                    for (int i = 0; i < countEvents; i++)
+                    {
+                        listitems.Title = reader["Title"].ToString();
+                        listitems.Location = reader["Location"].ToString();
+                        listitems.Day = reader["Day"].ToString();
+                        listitems.Time = reader["Time"].ToString();
+                        icon = byteArrayToImage((byte[])reader["images"]);
+                        listitems.Icon = icon;
+                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                        if (UserControlShowEvents.flowLayoutPanel1.Controls.Count < 0)
+                        {
+                            UserControlShowEvents.flowLayoutPanel1.Controls.Clear();
+                        }
+                        else
+                        {
+                            UserControlShowEvents.flowLayoutPanel1.Controls.Add(listitems);
+                        }
+                    }
                 }
+                reader.Close();
+                connection.Close();
+                if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
+                {
+                    UserControlShowEvents scse = new UserControlShowEvents();
+                    scse.Dock = DockStyle.Fill;
+                    HomePage.Instance.PnlContainer.Controls.Add(scse);
+                }
+                HomePage.Instance.PnlContainer.Controls["UserControlShowEvents"].BringToFront();
+            }*/
+
+
+            if (searchTxt.Text == "Home")
+            {
+                UserControlΗοme uc = new UserControlΗοme();
+                uc.Dock = DockStyle.Fill;
+                PnlContainer.Controls.Add(uc);
+                uc.BringToFront();
             }
-            connection.Close();
+            else if (searchTxt.Text == "Create Event")
+            {
+                UserControlCreateEvent uc = new UserControlCreateEvent();
+                uc.Dock = DockStyle.Fill;
+                PnlContainer.Controls.Add(uc);
+                uc.BringToFront();
+            }
+            else if (searchTxt.Text == "Help")
+            {
+                UserControlHelp uc = new UserControlHelp();
+                uc.Dock = DockStyle.Fill;
+                PnlContainer.Controls.Add(uc);
+                uc.BringToFront();
+            }
+            else if (searchTxt.Text == "About us")
+            {
+                UserControlAboutUs uc = new UserControlAboutUs();
+                uc.Dock = DockStyle.Fill;
+                PnlContainer.Controls.Add(uc);
+                uc.BringToFront();
+            }
+            else if (searchTxt.Text == "Contact")
+            {
+                UserControlContact uc = new UserControlContact();
+                uc.Dock = DockStyle.Fill;
+                PnlContainer.Controls.Add(uc);
+                uc.BringToFront();
+            }
+
         }
-
-
-
         //Telos Alla Properties 
     }
 }

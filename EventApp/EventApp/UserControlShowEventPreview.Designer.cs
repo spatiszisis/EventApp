@@ -38,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.star1Btn = new System.Windows.Forms.Button();
             this.goBtn = new System.Windows.Forms.Button();
-            this.wantBtn = new System.Windows.Forms.Button();
             this.locationTxt = new System.Windows.Forms.Label();
             this.imagePictureBox = new System.Windows.Forms.PictureBox();
             this.dateTxt = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.categoryTxt = new System.Windows.Forms.Label();
             this.favlist_button = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
+            this.dontgo_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,17 +150,7 @@
             this.goBtn.TabIndex = 19;
             this.goBtn.Text = "Θα πάω";
             this.goBtn.UseVisualStyleBackColor = true;
-            // 
-            // wantBtn
-            // 
-            this.wantBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wantBtn.Location = new System.Drawing.Point(656, 531);
-            this.wantBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.wantBtn.Name = "wantBtn";
-            this.wantBtn.Size = new System.Drawing.Size(95, 41);
-            this.wantBtn.TabIndex = 18;
-            this.wantBtn.Text = "Ενδιαφέρομαι ";
-            this.wantBtn.UseVisualStyleBackColor = true;
+            this.goBtn.Click += new System.EventHandler(this.goBtn_Click);
             // 
             // locationTxt
             // 
@@ -223,14 +213,14 @@
             // 
             // favlist_button
             // 
-            this.favlist_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.favlist_button.BackColor = System.Drawing.SystemColors.Control;
             this.favlist_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.favlist_button.FlatAppearance.BorderSize = 0;
             this.favlist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.favlist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.favlist_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.favlist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.favlist_button.Image = ((System.Drawing.Image)(resources.GetObject("favlist_button.Image")));
-            this.favlist_button.Location = new System.Drawing.Point(910, 68);
+            this.favlist_button.Location = new System.Drawing.Point(910, 34);
             this.favlist_button.Name = "favlist_button";
             this.favlist_button.Size = new System.Drawing.Size(45, 36);
             this.favlist_button.TabIndex = 31;
@@ -241,18 +231,32 @@
             // 
             this.backBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.backBtn.FlatAppearance.BorderSize = 0;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
-            this.backBtn.Location = new System.Drawing.Point(34, 34);
+            this.backBtn.Location = new System.Drawing.Point(35, 34);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(33, 36);
             this.backBtn.TabIndex = 32;
             this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
+            // dontgo_btn
+            // 
+            this.dontgo_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dontgo_btn.Location = new System.Drawing.Point(778, 531);
+            this.dontgo_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.dontgo_btn.Name = "dontgo_btn";
+            this.dontgo_btn.Size = new System.Drawing.Size(93, 41);
+            this.dontgo_btn.TabIndex = 33;
+            this.dontgo_btn.Text = "Δεν θα πάω";
+            this.dontgo_btn.UseVisualStyleBackColor = true;
+            this.dontgo_btn.Click += new System.EventHandler(this.dontgo_btn_Click);
+            // 
             // UserControlShowEventPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dontgo_btn);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.favlist_button);
             this.Controls.Add(this.categoryTxt);
@@ -265,7 +269,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.star1Btn);
             this.Controls.Add(this.goBtn);
-            this.Controls.Add(this.wantBtn);
             this.Controls.Add(this.locationTxt);
             this.Controls.Add(this.imagePictureBox);
             this.Controls.Add(this.dateTxt);
@@ -291,7 +294,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button star1Btn;
         private System.Windows.Forms.Button goBtn;
-        private System.Windows.Forms.Button wantBtn;
         private System.Windows.Forms.Label locationTxt;
         private System.Windows.Forms.PictureBox imagePictureBox;
         private System.Windows.Forms.Label dateTxt;
@@ -299,5 +301,6 @@
         private System.Windows.Forms.Label categoryTxt;
         private System.Windows.Forms.Button favlist_button;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Button dontgo_btn;
     }
 }
