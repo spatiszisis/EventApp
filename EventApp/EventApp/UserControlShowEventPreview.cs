@@ -78,10 +78,10 @@ namespace EventApp
 
                 //Emfanisi Asteriwn
                 OleDbCommand command1 = new OleDbCommand();
-                command1.CommandType = CommandType.Text;
-                command1.CommandText = "select * from Rating where [EventID] = @Eventid";
                 command1.Connection = connection;
+                string query1 = "select * from Rating where [EventID] = @Eventid";
                 command1.Parameters.AddWithValue("@Eventid", EventId);
+                command1.CommandText = query1;
 
                 OleDbDataReader reader1 = command1.ExecuteReader();
 
@@ -119,12 +119,16 @@ namespace EventApp
                         this.star5Btn.Image = new Bitmap(Resources.star);
                     }
                 }
+
                 reader1.Close();
-                connection.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex);
+                connection.Close();
+            }
+            finally
+            {
                 connection.Close();
             }
         }
@@ -161,30 +165,45 @@ namespace EventApp
         {
             int num = 1;
             InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star2Btn_Click(object sender, EventArgs e)
         {
             int num = 2;
             InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star3Btn_Click(object sender, EventArgs e)
         {
             int num = 3;
             InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
+            this.star3Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star4Btn_Click(object sender, EventArgs e)
         {
             int num = 4;
             InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
+            this.star3Btn.Image = new Bitmap(Resources.star);
+            this.star4Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star5Btn_Click(object sender, EventArgs e)
         {
             int num = 5;
             InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
+            this.star3Btn.Image = new Bitmap(Resources.star);
+            this.star4Btn.Image = new Bitmap(Resources.star);
+            this.star5Btn.Image = new Bitmap(Resources.star);
         }
 
         public void InsertRating(int ratingNum)
