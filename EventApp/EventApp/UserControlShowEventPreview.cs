@@ -44,7 +44,14 @@ namespace EventApp
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
             {
-                this.BackColor = Color.Black;
+                this.BackColor = UserControlSettingsApp.darkmodecolor;
+                titleTxt.ForeColor = System.Drawing.Color.White;
+                descriptionTxt.ForeColor = System.Drawing.Color.White;
+                dateTxt.ForeColor = System.Drawing.Color.White;
+                timeTxt.ForeColor = System.Drawing.Color.White;
+                locationTxt.ForeColor = System.Drawing.Color.White;
+                categoryTxt.ForeColor = System.Drawing.Color.White;
+                label4.ForeColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {

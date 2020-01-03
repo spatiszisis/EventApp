@@ -29,7 +29,11 @@ namespace EventApp
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
             {
-                this.BackColor = Color.Black;
+                this.BackColor = UserControlSettingsApp.darkmodecolor;
+                label1.ForeColor = System.Drawing.Color.White;
+                label2.ForeColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
+                label4.ForeColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {
