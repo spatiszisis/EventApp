@@ -1,0 +1,325 @@
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.pdb
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe.config
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.pdb
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.exe
+D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2-master\adopse-omada2-master (1)\adopse-omada2-master\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\adopse\zisis\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\wetransfer-0f2831\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlManage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlManage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlManage.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\zisis\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlManage.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.AuthenticationContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\WindowsBase.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.AuthenticationContact.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.HomePage.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.Login.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.Properties.Resources.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.Registration.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlFavList.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlHelp.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlManage.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsApp.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlSettingsUser.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEventPreview.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlShowEvents.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.csproj.GenerateResource.cache
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\EventApp.exe.config
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\EventApp.exe
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\EventApp.pdb
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\Connect.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\RestSharp.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\WindowsBase.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\Connect.pdb
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\RestSharp.xml
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\RestSharp.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\WindowsBase.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\RestSharp.xml
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.AuthenticationContact.resources
