@@ -31,21 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlShowEventPreview));
             this.timeTxt = new System.Windows.Forms.Label();
             this.descriptionTxt = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.goBtn = new System.Windows.Forms.Button();
+            this.locationTxt = new System.Windows.Forms.Label();
+            this.dateTxt = new System.Windows.Forms.Label();
+            this.titleTxt = new System.Windows.Forms.Label();
+            this.categoryTxt = new System.Windows.Forms.Label();
+            this.backBtn = new System.Windows.Forms.Button();
+            this.favlist_button = new System.Windows.Forms.Button();
             this.star5Btn = new System.Windows.Forms.Button();
             this.star4Btn = new System.Windows.Forms.Button();
             this.star3Btn = new System.Windows.Forms.Button();
             this.star2Btn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.star1Btn = new System.Windows.Forms.Button();
-            this.goBtn = new System.Windows.Forms.Button();
-            this.locationTxt = new System.Windows.Forms.Label();
             this.imagePictureBox = new System.Windows.Forms.PictureBox();
-            this.dateTxt = new System.Windows.Forms.Label();
-            this.titleTxt = new System.Windows.Forms.Label();
-            this.categoryTxt = new System.Windows.Forms.Label();
-            this.favlist_button = new System.Windows.Forms.Button();
-            this.backBtn = new System.Windows.Forms.Button();
             this.dontgo_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.usernumber_label = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,50 +76,6 @@
             this.descriptionTxt.TabIndex = 26;
             this.descriptionTxt.Text = "Description";
             // 
-            // star5Btn
-            // 
-            this.star5Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star5Btn.Image = ((System.Drawing.Image)(resources.GetObject("star5Btn.Image")));
-            this.star5Btn.Location = new System.Drawing.Point(899, 435);
-            this.star5Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.star5Btn.Name = "star5Btn";
-            this.star5Btn.Size = new System.Drawing.Size(56, 28);
-            this.star5Btn.TabIndex = 25;
-            this.star5Btn.UseVisualStyleBackColor = true;
-            // 
-            // star4Btn
-            // 
-            this.star4Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star4Btn.Image = ((System.Drawing.Image)(resources.GetObject("star4Btn.Image")));
-            this.star4Btn.Location = new System.Drawing.Point(838, 435);
-            this.star4Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.star4Btn.Name = "star4Btn";
-            this.star4Btn.Size = new System.Drawing.Size(56, 28);
-            this.star4Btn.TabIndex = 24;
-            this.star4Btn.UseVisualStyleBackColor = true;
-            // 
-            // star3Btn
-            // 
-            this.star3Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star3Btn.Image = ((System.Drawing.Image)(resources.GetObject("star3Btn.Image")));
-            this.star3Btn.Location = new System.Drawing.Point(778, 435);
-            this.star3Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.star3Btn.Name = "star3Btn";
-            this.star3Btn.Size = new System.Drawing.Size(56, 28);
-            this.star3Btn.TabIndex = 23;
-            this.star3Btn.UseVisualStyleBackColor = true;
-            // 
-            // star2Btn
-            // 
-            this.star2Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star2Btn.Image = ((System.Drawing.Image)(resources.GetObject("star2Btn.Image")));
-            this.star2Btn.Location = new System.Drawing.Point(717, 435);
-            this.star2Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.star2Btn.Name = "star2Btn";
-            this.star2Btn.Size = new System.Drawing.Size(56, 28);
-            this.star2Btn.TabIndex = 22;
-            this.star2Btn.UseVisualStyleBackColor = true;
-            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -129,21 +88,10 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Rating";
             // 
-            // star1Btn
-            // 
-            this.star1Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star1Btn.Image = ((System.Drawing.Image)(resources.GetObject("star1Btn.Image")));
-            this.star1Btn.Location = new System.Drawing.Point(656, 435);
-            this.star1Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.star1Btn.Name = "star1Btn";
-            this.star1Btn.Size = new System.Drawing.Size(56, 28);
-            this.star1Btn.TabIndex = 20;
-            this.star1Btn.UseVisualStyleBackColor = true;
-            // 
             // goBtn
             // 
             this.goBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.goBtn.Location = new System.Drawing.Point(778, 531);
+            this.goBtn.Location = new System.Drawing.Point(656, 525);
             this.goBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.goBtn.Name = "goBtn";
             this.goBtn.Size = new System.Drawing.Size(93, 41);
@@ -163,17 +111,6 @@
             this.locationTxt.Size = new System.Drawing.Size(91, 22);
             this.locationTxt.TabIndex = 17;
             this.locationTxt.Text = "Location";
-            // 
-            // imagePictureBox
-            // 
-            this.imagePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imagePictureBox.Location = new System.Drawing.Point(142, 128);
-            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.imagePictureBox.Name = "imagePictureBox";
-            this.imagePictureBox.Size = new System.Drawing.Size(465, 268);
-            this.imagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.imagePictureBox.TabIndex = 16;
-            this.imagePictureBox.TabStop = false;
             // 
             // dateTxt
             // 
@@ -211,6 +148,19 @@
             this.categoryTxt.TabIndex = 28;
             this.categoryTxt.Text = "Category";
             // 
+            // backBtn
+            // 
+            this.backBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.backBtn.FlatAppearance.BorderSize = 0;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
+            this.backBtn.Location = new System.Drawing.Point(35, 34);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(33, 36);
+            this.backBtn.TabIndex = 32;
+            this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // favlist_button
             // 
             this.favlist_button.BackColor = System.Drawing.SystemColors.Control;
@@ -227,23 +177,91 @@
             this.favlist_button.UseVisualStyleBackColor = false;
             this.favlist_button.Click += new System.EventHandler(this.favlist_button_Click);
             // 
-            // backBtn
+            // star5Btn
             // 
-            this.backBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.backBtn.FlatAppearance.BorderSize = 0;
-            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
-            this.backBtn.Location = new System.Drawing.Point(35, 34);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(33, 36);
-            this.backBtn.TabIndex = 32;
-            this.backBtn.UseVisualStyleBackColor = false;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            this.star5Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star5Btn.FlatAppearance.BorderSize = 0;
+            this.star5Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star5Btn.Image = ((System.Drawing.Image)(resources.GetObject("star5Btn.Image")));
+            this.star5Btn.Location = new System.Drawing.Point(899, 435);
+            this.star5Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star5Btn.Name = "star5Btn";
+            this.star5Btn.Size = new System.Drawing.Size(56, 36);
+            this.star5Btn.TabIndex = 25;
+            this.star5Btn.UseVisualStyleBackColor = true;
+            this.star5Btn.Click += new System.EventHandler(this.star5Btn_Click);
+            // 
+            // star4Btn
+            // 
+            this.star4Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star4Btn.FlatAppearance.BorderSize = 0;
+            this.star4Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star4Btn.Image = ((System.Drawing.Image)(resources.GetObject("star4Btn.Image")));
+            this.star4Btn.Location = new System.Drawing.Point(838, 435);
+            this.star4Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star4Btn.Name = "star4Btn";
+            this.star4Btn.Size = new System.Drawing.Size(56, 36);
+            this.star4Btn.TabIndex = 24;
+            this.star4Btn.UseVisualStyleBackColor = true;
+            this.star4Btn.Click += new System.EventHandler(this.star4Btn_Click);
+            // 
+            // star3Btn
+            // 
+            this.star3Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star3Btn.FlatAppearance.BorderSize = 0;
+            this.star3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star3Btn.Image = ((System.Drawing.Image)(resources.GetObject("star3Btn.Image")));
+            this.star3Btn.Location = new System.Drawing.Point(778, 435);
+            this.star3Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star3Btn.Name = "star3Btn";
+            this.star3Btn.Size = new System.Drawing.Size(56, 36);
+            this.star3Btn.TabIndex = 23;
+            this.star3Btn.UseVisualStyleBackColor = true;
+            this.star3Btn.Click += new System.EventHandler(this.star3Btn_Click);
+            // 
+            // star2Btn
+            // 
+            this.star2Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star2Btn.FlatAppearance.BorderSize = 0;
+            this.star2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star2Btn.Image = ((System.Drawing.Image)(resources.GetObject("star2Btn.Image")));
+            this.star2Btn.Location = new System.Drawing.Point(717, 435);
+            this.star2Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star2Btn.Name = "star2Btn";
+            this.star2Btn.Size = new System.Drawing.Size(56, 36);
+            this.star2Btn.TabIndex = 22;
+            this.star2Btn.UseVisualStyleBackColor = true;
+            this.star2Btn.Click += new System.EventHandler(this.star2Btn_Click);
+            // 
+            // star1Btn
+            // 
+            this.star1Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star1Btn.FlatAppearance.BorderSize = 0;
+            this.star1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star1Btn.Image = global::EventApp.Properties.Resources.star__1_2;
+            this.star1Btn.Location = new System.Drawing.Point(656, 435);
+            this.star1Btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.star1Btn.Name = "star1Btn";
+            this.star1Btn.Size = new System.Drawing.Size(56, 36);
+            this.star1Btn.TabIndex = 20;
+            this.star1Btn.UseVisualStyleBackColor = true;
+            this.star1Btn.Click += new System.EventHandler(this.star1Btn_Click);
+            // 
+            // imagePictureBox
+            // 
+            this.imagePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.imagePictureBox.Location = new System.Drawing.Point(142, 128);
+            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imagePictureBox.Name = "imagePictureBox";
+            this.imagePictureBox.Size = new System.Drawing.Size(465, 268);
+            this.imagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imagePictureBox.TabIndex = 16;
+            this.imagePictureBox.TabStop = false;
             // 
             // dontgo_btn
             // 
             this.dontgo_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dontgo_btn.Location = new System.Drawing.Point(778, 531);
+            this.dontgo_btn.Location = new System.Drawing.Point(559, 525);
             this.dontgo_btn.Margin = new System.Windows.Forms.Padding(2);
             this.dontgo_btn.Name = "dontgo_btn";
             this.dontgo_btn.Size = new System.Drawing.Size(93, 41);
@@ -252,10 +270,43 @@
             this.dontgo_btn.UseVisualStyleBackColor = true;
             this.dontgo_btn.Click += new System.EventHandler(this.dontgo_btn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.Location = new System.Drawing.Point(775, 539);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Θα πάνε ";
+            // 
+            // usernumber_label
+            // 
+            this.usernumber_label.AutoSize = true;
+            this.usernumber_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.usernumber_label.Location = new System.Drawing.Point(835, 539);
+            this.usernumber_label.Name = "usernumber_label";
+            this.usernumber_label.Size = new System.Drawing.Size(15, 13);
+            this.usernumber_label.TabIndex = 35;
+            this.usernumber_label.Text = "Χ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Location = new System.Drawing.Point(856, 539);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 36;
+            this.label2.Text = " χρήστες.";
+            // 
             // UserControlShowEventPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.usernumber_label);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dontgo_btn);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.favlist_button);
@@ -302,5 +353,8 @@
         private System.Windows.Forms.Button favlist_button;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button dontgo_btn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label usernumber_label;
+        private System.Windows.Forms.Label label2;
     }
 }

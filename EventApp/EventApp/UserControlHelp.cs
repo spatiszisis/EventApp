@@ -23,7 +23,26 @@ namespace EventApp
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
             {
-                this.BackColor = Color.Black;
+                this.BackColor = UserControlSettingsApp.darkmodecolor;
+                label2.ForeColor = System.Drawing.Color.White;
+                label4.ForeColor = System.Drawing.Color.White;
+                label5.ForeColor = System.Drawing.Color.White;
+                label6.ForeColor = System.Drawing.Color.White;
+                label7.ForeColor = System.Drawing.Color.White;
+                label8.ForeColor = System.Drawing.Color.White;
+                label10.ForeColor = System.Drawing.Color.White;
+                label11.ForeColor = System.Drawing.Color.White;
+                label12.ForeColor = System.Drawing.Color.White;
+                label13.ForeColor = System.Drawing.Color.White;
+                label14.ForeColor = System.Drawing.Color.White;
+                label16.ForeColor = System.Drawing.Color.White;
+                label17.ForeColor = System.Drawing.Color.White;
+                label18.ForeColor = System.Drawing.Color.White;
+                label19.ForeColor = System.Drawing.Color.White;
+                label20.ForeColor = System.Drawing.Color.White;
+                label21.ForeColor = System.Drawing.Color.White;
+                label22.ForeColor = System.Drawing.Color.White;
+                panel1.BackColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {

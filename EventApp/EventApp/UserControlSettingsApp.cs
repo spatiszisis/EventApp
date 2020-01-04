@@ -12,6 +12,7 @@ namespace EventApp
 {
     public partial class UserControlSettingsApp : UserControl
     {
+        public static Color darkmodecolor = ColorTranslator.FromHtml("#4a4949");
         private FormBorderStyle FormBorderStyle;
         public static int color = 1; // Gia to xrwma
         public static int gram = 1; // Gia tin grammatoseira
@@ -25,7 +26,11 @@ namespace EventApp
             if(onvalue.Checked == true)
             {
                 color = 0;
-                this.BackColor = Color.Black;
+                this.BackColor = darkmodecolor;
+                panel1.BackColor = System.Drawing.Color.White;
+                label1.ForeColor = System.Drawing.Color.White;
+                label2.ForeColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
             }
             else
             {

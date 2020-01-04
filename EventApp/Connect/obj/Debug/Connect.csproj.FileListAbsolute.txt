@@ -30,3 +30,8 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventA
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\Connect\obj\Debug\Connect.csprojAssemblyReference.cache
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\Connect\obj\Debug\Connect.dll
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\EventApp\Connect\obj\Debug\Connect.pdb
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\Connect\bin\Debug\Connect.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\Connect\bin\Debug\Connect.pdb
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\Connect\obj\Debug\Connect.csprojAssemblyReference.cache
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\Connect\obj\Debug\Connect.dll
+C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\Connect\obj\Debug\Connect.pdb

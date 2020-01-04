@@ -8,7 +8,7 @@ namespace Connect
 {
     public class Connect1
     {
-        private string connectString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Giannis\Desktop\zisis\EventApp\Database.accdb";
+        private string connectString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Giannis\Desktop\Νέος φάκελος (2)\EventApp\Database.accdb";
 
         public string ConnectString { get => connectString; set => connectString = value; }
     }
