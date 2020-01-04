@@ -47,7 +47,6 @@ namespace EventApp
                 this.BackColor = UserControlSettingsApp.darkmodecolor;
                 titleTxt.ForeColor = System.Drawing.Color.White;
                 descriptionTxt.ForeColor = System.Drawing.Color.White;
-                dateTxt.ForeColor = System.Drawing.Color.White;
                 timeTxt.ForeColor = System.Drawing.Color.White;
                 locationTxt.ForeColor = System.Drawing.Color.White;
                 categoryTxt.ForeColor = System.Drawing.Color.White;
@@ -73,7 +72,7 @@ namespace EventApp
                 {
                     titleTxt.Text = reader["Title"].ToString();
                     descriptionTxt.Text = reader["Description"].ToString();
-                    dateTxt.Text = reader["Day"].ToString();
+                    dateTimePicker1.Value = (DateTime)reader["Day"];
                     timeTxt.Text = reader["Time"].ToString();
                     categoryTxt.Text = reader["Category"].ToString();
                     locationTxt.Text = reader["Location"].ToString();

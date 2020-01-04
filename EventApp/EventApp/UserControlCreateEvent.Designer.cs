@@ -257,7 +257,7 @@
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(295, 22);
             this.dateTimePicker.TabIndex = 36;
-            this.dateTimePicker.Value = new System.DateTime(2019, 12, 3, 0, 0, 0, 0);
+            this.dateTimePicker.Value = new System.DateTime(2020, 1, 5, 0, 20, 29, 0);
             // 
             // time_txt
             // 

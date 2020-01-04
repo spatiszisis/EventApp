@@ -77,7 +77,7 @@ namespace EventApp
 
                         listitems.Title         = reader2["Title"].ToString();
                         listitems.Location      = reader2["Location"].ToString();
-                        listitems.Day           = reader2["Day"].ToString();
+                        listitems.Day           = reader["Day"].ToString();
                         listitems.Time          = reader2["Time"].ToString();
                         icon                    = byteArrayToImage((byte[])reader2["images"]);
                         listitems.Icon          = icon;

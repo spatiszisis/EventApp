@@ -39,11 +39,11 @@ namespace EventApp
             get { return _location; }
             set { _location = value; locationTxt.Text = value; }
         }
-
+        public DateTime idate; 
         public string Day
         {
             get { return _day; }
-            set { _day = value; dayTxt.Text = value; }
+            set { _day = value; dayTxt.Text = idate.ToString("dd-MM-yyyy"); }
         }
 
         public string Time

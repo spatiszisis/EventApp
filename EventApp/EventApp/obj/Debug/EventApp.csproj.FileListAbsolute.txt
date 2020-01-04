@@ -323,3 +323,9 @@ C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\versio
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\RestSharp.xml
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\version pc\EventApp\EventApp\obj\Debug\EventApp.AuthenticationContact.resources
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\RestSharp.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\RestSharp.xml
+C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\System.Net.Http.Formatting.xml
