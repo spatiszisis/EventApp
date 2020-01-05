@@ -57,6 +57,7 @@ namespace EventApp
                 this.BackColor = Color.White;
             }
 
+            //diavazei to event kai to emfanizei
             try
             {
                 connection.Open();
@@ -81,8 +82,22 @@ namespace EventApp
                     EventId = (int)reader["EventsID"];
                 }
                 reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+                connection.Close();
+            }
+            finally
+            {
+                connection.Close();
 
+            }
+
+            try
+            {
                 //Emfanisi Asteriwn
+                connection.Open();
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection;
                 string query1 = "select * from Rating where [EventID] = @Eventid";
@@ -136,7 +151,7 @@ namespace EventApp
             finally
             {
                 connection.Close();
-                
+
             }
 
 
@@ -147,7 +162,6 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command2 = new OleDbCommand();
                 command2.Connection = connection;
-                //command2.CommandType = CommandType.Text;
                 string query2 = "select * from AttendList where [UserID] = @user and [EvenTID] = @eventid";
                 command2.Parameters.AddWithValue("@user", Login.UserID);
                 command2.Parameters.AddWithValue("@eventid", EventId);
@@ -170,6 +184,7 @@ namespace EventApp
                     goBtn.Visible = false;
                     dontgo_btn.Visible = true;
                 }
+                reader2.Close();
             }
             catch (Exception ex)
             {
@@ -178,7 +193,7 @@ namespace EventApp
             finally
             {
                 connection.Close();
-                
+
             }
 
             //posoi tha pane
@@ -192,12 +207,13 @@ namespace EventApp
                 string query3 = "select count(*) from AttendList where [EvenTID] = @eventid";
                 command3.Parameters.AddWithValue("@eventid", EventId);
                 command3.CommandText = query3;
-                OleDbDataReader reader3 =  command3.ExecuteReader();
+                OleDbDataReader reader3 = command3.ExecuteReader();
                 int count = 0;
                 while (reader3.Read())
                 {
                     count++;
                 }
+                reader3.Close();
                 usernumber_label.Text = count.ToString();
             }
             catch (Exception ex)
@@ -217,14 +233,14 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into FavList ( [EventID], [UserID]) values (@Eventid, @Userid)";
+                command.CommandText = "insert into FavList ([EventID], [UserID]) values (@Eventid, @Userid)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Eventid", EventId);
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
 
                 command.ExecuteNonQuery();
                 MessageBox.Show("Saved to favorite! ");
-                
+
             }
             catch (Exception ex)
             {
@@ -319,9 +335,9 @@ namespace EventApp
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                string query = "delete * from AttendList where [EventID] = @Eventid and [UserID] = @Userid";
-                command.Parameters.AddWithValue("@Eventid", EventId);
+                string query = "delete * from AttendList where [UserID] = @Userid and [EvenTID] = @Eventid";
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
+                command.Parameters.AddWithValue("@Eventid", EventId);
                 command.CommandText = query;
 
 
@@ -331,7 +347,7 @@ namespace EventApp
                     goBtn.Visible = true;
                 }
 
-                
+
             }
             catch (Exception ex)
             {
@@ -353,12 +369,12 @@ namespace EventApp
                 command.CommandType = CommandType.Text;
                 command.CommandText = "insert into AttendList ([UserID], [EventID]) values (@Userid, @Eventid)";
                 command.Connection = connection;
-                command.Parameters.AddWithValue("@Eventid", EventId);
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
+                command.Parameters.AddWithValue("@Eventid", EventId);
 
                 command.ExecuteNonQuery();
-                MessageBox.Show("Θα πάτε σε αυτή την εκδήλωση ");
-               
+                MessageBox.Show("Have fun! ");
+
             }
             catch (Exception ex)
             {
