@@ -12,8 +12,6 @@ namespace EventApp
 {
     public partial class UserControlAboutUs : UserControl
     {
-        //  UserControlSettingsApp us = new UserControlSettingsApp();
-      
         public UserControlAboutUs()
         {
             InitializeComponent();
@@ -21,17 +19,18 @@ namespace EventApp
 
         private void UserControlAboutUs_Load(object sender, EventArgs e)
         {
-            // gia to dark mode
+            //Dark Mode
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
             {
-                this.BackColor = Color.Black;
+                this.BackColor = UserControlSettingsApp.darkmodecolor;
+                label2.ForeColor = System.Drawing.Color.White;
+                panel1.BackColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {
                 this.BackColor = Color.White;
             }
         }
-       
     }
 }

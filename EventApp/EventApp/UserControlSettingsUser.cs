@@ -25,17 +25,28 @@ namespace EventApp
         
         private void UserControlSettingsUser_Load(object sender, EventArgs e)
         {
-            // gia to dark mode
+
+            //Dark Mode
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
             {
-                this.BackColor = Color.Black;
+                this.BackColor = UserControlSettingsApp.darkmodecolor;
+                label1.ForeColor = System.Drawing.Color.White;
+                label8.ForeColor = System.Drawing.Color.White;
+                panel1.BackColor = System.Drawing.Color.White;
+                label2.ForeColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
+                label4.ForeColor = System.Drawing.Color.White;
+                label5.ForeColor = System.Drawing.Color.White;
+                label6.ForeColor = System.Drawing.Color.White;
+                label7.ForeColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {
                 this.BackColor = Color.White;
             }
-            // Gia tin auksomoiosh thw grammatoseiras
+
+            //Grammatoseira
             int g = (int)UserControlSettingsApp.gram;
             if (g == 0)
             {
@@ -57,6 +68,8 @@ namespace EventApp
                 label2.Font = new Font("Arial", 8, FontStyle.Bold);
                 label3.Font = new Font("Arial", 8, FontStyle.Bold);
             }
+
+            dataGridViewEvents.DataSource = GetEventsList();
             usernameTxt.Text = Login.username;
             passwordTxt.Text = Login.password;
 
@@ -116,6 +129,74 @@ namespace EventApp
             }
         }
 
+        private DataTable GetEventsList()
+        {
+            DataTable dtEvents = new DataTable();
+
+            try
+            {
+                connection.Open();
+
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                string query = "select * from Events where [UserID] = @UserID";
+                command.Parameters.AddWithValue("@UserID", Login.UserID);
+                command.CommandText = query;
+
+                OleDbDataReader reader = command.ExecuteReader();
+
+                dtEvents.Load(reader);
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + "");
+            }
+
+            return dtEvents;
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = dataGridViewEvents.SelectedRows[0].Index;
+            if (selectedIndex != -1)
+            {
+                String selected = dataGridViewEvents.SelectedRows[0].Cells[0].Value.ToString();
+                int id = Convert.ToInt32(selected);
+                deleteEvents(id);
+            }
+        }
+
+        private void deleteEvents(int id)
+        {
+            try
+            {
+                connection.Open();
+
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                string query = "delete * from Events where [EventsID] = " + id + "";
+                command.CommandText = query;
+
+                //PROMPT FOR CONFIRMATION BEFORE DELETING
+                if (MessageBox.Show(@"Are you sure to permanently delete this?", @"DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show(@"Successfully deleted");
+                    }
+                }
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                connection.Close();
+            }
+        }
+
+        
     }
 
 }

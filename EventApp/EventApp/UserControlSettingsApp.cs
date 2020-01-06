@@ -12,44 +12,25 @@ namespace EventApp
 {
     public partial class UserControlSettingsApp : UserControl
     {
+        public static Color darkmodecolor = ColorTranslator.FromHtml("#4a4949");
         private FormBorderStyle FormBorderStyle;
-        /*Bgazei exception sto picture box den trexei me ayton ton tropo to dark mode
-        public UserControlAboutUs us1 = new UserControlAboutUs();
-        public UserControlContact us2 = new UserControlContact();
-        public UserControlCreateEvent us3 = new UserControlCreateEvent();
-        public UserControlFavList us4 = new UserControlFavList();
-        public UserControlHelp us5 = new UserControlHelp();
-        public UserControlSettingsApp us6 = new UserControlSettingsApp();
-        public UserControlSettingsUser us7 = new UserControlSettingsUser();
-        public UserControlShowEventPreview us8 = new UserControlShowEventPreview();
-        public UserControlShowEvents us9 = new UserControlShowEvents();
-        public UserControlΗοme us10 = new UserControlΗοme();
-        */
         public static int color = 1; // Gia to xrwma
         public static int gram = 1; // Gia tin grammatoseira
         public UserControlSettingsApp()
         {
-            InitializeComponent();   
+            InitializeComponent();
         }
 
         private void onvalue_CheckedChanged(object sender, EventArgs e)
         {
             if(onvalue.Checked == true)
             {
-                /*Bgazei exception sto picture box den trexei me ayton ton tropo to dark mode
-                us1.BackColor = Color.FromArgb(0, 0, 0); 
-                us2.BackColor = Color.FromArgb(0, 0, 0);
-                us3.BackColor = Color.FromArgb(0, 0, 0);
-                us4.BackColor = Color.FromArgb(0, 0, 0);
-                us5.BackColor = Color.FromArgb(0, 0, 0);
-                us6.BackColor = Color.FromArgb(0, 0, 0);
-                us7.BackColor = Color.FromArgb(0, 0, 0);
-                us8.BackColor = Color.FromArgb(0, 0, 0);
-                us9.BackColor = Color.FromArgb(0, 0, 0);
-                us10.BackColor = Color.FromArgb(0, 0, 0);
-                */
                 color = 0;
-                this.BackColor = Color.Black;
+                this.BackColor = darkmodecolor;
+                panel1.BackColor = System.Drawing.Color.White;
+                label1.ForeColor = System.Drawing.Color.White;
+                label2.ForeColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
             }
             else
             {
@@ -62,13 +43,11 @@ namespace EventApp
         {
             if (checkboxchangeborderstyleform.Checked == true)
             {
-                //HomePage hp = new HomePage();
                 FormBorderStyle = FormBorderStyle.Sizable;
                 // Auksisi tis grammatoseiras
                 gram = 0;
                 label2.Font = new Font("Arial", 14, FontStyle.Bold);
                 label3.Font = new Font("Arial", 14, FontStyle.Bold);
-                
             }
             else
             {
@@ -77,8 +56,6 @@ namespace EventApp
                 label2.Font = new Font("Arial", 12, FontStyle.Bold);
                 label3.Font = new Font("Arial", 12, FontStyle.Bold);
             }
-
         }
-
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Controls;
 using Connect;
+using RestSharp;
 
 namespace EventApp
 {
@@ -22,13 +23,14 @@ namespace EventApp
         public static string SetValueDay = "";
         public static string SetValueLocation = "";
         public static string SetValueCategory = "";
+
+
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            //SetValueDay = dateTimePicker1.Value;
+            SetValueDay      = dateTimePicker1.Value.ToString("dd-MM-yyyy");
             SetValueLocation = locationCombo.Text;
             SetValueCategory = categoryCombo.Text;
-            UserControlShowEvents us = new UserControlShowEvents();
-            us.Show();
+            
 
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
             {
@@ -37,6 +39,7 @@ namespace EventApp
                 HomePage.Instance.PnlContainer.Controls.Add(scse);
             }
             HomePage.Instance.PnlContainer.Controls["UserControlShowEvents"].BringToFront();
+
         }
     }
 }

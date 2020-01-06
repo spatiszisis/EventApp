@@ -50,9 +50,6 @@ namespace EventApp
 
         //Telos Clear Method gia ta text
 
-
-        //Arxi Click Method gia ta koumpia
-
         private byte[] ImageToByte(Image image, System.Drawing.Imaging.ImageFormat format)
         {
             MemoryStream ms = new MemoryStream();
@@ -61,47 +58,48 @@ namespace EventApp
         }
 
 
-
-
         private void save_btn_Click(object sender, EventArgs e)
         {
             Bitmap bm = new Bitmap(picBox.Image);
             byte[] imagebt = ImageToByte(bm, System.Drawing.Imaging.ImageFormat.Jpeg);
 
             EventShowPanelUserControl.title = title_txt.Text;
+            
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into Events ([Title],[Category],[Description],[Day],[Time],[Location],[images]) values (@Title, @Category, @Description, @Day, @Time, @Location, @Images)";
+                command.CommandText = "insert into Events ([Title],[Category],[Description],[Day],[Time],[Location],[images],[UserID]) values (@Title, @Category, @Description, @Day, @Time, @Location, @Images,@UserID)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Title", title_txt.Text);
                 command.Parameters.AddWithValue("@Category", category_box.Text);
                 command.Parameters.AddWithValue("@Description", description_txt.Text);
-                command.Parameters.Add("@Day", OleDbType.Date).Value = dateTimePicker.Value;
+                command.Parameters.Add("@Day", dateTimePicker.Value.Date.ToString("dd-MM-yyyy"));
                 command.Parameters.AddWithValue("@Time", time_txt.Text);
                 command.Parameters.AddWithValue("@Location", location_txt.Text);
                 command.Parameters.AddWithValue("@Images", imagebt);
+                command.Parameters.AddWithValue("@UserID", Login.UserID);
 
                 command.ExecuteNonQuery();
-                //command.Dispose();
                 MessageBox.Show("Event Saved! ");
                 connection.Close();
+                command.Dispose();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex);
                 connection.Close();
+                connection.Dispose();
             }
             finally
             {
-                title_txt.Clear();
+                title_txt.Text = "Event Title";
                 category_box.Text = "Please Select";
-                description_txt.Clear();
-                dateTimePicker = null;
-                time_txt.Clear();
-                location_txt.Clear();
+                description_txt.Text  = "Add Description...";
+                this.dateTimePicker.CustomFormat = null;
+                time_txt.Text = "Time";
+                location_txt.Text = "Search for location";
                 picBox.Image = null;
             }
         }
@@ -127,14 +125,20 @@ namespace EventApp
                 picBox.ImageLocation = imgpath;
             }
         }
-        //Telos Click Method gia ta koumpia
+
         private void UserControlCreateEvent_Load(object sender, EventArgs e)
         {
-            // gia to dark mode
+            //Dark Mode
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
             {
-                this.BackColor = Color.Black;
+                this.BackColor = UserControlSettingsApp.darkmodecolor;
+                label1.ForeColor = System.Drawing.Color.White;
+                panel1.BackColor = System.Drawing.Color.White;
+                label2.ForeColor = System.Drawing.Color.White;
+                panel2.BackColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
+                panel3.BackColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {
