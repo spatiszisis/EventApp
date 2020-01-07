@@ -73,17 +73,20 @@ namespace EventApp
 
             // Gia to notification Form
             AlertForm a = new AlertForm();
+            a.Dock = DockStyle.Fill;
+            
+            //AlertForm a = new AlertForm();
             a.Show();
-            //a.BringToFront();    //kjk
-            Timer myTimer = new Timer();
+            a.BringToFront();    
+           /* Timer myTimer = new Timer();
             myTimer.Interval = (10 * 1000); // 10 sec
             myTimer.Tick += new EventHandler(MyTimer_Tick);
-            myTimer.Start();
+            myTimer.Start();*/
         }
-        private void MyTimer_Tick(object sender, EventArgs e)
+        /*private void MyTimer_Tick(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }*/
         // Telos Notification Form
 
         //Start Properties button
@@ -392,6 +395,7 @@ namespace EventApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Gia na anoigei to notification form
             AlertForm al = new AlertForm();
             al.Show();
         }

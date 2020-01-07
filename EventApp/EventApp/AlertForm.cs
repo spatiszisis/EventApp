@@ -37,15 +37,15 @@ namespace EventApp
             {
                 this.BackColor = Color.White;
             }
-            /*  Timer myTimer = new Timer();
+              Timer myTimer = new Timer();
               myTimer.Interval = (10 * 1000); // 10 sec
               myTimer.Tick += new EventHandler(MyTimer_Tick);
               myTimer.Start();
-          }*/
-            /* private void MyTimer_Tick(object sender, EventArgs e)
+          }
+             private void MyTimer_Tick(object sender, EventArgs e)
              {
                  this.Close();
-             }*/
+             }
         }
     }
-}
+
