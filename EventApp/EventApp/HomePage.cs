@@ -51,6 +51,10 @@ namespace EventApp
             connection.ConnectionString = con.ConnectString;
             NameLabel.Text = Login.username;
             managerBtn.Visible = false;
+            // otan paei sto home page na emfanizei kai to notification form
+            AlertForm a = new AlertForm();
+            a.Show();
+            a.BringToFront();
         }
 
 
@@ -66,7 +70,21 @@ namespace EventApp
             {
                 managerBtn.Visible = true;
             }
+
+            // Gia to notification Form
+            AlertForm a = new AlertForm();
+            a.Show();
+            //a.BringToFront();
+            Timer myTimer = new Timer();
+            myTimer.Interval = (10 * 1000); // 10 sec
+            myTimer.Tick += new EventHandler(MyTimer_Tick);
+            myTimer.Start();
         }
+        private void MyTimer_Tick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        // Telos Notification Form
 
         //Start Properties button
 
@@ -281,7 +299,7 @@ namespace EventApp
         private void searchBtn_Click(object sender, EventArgs e)
         {
 
-            /*if (searchTxt.Text != null)
+         /*   if (searchTxt.Text != null)
             {
                 connection.ConnectionString = con.ConnectString;
                 OleDbCommand command = new OleDbCommand();
@@ -370,6 +388,12 @@ namespace EventApp
                 uc.BringToFront();
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AlertForm al = new AlertForm();
+            al.Show();
         }
         //Telos Alla Properties 
     }
