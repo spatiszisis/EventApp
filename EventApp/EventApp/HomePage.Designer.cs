@@ -367,9 +367,9 @@
             this.Notbtn.FlatAppearance.BorderSize = 0;
             this.Notbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Notbtn.Image = ((System.Drawing.Image)(resources.GetObject("Notbtn.Image")));
-            this.Notbtn.Location = new System.Drawing.Point(170, 11);
+            this.Notbtn.Location = new System.Drawing.Point(170, 12);
             this.Notbtn.Name = "Notbtn";
-            this.Notbtn.Size = new System.Drawing.Size(41, 37);
+            this.Notbtn.Size = new System.Drawing.Size(41, 36);
             this.Notbtn.TabIndex = 14;
             this.Notbtn.UseVisualStyleBackColor = true;
             this.Notbtn.Click += new System.EventHandler(this.button1_Click);
