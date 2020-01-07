@@ -369,7 +369,7 @@
             this.Notbtn.Image = ((System.Drawing.Image)(resources.GetObject("Notbtn.Image")));
             this.Notbtn.Location = new System.Drawing.Point(170, 11);
             this.Notbtn.Name = "Notbtn";
-            this.Notbtn.Size = new System.Drawing.Size(39, 35);
+            this.Notbtn.Size = new System.Drawing.Size(41, 37);
             this.Notbtn.TabIndex = 14;
             this.Notbtn.UseVisualStyleBackColor = true;
             this.Notbtn.Click += new System.EventHandler(this.button1_Click);
