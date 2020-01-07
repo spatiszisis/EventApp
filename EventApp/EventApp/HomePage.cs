@@ -70,25 +70,47 @@ namespace EventApp
             {
                 managerBtn.Visible = true;
             }
-
+            //--------------------------------------------------------
             // Gia to notification Form
             AlertForm a = new AlertForm();
             a.Dock = DockStyle.Fill;
             
             //AlertForm a = new AlertForm();
             a.Show();
-            a.BringToFront();    
-           /* Timer myTimer = new Timer();
-            myTimer.Interval = (10 * 1000); // 10 sec
-            myTimer.Tick += new EventHandler(MyTimer_Tick);
-            myTimer.Start();*/
-        }
-        /*private void MyTimer_Tick(object sender, EventArgs e)
-        {
-            this.Close();
-        }*/
-        // Telos Notification Form
+            a.BringToFront();
 
+            int b = (int)AlertForm.but;
+            if (b == 0)
+            {
+                a.Show();
+                Timer myTime = new Timer();
+                myTime.Interval = (2 * 1000); // 2 sec
+                myTime.Tick += new EventHandler(MyTime_Tick);
+                myTime.Start();
+                b = 1;
+            }
+            else if (b == 1)
+            {
+                //myTime.Stop();
+                a.Close();
+                Timer myTime = new Timer();
+                myTime.Interval = (2 * 1000); // 2 sec
+                myTime.Tick -= new EventHandler(MyTime_Tick_Close);
+                myTime.Stop();
+            }
+        }
+        private void MyTime_Tick(object sender, EventArgs e)
+        {
+            AlertForm a = new AlertForm();
+            a.Show();
+        }
+        private void MyTime_Tick_Close(object sender, EventArgs e)
+        {
+            AlertForm a = new AlertForm();
+            a.Close();
+        }
+        // Telos Notification Form
+        //------------------------------------------------------------
         //Start Properties button
 
         private void Home_MouseHover(object sender, EventArgs e)

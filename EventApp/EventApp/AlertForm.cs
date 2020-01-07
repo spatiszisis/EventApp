@@ -12,15 +12,18 @@ namespace EventApp
 {
     public partial class AlertForm : Form
     {
+        public static int but = 0;
         public AlertForm()
         {
             InitializeComponent();
             // this.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Gia na kleinei to notification form
+            but = 1;
             AlertForm a = new AlertForm();
             this.Close();
         }
