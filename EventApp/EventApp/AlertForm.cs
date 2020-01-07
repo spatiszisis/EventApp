@@ -13,11 +13,13 @@ namespace EventApp
     public partial class AlertForm : Form
     {
         public static int but = 0;
+
         public AlertForm()
         {
             InitializeComponent();
             // this.Show();
             this.Hide();
+            but = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,15 +42,15 @@ namespace EventApp
             {
                 this.BackColor = Color.White;
             }
-              Timer myTimer = new Timer();
+             /* Timer myTimer = new Timer();
               myTimer.Interval = (10 * 1000); // 10 sec
               myTimer.Tick += new EventHandler(MyTimer_Tick);
-              myTimer.Start();
+              myTimer.Start();*/
           }
-             private void MyTimer_Tick(object sender, EventArgs e)
+            /* private void MyTimer_Tick(object sender, EventArgs e)
              {
                  this.Close();
-             }
+             }*/
         }
     }
 

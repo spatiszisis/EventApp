@@ -72,42 +72,46 @@ namespace EventApp
             }
             //--------------------------------------------------------
             // Gia to notification Form
-            AlertForm a = new AlertForm();
-            a.Dock = DockStyle.Fill;
+           // AlertForm a = new AlertForm();
+           // a.Dock = DockStyle.Fill;
             
+
             //AlertForm a = new AlertForm();
-            a.Show();
-            a.BringToFront();
+            //a.Show();
+            // a.BringToFront();
 
             int b = (int)AlertForm.but;
             if (b == 0)
-            {
-                a.Show();
+            { 
+            
+                //a.Show();
+               // a.BringToFront();
                 Timer myTime = new Timer();
                 myTime.Interval = (2 * 1000); // 2 sec
                 myTime.Tick += new EventHandler(MyTime_Tick);
                 myTime.Start();
                 b = 1;
+                myTime.Stop();
             }
             else if (b == 1)
             {
                 //myTime.Stop();
-                a.Close();
+                //a.Close();
                 Timer myTime = new Timer();
-                myTime.Interval = (2 * 1000); // 2 sec
-                myTime.Tick -= new EventHandler(MyTime_Tick_Close);
-                myTime.Stop();
+                myTime.Interval = (10 * 1000); // 10 sec
+                myTime.Tick += new EventHandler(MyTime_Tick_Close);
+                myTime.Start();
             }
         }
         private void MyTime_Tick(object sender, EventArgs e)
         {
             AlertForm a = new AlertForm();
-            a.Show();
+            a.Close();
         }
         private void MyTime_Tick_Close(object sender, EventArgs e)
         {
-            AlertForm a = new AlertForm();
-            a.Close();
+            //AlertForm a = new AlertForm();
+            this.Close();
         }
         // Telos Notification Form
         //------------------------------------------------------------
