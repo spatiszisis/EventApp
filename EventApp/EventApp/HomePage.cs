@@ -74,7 +74,7 @@ namespace EventApp
             // Gia to notification Form
             AlertForm a = new AlertForm();
             a.Show();
-            //a.BringToFront();
+            //a.BringToFront();    //kjk
             Timer myTimer = new Timer();
             myTimer.Interval = (10 * 1000); // 10 sec
             myTimer.Tick += new EventHandler(MyTimer_Tick);
