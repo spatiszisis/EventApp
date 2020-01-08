@@ -44,6 +44,8 @@ namespace EventApp
         }
         private OleDbConnection connection = new OleDbConnection();
 
+        Timer t = new Timer(); // Dilwsh tou timer
+
         Connect1 con = new Connect1();
         public HomePage()
         {
@@ -51,12 +53,7 @@ namespace EventApp
             connection.ConnectionString = con.ConnectString;
             NameLabel.Text = Login.username;
             managerBtn.Visible = false;
-            // otan paei sto home page na emfanizei kai to notification form
-            AlertForm a = new AlertForm();
-            a.Show();
-            a.BringToFront();
         }
-
 
         private void HomePage_Load(object sender, EventArgs e)
         {
@@ -70,51 +67,20 @@ namespace EventApp
             {
                 managerBtn.Visible = true;
             }
-            //--------------------------------------------------------
+
             // Gia to notification Form
-           // AlertForm a = new AlertForm();
-           // a.Dock = DockStyle.Fill;
-            
-
-            //AlertForm a = new AlertForm();
-            //a.Show();
-            // a.BringToFront();
-
-            int b = (int)AlertForm.but;
-            if (b == 0)
-            { 
-            
-                //a.Show();
-               // a.BringToFront();
-                Timer myTime = new Timer();
-                myTime.Interval = (2 * 1000); // 2 sec
-                myTime.Tick += new EventHandler(MyTime_Tick);
-                myTime.Start();
-                b = 1;
-                myTime.Stop();
-            }
-            else if (b == 1)
-            {
-                //myTime.Stop();
-                //a.Close();
-                Timer myTime = new Timer();
-                myTime.Interval = (10 * 1000); // 10 sec
-                myTime.Tick += new EventHandler(MyTime_Tick_Close);
-                myTime.Start();
-            }
+            t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
+            t.Tick += new EventHandler(OnTimerTicked);
+            t.Start();    
         }
-        private void MyTime_Tick(object sender, EventArgs e)
+        public void OnTimerTicked(object sender, EventArgs e)
         {
-            AlertForm a = new AlertForm();
-            a.Close();
-        }
-        private void MyTime_Tick_Close(object sender, EventArgs e)
-        {
-            //AlertForm a = new AlertForm();
-            this.Close();
+            t.Stop();
+            AlertForm formdois = new AlertForm();
+            formdois.Show();
         }
         // Telos Notification Form
-        //------------------------------------------------------------
+
         //Start Properties button
 
         private void Home_MouseHover(object sender, EventArgs e)

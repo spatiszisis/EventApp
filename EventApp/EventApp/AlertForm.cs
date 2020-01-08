@@ -12,20 +12,14 @@ namespace EventApp
 {
     public partial class AlertForm : Form
     {
-        public static int but = 0;
-
         public AlertForm()
         {
             InitializeComponent();
-            // this.Show();
-            this.Hide();
-            but = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Gia na kleinei to notification form
-            but = 1;
             AlertForm a = new AlertForm();
             this.Close();
         }
@@ -42,15 +36,23 @@ namespace EventApp
             {
                 this.BackColor = Color.White;
             }
-             /* Timer myTimer = new Timer();
-              myTimer.Interval = (10 * 1000); // 10 sec
-              myTimer.Tick += new EventHandler(MyTimer_Tick);
-              myTimer.Start();*/
-          }
-            /* private void MyTimer_Tick(object sender, EventArgs e)
-             {
-                 this.Close();
-             }*/
+            /* 
+             * Edo otan anoigei h forma kleinei meta apo 10 sec.
+             * To provlima einai oti kai apo to koumpi ton eidopoihsewn
+             * na anoikseis tin forma meta apo 10 sec tha kleisei.
+             * Na kleinei mono thn proti fora pou anoigei h forma ginetai apo
+             * to HomePage_Load alla den douleuei
+             */// Arxi
+            Timer myTimer = new Timer();
+            myTimer.Interval = (10 * 1000); // 10 sec
+            myTimer.Tick += new EventHandler(MyTimer_Tick);
+            myTimer.Start();
         }
+        private void MyTimer_Tick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        // Telos
     }
+}
 
