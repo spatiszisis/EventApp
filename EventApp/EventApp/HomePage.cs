@@ -19,11 +19,8 @@ using System.Windows.Documents;
 namespace EventApp
 {
     public partial class HomePage : Form
-
     {
-
         static HomePage _obj;
-
 
         public static HomePage Instance
         {

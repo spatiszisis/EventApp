@@ -36,13 +36,15 @@ namespace EventApp
             {
                 this.BackColor = Color.White;
             }
+            //-----------------------------------------------------------------------------
             /* 
              * Edo otan anoigei h forma kleinei meta apo 10 sec.
              * To provlima einai oti kai apo to koumpi ton eidopoihsewn
              * na anoikseis tin forma meta apo 10 sec tha kleisei.
              * Na kleinei mono thn proti fora pou anoigei h forma ginetai apo
              * to HomePage_Load alla den douleuei
-             */// Arxi
+             */
+            // Arxi
             Timer myTimer = new Timer();
             myTimer.Interval = (10 * 1000); // 10 sec
             myTimer.Tick += new EventHandler(MyTimer_Tick);
@@ -52,7 +54,8 @@ namespace EventApp
         {
             this.Close();
         }
-        // Telos  
+        // Telos
+        //----------------------------------------------------------------------------------
     }
 }
 
