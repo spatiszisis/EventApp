@@ -68,11 +68,19 @@ namespace EventApp
                 managerBtn.Visible = true;
             }
 
-            // Gia to notification Form
-            t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
-            t.Tick += new EventHandler(OnTimerTicked);
-            t.Start();
-
+            //Elegxos gia to ama iparxei Location i oxi kai analoga tha trexei
+            if(Login.Location == "")
+            {
+                //nothing
+            }
+            else
+            {
+                // Gia to notification Form
+                t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
+                t.Tick += new EventHandler(OnTimerTicked);
+                t.Start();
+            }
+            
         }
 
         //Notification 
