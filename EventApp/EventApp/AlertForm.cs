@@ -52,7 +52,7 @@ namespace EventApp
         {
             this.Close();
         }
-        // Telos
+        // Telos  
     }
 }
 
