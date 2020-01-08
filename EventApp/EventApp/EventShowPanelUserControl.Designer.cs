@@ -32,7 +32,7 @@
             this.titleTxt = new System.Windows.Forms.Label();
             this.locationTxt = new System.Windows.Forms.Label();
             this.timeTxt = new System.Windows.Forms.Label();
-            this.dayTxt = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@
             // locationTxt
             // 
             this.locationTxt.AutoSize = true;
-            this.locationTxt.Location = new System.Drawing.Point(7, 167);
+            this.locationTxt.Location = new System.Drawing.Point(7, 166);
             this.locationTxt.Name = "locationTxt";
             this.locationTxt.Size = new System.Drawing.Size(46, 17);
             this.locationTxt.TabIndex = 2;
@@ -67,26 +67,27 @@
             // timeTxt
             // 
             this.timeTxt.AutoSize = true;
-            this.timeTxt.Location = new System.Drawing.Point(7, 239);
+            this.timeTxt.Location = new System.Drawing.Point(7, 237);
             this.timeTxt.Name = "timeTxt";
             this.timeTxt.Size = new System.Drawing.Size(46, 17);
             this.timeTxt.TabIndex = 4;
             this.timeTxt.Text = "label4";
             // 
-            // dayTxt
+            // dateTimePicker1
             // 
-            this.dayTxt.AutoSize = true;
-            this.dayTxt.Location = new System.Drawing.Point(7, 204);
-            this.dayTxt.Name = "dayTxt";
-            this.dayTxt.Size = new System.Drawing.Size(46, 17);
-            this.dayTxt.TabIndex = 5;
-            this.dayTxt.Text = "label1";
+            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(10, 199);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowUpDown = true;
+            this.dateTimePicker1.Size = new System.Drawing.Size(174, 22);
+            this.dateTimePicker1.TabIndex = 6;
             // 
             // EventShowPanelUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dayTxt);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.timeTxt);
             this.Controls.Add(this.locationTxt);
             this.Controls.Add(this.titleTxt);
@@ -109,6 +110,6 @@
         private System.Windows.Forms.Label titleTxt;
         private System.Windows.Forms.Label locationTxt;
         private System.Windows.Forms.Label timeTxt;
-        private System.Windows.Forms.Label dayTxt;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

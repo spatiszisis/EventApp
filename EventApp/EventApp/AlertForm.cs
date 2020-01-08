@@ -64,13 +64,13 @@ namespace EventApp
                 while (reader.Read())
                 {
                    
-                        listitems.Title = reader["Title"].ToString();
-                        listitems.Location = reader["Location"].ToString();
-                        listitems.Day = reader["Day"].ToString();
-                        listitems.Time = reader["Time"].ToString();
-                        icon = byteArrayToImage((byte[])reader["images"]);
-                        listitems.Icon = icon;
-                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+                        listitems.Title         = reader["Title"].ToString();
+                        listitems.Location      = reader["Location"].ToString();
+                        listitems.Day           = (DateTime)reader["Day"];
+                        listitems.Time          = reader["Time"].ToString();
+                        icon                    = byteArrayToImage((byte[])reader["images"]);
+                        listitems.Icon          = icon;
+                        listitems.BorderStyle   = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanelEventNear.Controls.Count < 0)
                         {

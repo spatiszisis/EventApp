@@ -24,7 +24,7 @@ namespace EventApp
 
         private string _title;
         private string _location;
-        private string _day;
+        private DateTime _day;
         private string _time;
         private Image _icon;
         public static string title = "";
@@ -39,11 +39,11 @@ namespace EventApp
             get { return _location; }
             set { _location = value; locationTxt.Text = value; }
         }
-        public DateTime idate; 
-        public string Day
+        //public DateTime idate; 
+        public DateTime Day
         {
             get { return _day; }
-            set { _day = value; dayTxt.Text = idate.ToString("dd-MM-yyyy"); }
+            set { _day = value; dateTimePicker1.Value = value; }
         }
 
         public string Time

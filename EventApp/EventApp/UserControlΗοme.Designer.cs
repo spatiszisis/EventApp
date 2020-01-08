@@ -150,6 +150,7 @@
             this.locationCombo.ForeColor = System.Drawing.Color.Gray;
             this.locationCombo.FormattingEnabled = true;
             this.locationCombo.Items.AddRange(new object[] {
+            "City",
             "Thessaloniki",
             "Athens",
             "Patra",
