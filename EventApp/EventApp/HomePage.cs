@@ -68,7 +68,7 @@ namespace EventApp
             // Gia to notification Form
             t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
             t.Tick += new EventHandler(OnTimerTicked);
-            t.Start();    
+            t.Start();           
         }
         public void OnTimerTicked(object sender, EventArgs e)
         {
