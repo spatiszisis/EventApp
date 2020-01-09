@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
-using Connect;
 using System.Windows.Documents;
 
 namespace EventApp

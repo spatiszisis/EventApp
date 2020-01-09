@@ -33,7 +33,6 @@ D:\Giannis\Documents\gitrepo\adopse\adopse-omada2\EventApp\EventApp\obj\Debug\Ev
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlΗοme.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlCreateEvent.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlAboutUs.resources
-C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.csprojAssemblyReference.cache
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe.config
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.exe
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\vasiloudis\adopse-omada2\EventApp\EventApp\bin\Debug\EventApp.pdb
@@ -184,8 +183,6 @@ C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\EventApp.p
 C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\Connect.dll
 C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\bin\Debug\Connect.pdb
 C:\Users\Giannis\Desktop\adopse2\EventApp\EventApp\EventApp\obj\Debug\EventApp.csproj.CopyComplete
-C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\Connect.dll
-C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\bin\Debug\Connect.pdb
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.AccessFormToGoogleAccount.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.EventShowPanelUserControl.resources
 C:\Users\Ζήσης\Desktop\Σχολή\ΑΟΠΣΕ - ΕΡΓΑΣΙΑ\GitHub\adopse-omada2\EventApp\EventApp\obj\Debug\EventApp.UserControlContact.resources
