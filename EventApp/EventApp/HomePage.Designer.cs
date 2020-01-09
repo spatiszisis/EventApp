@@ -47,6 +47,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.searchTxt = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.notificationBtn = new System.Windows.Forms.Button();
             this.logoutBtn = new System.Windows.Forms.Button();
             this.usersettingsBtn = new System.Windows.Forms.Button();
             this.favlistBtn = new System.Windows.Forms.Button();
@@ -358,27 +359,41 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.notificationBtn);
             this.panel5.Controls.Add(this.logoutBtn);
             this.panel5.Controls.Add(this.usersettingsBtn);
             this.panel5.Controls.Add(this.favlistBtn);
             this.panel5.Controls.Add(this.WelcomeLabel);
             this.panel5.Controls.Add(this.NameLabel);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(965, 0);
+            this.panel5.Location = new System.Drawing.Point(826, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(488, 69);
+            this.panel5.Size = new System.Drawing.Size(627, 69);
             this.panel5.TabIndex = 5;
+            // 
+            // notificationBtn
+            // 
+            this.notificationBtn.FlatAppearance.BorderSize = 0;
+            this.notificationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.notificationBtn.Image = global::EventApp.Properties.Resources.notificationOFF;
+            this.notificationBtn.Location = new System.Drawing.Point(386, 3);
+            this.notificationBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.notificationBtn.Name = "notificationBtn";
+            this.notificationBtn.Size = new System.Drawing.Size(55, 66);
+            this.notificationBtn.TabIndex = 15;
+            this.notificationBtn.UseVisualStyleBackColor = true;
+            this.notificationBtn.Click += new System.EventHandler(this.notificationBtn_Click);
             // 
             // logoutBtn
             // 
             this.logoutBtn.FlatAppearance.BorderSize = 0;
             this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutBtn.Image = global::EventApp.Properties.Resources.logout__3_;
-            this.logoutBtn.Location = new System.Drawing.Point(421, 20);
+            this.logoutBtn.Location = new System.Drawing.Point(569, 2);
             this.logoutBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(55, 39);
+            this.logoutBtn.Size = new System.Drawing.Size(55, 67);
             this.logoutBtn.TabIndex = 12;
             this.logoutBtn.UseVisualStyleBackColor = true;
             this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
@@ -388,10 +403,10 @@
             this.usersettingsBtn.FlatAppearance.BorderSize = 0;
             this.usersettingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.usersettingsBtn.Image = global::EventApp.Properties.Resources.user;
-            this.usersettingsBtn.Location = new System.Drawing.Point(360, 18);
+            this.usersettingsBtn.Location = new System.Drawing.Point(508, 3);
             this.usersettingsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usersettingsBtn.Name = "usersettingsBtn";
-            this.usersettingsBtn.Size = new System.Drawing.Size(55, 39);
+            this.usersettingsBtn.Size = new System.Drawing.Size(55, 67);
             this.usersettingsBtn.TabIndex = 13;
             this.usersettingsBtn.UseVisualStyleBackColor = true;
             this.usersettingsBtn.Click += new System.EventHandler(this.usersettingsBtn_Click);
@@ -401,10 +416,10 @@
             this.favlistBtn.FlatAppearance.BorderSize = 0;
             this.favlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.favlistBtn.Image = global::EventApp.Properties.Resources.list__1_;
-            this.favlistBtn.Location = new System.Drawing.Point(299, 17);
+            this.favlistBtn.Location = new System.Drawing.Point(447, 2);
             this.favlistBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.favlistBtn.Name = "favlistBtn";
-            this.favlistBtn.Size = new System.Drawing.Size(55, 46);
+            this.favlistBtn.Size = new System.Drawing.Size(55, 66);
             this.favlistBtn.TabIndex = 14;
             this.favlistBtn.UseVisualStyleBackColor = true;
             this.favlistBtn.Click += new System.EventHandler(this.favlistBtn_Click);
@@ -414,7 +429,7 @@
             this.WelcomeLabel.AutoSize = true;
             this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.WelcomeLabel.Location = new System.Drawing.Point(33, 23);
+            this.WelcomeLabel.Location = new System.Drawing.Point(160, 25);
             this.WelcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WelcomeLabel.Name = "WelcomeLabel";
             this.WelcomeLabel.Size = new System.Drawing.Size(121, 29);
@@ -426,11 +441,12 @@
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.NameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.NameLabel.Location = new System.Drawing.Point(202, 22);
+            this.NameLabel.Location = new System.Drawing.Point(303, 25);
             this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(0, 29);
+            this.NameLabel.Size = new System.Drawing.Size(63, 29);
             this.NameLabel.TabIndex = 7;
+            this.NameLabel.Text = "Zisis";
             // 
             // User_label
             // 
@@ -505,5 +521,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button managerBtn;
+        private System.Windows.Forms.Button notificationBtn;
     }
 }

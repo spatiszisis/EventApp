@@ -48,6 +48,8 @@ namespace EventApp
                 this.BackColor = Color.White;
             }
 
+            //i agapimeni lista tou
+
             try
             {
                 connection.Open();
@@ -77,7 +79,7 @@ namespace EventApp
 
                         listitems.Title         = reader2["Title"].ToString();
                         listitems.Location      = reader2["Location"].ToString();
-                        listitems.Day           = reader2["Day"].ToString();
+                        listitems.Day           = (DateTime)reader2["Day"];
                         listitems.Time          = reader2["Time"].ToString();
                         icon                    = byteArrayToImage((byte[])reader2["images"]);
                         listitems.Icon          = icon;
@@ -95,7 +97,6 @@ namespace EventApp
                     }
                     reader2.Close();
                 }
-                connection.Dispose();
                 reader.Close();
                 connection.Close();
 
@@ -103,8 +104,73 @@ namespace EventApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex + " ");
+                connection.Close();
+            }
+
+            //Ta events pou tha paei
+
+            try
+            {
+                connection.Open();
+
+                OleDbCommand command1 = new OleDbCommand();
+                command1.Connection = connection;
+                string query1 = "select distinct [EventID] from AttendList where [UserID] = @Userid";
+                command1.Parameters.AddWithValue("@Userid", Login.UserID);
+                command1.CommandText = query1;
+                OleDbDataReader reader = command1.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Eventid = (int)reader["EventID"];
+
+                    EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+
+                    OleDbCommand command2 = new OleDbCommand();
+                    command2.Connection = connection;
+                    string query2 = "select * from Events where [EventsID] = @Eventid";
+                    command2.Parameters.AddWithValue("@Eventid", Eventid);
+                    command2.CommandText = query2;
+                    OleDbDataReader reader2 = command2.ExecuteReader();
+
+                    while (reader2.Read())
+                    {
+
+                        listitems.Title             = reader2["Title"].ToString();
+                        listitems.Location          = reader2["Location"].ToString();
+                        listitems.Day               = (DateTime)reader2["Day"];
+                        listitems.Time              = reader2["Time"].ToString();
+                        icon                        = byteArrayToImage((byte[])reader2["images"]);
+                        listitems.Icon              = icon;
+                        listitems.BorderStyle       = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                        if (flowLayoutPanelGoEvents.Controls.Count < 0)
+                        {
+                            flowLayoutPanelGoEvents.Controls.Clear();
+                        }
+                        else
+                        {
+                            flowLayoutPanelGoEvents.Controls.Add(listitems);
+                        }
+
+                    }
+                    reader2.Close();
+                }
+                reader.Close();
+                connection.Close();
 
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + " ");
+                connection.Close();
+
+            }
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

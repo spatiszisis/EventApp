@@ -19,12 +19,12 @@ namespace EventApp
         public EventShowPanelUserControl()
         {
             InitializeComponent();
-            connection.ConnectionString = con.ConnectString;
+            
         }
 
         private string _title;
         private string _location;
-        private string _day;
+        private DateTime _day;
         private string _time;
         private Image _icon;
         public static string title = "";
@@ -39,11 +39,11 @@ namespace EventApp
             get { return _location; }
             set { _location = value; locationTxt.Text = value; }
         }
-
-        public string Day
+        //public DateTime idate; 
+        public DateTime Day
         {
             get { return _day; }
-            set { _day = value; dayTxt.Text = value; }
+            set { _day = value; dateTimePicker1.Value = value; }
         }
 
         public string Time
@@ -68,7 +68,7 @@ namespace EventApp
             this.BackColor = Color.White;
         }
 
-        public int userid = 0;
+        
         public static int eventid = 0;
 
         private void EventShowPanelUserControl_Click(object sender, EventArgs e)
@@ -80,6 +80,7 @@ namespace EventApp
 
             try
             {
+                connection.ConnectionString = con.ConnectString;
                 connection.Open();
 
                 OleDbCommand command1 = new OleDbCommand();
@@ -100,7 +101,7 @@ namespace EventApp
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
                 command.CommandText = "insert into DataUser ([UserID],[EventID]) values (@UserID, @EventID)";
-                command.Parameters.AddWithValue("@UserID", userid);
+                command.Parameters.AddWithValue("@UserID", Login.UserID);
                 command.Parameters.AddWithValue("@EventID", eventid);
                 command.Connection = connection;
 

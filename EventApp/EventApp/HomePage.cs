@@ -1,4 +1,4 @@
-﻿using EventApp.Properties;
+﻿ using EventApp.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,6 +43,7 @@ namespace EventApp
             set { panelContainer = value; }
         }
         private OleDbConnection connection = new OleDbConnection();
+        Timer t = new Timer(); // Dilwsh tou timer
 
         Connect1 con = new Connect1();
         public HomePage()
@@ -66,6 +67,28 @@ namespace EventApp
             {
                 managerBtn.Visible = true;
             }
+
+            //Elegxos gia to ama iparxei Location i oxi kai analoga tha trexei
+            if(Login.Location == "")
+            {
+                //nothing
+            }
+            else
+            {
+                // Gia to notification Form
+                t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
+                t.Tick += new EventHandler(OnTimerTicked);
+                t.Start();
+            }
+            
+        }
+
+        //Notification 
+        public void OnTimerTicked(object sender, EventArgs e)
+        {
+            t.Stop();
+            AlertForm formdois = new AlertForm();
+            formdois.Show();
         }
 
         //Start Properties button
@@ -160,6 +183,7 @@ namespace EventApp
         //Arxi Click Method gia na allazei panel
         private void Home_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = Home.Height;
             SidePanel.Top = Home.Top;
             UserControlΗοme uc = new UserControlΗοme();
@@ -170,6 +194,7 @@ namespace EventApp
 
         private void Create_Event_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = Create_Event.Height;
             SidePanel.Top = Create_Event.Top;
             UserControlCreateEvent uc = new UserControlCreateEvent();
@@ -180,6 +205,7 @@ namespace EventApp
 
         private void Help_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = Help.Height;
             SidePanel.Top = Help.Top;
             UserControlHelp uc = new UserControlHelp();
@@ -190,6 +216,7 @@ namespace EventApp
 
         private void About_Us_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = About_Us.Height;
             SidePanel.Top = About_Us.Top;
             UserControlAboutUs uc = new UserControlAboutUs();
@@ -200,6 +227,7 @@ namespace EventApp
 
         private void Contact_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = Contact.Height;
             SidePanel.Top = Contact.Top;
             UserControlContact uc = new UserControlContact();
@@ -226,6 +254,7 @@ namespace EventApp
 
         private void favlistBtn_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             UserControlFavList uc = new UserControlFavList();
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
@@ -233,12 +262,19 @@ namespace EventApp
         }
         private void managerBtn_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = managerBtn.Height;
             SidePanel.Top = managerBtn.Top;
             UserControlManage uc = new UserControlManage();
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
             uc.BringToFront();
+        }
+
+        private void notificationBtn_Click(object sender, EventArgs e)
+        {
+            AlertForm uc = new AlertForm();
+            uc.Show();
         }
 
         //Telos Click Method gia na allazei panel
@@ -371,6 +407,8 @@ namespace EventApp
             }
 
         }
+
+       
         //Telos Alla Properties 
     }
 }

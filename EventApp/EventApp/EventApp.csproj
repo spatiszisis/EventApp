@@ -83,6 +83,12 @@
     <Compile Include="AccessFormToGoogleAccount.Designer.cs">
       <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertForm.Designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AuthenticationContact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </Compile>
     <EmbeddedResource Include="AccessFormToGoogleAccount.resx">
       <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AuthenticationContact.resx">
       <DependentUpon>AuthenticationContact.cs</DependentUpon>
@@ -368,6 +377,9 @@
   <ItemGroup>
     <None Include="Resources\star1.png" />
     <None Include="Resources\star %281%29.png" />
+    <None Include="Resources\likeNo.png" />
+    <None Include="Resources\likeYes.png" />
+    <None Include="Resources\notificationOFF.png" />
     <Content Include="Resources\star.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

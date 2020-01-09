@@ -75,7 +75,7 @@ namespace EventApp
                 command.Parameters.AddWithValue("@Title", title_txt.Text);
                 command.Parameters.AddWithValue("@Category", category_box.Text);
                 command.Parameters.AddWithValue("@Description", description_txt.Text);
-                command.Parameters.Add("@Day", dateTimePicker.Value.ToString("dd-MM-yyyy"));
+                command.Parameters.Add("@Day", dateTimePicker.Value.Date.ToString("dd-MM-yyyy"));
                 command.Parameters.AddWithValue("@Time", time_txt.Text);
                 command.Parameters.AddWithValue("@Location", location_txt.Text);
                 command.Parameters.AddWithValue("@Images", imagebt);

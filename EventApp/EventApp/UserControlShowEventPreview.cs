@@ -37,9 +37,13 @@ namespace EventApp
             return returnImage;
         }
 
-        public static int numRating = 0;
+        public static int numRating = 0; //gia na metraei ta asteria
         private void UserControlShowEventPreview_Load(object sender, EventArgs e)
         {
+            //Wrap text
+            descriptionTxt.MaximumSize = new Size(550, 0);
+            descriptionTxt.AutoSize = true;
+
             //Dark Mode
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
@@ -47,17 +51,23 @@ namespace EventApp
                 this.BackColor = UserControlSettingsApp.darkmodecolor;
                 titleTxt.ForeColor = System.Drawing.Color.White;
                 descriptionTxt.ForeColor = System.Drawing.Color.White;
-                dateTxt.ForeColor = System.Drawing.Color.White;
                 timeTxt.ForeColor = System.Drawing.Color.White;
                 locationTxt.ForeColor = System.Drawing.Color.White;
                 categoryTxt.ForeColor = System.Drawing.Color.White;
                 label4.ForeColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
+                label1.ForeColor = System.Drawing.Color.White;
+                usernumber_label.ForeColor = System.Drawing.Color.White;
+                panel1.BackColor = System.Drawing.Color.White;
+                panel2.BackColor = System.Drawing.Color.White;
+                panel3.BackColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {
                 this.BackColor = Color.White;
             }
 
+            //diavazei to event kai to emfanizei
             try
             {
                 connection.Open();
@@ -73,7 +83,7 @@ namespace EventApp
                 {
                     titleTxt.Text = reader["Title"].ToString();
                     descriptionTxt.Text = reader["Description"].ToString();
-                    dateTxt.Text = reader["Day"].ToString();
+                    dateTimePicker1.Value = (DateTime)reader["Day"];
                     timeTxt.Text = reader["Time"].ToString();
                     categoryTxt.Text = reader["Category"].ToString();
                     locationTxt.Text = reader["Location"].ToString();
@@ -82,8 +92,22 @@ namespace EventApp
                     EventId = (int)reader["EventsID"];
                 }
                 reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+                connection.Close();
+            }
+            finally
+            {
+                connection.Close();
 
+            }
+
+            try
+            {
                 //Emfanisi Asteriwn
+                connection.Open();
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection;
                 string query1 = "select * from Rating where [EventID] = @Eventid";
@@ -137,7 +161,7 @@ namespace EventApp
             finally
             {
                 connection.Close();
-                
+
             }
 
 
@@ -148,7 +172,6 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command2 = new OleDbCommand();
                 command2.Connection = connection;
-                //command2.CommandType = CommandType.Text;
                 string query2 = "select * from AttendList where [UserID] = @user and [EvenTID] = @eventid";
                 command2.Parameters.AddWithValue("@user", Login.UserID);
                 command2.Parameters.AddWithValue("@eventid", EventId);
@@ -171,6 +194,7 @@ namespace EventApp
                     goBtn.Visible = false;
                     dontgo_btn.Visible = true;
                 }
+                reader2.Close();
             }
             catch (Exception ex)
             {
@@ -179,27 +203,66 @@ namespace EventApp
             finally
             {
                 connection.Close();
-                
+
             }
 
             //posoi tha pane
+           try
+            {
+                connection.Open();
+                OleDbCommand command3 = new OleDbCommand();
+                command3.Connection = connection;
+                command3.CommandType = CommandType.Text;
+                string query3 = "select * from AttendList where [EvenTID] = @eventid";
+                command3.Parameters.AddWithValue("@eventid", EventId);
+                command3.CommandText = query3;
+                OleDbDataReader reader3 = command3.ExecuteReader();
+                int count = 0;
+             
+                while (reader3.Read())
+                {
+                    count++;
+                }
+                usernumber_label.Text = count.ToString();
+                reader3.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            //na tsekarei ean iparxei sigkekrimeno event sti FavList
             try
             {
 
                 connection.Open();
                 OleDbCommand command3 = new OleDbCommand();
                 command3.Connection = connection;
-                //command3.CommandType = CommandType.Text;
-                string query3 = "select count(*) from AttendList where [EvenTID] = @eventid";
+                string query3 = "select * from FavList where [UserID] = @Userid and [EventID] = @eventid";
+                command3.Parameters.AddWithValue("@Userid", Login.UserID);
                 command3.Parameters.AddWithValue("@eventid", EventId);
                 command3.CommandText = query3;
-                OleDbDataReader reader3 =  command3.ExecuteReader();
+                OleDbDataReader reader3 = command3.ExecuteReader();
                 int count = 0;
                 while (reader3.Read())
                 {
                     count++;
                 }
-                usernumber_label.Text = count.ToString();
+                if (count == 0)
+                {
+                    this.favlist_button.Image = new Bitmap(Resources.likeNo);
+                }
+                else
+                {
+                    this.favlist_button.Image = new Bitmap(Resources.likeYes);
+                }
+                
+                reader3.Close();
+            
             }
             catch (Exception ex)
             {
@@ -218,14 +281,14 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into FavList ( [EventID], [UserID]) values (@Eventid, @Userid)";
+                command.CommandText = "insert into FavList ([EventID], [UserID]) values (@Eventid, @Userid)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Eventid", EventId);
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
 
                 command.ExecuteNonQuery();
                 MessageBox.Show("Saved to favorite! ");
-                
+
             }
             catch (Exception ex)
             {
@@ -235,6 +298,7 @@ namespace EventApp
             {
                 connection.Close();
             }
+            this.favlist_button.Image = new Bitmap(Resources.likeYes);
         }
 
         private void backBtn_Click(object sender, EventArgs e)
@@ -320,9 +384,9 @@ namespace EventApp
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                string query = "delete * from AttendList where [EventID] = @Eventid and [UserID] = @Userid";
-                command.Parameters.AddWithValue("@Eventid", EventId);
+                string query = "delete * from AttendList where [UserID] = @Userid and [EvenTID] = @Eventid";
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
+                command.Parameters.AddWithValue("@Eventid", EventId);
                 command.CommandText = query;
 
 
@@ -332,7 +396,7 @@ namespace EventApp
                     goBtn.Visible = true;
                 }
 
-                
+
             }
             catch (Exception ex)
             {
@@ -352,14 +416,14 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into AttendList ([UserID], [EventID]) values (@Userid, @Eventid)";
+                command.CommandText = "insert into AttendList ([UserID], [EvenTID]) values (@Userid, @Eventid)";
                 command.Connection = connection;
-                command.Parameters.AddWithValue("@Eventid", EventId);
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
+                command.Parameters.AddWithValue("@Eventid", EventId);
 
                 command.ExecuteNonQuery();
-                MessageBox.Show("Θα πάτε σε αυτή την εκδήλωση ");
-               
+                MessageBox.Show("Have fun! ");
+
             }
             catch (Exception ex)
             {

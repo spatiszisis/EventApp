@@ -27,7 +27,7 @@ namespace EventApp
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            SetValueDay = dateTimePicker1.Value.ToString("dd-MM-yyyy");
+            SetValueDay      = dateTimePicker1.Value.ToString("dd-MM-yyyy");
             SetValueLocation = locationCombo.Text;
             SetValueCategory = categoryCombo.Text;
             
@@ -40,12 +40,6 @@ namespace EventApp
             }
             HomePage.Instance.PnlContainer.Controls["UserControlShowEvents"].BringToFront();
 
-
-            var client = new RestClient("https://community-eventful.p.rapidapi.com/events/search?q=music&app_key=6t36739SKFQD49hW");
-            var request = new RestRequest(Method.GET);
-            request.AddHeader("x-rapidapi-host", "community-eventful.p.rapidapi.com");
-            request.AddHeader("x-rapidapi-key", "c8810b1a79msh4ae5777760c25a0p12c7a6jsnc6efe4bf0b60");
-            IRestResponse response = client.Execute(request);
         }
     }
 }
