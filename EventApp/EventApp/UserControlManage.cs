@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
-using Connect;
 
 namespace EventApp
 {
     public partial class UserControlManage : UserControl
     {
         private OleDbConnection connection = new OleDbConnection();
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         public UserControlManage()
         {
             InitializeComponent();

@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
-using Connect;
 using System.Drawing.Imaging;
 
 namespace EventApp
@@ -17,7 +16,7 @@ namespace EventApp
     public partial class UserControlCreateEvent : UserControl
     {
         private OleDbConnection connection = new OleDbConnection();
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         public String imgpath = "";
 
         public UserControlCreateEvent()

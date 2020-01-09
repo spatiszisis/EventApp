@@ -95,6 +95,7 @@
     <Compile Include="AuthenticationContact.Designer.cs">
       <DependentUpon>AuthenticationContact.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connect.cs" />
     <Compile Include="DataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

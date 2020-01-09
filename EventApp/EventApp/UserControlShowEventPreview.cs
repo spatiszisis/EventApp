@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
-using Connect;
 using System.Windows.Media.Imaging;
 using EventApp.Properties;
 
@@ -18,7 +17,7 @@ namespace EventApp
     public partial class UserControlShowEventPreview : UserControl
     {
         private OleDbConnection connection = new OleDbConnection();
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         Image icon;
         public int UserId = 0;
         public int EventId = 0;

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Connect;
 using System.Data.OleDb;
 
 namespace EventApp
@@ -15,7 +14,7 @@ namespace EventApp
     public partial class EventShowPanelUserControl : UserControl
     {
         private OleDbConnection connection = new OleDbConnection();
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         public EventShowPanelUserControl()
         {
             InitializeComponent();

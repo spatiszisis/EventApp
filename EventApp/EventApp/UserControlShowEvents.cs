@@ -17,7 +17,7 @@ namespace EventApp
     public partial class UserControlShowEvents : UserControl
     {
         private OleDbConnection connection = new OleDbConnection();
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         Image icon;
         public int Eventid = 0;
 

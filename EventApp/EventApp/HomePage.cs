@@ -9,11 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Connect;
 using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.IO;
-using Connect;
 using System.Windows.Documents;
 
 namespace EventApp
@@ -45,7 +43,7 @@ namespace EventApp
         private OleDbConnection connection = new OleDbConnection();
         Timer t = new Timer(); // Dilwsh tou timer
 
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         public HomePage()
         {
             InitializeComponent();

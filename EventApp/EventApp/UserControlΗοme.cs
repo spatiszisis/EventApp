@@ -15,7 +15,7 @@ namespace EventApp
 {
     public partial class UserControlΗοme : System.Windows.Forms.UserControl
     {
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         public UserControlΗοme()
         {
             InitializeComponent();

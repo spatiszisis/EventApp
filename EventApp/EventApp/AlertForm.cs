@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using Connect;
 using System.IO;
 
 namespace EventApp
@@ -16,7 +15,7 @@ namespace EventApp
     public partial class AlertForm : Form
     {
         private OleDbConnection connection = new OleDbConnection();
-        Connect1 con = new Connect1();
+        Connect con = new Connect();
         Image icon;
         public AlertForm()
         {
