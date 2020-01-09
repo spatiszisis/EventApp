@@ -262,7 +262,6 @@ namespace EventApp
                 }
                 
                 reader3.Close();
-                usernumber_label.Text = count.ToString();
             }
             catch (Exception ex)
             {

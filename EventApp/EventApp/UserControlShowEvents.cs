@@ -24,7 +24,7 @@ namespace EventApp
         public UserControlShowEvents()
         {
             InitializeComponent();
-            connection.ConnectionString = con.ConnectString;
+
         }
 
         private Image byteArrayToImage(byte[] byteArrayIn)
@@ -50,7 +50,7 @@ namespace EventApp
             }
             try
             {
-                
+                connection.ConnectionString = con.ConnectString;
                 connection.Open();
                 //Emfanisi apo to DataUser me vasi ta click tou xristi
 
@@ -77,13 +77,13 @@ namespace EventApp
                     while (reader3.Read())
                     {
 
-                        listitems2.Title            = reader3["Title"].ToString();
-                        listitems2.Location         = reader3["Location"].ToString();
-                        listitems2.Day              = (DateTime)reader3["Day"];
-                        listitems2.Time             = reader3["Time"].ToString();
-                        icon                        = byteArrayToImage((byte[])reader3["images"]);
-                        listitems2.Icon             = icon;
-                        listitems2.BorderStyle      = System.Windows.Forms.BorderStyle.Fixed3D;
+                        listitems2.Title = reader3["Title"].ToString();
+                        listitems2.Location = reader3["Location"].ToString();
+                        listitems2.Day = (DateTime)reader3["Day"];
+                        listitems2.Time = reader3["Time"].ToString();
+                        icon = byteArrayToImage((byte[])reader3["images"]);
+                        listitems2.Icon = icon;
+                        listitems2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanel2.Controls.Count < 0)
                         {
@@ -101,16 +101,28 @@ namespace EventApp
                 }
                 reader2.Close();
 
-                //Emfanisi tou search erwtimatos apo to homepage
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + " ");
+                connection.Close();
+            }
 
-                OleDbCommand command = new OleDbCommand();
-                OleDbCommand command1 = new OleDbCommand();
-                command.Connection = connection;
-                command1.Connection = connection;
-                string a = "All Events";
-                if (UserControlΗοme.SetValueCategory.Equals(a))
+            //End Emfanisi apo to DataUser me vasi ta click tou xristi
+
+            //Emfanisi tou search erwtimatos apo to homepage
+
+            //na emfanisei mono to day
+            if (UserControlΗοme.SetValueDay != String.Empty && UserControlΗοme.SetValueCategory.Equals("Anything") && UserControlΗοme.SetValueLocation.Equals("Any City"))
+            {
+                try
                 {
-                    string query = "select * from Events";
+                    OleDbCommand command = new OleDbCommand();
+                    OleDbCommand command1 = new OleDbCommand();
+                    command.Connection = connection;
+                    command1.Connection = connection;
+                    string query = "select * from Events where [Day] = @Day";
+                    command.Parameters.AddWithValue("@Day", UserControlΗοme.SetValueDay);
                     string query1 = "select count(*) from Events";
                     command.CommandText = query;
                     command1.CommandText = query1;
@@ -122,13 +134,13 @@ namespace EventApp
                         EventShowPanelUserControl listitems = new EventShowPanelUserControl();
                         for (int i = 0; i < countEvents; i++)
                         {
-                            listitems.Title         = reader["Title"].ToString();
-                            listitems.Location      = reader["Location"].ToString();
-                            listitems.Day           = (DateTime)reader["Day"];
-                            listitems.Time          = reader["Time"].ToString();
-                            icon                    = byteArrayToImage((byte[])reader["images"]);
-                            listitems.Icon          = icon;
-                            listitems.BorderStyle   = System.Windows.Forms.BorderStyle.Fixed3D;
+                            listitems.Title = reader["Title"].ToString();
+                            listitems.Location = reader["Location"].ToString();
+                            listitems.Day = (DateTime)reader["Day"];
+                            listitems.Time = reader["Time"].ToString();
+                            icon = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon = icon;
+                            listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
                             if (flowLayoutPanel1.Controls.Count < 0)
                             {
@@ -142,11 +154,72 @@ namespace EventApp
                     }
                     reader.Close();
                 }
-                else
+                catch (Exception ex)
                 {
-                    string query = "select * from Events where [Category] = @Category and [Day] = @Day and [Location] = @Location";
+                    MessageBox.Show(ex + " ");
+                    connection.Close();
+                }
+
+            }
+            //na emfanisei mono to category
+            else if (UserControlΗοme.SetValueCategory != String.Empty && UserControlΗοme.SetValueDay != String.Empty && UserControlΗοme.SetValueLocation.Equals("Any City"))
+            {
+                try
+                {
+                    OleDbCommand command = new OleDbCommand();
+                    OleDbCommand command1 = new OleDbCommand();
+                    command.Connection = connection;
+                    command1.Connection = connection;
+                    string query = "select * from Events where [Category] = @Category";
                     command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueCategory);
-                    command.Parameters.AddWithValue("@Day", UserControlΗοme.SetValueDay);   
+                    string query1 = "select count(*) from Events";
+                    command.CommandText = query;
+                    command1.CommandText = query1;
+                    int countEvents = (int)command1.ExecuteScalar();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                        for (int i = 0; i < countEvents; i++)
+                        {
+                            listitems.Title = reader["Title"].ToString();
+                            listitems.Location = reader["Location"].ToString();
+                            listitems.Day = (DateTime)reader["Day"];
+                            listitems.Time = reader["Time"].ToString();
+                            icon = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon = icon;
+                            listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                            if (flowLayoutPanel1.Controls.Count < 0)
+                            {
+                                flowLayoutPanel1.Controls.Clear();
+                            }
+                            else
+                            {
+                                flowLayoutPanel1.Controls.Add(listitems);
+                            }
+                        }
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex + " ");
+                    connection.Close();
+                }
+
+            }
+            //na emfanisei mono to location
+            else if (UserControlΗοme.SetValueLocation != String.Empty && UserControlΗοme.SetValueDay != String.Empty && UserControlΗοme.SetValueCategory.Equals("Anything"))
+            { 
+                try
+                {
+                    OleDbCommand command = new OleDbCommand();
+                    OleDbCommand command1 = new OleDbCommand();
+                    command.Connection = connection;
+                    command1.Connection = connection;
+                    string query = "select * from Events where [Location] = @Location";
                     command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueLocation);
                     string query1 = "select count(*) from Events";
                     command.CommandText = query;
@@ -159,13 +232,13 @@ namespace EventApp
                         EventShowPanelUserControl listitems = new EventShowPanelUserControl();
                         for (int i = 0; i < countEvents; i++)
                         {
-                            listitems.Title             = reader["Title"].ToString();
-                            listitems.Location          = reader["Location"].ToString();
-                            listitems.Day               = (DateTime)reader["Day"];
-                            listitems.Time              = reader["Time"].ToString();
-                            icon                        = byteArrayToImage((byte[])reader["images"]);
-                            listitems.Icon              = icon;
-                            listitems.BorderStyle       = System.Windows.Forms.BorderStyle.Fixed3D;
+                            listitems.Title = reader["Title"].ToString();
+                            listitems.Location = reader["Location"].ToString();
+                            listitems.Day = (DateTime)reader["Day"];
+                            listitems.Time = reader["Time"].ToString();
+                            icon = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon = icon;
+                            listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
                             if (flowLayoutPanel1.Controls.Count < 0)
                             {
@@ -179,27 +252,165 @@ namespace EventApp
                     }
                     reader.Close();
                 }
-                
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex + " ");
+                    connection.Close();
+                }
+
+            }
+            else if (UserControlΗοme.SetValueCategory.Equals("All Events")) // na emfanisei ola ta events
+            {
+                try
+                {
+                    OleDbCommand command = new OleDbCommand();
+                    OleDbCommand command1 = new OleDbCommand();
+                    command.Connection = connection;
+                    command1.Connection = connection;
+                    string query = "select * from Events";
+                    string query1 = "select count(*) from Events";
+                    command.CommandText = query;
+                    command1.CommandText = query1;
+                    int countEvents = (int)command1.ExecuteScalar();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                        for (int i = 0; i < countEvents; i++)
+                        {
+                            listitems.Title = reader["Title"].ToString();
+                            listitems.Location = reader["Location"].ToString();
+                            listitems.Day = (DateTime)reader["Day"];
+                            listitems.Time = reader["Time"].ToString();
+                            icon = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon = icon;
+                            listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                            if (flowLayoutPanel1.Controls.Count < 0)
+                            {
+                                flowLayoutPanel1.Controls.Clear();
+                            }
+                            else
+                            {
+                                flowLayoutPanel1.Controls.Add(listitems);
+                            }
+                        }
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex + " ");
+                    connection.Close();
+                }
+
+            }
+            else //Na emfanisei ena event me imerominia , category , location
+            {
+                try
+                {
+                    OleDbCommand command = new OleDbCommand();
+                    OleDbCommand command1 = new OleDbCommand();
+                    command.Connection = connection;
+                    command1.Connection = connection;
+                    string query = "select * from Events where [Category] = @Category and [Day] = @Day and [Location] = @Location";
+                    command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueCategory);
+                    command.Parameters.AddWithValue("@Day", UserControlΗοme.SetValueDay);
+                    command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueLocation);
+                    string query1 = "select count(*) from Events";
+                    command.CommandText = query;
+                    command1.CommandText = query1;
+                    int countEvents = (int)command1.ExecuteScalar();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                        for (int i = 0; i < countEvents; i++)
+                        {
+                            listitems.Title = reader["Title"].ToString();
+                            listitems.Location = reader["Location"].ToString();
+                            listitems.Day = (DateTime)reader["Day"];
+                            listitems.Time = reader["Time"].ToString();
+                            icon = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon = icon;
+                            listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                            if (flowLayoutPanel1.Controls.Count < 0)
+                            {
+                                flowLayoutPanel1.Controls.Clear();
+                            }
+                            else
+                            {
+                                flowLayoutPanel1.Controls.Add(listitems);
+                            }
+                        }
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex + " ");
+                    connection.Close();
+                }
+            }
+
+            /*try
+            {
+                OleDbCommand command = new OleDbCommand();
+                OleDbCommand command1 = new OleDbCommand();
+                command.Connection = connection;
+                command1.Connection = connection;
+                string query = "select * from Events where [Category] like %@Search%";
+                command.Parameters.AddWithValue("@Search", HomePage.SetValueSearch);
+                string query1 = "select count(*) from Events";
+                command.CommandText = query;
+                command1.CommandText = query1;
+                int countEvents = (int)command1.ExecuteScalar();
+                OleDbDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                    for (int i = 0; i < countEvents; i++)
+                    {
+                        listitems.Title = reader["Title"].ToString();
+                        listitems.Location = reader["Location"].ToString();
+                        listitems.Day = (DateTime)reader["Day"];
+                        listitems.Time = reader["Time"].ToString();
+                        icon = byteArrayToImage((byte[])reader["images"]);
+                        listitems.Icon = icon;
+                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                        if (flowLayoutPanel1.Controls.Count < 0)
+                        {
+                            flowLayoutPanel1.Controls.Clear();
+                        }
+                        else
+                        {
+                            flowLayoutPanel1.Controls.Add(listitems);
+                        }
+                    }
+                }
+                reader.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex + " ");
-            }
-            finally
-            {
                 connection.Close();
-                connection.Dispose();
             }
+        */
         }
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            UserControlΗοme.SetValueLocation = null;
-            UserControlΗοme.SetValueCategory = null;
-            UserControlΗοme uc = new UserControlΗοme();
             this.Dispose();
-            uc.Show();
-            
+            /*UserControlΗοme uc = new UserControlΗοme();
+            uc.Dock = DockStyle.Fill;
+            //HomePage.PnlContainer.Controls.Add(uc);
+            uc.BringToFront();*/
+
         }
     }
 }

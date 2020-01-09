@@ -82,6 +82,7 @@
             // 
             this.loadimage_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loadimage_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(122)))));
+            this.loadimage_btn.FlatAppearance.BorderSize = 0;
             this.loadimage_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadimage_btn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
             this.loadimage_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -166,7 +167,6 @@
             "Athens",
             "Patra",
             "Larisa",
-            "Ioannina",
             "Volos",
             "Herakleion",
             "Kavala",

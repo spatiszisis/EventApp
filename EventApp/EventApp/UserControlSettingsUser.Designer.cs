@@ -213,7 +213,6 @@
             "Athens",
             "Patra",
             "Larisa",
-            "Ioannina",
             "Volos",
             "Herakleion",
             "Kavala",
@@ -256,6 +255,7 @@
             // 
             // dataGridViewEvents
             // 
+            this.dataGridViewEvents.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridViewEvents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEvents.Location = new System.Drawing.Point(25, 410);
             this.dataGridViewEvents.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

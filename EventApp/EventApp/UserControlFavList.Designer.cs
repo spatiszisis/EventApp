@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanelFav = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanelGoEvents = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,7 @@
             // 
             // flowLayoutPanelFav
             // 
+            this.flowLayoutPanelFav.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanelFav.AutoScroll = true;
             this.flowLayoutPanelFav.Location = new System.Drawing.Point(3, 100);
             this.flowLayoutPanelFav.Name = "flowLayoutPanelFav";
@@ -79,6 +80,15 @@
             this.panel2.Size = new System.Drawing.Size(1453, 785);
             this.panel2.TabIndex = 29;
             // 
+            // flowLayoutPanelGoEvents
+            // 
+            this.flowLayoutPanelGoEvents.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.flowLayoutPanelGoEvents.AutoScroll = true;
+            this.flowLayoutPanelGoEvents.Location = new System.Drawing.Point(3, 457);
+            this.flowLayoutPanelGoEvents.Name = "flowLayoutPanelGoEvents";
+            this.flowLayoutPanelGoEvents.Size = new System.Drawing.Size(1426, 276);
+            this.flowLayoutPanelGoEvents.TabIndex = 30;
+            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -90,14 +100,6 @@
             this.label2.Size = new System.Drawing.Size(324, 49);
             this.label2.TabIndex = 29;
             this.label2.Text = "You are going to...";
-            // 
-            // flowLayoutPanelGoEvents
-            // 
-            this.flowLayoutPanelGoEvents.AutoScroll = true;
-            this.flowLayoutPanelGoEvents.Location = new System.Drawing.Point(3, 457);
-            this.flowLayoutPanelGoEvents.Name = "flowLayoutPanelGoEvents";
-            this.flowLayoutPanelGoEvents.Size = new System.Drawing.Size(1426, 276);
-            this.flowLayoutPanelGoEvents.TabIndex = 30;
             // 
             // UserControlFavList
             // 

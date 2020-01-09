@@ -19,6 +19,7 @@ namespace EventApp
         public UserControlΗοme()
         {
             InitializeComponent();
+            
         }
         public static string SetValueDay = "";
         public static string SetValueLocation = "";
@@ -39,7 +40,14 @@ namespace EventApp
                 HomePage.Instance.PnlContainer.Controls.Add(scse);
             }
             HomePage.Instance.PnlContainer.Controls["UserControlShowEvents"].BringToFront();
+            
+        }
 
+        private void UserControlΗοme_Load(object sender, EventArgs e)
+        {
+            locationCombo.SelectedText = "Any City";
+            categoryCombo.SelectedText = "Anything";
+            dateTimePicker1.Value = DateTime.Now;
         }
     }
 }

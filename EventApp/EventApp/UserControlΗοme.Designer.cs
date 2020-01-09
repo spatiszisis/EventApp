@@ -121,7 +121,6 @@
             this.categoryCombo.ForeColor = System.Drawing.Color.Gray;
             this.categoryCombo.FormattingEnabled = true;
             this.categoryCombo.Items.AddRange(new object[] {
-            "Anything",
             "All Events",
             "Concerts",
             "Comedy",
@@ -142,7 +141,6 @@
             this.categoryCombo.Name = "categoryCombo";
             this.categoryCombo.Size = new System.Drawing.Size(241, 32);
             this.categoryCombo.TabIndex = 3;
-            this.categoryCombo.Text = "Anything";
             // 
             // locationCombo
             // 
@@ -150,12 +148,11 @@
             this.locationCombo.ForeColor = System.Drawing.Color.Gray;
             this.locationCombo.FormattingEnabled = true;
             this.locationCombo.Items.AddRange(new object[] {
-            "City",
+            "Any City",
             "Thessaloniki",
             "Athens",
             "Patra",
             "Larisa",
-            "Ioannina",
             "Volos",
             "Herakleion",
             "Kavala",
@@ -166,7 +163,6 @@
             this.locationCombo.Name = "locationCombo";
             this.locationCombo.Size = new System.Drawing.Size(241, 32);
             this.locationCombo.TabIndex = 2;
-            this.locationCombo.Text = "City";
             // 
             // label1
             // 
@@ -189,6 +185,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlΗοme";
             this.Size = new System.Drawing.Size(1453, 785);
+            this.Load += new System.EventHandler(this.UserControlΗοme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

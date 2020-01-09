@@ -56,11 +56,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // timeTxt
@@ -163,6 +165,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.Location = new System.Drawing.Point(862, 698);
@@ -174,6 +177,7 @@
             // 
             // usernumber_label
             // 
+            this.usernumber_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.usernumber_label.AutoSize = true;
             this.usernumber_label.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.usernumber_label.Location = new System.Drawing.Point(950, 698);
@@ -185,6 +189,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker1.Checked = false;
             this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -196,6 +201,7 @@
             // 
             // backBtn
             // 
+            this.backBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.backBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.backBtn.FlatAppearance.BorderSize = 0;
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -210,6 +216,7 @@
             // 
             // favlist_button
             // 
+            this.favlist_button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.favlist_button.BackColor = System.Drawing.SystemColors.Control;
             this.favlist_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.favlist_button.FlatAppearance.BorderSize = 0;
@@ -308,6 +315,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(864, 232);
@@ -319,6 +327,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(864, 306);
@@ -330,6 +339,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(864, 380);
             this.pictureBox3.Name = "pictureBox3";
@@ -340,6 +350,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.ErrorImage")));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(864, 158);
@@ -362,6 +373,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Location = new System.Drawing.Point(159, 567);
             this.panel1.Name = "panel1";
@@ -370,6 +382,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel2.Location = new System.Drawing.Point(867, 517);
             this.panel2.Name = "panel2";
@@ -378,43 +391,53 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel3.Location = new System.Drawing.Point(159, 127);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(620, 1);
             this.panel3.TabIndex = 45;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.favlist_button);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.dateTimePicker1);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.pictureBox3);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.usernumber_label);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.backBtn);
+            this.panel4.Controls.Add(this.dontgo_btn);
+            this.panel4.Controls.Add(this.categoryTxt);
+            this.panel4.Controls.Add(this.descriptionTxt);
+            this.panel4.Controls.Add(this.timeTxt);
+            this.panel4.Controls.Add(this.star4Btn);
+            this.panel4.Controls.Add(this.star5Btn);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.star3Btn);
+            this.panel4.Controls.Add(this.star2Btn);
+            this.panel4.Controls.Add(this.locationTxt);
+            this.panel4.Controls.Add(this.star1Btn);
+            this.panel4.Controls.Add(this.goBtn);
+            this.panel4.Controls.Add(this.imagePictureBox);
+            this.panel4.Controls.Add(this.titleTxt);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1453, 785);
+            this.panel4.TabIndex = 46;
+            // 
             // UserControlShowEventPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.usernumber_label);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dontgo_btn);
-            this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.favlist_button);
-            this.Controls.Add(this.categoryTxt);
-            this.Controls.Add(this.timeTxt);
-            this.Controls.Add(this.descriptionTxt);
-            this.Controls.Add(this.star5Btn);
-            this.Controls.Add(this.star4Btn);
-            this.Controls.Add(this.star3Btn);
-            this.Controls.Add(this.star2Btn);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.star1Btn);
-            this.Controls.Add(this.goBtn);
-            this.Controls.Add(this.locationTxt);
-            this.Controls.Add(this.imagePictureBox);
-            this.Controls.Add(this.titleTxt);
+            this.Controls.Add(this.panel4);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlShowEventPreview";
             this.Size = new System.Drawing.Size(1453, 785);
@@ -424,8 +447,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -458,5 +482,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
