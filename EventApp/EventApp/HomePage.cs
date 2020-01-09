@@ -193,6 +193,7 @@ namespace EventApp
         //Arxi Click Method gia na allazei panel
         private void Home_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear(); ////////
             SidePanel.Height = Home.Height;
             SidePanel.Top = Home.Top;
             UserControlΗοme uc = new UserControlΗοme();
@@ -203,6 +204,7 @@ namespace EventApp
 
         private void Create_Event_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = Create_Event.Height;
             SidePanel.Top = Create_Event.Top;
             UserControlCreateEvent uc = new UserControlCreateEvent();
@@ -213,6 +215,7 @@ namespace EventApp
 
         private void Help_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = Help.Height;
             SidePanel.Top = Help.Top;
             UserControlHelp uc = new UserControlHelp();
@@ -223,6 +226,7 @@ namespace EventApp
 
         private void About_Us_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = About_Us.Height;
             SidePanel.Top = About_Us.Top;
             UserControlAboutUs uc = new UserControlAboutUs();
@@ -233,6 +237,7 @@ namespace EventApp
 
         private void Contact_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = Contact.Height;
             SidePanel.Top = Contact.Top;
             UserControlContact uc = new UserControlContact();

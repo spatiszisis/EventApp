@@ -100,7 +100,7 @@ namespace EventApp
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
                 command.CommandText = "insert into DataUser ([UserID],[EventID]) values (@UserID, @EventID)";
-                command.Parameters.AddWithValue("@UserID", userid);
+                command.Parameters.AddWithValue("@UserID", Login.UserID);
                 command.Parameters.AddWithValue("@EventID", eventid);
                 command.Connection = connection;
 

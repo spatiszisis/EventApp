@@ -115,7 +115,7 @@ namespace EventApp
 
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection;
-                string query1 = "select * from AttendList where [UserID] = @Userid";
+                string query1 = "select distinct [EventID] AttendList where [UserID] = @Userid";
                 command1.Parameters.AddWithValue("@Userid", Login.UserID);
                 command1.CommandText = query1;
                 OleDbDataReader reader = command1.ExecuteReader();

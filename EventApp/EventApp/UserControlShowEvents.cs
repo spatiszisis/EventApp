@@ -56,7 +56,7 @@ namespace EventApp
 
                 OleDbCommand command2 = new OleDbCommand();
                 command2.Connection = connection;
-                string query2 = "select * from DataUser where [UserID] = @Userid";
+                string query2 = "select distinct [EventID] from DataUser where [UserID] = @Userid";
                 command2.Parameters.AddWithValue("@Userid", Login.UserID);
                 command2.CommandText = query2;
                 OleDbDataReader reader2 = command2.ExecuteReader();
@@ -406,11 +406,6 @@ namespace EventApp
         private void backBtn_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            /*UserControlΗοme uc = new UserControlΗοme();
-            uc.Dock = DockStyle.Fill;
-            //HomePage.PnlContainer.Controls.Add(uc);
-            uc.BringToFront();*/
-
         }
     }
 }
