@@ -26,6 +26,7 @@ namespace EventApp
         public static string password = "";
         public static Boolean isAdmin;
         public static int UserID = 0;
+        public static string Location = "";
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -34,7 +35,6 @@ namespace EventApp
             String Email = "";
             String FirstName = "";
             String LastName = "";
-            String Location = "";
             
             connection.Open();
 

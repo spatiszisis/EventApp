@@ -37,9 +37,13 @@ namespace EventApp
             return returnImage;
         }
 
-        public static int numRating = 0;
+        public static int numRating = 0; //gia na metraei ta asteria
         private void UserControlShowEventPreview_Load(object sender, EventArgs e)
         {
+            //Wrap text
+            descriptionTxt.MaximumSize = new Size(550, 0);
+            descriptionTxt.AutoSize = true;
+
             //Dark Mode
             int c = (int)UserControlSettingsApp.color;
             if (c == 0)
@@ -51,6 +55,12 @@ namespace EventApp
                 locationTxt.ForeColor = System.Drawing.Color.White;
                 categoryTxt.ForeColor = System.Drawing.Color.White;
                 label4.ForeColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
+                label1.ForeColor = System.Drawing.Color.White;
+                usernumber_label.ForeColor = System.Drawing.Color.White;
+                panel1.BackColor = System.Drawing.Color.White;
+                panel2.BackColor = System.Drawing.Color.White;
+                panel3.BackColor = System.Drawing.Color.White;
             }
             else if (c == 1)
             {
@@ -199,7 +209,6 @@ namespace EventApp
             //posoi tha pane
             try
             {
-
                 connection.Open();
                 OleDbCommand command3 = new OleDbCommand();
                 command3.Connection = connection;
@@ -209,10 +218,49 @@ namespace EventApp
                 command3.CommandText = query3;
                 OleDbDataReader reader3 = command3.ExecuteReader();
                 int count = 0;
+             
                 while (reader3.Read())
                 {
                     count++;
                 }
+                usernumber_label.Text = count.ToString();
+                reader3.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            //na tsekarei ean iparxei sigkekrimeno event sti FavList
+            try
+            {
+
+                connection.Open();
+                OleDbCommand command3 = new OleDbCommand();
+                command3.Connection = connection;
+                string query3 = "select * from FavList where [UserID] = @Userid and [EventID] = @eventid";
+                command3.Parameters.AddWithValue("@Userid", Login.UserID);
+                command3.Parameters.AddWithValue("@eventid", EventId);
+                command3.CommandText = query3;
+                OleDbDataReader reader3 = command3.ExecuteReader();
+                int count = 0;
+                while (reader3.Read())
+                {
+                    count++;
+                }
+                if (count == 0)
+                {
+                    this.favlist_button.Image = new Bitmap(Resources.likeNo);
+                }
+                else
+                {
+                    this.favlist_button.Image = new Bitmap(Resources.likeYes);
+                }
+                
                 reader3.Close();
                 usernumber_label.Text = count.ToString();
             }
@@ -250,6 +298,7 @@ namespace EventApp
             {
                 connection.Close();
             }
+            this.favlist_button.Image = new Bitmap(Resources.likeYes);
         }
 
         private void backBtn_Click(object sender, EventArgs e)
@@ -367,7 +416,7 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into AttendList ([UserID], [EventID]) values (@Userid, @Eventid)";
+                command.CommandText = "insert into AttendList ([UserID], [EvenTID]) values (@Userid, @Eventid)";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
                 command.Parameters.AddWithValue("@Eventid", EventId);

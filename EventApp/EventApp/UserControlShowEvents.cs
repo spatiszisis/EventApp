@@ -77,13 +77,13 @@ namespace EventApp
                     while (reader3.Read())
                     {
 
-                        listitems2.Title = reader3["Title"].ToString();
-                        listitems2.Location = reader3["Location"].ToString();
-                        listitems2.Day = reader3["Day"].ToString();
-                        listitems2.Time = reader3["Time"].ToString();
-                        icon = byteArrayToImage((byte[])reader3["images"]);
-                        listitems2.Icon = icon;
-                        listitems2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+                        listitems2.Title            = reader3["Title"].ToString();
+                        listitems2.Location         = reader3["Location"].ToString();
+                        listitems2.Day              = (DateTime)reader3["Day"];
+                        listitems2.Time             = reader3["Time"].ToString();
+                        icon                        = byteArrayToImage((byte[])reader3["images"]);
+                        listitems2.Icon             = icon;
+                        listitems2.BorderStyle      = System.Windows.Forms.BorderStyle.Fixed3D;
 
                         if (flowLayoutPanel2.Controls.Count < 0)
                         {
@@ -124,7 +124,7 @@ namespace EventApp
                         {
                             listitems.Title         = reader["Title"].ToString();
                             listitems.Location      = reader["Location"].ToString();
-                            listitems.Day           = reader["Day"].ToString();
+                            listitems.Day           = (DateTime)reader["Day"];
                             listitems.Time          = reader["Time"].ToString();
                             icon                    = byteArrayToImage((byte[])reader["images"]);
                             listitems.Icon          = icon;
@@ -161,7 +161,7 @@ namespace EventApp
                         {
                             listitems.Title             = reader["Title"].ToString();
                             listitems.Location          = reader["Location"].ToString();
-                            listitems.Day               = reader["Day"].ToString();
+                            listitems.Day               = (DateTime)reader["Day"];
                             listitems.Time              = reader["Time"].ToString();
                             icon                        = byteArrayToImage((byte[])reader["images"]);
                             listitems.Icon              = icon;

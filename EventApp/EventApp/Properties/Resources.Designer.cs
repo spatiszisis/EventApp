@@ -243,6 +243,26 @@ namespace EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap likeNo {
+            get {
+                object obj = ResourceManager.GetObject("likeNo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap likeYes {
+            get {
+                object obj = ResourceManager.GetObject("likeYes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap list {
             get {
                 object obj = ResourceManager.GetObject("list", resourceCulture);
@@ -293,9 +313,9 @@ namespace EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Notification_512 {
+        internal static System.Drawing.Bitmap notificationOFF {
             get {
-                object obj = ResourceManager.GetObject("Notification-512", resourceCulture);
+                object obj = ResourceManager.GetObject("notificationOFF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

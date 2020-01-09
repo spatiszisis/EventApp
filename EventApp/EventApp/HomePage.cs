@@ -19,8 +19,11 @@ using System.Windows.Documents;
 namespace EventApp
 {
     public partial class HomePage : Form
+
     {
+
         static HomePage _obj;
+
 
         public static HomePage Instance
         {
@@ -40,7 +43,6 @@ namespace EventApp
             set { panelContainer = value; }
         }
         private OleDbConnection connection = new OleDbConnection();
-
         Timer t = new Timer(); // Dilwsh tou timer
 
         Connect1 con = new Connect1();
@@ -51,6 +53,7 @@ namespace EventApp
             NameLabel.Text = Login.username;
             managerBtn.Visible = false;
         }
+
 
         private void HomePage_Load(object sender, EventArgs e)
         {
@@ -65,18 +68,28 @@ namespace EventApp
                 managerBtn.Visible = true;
             }
 
-            // Gia to notification Form
-            t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
-            t.Tick += new EventHandler(OnTimerTicked);
-            t.Start();           
+            //Elegxos gia to ama iparxei Location i oxi kai analoga tha trexei
+            if(Login.Location == "")
+            {
+                //nothing
+            }
+            else
+            {
+                // Gia to notification Form
+                t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
+                t.Tick += new EventHandler(OnTimerTicked);
+                t.Start();
+            }
+            
         }
+
+        //Notification 
         public void OnTimerTicked(object sender, EventArgs e)
         {
             t.Stop();
             AlertForm formdois = new AlertForm();
             formdois.Show();
         }
-        // Telos Notification Form
 
         //Start Properties button
 
@@ -251,6 +264,12 @@ namespace EventApp
             uc.BringToFront();
         }
 
+        private void notificationBtn_Click(object sender, EventArgs e)
+        {
+            AlertForm uc = new AlertForm();
+            uc.Show();
+        }
+
         //Telos Click Method gia na allazei panel
 
         //Arxi Exit, Log Out    
@@ -291,7 +310,7 @@ namespace EventApp
         private void searchBtn_Click(object sender, EventArgs e)
         {
 
-         /*   if (searchTxt.Text != null)
+            /*if (searchTxt.Text != null)
             {
                 connection.ConnectionString = con.ConnectString;
                 OleDbCommand command = new OleDbCommand();
@@ -382,12 +401,7 @@ namespace EventApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // Gia na anoigei to notification form
-            AlertForm al = new AlertForm();
-            al.Show();
-        }
+       
         //Telos Alla Properties 
     }
 }
