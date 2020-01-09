@@ -437,5 +437,7 @@ namespace EventApp
             goBtn.Visible = false;
             dontgo_btn.Visible = true;
         }
+
+       
     }
 }

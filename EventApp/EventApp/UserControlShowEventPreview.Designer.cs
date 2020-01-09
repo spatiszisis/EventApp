@@ -40,29 +40,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.usernumber_label = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.backBtn = new System.Windows.Forms.Button();
-            this.favlist_button = new System.Windows.Forms.Button();
-            this.star5Btn = new System.Windows.Forms.Button();
-            this.star4Btn = new System.Windows.Forms.Button();
-            this.star3Btn = new System.Windows.Forms.Button();
-            this.star2Btn = new System.Windows.Forms.Button();
-            this.star1Btn = new System.Windows.Forms.Button();
-            this.imagePictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.favlist_button = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backBtn = new System.Windows.Forms.Button();
+            this.star4Btn = new System.Windows.Forms.Button();
+            this.star5Btn = new System.Windows.Forms.Button();
+            this.star3Btn = new System.Windows.Forms.Button();
+            this.star2Btn = new System.Windows.Forms.Button();
+            this.star1Btn = new System.Windows.Forms.Button();
+            this.imagePictureBox = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // timeTxt
@@ -199,167 +199,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(159, 22);
             this.dateTimePicker1.TabIndex = 37;
             // 
-            // backBtn
-            // 
-            this.backBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.backBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.backBtn.FlatAppearance.BorderSize = 0;
-            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
-            this.backBtn.Location = new System.Drawing.Point(47, 42);
-            this.backBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(44, 44);
-            this.backBtn.TabIndex = 32;
-            this.backBtn.UseVisualStyleBackColor = false;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
-            // 
-            // favlist_button
-            // 
-            this.favlist_button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.favlist_button.BackColor = System.Drawing.SystemColors.Control;
-            this.favlist_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.favlist_button.FlatAppearance.BorderSize = 0;
-            this.favlist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.favlist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.favlist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.favlist_button.Image = global::EventApp.Properties.Resources.likeNo;
-            this.favlist_button.Location = new System.Drawing.Point(1076, 78);
-            this.favlist_button.Margin = new System.Windows.Forms.Padding(4);
-            this.favlist_button.Name = "favlist_button";
-            this.favlist_button.Size = new System.Drawing.Size(60, 44);
-            this.favlist_button.TabIndex = 31;
-            this.favlist_button.UseVisualStyleBackColor = false;
-            this.favlist_button.Click += new System.EventHandler(this.favlist_button_Click);
-            // 
-            // star5Btn
-            // 
-            this.star5Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star5Btn.FlatAppearance.BorderSize = 0;
-            this.star5Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star5Btn.Image = ((System.Drawing.Image)(resources.GetObject("star5Btn.Image")));
-            this.star5Btn.Location = new System.Drawing.Point(1115, 535);
-            this.star5Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.star5Btn.Name = "star5Btn";
-            this.star5Btn.Size = new System.Drawing.Size(56, 44);
-            this.star5Btn.TabIndex = 25;
-            this.star5Btn.UseVisualStyleBackColor = true;
-            this.star5Btn.Click += new System.EventHandler(this.star5Btn_Click);
-            // 
-            // star4Btn
-            // 
-            this.star4Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star4Btn.FlatAppearance.BorderSize = 0;
-            this.star4Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star4Btn.Image = ((System.Drawing.Image)(resources.GetObject("star4Btn.Image")));
-            this.star4Btn.Location = new System.Drawing.Point(1053, 535);
-            this.star4Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.star4Btn.Name = "star4Btn";
-            this.star4Btn.Size = new System.Drawing.Size(56, 44);
-            this.star4Btn.TabIndex = 24;
-            this.star4Btn.UseVisualStyleBackColor = true;
-            this.star4Btn.Click += new System.EventHandler(this.star4Btn_Click);
-            // 
-            // star3Btn
-            // 
-            this.star3Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star3Btn.FlatAppearance.BorderSize = 0;
-            this.star3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star3Btn.Image = ((System.Drawing.Image)(resources.GetObject("star3Btn.Image")));
-            this.star3Btn.Location = new System.Drawing.Point(991, 535);
-            this.star3Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.star3Btn.Name = "star3Btn";
-            this.star3Btn.Size = new System.Drawing.Size(56, 44);
-            this.star3Btn.TabIndex = 23;
-            this.star3Btn.UseVisualStyleBackColor = true;
-            this.star3Btn.Click += new System.EventHandler(this.star3Btn_Click);
-            // 
-            // star2Btn
-            // 
-            this.star2Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star2Btn.FlatAppearance.BorderSize = 0;
-            this.star2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star2Btn.Image = ((System.Drawing.Image)(resources.GetObject("star2Btn.Image")));
-            this.star2Btn.Location = new System.Drawing.Point(929, 535);
-            this.star2Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.star2Btn.Name = "star2Btn";
-            this.star2Btn.Size = new System.Drawing.Size(56, 44);
-            this.star2Btn.TabIndex = 22;
-            this.star2Btn.UseVisualStyleBackColor = true;
-            this.star2Btn.Click += new System.EventHandler(this.star2Btn_Click);
-            // 
-            // star1Btn
-            // 
-            this.star1Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.star1Btn.FlatAppearance.BorderSize = 0;
-            this.star1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star1Btn.Image = global::EventApp.Properties.Resources.star__1_2;
-            this.star1Btn.Location = new System.Drawing.Point(867, 535);
-            this.star1Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.star1Btn.Name = "star1Btn";
-            this.star1Btn.Size = new System.Drawing.Size(56, 44);
-            this.star1Btn.TabIndex = 20;
-            this.star1Btn.UseVisualStyleBackColor = true;
-            this.star1Btn.Click += new System.EventHandler(this.star1Btn_Click);
-            // 
-            // imagePictureBox
-            // 
-            this.imagePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imagePictureBox.Location = new System.Drawing.Point(159, 158);
-            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imagePictureBox.Name = "imagePictureBox";
-            this.imagePictureBox.Size = new System.Drawing.Size(620, 330);
-            this.imagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.imagePictureBox.TabIndex = 16;
-            this.imagePictureBox.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(864, 232);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(864, 306);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 39;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(864, 380);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 40;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.ErrorImage")));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(864, 158);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 41;
-            this.pictureBox4.TabStop = false;
-            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -433,6 +272,167 @@
             this.panel4.Size = new System.Drawing.Size(1453, 785);
             this.panel4.TabIndex = 46;
             // 
+            // favlist_button
+            // 
+            this.favlist_button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.favlist_button.BackColor = System.Drawing.SystemColors.Control;
+            this.favlist_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.favlist_button.FlatAppearance.BorderSize = 0;
+            this.favlist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.favlist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.favlist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.favlist_button.Image = global::EventApp.Properties.Resources.likeNo;
+            this.favlist_button.Location = new System.Drawing.Point(1076, 78);
+            this.favlist_button.Margin = new System.Windows.Forms.Padding(4);
+            this.favlist_button.Name = "favlist_button";
+            this.favlist_button.Size = new System.Drawing.Size(60, 44);
+            this.favlist_button.TabIndex = 31;
+            this.favlist_button.UseVisualStyleBackColor = false;
+            this.favlist_button.Click += new System.EventHandler(this.favlist_button_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.ErrorImage")));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(864, 158);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 41;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(864, 380);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(864, 306);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(864, 232);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // backBtn
+            // 
+            this.backBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.backBtn.FlatAppearance.BorderSize = 0;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
+            this.backBtn.Location = new System.Drawing.Point(47, 42);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(44, 44);
+            this.backBtn.TabIndex = 32;
+            this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
+            // star4Btn
+            // 
+            this.star4Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star4Btn.FlatAppearance.BorderSize = 0;
+            this.star4Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star4Btn.Image = global::EventApp.Properties.Resources.star1__2_;
+            this.star4Btn.Location = new System.Drawing.Point(1053, 535);
+            this.star4Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.star4Btn.Name = "star4Btn";
+            this.star4Btn.Size = new System.Drawing.Size(56, 44);
+            this.star4Btn.TabIndex = 24;
+            this.star4Btn.UseVisualStyleBackColor = true;
+            this.star4Btn.Click += new System.EventHandler(this.star4Btn_Click);
+            // 
+            // star5Btn
+            // 
+            this.star5Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star5Btn.FlatAppearance.BorderSize = 0;
+            this.star5Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star5Btn.Image = global::EventApp.Properties.Resources.star1__2_;
+            this.star5Btn.Location = new System.Drawing.Point(1115, 535);
+            this.star5Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.star5Btn.Name = "star5Btn";
+            this.star5Btn.Size = new System.Drawing.Size(56, 44);
+            this.star5Btn.TabIndex = 25;
+            this.star5Btn.UseVisualStyleBackColor = true;
+            this.star5Btn.Click += new System.EventHandler(this.star5Btn_Click);
+            // 
+            // star3Btn
+            // 
+            this.star3Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star3Btn.FlatAppearance.BorderSize = 0;
+            this.star3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star3Btn.Image = global::EventApp.Properties.Resources.star1__2_;
+            this.star3Btn.Location = new System.Drawing.Point(991, 535);
+            this.star3Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.star3Btn.Name = "star3Btn";
+            this.star3Btn.Size = new System.Drawing.Size(56, 44);
+            this.star3Btn.TabIndex = 23;
+            this.star3Btn.UseVisualStyleBackColor = true;
+            this.star3Btn.Click += new System.EventHandler(this.star3Btn_Click);
+            // 
+            // star2Btn
+            // 
+            this.star2Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star2Btn.FlatAppearance.BorderSize = 0;
+            this.star2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star2Btn.Image = global::EventApp.Properties.Resources.star1__2_;
+            this.star2Btn.Location = new System.Drawing.Point(929, 535);
+            this.star2Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.star2Btn.Name = "star2Btn";
+            this.star2Btn.Size = new System.Drawing.Size(56, 44);
+            this.star2Btn.TabIndex = 22;
+            this.star2Btn.UseVisualStyleBackColor = true;
+            this.star2Btn.Click += new System.EventHandler(this.star2Btn_Click);
+            // 
+            // star1Btn
+            // 
+            this.star1Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.star1Btn.FlatAppearance.BorderSize = 0;
+            this.star1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star1Btn.Image = global::EventApp.Properties.Resources.star1__2_;
+            this.star1Btn.Location = new System.Drawing.Point(867, 535);
+            this.star1Btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.star1Btn.Name = "star1Btn";
+            this.star1Btn.Size = new System.Drawing.Size(56, 44);
+            this.star1Btn.TabIndex = 20;
+            this.star1Btn.UseVisualStyleBackColor = true;
+            this.star1Btn.Click += new System.EventHandler(this.star1Btn_Click);
+            // 
+            // imagePictureBox
+            // 
+            this.imagePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.imagePictureBox.Location = new System.Drawing.Point(159, 158);
+            this.imagePictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imagePictureBox.Name = "imagePictureBox";
+            this.imagePictureBox.Size = new System.Drawing.Size(620, 330);
+            this.imagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imagePictureBox.TabIndex = 16;
+            this.imagePictureBox.TabStop = false;
+            // 
             // UserControlShowEventPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -442,13 +442,13 @@
             this.Name = "UserControlShowEventPreview";
             this.Size = new System.Drawing.Size(1453, 785);
             this.Load += new System.EventHandler(this.UserControlShowEventPreview_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

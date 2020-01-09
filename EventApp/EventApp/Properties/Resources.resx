@@ -160,11 +160,11 @@
   <data name="67091909_420668218790060_6866743294223712256_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\67091909_420668218790060_6866743294223712256_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="notificationOFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notificationOFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic_power_settings_new_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_power_settings_new_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="star (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="oie_1895421D1UY7qaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oie_1895421D1UY7qaw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,7 +208,10 @@
   <data name="ic_keyboard_arrow_down_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_keyboard_arrow_down_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="notificationOFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notificationOFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="star1 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star1 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star1 (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star1 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

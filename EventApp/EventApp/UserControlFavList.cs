@@ -56,7 +56,7 @@ namespace EventApp
 
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection;
-                string query1 = "select * from FavList where [UserID] = @Userid";
+                string query1 = "select distinct [EventID] from FavList where [UserID] = @Userid";
                 command1.Parameters.AddWithValue("@Userid", Login.UserID);
                 command1.CommandText = query1;
                 OleDbDataReader reader = command1.ExecuteReader();
@@ -115,14 +115,14 @@ namespace EventApp
 
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection;
-                string query1 = "select distinct [EventID] AttendList where [UserID] = @Userid";
+                string query1 = "select distinct [EvenTID] from AttendList where [UserID] = @Userid";
                 command1.Parameters.AddWithValue("@Userid", Login.UserID);
                 command1.CommandText = query1;
                 OleDbDataReader reader = command1.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    Eventid = (int)reader["EventID"];
+                    Eventid = (int)reader["EvenTID"];
 
                     EventShowPanelUserControl listitems = new EventShowPanelUserControl();
 

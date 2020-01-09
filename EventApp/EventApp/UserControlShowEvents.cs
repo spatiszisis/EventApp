@@ -259,54 +259,7 @@ namespace EventApp
                 }
 
             }
-            else if (UserControlΗοme.SetValueCategory.Equals("All Events")) // na emfanisei ola ta events
-            {
-                try
-                {
-                    OleDbCommand command = new OleDbCommand();
-                    OleDbCommand command1 = new OleDbCommand();
-                    command.Connection = connection;
-                    command1.Connection = connection;
-                    string query = "select * from Events";
-                    string query1 = "select count(*) from Events";
-                    command.CommandText = query;
-                    command1.CommandText = query1;
-                    int countEvents = (int)command1.ExecuteScalar();
-                    OleDbDataReader reader = command.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        EventShowPanelUserControl listitems = new EventShowPanelUserControl();
-                        for (int i = 0; i < countEvents; i++)
-                        {
-                            listitems.Title = reader["Title"].ToString();
-                            listitems.Location = reader["Location"].ToString();
-                            listitems.Day = (DateTime)reader["Day"];
-                            listitems.Time = reader["Time"].ToString();
-                            icon = byteArrayToImage((byte[])reader["images"]);
-                            listitems.Icon = icon;
-                            listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-
-                            if (flowLayoutPanel1.Controls.Count < 0)
-                            {
-                                flowLayoutPanel1.Controls.Clear();
-                            }
-                            else
-                            {
-                                flowLayoutPanel1.Controls.Add(listitems);
-                            }
-                        }
-                    }
-                    reader.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex + " ");
-                    connection.Close();
-                }
-
-            }
-            else //Na emfanisei ena event me imerominia , category , location
+            else //Na emfanisei ena event me sigkekrimeni imerominia , category , location
             {
                 try
                 {
@@ -354,6 +307,55 @@ namespace EventApp
                     MessageBox.Show(ex + " ");
                     connection.Close();
                 }
+            }
+
+            // na emfanisei ola ta events
+            if (UserControlΗοme.SetValueCategory.Equals("All Events"))
+            {
+                try
+                {
+                    OleDbCommand command = new OleDbCommand();
+                    OleDbCommand command1 = new OleDbCommand();
+                    command.Connection = connection;
+                    command1.Connection = connection;
+                    string query = "select * from Events";
+                    string query1 = "select count(*) from Events";
+                    command.CommandText = query;
+                    command1.CommandText = query1;
+                    int countEvents = (int)command1.ExecuteScalar();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        EventShowPanelUserControl listitems = new EventShowPanelUserControl();
+                        for (int i = 0; i < countEvents; i++)
+                        {
+                            listitems.Title = reader["Title"].ToString();
+                            listitems.Location = reader["Location"].ToString();
+                            listitems.Day = (DateTime)reader["Day"];
+                            listitems.Time = reader["Time"].ToString();
+                            icon = byteArrayToImage((byte[])reader["images"]);
+                            listitems.Icon = icon;
+                            listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+                            if (flowLayoutPanel1.Controls.Count < 0)
+                            {
+                                flowLayoutPanel1.Controls.Clear();
+                            }
+                            else
+                            {
+                                flowLayoutPanel1.Controls.Add(listitems);
+                            }
+                        }
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex + " ");
+                    connection.Close();
+                }
+
             }
 
             /*try

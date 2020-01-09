@@ -375,8 +375,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\star1 %282%29.png" />
     <None Include="Resources\star1.png" />
-    <None Include="Resources\star %281%29.png" />
     <None Include="Resources\likeNo.png" />
     <None Include="Resources\likeYes.png" />
     <None Include="Resources\notificationOFF.png" />
