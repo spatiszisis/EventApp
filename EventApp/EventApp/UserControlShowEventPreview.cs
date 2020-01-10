@@ -116,7 +116,7 @@ namespace EventApp
                 command1.CommandText = query1;
 
                 OleDbDataReader reader1 = command1.ExecuteReader();
-
+                
                 while (reader1.Read())
                 {
                     ratingBol = true;
@@ -342,14 +342,14 @@ namespace EventApp
         private void star1Btn_Click(object sender, EventArgs e)
         {
             int num = 1;
-            if (ratingBol)
+            if (numRating > 0)
             {
+                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
             }
             else
             {
-                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
             }
@@ -358,15 +358,16 @@ namespace EventApp
         private void star2Btn_Click(object sender, EventArgs e)
         {
             int num = 2;
-            if (ratingBol)
+            if (numRating >0)
             {
+                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
             }
             else
             {
-                DeleteRating();
+                
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
@@ -377,16 +378,18 @@ namespace EventApp
         private void star3Btn_Click(object sender, EventArgs e)
         {
             int num = 3;
-            if (ratingBol)
+            if (numRating > 0)
             {
+                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
                 this.star3Btn.Image = new Bitmap(Resources.star);
+
             }
             else
             {
-                DeleteRating();
+              
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
@@ -398,17 +401,18 @@ namespace EventApp
         private void star4Btn_Click(object sender, EventArgs e)
         {
             int num = 4;
-            if (ratingBol)
+            if (numRating > 0)
             {
+                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
                 this.star3Btn.Image = new Bitmap(Resources.star);
                 this.star4Btn.Image = new Bitmap(Resources.star);
+
             }
             else
             {
-                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
@@ -421,8 +425,9 @@ namespace EventApp
         private void star5Btn_Click(object sender, EventArgs e)
         {
             int num = 5;
-            if (ratingBol)
+            if (numRating > 0)
             {
+                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
@@ -432,7 +437,6 @@ namespace EventApp
             }
             else
             {
-                DeleteRating();
                 InsertRating(num);
                 this.star1Btn.Image = new Bitmap(Resources.star);
                 this.star2Btn.Image = new Bitmap(Resources.star);
@@ -474,7 +478,7 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "delete * from Rating where [UserID] = @Userid and [EvenTID] = @Eventid)";
+                command.CommandText = "delete * from Rating where [UserID] = @Userid and [EventID] = @Eventid";
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@Userid", Login.UserID);
                 command.Parameters.AddWithValue("@Eventid", EventId);
