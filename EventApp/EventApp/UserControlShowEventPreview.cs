@@ -37,6 +37,8 @@ namespace EventApp
         }
 
         public static int numRating = 0; //gia na metraei ta asteria
+        public Boolean favlist; //boolean gia to favlist
+        public Boolean ratingBol; //boolean gia to rating
         private void UserControlShowEventPreview_Load(object sender, EventArgs e)
         {
             //Wrap text
@@ -103,9 +105,9 @@ namespace EventApp
 
             }
 
+            //Emfanisi Asteriwn
             try
             {
-                //Emfanisi Asteriwn
                 connection.Open();
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = connection;
@@ -117,6 +119,7 @@ namespace EventApp
 
                 while (reader1.Read())
                 {
+                    ratingBol = true;
                     numRating = (int)reader1["Rating"];
                     if (numRating == 1)
                     {
@@ -211,13 +214,12 @@ namespace EventApp
                 connection.Open();
                 OleDbCommand command3 = new OleDbCommand();
                 command3.Connection = connection;
-                //command3.CommandType = CommandType.Text;
-                string query3 = "select count(*) from AttendList where [EvenTID] = @eventid";
+                string query3 = "select * from AttendList where [EvenTID] = @eventid";
                 command3.Parameters.AddWithValue("@eventid", EventId);
                 command3.CommandText = query3;
                 OleDbDataReader reader3 = command3.ExecuteReader();
                 int count = 0;
-             
+
                 while (reader3.Read())
                 {
                     count++;
@@ -254,12 +256,15 @@ namespace EventApp
                 if (count == 0)
                 {
                     this.favlist_button.Image = new Bitmap(Resources.likeNo);
+                    favlist = false;
                 }
                 else
                 {
                     this.favlist_button.Image = new Bitmap(Resources.likeYes);
+                    favlist = true;
+
                 }
-                
+
                 reader3.Close();
             }
             catch (Exception ex)
@@ -271,32 +276,62 @@ namespace EventApp
                 connection.Close();
             }
         }
-
+       
         private void favlist_button_Click(object sender, EventArgs e)
         {
-            try
+            
+            if (favlist)
             {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.CommandType = CommandType.Text;
-                command.CommandText = "insert into FavList ([EventID], [UserID]) values (@Eventid, @Userid)";
-                command.Connection = connection;
-                command.Parameters.AddWithValue("@Eventid", EventId);
-                command.Parameters.AddWithValue("@Userid", Login.UserID);
+                try
+                {
 
-                command.ExecuteNonQuery();
-                MessageBox.Show("Saved to favorite! ");
+                    connection.Open();
+                    OleDbCommand command3 = new OleDbCommand();
+                    command3.Connection = connection;
+                    string query3 = "delete * from FavList where [UserID] = @Userid and [EventID] = @Eventid";
+                    command3.Parameters.AddWithValue("@Userid", Login.UserID);
+                    command3.Parameters.AddWithValue("@eventid", EventId);
+                    command3.CommandText = query3;
+                    command3.ExecuteScalar();
+                    MessageBox.Show("Deleted from favorite list! ");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error " + ex);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+                this.favlist_button.Image = new Bitmap(Resources.likeNo);
+            }
+            else
+            {
+                try
+                {
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand();
+                    command.CommandType = CommandType.Text;
+                    command.CommandText = "insert into FavList ([EventID], [UserID]) values (@Eventid, @Userid)";
+                    command.Connection = connection;
+                    command.Parameters.AddWithValue("@Eventid", EventId);
+                    command.Parameters.AddWithValue("@Userid", Login.UserID);
 
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Saved to favorite list! ");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error " + ex);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+                this.favlist_button.Image = new Bitmap(Resources.likeYes);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error " + ex);
-            }
-            finally
-            {
-                connection.Close();
-            }
-            this.favlist_button.Image = new Bitmap(Resources.likeYes);
+
         }
 
         private void backBtn_Click(object sender, EventArgs e)
@@ -307,46 +342,105 @@ namespace EventApp
         private void star1Btn_Click(object sender, EventArgs e)
         {
             int num = 1;
-            InsertRating(num);
-            this.star1Btn.Image = new Bitmap(Resources.star);
+            if (ratingBol)
+            {
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+            }
+            else
+            {
+                DeleteRating();
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+            }
         }
 
         private void star2Btn_Click(object sender, EventArgs e)
         {
             int num = 2;
-            InsertRating(num);
-            this.star1Btn.Image = new Bitmap(Resources.star);
-            this.star2Btn.Image = new Bitmap(Resources.star);
+            if (ratingBol)
+            {
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+            }
+            else
+            {
+                DeleteRating();
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+            }
+            
         }
 
         private void star3Btn_Click(object sender, EventArgs e)
         {
             int num = 3;
-            InsertRating(num);
-            this.star1Btn.Image = new Bitmap(Resources.star);
-            this.star2Btn.Image = new Bitmap(Resources.star);
-            this.star3Btn.Image = new Bitmap(Resources.star);
+            if (ratingBol)
+            {
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+                this.star3Btn.Image = new Bitmap(Resources.star);
+            }
+            else
+            {
+                DeleteRating();
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+                this.star3Btn.Image = new Bitmap(Resources.star);
+            }
+            
         }
 
         private void star4Btn_Click(object sender, EventArgs e)
         {
             int num = 4;
-            InsertRating(num);
-            this.star1Btn.Image = new Bitmap(Resources.star);
-            this.star2Btn.Image = new Bitmap(Resources.star);
-            this.star3Btn.Image = new Bitmap(Resources.star);
-            this.star4Btn.Image = new Bitmap(Resources.star);
+            if (ratingBol)
+            {
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+                this.star3Btn.Image = new Bitmap(Resources.star);
+                this.star4Btn.Image = new Bitmap(Resources.star);
+            }
+            else
+            {
+                DeleteRating();
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+                this.star3Btn.Image = new Bitmap(Resources.star);
+                this.star4Btn.Image = new Bitmap(Resources.star);
+            }
+           
         }
 
         private void star5Btn_Click(object sender, EventArgs e)
         {
             int num = 5;
-            InsertRating(num);
-            this.star1Btn.Image = new Bitmap(Resources.star);
-            this.star2Btn.Image = new Bitmap(Resources.star);
-            this.star3Btn.Image = new Bitmap(Resources.star);
-            this.star4Btn.Image = new Bitmap(Resources.star);
-            this.star5Btn.Image = new Bitmap(Resources.star);
+            if (ratingBol)
+            {
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+                this.star3Btn.Image = new Bitmap(Resources.star);
+                this.star4Btn.Image = new Bitmap(Resources.star);
+                this.star5Btn.Image = new Bitmap(Resources.star);
+            }
+            else
+            {
+                DeleteRating();
+                InsertRating(num);
+                this.star1Btn.Image = new Bitmap(Resources.star);
+                this.star2Btn.Image = new Bitmap(Resources.star);
+                this.star3Btn.Image = new Bitmap(Resources.star);
+                this.star4Btn.Image = new Bitmap(Resources.star);
+                this.star5Btn.Image = new Bitmap(Resources.star);
+            }
+            
         }
 
         public void InsertRating(int ratingNum)
@@ -364,6 +458,28 @@ namespace EventApp
 
                 command.ExecuteNonQuery();
                 MessageBox.Show("Saved your Rating! ");
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+                connection.Close();
+            }
+        }
+
+        public void DeleteRating()
+        {
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.CommandType = CommandType.Text;
+                command.CommandText = "delete * from Rating where [UserID] = @Userid and [EvenTID] = @Eventid)";
+                command.Connection = connection;
+                command.Parameters.AddWithValue("@Userid", Login.UserID);
+                command.Parameters.AddWithValue("@Eventid", EventId);
+
+                command.ExecuteNonQuery();
                 connection.Close();
             }
             catch (Exception ex)
@@ -437,6 +553,6 @@ namespace EventApp
             dontgo_btn.Visible = true;
         }
 
-       
+
     }
 }

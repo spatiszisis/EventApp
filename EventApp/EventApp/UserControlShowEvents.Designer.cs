@@ -66,11 +66,10 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.flowLayoutPanel2.AutoScroll = true;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 71);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1427, 302);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1427, 274);
             this.flowLayoutPanel2.TabIndex = 27;
             // 
             // flowLayoutPanel1

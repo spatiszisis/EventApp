@@ -23,6 +23,7 @@ namespace EventApp
         public UserControlShowEvents()
         {
             InitializeComponent();
+            connection.ConnectionString = con.ConnectString;
 
         }
 
@@ -49,7 +50,6 @@ namespace EventApp
             }
             try
             {
-                connection.ConnectionString = con.ConnectString;
                 connection.Open();
                 //Emfanisi apo to DataUser me vasi ta click tou xristi
 

@@ -246,6 +246,7 @@ namespace EventApp
 
         private void usersettingsBtn_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             UserControlSettingsUser uc = new UserControlSettingsUser();
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
@@ -262,6 +263,7 @@ namespace EventApp
 
         private void favlistBtn_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             UserControlFavList uc = new UserControlFavList();
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
@@ -269,6 +271,7 @@ namespace EventApp
         }
         private void managerBtn_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             SidePanel.Height = managerBtn.Height;
             SidePanel.Top = managerBtn.Top;
             UserControlManage uc = new UserControlManage();

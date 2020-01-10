@@ -18,7 +18,6 @@ namespace EventApp
         public EventShowPanelUserControl()
         {
             InitializeComponent();
-            connection.ConnectionString = con.ConnectString;
         }
 
         private string _title;
@@ -79,6 +78,7 @@ namespace EventApp
 
             try
             {
+                connection.ConnectionString = con.ConnectString;
                 connection.Open();
 
                 OleDbCommand command1 = new OleDbCommand();

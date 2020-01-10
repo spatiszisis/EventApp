@@ -75,7 +75,7 @@
             // 
             // flowLayoutPanelEventNear
             // 
-            this.flowLayoutPanelEventNear.Location = new System.Drawing.Point(44, 90);
+            this.flowLayoutPanelEventNear.Location = new System.Drawing.Point(30, 98);
             this.flowLayoutPanelEventNear.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanelEventNear.Name = "flowLayoutPanelEventNear";
             this.flowLayoutPanelEventNear.Size = new System.Drawing.Size(713, 276);
