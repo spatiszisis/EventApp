@@ -37,10 +37,6 @@ namespace EventApp
             description_txt.Clear();
         }
 
-        private void location_txt_Click(object sender, EventArgs e)
-        {
-            location_txt.Clear();
-        }
 
         private void time_txt_Click(object sender, EventArgs e)
         {
@@ -76,7 +72,7 @@ namespace EventApp
                 command.Parameters.AddWithValue("@Description", description_txt.Text);
                 command.Parameters.Add("@Day", dateTimePicker.Value.Date.ToString("dd-MM-yyyy"));
                 command.Parameters.AddWithValue("@Time", time_txt.Text);
-                command.Parameters.AddWithValue("@Location", location_txt.Text);
+                command.Parameters.AddWithValue("@Location", location_box.Text);
                 command.Parameters.AddWithValue("@Images", imagebt);
                 command.Parameters.AddWithValue("@UserID", Login.UserID);
 
@@ -98,7 +94,7 @@ namespace EventApp
                 description_txt.Text  = "Add Description...";
                 this.dateTimePicker.CustomFormat = null;
                 time_txt.Text = "Time";
-                location_txt.Text = "Search for location";
+                location_box.Text = "Search for location";
                 picBox.Image = null;
             }
         }

@@ -41,12 +41,12 @@
             this.emailTxt = new System.Windows.Forms.TextBox();
             this.lastnameTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.locationTxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridViewEvents = new System.Windows.Forms.DataGridView();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.location_box = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEvents)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -205,28 +205,6 @@
             this.label4.TabIndex = 33;
             this.label4.Text = "LastName";
             // 
-            // locationTxt
-            // 
-            this.locationTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.locationTxt.AutoCompleteCustomSource.AddRange(new string[] {
-            "Thessaloniki",
-            "Athens",
-            "Patra",
-            "Larisa",
-            "Volos",
-            "Herakleion",
-            "Kavala",
-            "Giannena",
-            "Aleksandroupoli"});
-            this.locationTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.locationTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.locationTxt.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.locationTxt.Location = new System.Drawing.Point(527, 247);
-            this.locationTxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.locationTxt.Name = "locationTxt";
-            this.locationTxt.Size = new System.Drawing.Size(349, 22);
-            this.locationTxt.TabIndex = 36;
-            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -284,10 +262,10 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.location_box);
             this.panel2.Controls.Add(this.dataGridViewEvents);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.locationTxt);
             this.panel2.Controls.Add(this.lastnameTxt);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.firstnameTxt);
@@ -308,6 +286,29 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1090, 638);
             this.panel2.TabIndex = 40;
+            // 
+            // location_box
+            // 
+            this.location_box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.location_box.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.location_box.ForeColor = System.Drawing.Color.Gray;
+            this.location_box.FormattingEnabled = true;
+            this.location_box.Items.AddRange(new object[] {
+            "Thessaloniki",
+            "Athens",
+            "Patra",
+            "Larisa",
+            "Volos",
+            "Herakleion",
+            "Kavala",
+            "Giannena",
+            "Aleksandroupoli"});
+            this.location_box.Location = new System.Drawing.Point(527, 240);
+            this.location_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.location_box.Name = "location_box";
+            this.location_box.Size = new System.Drawing.Size(349, 29);
+            this.location_box.TabIndex = 41;
+            this.location_box.Text = "Search for location";
             // 
             // UserControlSettingsUser
             // 
@@ -342,11 +343,11 @@
         private System.Windows.Forms.TextBox emailTxt;
         private System.Windows.Forms.TextBox lastnameTxt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox locationTxt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridViewEvents;
         private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox location_box;
     }
 }

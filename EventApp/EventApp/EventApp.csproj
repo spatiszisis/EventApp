@@ -187,10 +187,10 @@
     <Compile Include="WP5\UserControlSettingsApp.Designer.cs">
       <DependentUpon>UserControlSettingsApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="WP2\UserControlSettingsUser.cs">
+    <Compile Include="WP1\UserControlSettingsUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WP2\UserControlSettingsUser.Designer.cs">
+    <Compile Include="WP1\UserControlSettingsUser.Designer.cs">
       <DependentUpon>UserControlSettingsUser.cs</DependentUpon>
     </Compile>
     <Compile Include="WP2\UserControlShowEventPreview.cs">
@@ -258,7 +258,7 @@
     <EmbeddedResource Include="WP5\UserControlSettingsApp.resx">
       <DependentUpon>UserControlSettingsApp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WP2\UserControlSettingsUser.resx">
+    <EmbeddedResource Include="WP1\UserControlSettingsUser.resx">
       <DependentUpon>UserControlSettingsUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WP2\UserControlShowEventPreview.resx">

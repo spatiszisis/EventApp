@@ -35,7 +35,6 @@
             this.save_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.location_txt = new System.Windows.Forms.TextBox();
             this.description_txt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,18 +44,17 @@
             this.time_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.picBox = new System.Windows.Forms.PictureBox();
+            this.location_box = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
             // category_box
             // 
             this.category_box.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.category_box.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold);
+            this.category_box.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.category_box.ForeColor = System.Drawing.Color.Gray;
             this.category_box.FormattingEnabled = true;
             this.category_box.Items.AddRange(new object[] {
-            "Anything",
-            "All Events",
             "Concerts",
             "Comedy",
             "Education",
@@ -74,7 +72,7 @@
             this.category_box.Location = new System.Drawing.Point(181, 223);
             this.category_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.category_box.Name = "category_box";
-            this.category_box.Size = new System.Drawing.Size(473, 35);
+            this.category_box.Size = new System.Drawing.Size(473, 29);
             this.category_box.TabIndex = 37;
             this.category_box.Text = "Categories";
             // 
@@ -159,35 +157,10 @@
             this.panel1.Size = new System.Drawing.Size(300, 2);
             this.panel1.TabIndex = 31;
             // 
-            // location_txt
-            // 
-            this.location_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.location_txt.AutoCompleteCustomSource.AddRange(new string[] {
-            "Thessaloniki",
-            "Athens",
-            "Patra",
-            "Larisa",
-            "Volos",
-            "Herakleion",
-            "Kavala",
-            "Giannena",
-            "Aleksandroupoli"});
-            this.location_txt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.location_txt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.location_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.location_txt.ForeColor = System.Drawing.Color.Gray;
-            this.location_txt.Location = new System.Drawing.Point(180, 614);
-            this.location_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.location_txt.Name = "location_txt";
-            this.location_txt.Size = new System.Drawing.Size(473, 30);
-            this.location_txt.TabIndex = 27;
-            this.location_txt.Text = "Search for location";
-            this.location_txt.Click += new System.EventHandler(this.location_txt_Click);
-            // 
             // description_txt
             // 
             this.description_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.description_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.description_txt.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.description_txt.ForeColor = System.Drawing.Color.Gray;
             this.description_txt.Location = new System.Drawing.Point(181, 288);
             this.description_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -237,7 +210,7 @@
             // title_txt
             // 
             this.title_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.title_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.title_txt.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.title_txt.ForeColor = System.Drawing.Color.Gray;
             this.title_txt.Location = new System.Drawing.Point(181, 159);
             this.title_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -262,7 +235,7 @@
             // time_txt
             // 
             this.time_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.time_txt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.time_txt.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.time_txt.ForeColor = System.Drawing.Color.Gray;
             this.time_txt.Location = new System.Drawing.Point(801, 207);
             this.time_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -270,7 +243,7 @@
             this.time_txt.Name = "time_txt";
             this.time_txt.Size = new System.Drawing.Size(473, 30);
             this.time_txt.TabIndex = 28;
-            this.time_txt.Text = "Time";
+            this.time_txt.Text = "Time (e.g. 10:00 PM or AM)";
             this.time_txt.Click += new System.EventHandler(this.time_txt_Click);
             // 
             // label4
@@ -294,10 +267,34 @@
             this.picBox.TabIndex = 39;
             this.picBox.TabStop = false;
             // 
+            // location_box
+            // 
+            this.location_box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.location_box.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.location_box.ForeColor = System.Drawing.Color.Gray;
+            this.location_box.FormattingEnabled = true;
+            this.location_box.Items.AddRange(new object[] {
+            "Thessaloniki",
+            "Athens",
+            "Patra",
+            "Larisa",
+            "Volos",
+            "Herakleion",
+            "Kavala",
+            "Giannena",
+            "Aleksandroupoli"});
+            this.location_box.Location = new System.Drawing.Point(181, 579);
+            this.location_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.location_box.Name = "location_box";
+            this.location_box.Size = new System.Drawing.Size(473, 29);
+            this.location_box.TabIndex = 40;
+            this.location_box.Text = "Search for location";
+            // 
             // UserControlCreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.location_box);
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.category_box);
@@ -307,7 +304,6 @@
             this.Controls.Add(this.save_btn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.location_txt);
             this.Controls.Add(this.description_txt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -334,7 +330,6 @@
         private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox location_txt;
         private System.Windows.Forms.TextBox description_txt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -344,5 +339,6 @@
         private System.Windows.Forms.TextBox time_txt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picBox;
+        private System.Windows.Forms.ComboBox location_box;
     }
 }

@@ -88,7 +88,7 @@ namespace EventApp
                     emailTxt.Text = reader["Email"].ToString();
                     firstnameTxt.Text = reader["FirstName"].ToString();
                     lastnameTxt.Text = reader["LastName"].ToString();
-                    locationTxt.Text = reader["Location"].ToString();
+                    location_box.Text = reader["Location"].ToString();
                 }
 
                 reader.Close();
@@ -112,7 +112,7 @@ namespace EventApp
                 command.Parameters.AddWithValue("@Email", emailTxt.Text);
                 command.Parameters.AddWithValue("@FirstName", firstnameTxt.Text);
                 command.Parameters.AddWithValue("@LastName", lastnameTxt.Text);
-                command.Parameters.AddWithValue("@Location", locationTxt.Text);
+                command.Parameters.AddWithValue("@Location", location_box.Text);
                 command.Connection = connection;
 
                 connection.Open();
