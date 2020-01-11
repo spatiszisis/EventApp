@@ -90,40 +90,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessFormToGoogleAccount.cs">
+    <Compile Include="WP1\AccessFormToGoogleAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccessFormToGoogleAccount.Designer.cs">
+    <Compile Include="WP1\AccessFormToGoogleAccount.Designer.cs">
       <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlertForm.cs">
+    <Compile Include="WP4\AlertForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlertForm.Designer.cs">
+    <Compile Include="WP4\AlertForm.Designer.cs">
       <DependentUpon>AlertForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AuthenticationContact.cs">
+    <Compile Include="WP5\AuthenticationContact.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AuthenticationContact.Designer.cs">
+    <Compile Include="WP5\AuthenticationContact.Designer.cs">
       <DependentUpon>AuthenticationContact.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connect.cs" />
-    <Compile Include="DataDataSet.Designer.cs">
+    <Compile Include="ConnectString\Connect.cs" />
+    <Compile Include="WP3\DataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="EventShowPanelUserControl.cs">
+    <Compile Include="WP2\EventShowPanelUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EventShowPanelUserControl.Designer.cs">
+    <Compile Include="WP2\EventShowPanelUserControl.Designer.cs">
       <DependentUpon>EventShowPanelUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="WP1\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="WP1\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
@@ -139,94 +139,94 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Registration.cs">
+    <Compile Include="WP1\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registration.Designer.cs">
+    <Compile Include="WP1\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlContact.cs">
+    <Compile Include="WP5\UserControlContact.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlContact.Designer.cs">
+    <Compile Include="WP5\UserControlContact.Designer.cs">
       <DependentUpon>UserControlContact.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlFavList.cs">
+    <Compile Include="WP1\UserControlFavList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlFavList.Designer.cs">
+    <Compile Include="WP1\UserControlFavList.Designer.cs">
       <DependentUpon>UserControlFavList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlHelp.cs">
+    <Compile Include="WP5\UserControlHelp.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlHelp.Designer.cs">
+    <Compile Include="WP5\UserControlHelp.Designer.cs">
       <DependentUpon>UserControlHelp.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlAboutUs.cs">
+    <Compile Include="WP5\UserControlAboutUs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlAboutUs.Designer.cs">
+    <Compile Include="WP5\UserControlAboutUs.Designer.cs">
       <DependentUpon>UserControlAboutUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlCreateEvent.cs">
+    <Compile Include="WP2\UserControlCreateEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlCreateEvent.Designer.cs">
+    <Compile Include="WP2\UserControlCreateEvent.Designer.cs">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlManage.cs">
+    <Compile Include="WP1\UserControlManage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlManage.Designer.cs">
+    <Compile Include="WP1\UserControlManage.Designer.cs">
       <DependentUpon>UserControlManage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlSettingsApp.cs">
+    <Compile Include="WP5\UserControlSettingsApp.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlSettingsApp.Designer.cs">
+    <Compile Include="WP5\UserControlSettingsApp.Designer.cs">
       <DependentUpon>UserControlSettingsApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlSettingsUser.cs">
+    <Compile Include="WP2\UserControlSettingsUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlSettingsUser.Designer.cs">
+    <Compile Include="WP2\UserControlSettingsUser.Designer.cs">
       <DependentUpon>UserControlSettingsUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlShowEventPreview.cs">
+    <Compile Include="WP2\UserControlShowEventPreview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlShowEventPreview.Designer.cs">
+    <Compile Include="WP2\UserControlShowEventPreview.Designer.cs">
       <DependentUpon>UserControlShowEventPreview.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlShowEvents.cs">
+    <Compile Include="WP2\UserControlShowEvents.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlShowEvents.Designer.cs">
+    <Compile Include="WP2\UserControlShowEvents.Designer.cs">
       <DependentUpon>UserControlShowEvents.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlΗοme.cs">
+    <Compile Include="WP5\UserControlΗοme.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlΗοme.Designer.cs">
+    <Compile Include="WP5\UserControlΗοme.Designer.cs">
       <DependentUpon>UserControlΗοme.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AccessFormToGoogleAccount.resx">
+    <EmbeddedResource Include="WP1\AccessFormToGoogleAccount.resx">
       <DependentUpon>AccessFormToGoogleAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AlertForm.resx">
+    <EmbeddedResource Include="WP4\AlertForm.resx">
       <DependentUpon>AlertForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AuthenticationContact.resx">
+    <EmbeddedResource Include="WP5\AuthenticationContact.resx">
       <DependentUpon>AuthenticationContact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EventShowPanelUserControl.resx">
+    <EmbeddedResource Include="WP2\EventShowPanelUserControl.resx">
       <DependentUpon>EventShowPanelUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="WP1\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -234,55 +234,55 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registration.resx">
+    <EmbeddedResource Include="WP1\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlContact.resx">
+    <EmbeddedResource Include="WP5\UserControlContact.resx">
       <DependentUpon>UserControlContact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlFavList.resx">
+    <EmbeddedResource Include="WP1\UserControlFavList.resx">
       <DependentUpon>UserControlFavList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlHelp.resx">
+    <EmbeddedResource Include="WP5\UserControlHelp.resx">
       <DependentUpon>UserControlHelp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlAboutUs.resx">
+    <EmbeddedResource Include="WP5\UserControlAboutUs.resx">
       <DependentUpon>UserControlAboutUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlCreateEvent.resx">
+    <EmbeddedResource Include="WP2\UserControlCreateEvent.resx">
       <DependentUpon>UserControlCreateEvent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlManage.resx">
+    <EmbeddedResource Include="WP1\UserControlManage.resx">
       <DependentUpon>UserControlManage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlSettingsApp.resx">
+    <EmbeddedResource Include="WP5\UserControlSettingsApp.resx">
       <DependentUpon>UserControlSettingsApp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlSettingsUser.resx">
+    <EmbeddedResource Include="WP2\UserControlSettingsUser.resx">
       <DependentUpon>UserControlSettingsUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlShowEventPreview.resx">
+    <EmbeddedResource Include="WP2\UserControlShowEventPreview.resx">
       <DependentUpon>UserControlShowEventPreview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlShowEvents.resx">
+    <EmbeddedResource Include="WP2\UserControlShowEvents.resx">
       <DependentUpon>UserControlShowEvents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlΗοme.resx">
+    <EmbeddedResource Include="WP5\UserControlΗοme.resx">
       <DependentUpon>UserControlΗοme.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataDataSet.xsc">
+    <None Include="WP3\DataDataSet.xsc">
       <DependentUpon>DataDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DataDataSet.xsd">
+    <None Include="WP3\DataDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DataDataSet.xss">
+    <None Include="WP3\DataDataSet.xss">
       <DependentUpon>DataDataSet.xsd</DependentUpon>
     </None>
-    <None Include="EventApp_TemporaryKey.pfx" />
-    <None Include="packages.config" />
+    <None Include="Διάφορα\EventApp_TemporaryKey.pfx" />
+    <None Include="Διάφορα\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -294,7 +294,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Διάφορα\App.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

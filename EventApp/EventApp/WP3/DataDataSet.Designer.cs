@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace EventApp {
+namespace EventApp.WP3 {
     
     
     /// <summary>
@@ -723,7 +723,7 @@ namespace EventApp {
         }
     }
 }
-namespace EventApp.DataDataSetTableAdapters {
+namespace EventApp.WP3.DataDataSetTableAdapters {
     
     
     /// <summary>
