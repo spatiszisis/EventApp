@@ -1,4 +1,4 @@
-﻿ using EventApp.Properties;
+﻿using EventApp.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,11 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Connect;
 using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.IO;
-using Connect;
 using System.Windows.Documents;
 
 namespace EventApp
@@ -44,8 +42,8 @@ namespace EventApp
         }
         private OleDbConnection connection = new OleDbConnection();
         Timer t = new Timer(); // Dilwsh tou timer
+        Connect con = new Connect();
 
-        Connect1 con = new Connect1();
         public HomePage()
         {
             InitializeComponent();
@@ -69,18 +67,18 @@ namespace EventApp
             }
 
             //Elegxos gia to ama iparxei Location i oxi kai analoga tha trexei
-            if(Login.Location == "")
+            if (Login.Location == "")
             {
                 //nothing
             }
             else
             {
                 // Gia to notification Form
-                t.Interval = 2000; // meta apo 2 sec na anoigei h forma gia ta notification
+                t.Interval = 500; // meta apo 2 sec na anoigei h forma gia ta notification
                 t.Tick += new EventHandler(OnTimerTicked);
                 t.Start();
             }
-            
+
         }
 
         //Notification 
@@ -176,14 +174,24 @@ namespace EventApp
             settingsBtn.ForeColor = Color.Snow;
         }
 
+        private void managerBtn_MouseHover(object sender, EventArgs e)
+        {
+            managerBtn.BackColor = Color.FromArgb(85, 61, 69);
+            managerBtn.ForeColor = Color.Black;
+        }
 
+        private void managerBtn_MouseLeave(object sender, EventArgs e)
+        {
+            managerBtn.BackColor = Color.FromArgb(87, 96, 122);
+            managerBtn.ForeColor = Color.Snow;
+        }
 
         //Telos Properties button
 
         //Arxi Click Method gia na allazei panel
         private void Home_Click(object sender, EventArgs e)
         {
-            PnlContainer.Controls.Clear();
+            PnlContainer.Controls.Clear(); ////////
             SidePanel.Height = Home.Height;
             SidePanel.Top = Home.Top;
             UserControlΗοme uc = new UserControlΗοme();
@@ -238,6 +246,7 @@ namespace EventApp
 
         private void usersettingsBtn_Click(object sender, EventArgs e)
         {
+            PnlContainer.Controls.Clear();
             UserControlSettingsUser uc = new UserControlSettingsUser();
             uc.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(uc);
@@ -292,6 +301,7 @@ namespace EventApp
             this.Hide();
             Login.username = "";
             Login.password = "";
+            Login.Location = "";
             Login lgform = new Login();
             lgform.Show();
         }
@@ -314,101 +324,29 @@ namespace EventApp
             return returnImage;
         }
 
+        //search box
         private void searchBtn_Click(object sender, EventArgs e)
         {
-
-            /*if (searchTxt.Text != null)
+            UserControlShowEvents uc = new UserControlShowEvents();
+            
+            if (searchTxt.Text == "Thessaloniki" || searchTxt.Text == "Athens" || searchTxt.Text == "Patra" || searchTxt.Text == "Larissa" || searchTxt.Text == "Kavala" || searchTxt.Text == "Giannena" || searchTxt.Text == "Volos" || searchTxt.Text == "Alexandroupoli" || searchTxt.Text == "Herakleion")
             {
-                connection.ConnectionString = con.ConnectString;
-                OleDbCommand command = new OleDbCommand();
-                OleDbCommand command1 = new OleDbCommand();
-                command.CommandType = CommandType.Text;
-                command.Connection = connection;
-                connection.Open();
-
-                string query = "select * from Events where [Category] = @Category and [Location] = @Location";
-                command.Parameters.AddWithValue("@Category", UserControlΗοme.SetValueCategory);
-                command.Parameters.AddWithValue("@Location", UserControlΗοme.SetValueLocation);
-                string query1 = "select count(*) from Events";
-                command.CommandText = query;
-                command1.CommandText = query1;
-                int countEvents = (int)command1.ExecuteScalar();
-                OleDbDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    EventShowPanelUserControl listitems = new EventShowPanelUserControl();
-                    for (int i = 0; i < countEvents; i++)
-                    {
-                        listitems.Title = reader["Title"].ToString();
-                        listitems.Location = reader["Location"].ToString();
-                        listitems.Day = reader["Day"].ToString();
-                        listitems.Time = reader["Time"].ToString();
-                        icon = byteArrayToImage((byte[])reader["images"]);
-                        listitems.Icon = icon;
-                        listitems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-
-                        if (UserControlShowEvents.flowLayoutPanel1.Controls.Count < 0)
-                        {
-                            UserControlShowEvents.flowLayoutPanel1.Controls.Clear();
-                        }
-                        else
-                        {
-                            UserControlShowEvents.flowLayoutPanel1.Controls.Add(listitems);
-                        }
-                    }
-                }
-                reader.Close();
-                connection.Close();
-                if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEvents"))
-                {
-                    UserControlShowEvents scse = new UserControlShowEvents();
-                    scse.Dock = DockStyle.Fill;
-                    HomePage.Instance.PnlContainer.Controls.Add(scse);
-                }
-                HomePage.Instance.PnlContainer.Controls["UserControlShowEvents"].BringToFront();
-            }*/
-
-
-            if (searchTxt.Text == "Home")
-            {
-                UserControlΗοme uc = new UserControlΗοme();
+                uc.locationsearch(searchTxt.Text);
                 uc.Dock = DockStyle.Fill;
                 PnlContainer.Controls.Add(uc);
                 uc.BringToFront();
             }
-            else if (searchTxt.Text == "Create Event")
+            if(searchTxt.Text == "Concerts" || searchTxt.Text == "Comedy" || searchTxt.Text == "Education" || searchTxt.Text == "Festival" || searchTxt.Text == "Food" || searchTxt.Text == "Galleries" || searchTxt.Text == "Health" || searchTxt.Text == "Holiday" || searchTxt.Text == "Movies" || searchTxt.Text == "Museums" || searchTxt.Text == "Networking" || searchTxt.Text == "Technology" || searchTxt.Text == "Politics")
             {
-                UserControlCreateEvent uc = new UserControlCreateEvent();
+                uc.categorysearch(searchTxt.Text);
                 uc.Dock = DockStyle.Fill;
                 PnlContainer.Controls.Add(uc);
                 uc.BringToFront();
             }
-            else if (searchTxt.Text == "Help")
-            {
-                UserControlHelp uc = new UserControlHelp();
-                uc.Dock = DockStyle.Fill;
-                PnlContainer.Controls.Add(uc);
-                uc.BringToFront();
-            }
-            else if (searchTxt.Text == "About us")
-            {
-                UserControlAboutUs uc = new UserControlAboutUs();
-                uc.Dock = DockStyle.Fill;
-                PnlContainer.Controls.Add(uc);
-                uc.BringToFront();
-            }
-            else if (searchTxt.Text == "Contact")
-            {
-                UserControlContact uc = new UserControlContact();
-                uc.Dock = DockStyle.Fill;
-                PnlContainer.Controls.Add(uc);
-                uc.BringToFront();
-            }
+            
 
         }
 
-       
         //Telos Alla Properties 
     }
 }

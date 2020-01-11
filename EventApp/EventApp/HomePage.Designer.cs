@@ -98,6 +98,8 @@
             this.managerBtn.Text = "Manage";
             this.managerBtn.UseVisualStyleBackColor = true;
             this.managerBtn.Click += new System.EventHandler(this.managerBtn_Click);
+            this.managerBtn.MouseLeave += new System.EventHandler(this.managerBtn_MouseLeave);
+            this.managerBtn.MouseHover += new System.EventHandler(this.managerBtn_MouseHover);
             // 
             // panel4
             // 
@@ -310,11 +312,11 @@
             // searchTxt
             // 
             this.searchTxt.AutoCompleteCustomSource.AddRange(new string[] {
+            "Any City",
             "Thessaloniki",
             "Athens",
             "Patra",
             "Larisa",
-            "Ioannina",
             "Volos",
             "Herakleion",
             "Kavala",
@@ -342,7 +344,7 @@
             "About us",
             "Contact",
             "Manage"});
-            this.searchTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.searchTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.searchTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.searchTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.searchTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -377,7 +379,7 @@
             this.notificationBtn.FlatAppearance.BorderSize = 0;
             this.notificationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.notificationBtn.Image = global::EventApp.Properties.Resources.notificationOFF;
-            this.notificationBtn.Location = new System.Drawing.Point(386, 3);
+            this.notificationBtn.Location = new System.Drawing.Point(386, -1);
             this.notificationBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.notificationBtn.Name = "notificationBtn";
             this.notificationBtn.Size = new System.Drawing.Size(55, 66);
@@ -441,7 +443,7 @@
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.NameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.NameLabel.Location = new System.Drawing.Point(303, 25);
+            this.NameLabel.Location = new System.Drawing.Point(289, 26);
             this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(63, 29);
@@ -476,7 +478,6 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
