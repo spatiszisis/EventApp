@@ -2,13 +2,14 @@
 
 ## Θέμα Εργασίας: Εvents
   * [Ομάδα](https://github.com/zisispa/adopse-omada2/wiki/%CE%A4eam)
-  * [Πρόγραμμα εκτέλεσης](https://github.com/zisispa/adopse-omada2/#πρόγραμμα-εκτέλεσης)
+  * [Πληροφορίες της εφαρμογής](https://github.com/zisispa/adopse-omada2/#πληροφορίες-της-εφαρμογής)
   * [Installation Instructions](https://github.com/zisispa/adopse-omada2/#installation-instructions)
   
  ---
-### Πρόγραμμα εκτέλεσης
+### Πληροφορίες της εφαρμογής
+ ##### Code
+ Όλη η εφαρμογή είναι γραμμένη σε .NET και Windows Form.
 
-H ομάδα εργάστηκε στο πρόγραμμα Visual Studio 2019. Συγκερκιμένα όλη η εφαρμογή είναι γραμμένη σε .NET και Windows Form.
 
 ### Installation Instructions
 1. Πατάτε το κουμπί Clone or Dowload
