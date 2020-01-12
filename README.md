@@ -1,8 +1,10 @@
-ΑΔΟΠΣΕ - ΟΜΑΔΑ 2
+# Μάθημα Εργασίας ΑΔΟΠΣΕ
 
-ΟΜΑΔΑ: 
-1. ΣΠΑΤΗΣ ΖΗΣΗΣ
-2. ΣΜΠΗΛΙΑΣ ΒΑΣΙΛΗΣ
-3. ΤΑΣΟΥΛΑΣ ΝΙΚΟΣ
-4. ΒΑΣΙΛΟΥΣΗΣ ΓΙΩΡΓΟΣ
-5. ΣΚΑΡΛΗΣ ΓΙΑΝΝΗΣ
+## Θέμα Εργασίας: Εvents
+  * [Ομάδα](https://github.com/zisispa/adopse-omada2/wiki/%CE%A4eam)
+  * [Πρόγραμμα εκτέλεσης](https://www.google.com)
+  * [Installation Instructions](https://github.com/zisispa/adopse-omada2/#installation-instructions)
+  
+ ---
+
+### Installation Instructions
