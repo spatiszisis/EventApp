@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventApp.exe" size="1869792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventApp.exe" size="1868256">
       <assemblyIdentity name="EventApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xViSIssT3cTmTFn3fqzrODBN3z5tWn+VJxmTThenvPw=</dsig:DigestValue>
+        <dsig:DigestValue>FwxbG+v9pPZaglr3FCTp5y5YyTWQZtKmOiyEKHG72Qs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -23,68 +23,82 @@ namespace EventApp
         }
         public static string username = "";
         public static string password = "";
-        public static Boolean isAdmin;
-        public static int UserID = 0;
         public static string Location = "";
+        public static Boolean isAdmin; //Metavliti gia na doume ean einai admin i oxi 
+        public static int UserID = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-
-            String Username = "";
-            String Password = "";
-            String Email = "";
-            String FirstName = "";
-            String LastName = "";
-            
-            connection.Open();
-
-            OleDbCommand command = new OleDbCommand();
-            OleDbCommand command2 = new OleDbCommand();
-            OleDbCommand command3 = new OleDbCommand();
-            command.Connection = connection;
-            command2.Connection = connection;
-            command3.Connection = connection;
-            command.CommandText = "select * from Users where Username='" + txt_Username.Text + "' and Password= '" + txt_Password.Text + "'";
-
-            OleDbDataReader reader = command.ExecuteReader();
-            int count = 0;
-            while (reader.Read())
+            //Elegxei ena iparxei o xristis ean dn iparxei tou petaei katallilo minima
+            try
             {
-                count++;
-                
-                UserID = (int)reader["UsersID"];
-                Username = (String)reader["Username"];
-                Password = (String)reader["Password"];
-                if (!DBNull.Value.Equals(reader["Email"]))
-                {  Email = (String)reader["Email"];         }
-                if (!DBNull.Value.Equals(reader["FirstName"]))
-                {  FirstName = (String)reader["FirstName"]; }
-                if (!DBNull.Value.Equals(reader["LastName"])) 
-                {  LastName = (String)reader["LastName"];   }
-                if (!DBNull.Value.Equals(reader["Location"]))
-                {  Location = (String)reader["Location"];   }
-                isAdmin = (Boolean)reader["isAdmin"]; 
-            }
+                String Username = "";
+                String Password = "";
+                String Email = "";
+                String FirstName = "";
+                String LastName = "";
 
-            reader.Close();
+                connection.Open();
 
-            if (count == 1)
-            {
-                username = txt_Username.Text;
-                password = txt_Password.Text;
+                OleDbCommand command = new OleDbCommand();
+                OleDbCommand command2 = new OleDbCommand();
+                OleDbCommand command3 = new OleDbCommand();
+                command.Connection = connection;
+                command2.Connection = connection;
+                command3.Connection = connection;
+                command.CommandText = "select * from Users where Username='" + txt_Username.Text + "' and Password= '" + txt_Password.Text + "'";
+
+                OleDbDataReader reader = command.ExecuteReader();
+                int count = 0;
+                while (reader.Read())
+                {
+                    count++;
+
+                    UserID = (int)reader["UsersID"];
+                    Username = (String)reader["Username"];
+                    Password = (String)reader["Password"];
+                    if (!DBNull.Value.Equals(reader["Email"]))
+                    { Email = (String)reader["Email"]; }
+                    if (!DBNull.Value.Equals(reader["FirstName"]))
+                    { FirstName = (String)reader["FirstName"]; }
+                    if (!DBNull.Value.Equals(reader["LastName"]))
+                    { LastName = (String)reader["LastName"]; }
+                    if (!DBNull.Value.Equals(reader["Location"]))
+                    { Location = (String)reader["Location"]; }
+                    isAdmin = (Boolean)reader["isAdmin"];
+                }
+
+                reader.Close();
+
+                if (count == 1)
+                {
+                    username = txt_Username.Text;
+                    password = txt_Password.Text;
+                    connection.Close();
+                    connection.Dispose();
+                    this.Hide();
+                    HomePage f2 = new HomePage();
+                    f2.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Username and password is not correct");
+                    connection.Close();
+                }
+
+
                 connection.Close();
-                connection.Dispose();
-                this.Hide();
-                HomePage f2 = new HomePage();
-                f2.Show();
-
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("Username and password is not correct");
+                MessageBox.Show(ex + "");
             }
-
-
-            connection.Close();
+            finally
+            {
+                txt_Username.Text = "Username";
+                txt_Password.Text = "Password";
+            }
+            
         }
 
 

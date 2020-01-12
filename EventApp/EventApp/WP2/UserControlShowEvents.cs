@@ -112,17 +112,15 @@ namespace EventApp
                 connection.Close();
             }
 
-            //End Emfanisi apo to DataUser me vasi ta click tou xristi
-
-           
-
-        
+            //Telos
         }
+
+
+        //Emfanisi tou search erwtimatos apo to homepage
         public void button_main_search()
         {
-            //Emfanisi tou search erwtimatos apo to homepage
 
-            //na emfanisei mono to day
+            //Na emfanisei mono to day
 
             if (UserControlΗοme.SetValueDay != String.Empty && UserControlΗοme.SetValueCategory.Equals("Anything") && UserControlΗοme.SetValueLocation.Equals("Any City"))
             {
@@ -174,9 +172,10 @@ namespace EventApp
                 {
                     connection.Close();
                 }
-
             }
-            //na emfanisei mono to category
+            //Telos
+
+            //Na emfanisei mono to category
             else if (UserControlΗοme.SetValueCategory != String.Empty && UserControlΗοme.SetValueDay != String.Empty && UserControlΗοme.SetValueLocation.Equals("Any City"))
             {
                 try
@@ -227,8 +226,9 @@ namespace EventApp
                 {
                     connection.Close();
                 }
-
             }
+            //Telos
+
             //na emfanisei mono to location
             else if (UserControlΗοme.SetValueLocation != String.Empty && UserControlΗοme.SetValueDay != String.Empty && UserControlΗοme.SetValueCategory.Equals("Anything"))
             {
@@ -279,8 +279,9 @@ namespace EventApp
                 }
 
             }
-            else //Na emfanisei ena event me sigkekrimeni imerominia , category , location
+            else 
             {
+                //Na emfanisei ena event me sigkekrimeni imerominia , category , location
                 try
                 {
                     connection.Open();
@@ -328,9 +329,10 @@ namespace EventApp
                     MessageBox.Show(ex + " ");
                     connection.Close();
                 }
+                //Telos
             }
 
-            // na emfanisei ola ta events
+            // Na emfanisei ola ta events
             if (UserControlΗοme.SetValueCategory.Equals("All Events"))
             {
                 try
@@ -379,11 +381,14 @@ namespace EventApp
                 }
 
             }
+            //Telos
         }
-        //emfanisi apo to search box
+
+        //Emfanisi apo to search box sto homepage ta antistoixa event
+
+        //Emfanisi apo to search box to location
         public void locationsearch(string value)
         {
-            //emfanisi apo to search box to location
             try
             {
                 connection.Open();
@@ -430,7 +435,9 @@ namespace EventApp
                 connection.Close();
             }
         }
-        //emfanisi apo to search box to category
+        //Telos
+
+        //Emfanisi apo to search box to category
         public void categorysearch(string value)
         {
             try
@@ -482,6 +489,8 @@ namespace EventApp
                 connection.Close();
             }
         }
+        //Telos
+    //Telos
 
         private void backBtn_Click(object sender, EventArgs e)
         {

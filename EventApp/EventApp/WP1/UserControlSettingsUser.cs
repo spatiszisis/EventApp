@@ -72,6 +72,7 @@ namespace EventApp
             usernameTxt.Text = Login.username;
             passwordTxt.Text = Login.password;
 
+            //Emfanisi twn pliroforiwn diladi Username kai Password
             try
             {
                 connection.Open();
@@ -98,8 +99,10 @@ namespace EventApp
             {
                 MessageBox.Show(ex + " ");
             }
+            //Telos
         }
 
+        //Koumpi wste na kanoume edit tis plirofories tou xristi
         private void editBtn_Click(object sender, EventArgs e)
         {
             try
@@ -107,8 +110,8 @@ namespace EventApp
                 OleDbCommand command = new OleDbCommand();
                 command.CommandType = CommandType.Text;
                 command.CommandText = "Update Users SET [Username] = @Username, [Password] = @Password, [Email] = @Email, [FirstName] = @FirstName, [LastName] = @LastName, [Location] = @Location WHERE [Username] = @Username and [Password] = @Password";
-                command.Parameters.AddWithValue("@Username", usernameTxt);
-                command.Parameters.AddWithValue("@Password", passwordTxt);
+                command.Parameters.AddWithValue("@Username", usernameTxt.Text);
+                command.Parameters.AddWithValue("@Password", passwordTxt.Text);
                 command.Parameters.AddWithValue("@Email", emailTxt.Text);
                 command.Parameters.AddWithValue("@FirstName", firstnameTxt.Text);
                 command.Parameters.AddWithValue("@LastName", lastnameTxt.Text);
@@ -117,7 +120,6 @@ namespace EventApp
 
                 connection.Open();
                 command.ExecuteNonQuery();
-                //connection.Dispose();
                 MessageBox.Show("The settings was updated! ");
                 connection.Close();
             }
@@ -127,7 +129,9 @@ namespace EventApp
                 connection.Close();
             }
         }
+        //Telos
 
+        //Emfanisi ta Events tou xristi diladi auta pou exei dimiourgisei
         private DataTable GetEventsList()
         {
             DataTable dtEvents = new DataTable();
@@ -155,7 +159,9 @@ namespace EventApp
 
             return dtEvents;
         }
+        //Telos
 
+        //Delete button wste na svisei auta pou thelei
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             int selectedIndex = dataGridViewEvents.SelectedRows[0].Index;
@@ -166,7 +172,9 @@ namespace EventApp
                 deleteEvents(id);
             }
         }
+        //Telos
 
+        //Methodos gia to delete
         private void deleteEvents(int id)
         {
             try
@@ -178,7 +186,7 @@ namespace EventApp
                 string query = "delete * from Events where [EventsID] = " + id + "";
                 command.CommandText = query;
 
-                //PROMPT FOR CONFIRMATION BEFORE DELETING
+                //Elegxos gia na deis ena thelei na diagrapsei to event
                 if (MessageBox.Show(@"Are you sure to permanently delete this?", @"DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                 {
                     if (command.ExecuteNonQuery() > 0)
@@ -194,8 +202,7 @@ namespace EventApp
                 connection.Close();
             }
         }
-
-        
+        //Telos
     }
 
 }

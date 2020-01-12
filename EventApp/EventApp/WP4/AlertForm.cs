@@ -47,7 +47,7 @@ namespace EventApp
             myTimer.Tick += new EventHandler(MyTimer_Tick);
             myTimer.Start();
 
-            //Ta event pou einai konta se auton
+            //Emfanisei twn event analoga me to location pou exei
             try
             {
                 connection.Open();
@@ -93,7 +93,9 @@ namespace EventApp
                 MessageBox.Show(ex + " ");
                 connection.Close();
             }
+            //Telos
         }
+        //Telos
 
         private void MyTimer_Tick(object sender, EventArgs e)
         {

@@ -43,6 +43,7 @@ namespace EventApp
             dataGridViewEvents.DataSource = GetUsersEvents();
         }
 
+        //Emfanisi twn Users kai Events antistoixa sto DataGridView
         private DataTable GetUsersList()
         {
             DataTable dtUsers = new DataTable();
@@ -62,7 +63,7 @@ namespace EventApp
 
                 connection.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex + "");
             }
@@ -96,7 +97,10 @@ namespace EventApp
 
             return dtEvents;
         }
+        //Telos
 
+
+        //Afairesi twn Users apo to datagridview
         private void deleteUsersBtn_Click(object sender, EventArgs e)
         {
             int selectedIndex = dataGridViewUsers.SelectedRows[0].Index;
@@ -107,7 +111,9 @@ namespace EventApp
                 deleteUsers(id);
             }
         }
+        //Telos
 
+        //Afairesi twn Events apo to datagridview
         private void deleteEventsBtn_Click(object sender, EventArgs e)
         {
             int selectedIndex = dataGridViewEvents.SelectedRows[0].Index;
@@ -117,8 +123,11 @@ namespace EventApp
                 int id = Convert.ToInt32(selected);
                 deleteEvents(id);
             }
-            
+
         }
+        //Telos
+
+        //Methodoi gia afairesi antistoixa gia Users kai Events
         private void deleteUsers(int id)
         {
             try
@@ -130,7 +139,7 @@ namespace EventApp
                 string query = "delete * from Users where [UsersID] = " + id + "";
                 command.CommandText = query;
 
-                //PROMPT FOR CONFIRMATION BEFORE DELETING
+                //Elegxos ena thelei na to diagrapsei 
                 if (MessageBox.Show(@"Are you sure to permanently delete this?", @"DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                 {
                     if (command.ExecuteNonQuery() > 0)
@@ -145,6 +154,11 @@ namespace EventApp
             {
                 MessageBox.Show(ex.Message);
                 connection.Close();
+            }
+            finally
+            {
+                dataGridViewUsers.Refresh();
+                dataGridViewUsers.Update();
             }
         }
 
@@ -175,18 +189,13 @@ namespace EventApp
                 MessageBox.Show(ex.Message);
                 connection.Close();
             }
+            finally
+            {
+                dataGridViewEvents.Refresh();
+                dataGridViewEvents.Update();
+            }
         }
+        //Telos
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            UserControlManage scse = new UserControlManage();
-            scse.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            UserControlManage scse = new UserControlManage();
-            scse.Show();
-        }
     }
 }

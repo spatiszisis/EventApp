@@ -25,7 +25,7 @@ namespace EventApp
             txt_Username.Text = UserControlContact.Username;
         }
         
-        
+        //Button gia steilei to email sto gmail pou exoume ftiaksei
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -65,6 +65,7 @@ namespace EventApp
                 MessageBox.Show(ex.Message);
             }
         }
+        //Telos
 
         private void txt_Password_TextChanged(object sender, EventArgs e)
         {

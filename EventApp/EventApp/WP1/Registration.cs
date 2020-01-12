@@ -21,104 +21,80 @@ namespace EventApp
             connection.ConnectionString = con.ConnectString;
         }
 
-        
+
         private void button1_Click(object sender, EventArgs e)
-        {   //elegxos an yparxei hdh xrhsths idios
-            connection.ConnectionString = con.ConnectString;
-            OleDbCommand elegxos = new OleDbCommand();
-            elegxos.CommandType = CommandType.Text;
-            elegxos.CommandText = "select * from Users where Username='" + txt_Username.Text + "' and Password= '" + txt_Password.Text + "'";
-            elegxos.Connection = connection;
-            connection.Open();
-
-
-            OleDbDataReader readerelegxos = elegxos.ExecuteReader();
-            int countelegxos = 0;
-            while (readerelegxos.Read())
+        {
+            try
             {
-                countelegxos++;
-            }
+                //Elegxos an yparxei hdh xrhsths idios kai emfanisi katallilou minimatos
+                connection.ConnectionString = con.ConnectString;
+                OleDbCommand elegxos = new OleDbCommand();
+                elegxos.CommandType = CommandType.Text;
+                elegxos.CommandText = "select * from Users where Username='" + txt_Username.Text + "' and Password= '" + txt_Password.Text + "'";
+                elegxos.Connection = connection;
+                connection.Open();
 
-            if (countelegxos == 1)
-            {
-                txt_Username.Clear();
-                txt_Password.Clear();
-                txt_Email.Clear();
-                connection.Close();
-                connection.Dispose();
-                return;
-            }
-            else
-            {
-
-                try
+                OleDbDataReader readerelegxos = elegxos.ExecuteReader();
+                int countelegxos = 0;
+                while (readerelegxos.Read())
                 {
-                    //dhmiourgia xrhsth
-                    OleDbCommand command = new OleDbCommand();
-                    command.CommandType = CommandType.Text;
-                    command.CommandText = "INSERT INTO Users ([Username] , [Password] , [Email])" + " VALUES (@Username,@Password,@Email)";
-                    command.Parameters.AddWithValue("@Username", txt_Username.Text);
-                    command.Parameters.AddWithValue("@Password", txt_Password.Text);
-                    command.Parameters.AddWithValue("@Email", txt_Email.Text);
-                    command.Connection = connection;
+                    countelegxos++;
+                }
 
-               
-                    command.ExecuteNonQuery();
+                if (countelegxos == 1)
+                {
+                    MessageBox.Show("Username and password is exist! ");
                     connection.Close();
-          
-                    //dhmiourgia session
-                    int UserID = 0;
-                    String Username = "";
-                    String Password = "";
-                    String Email = "";
-                    String FirstName = "";
-                    String LastName = "";
-                    String Location = "";
-
-
-                    OleDbCommand command1 = new OleDbCommand();
-                    command1.Connection = connection;
-                    connection.Open();
-                    command1.CommandText = "select * from Users where Username='" + txt_Username.Text + "' and Password= '" + txt_Password.Text + "'";
-
-                    OleDbDataReader reader = command1.ExecuteReader();
-                    int count = 0;
-                    while (reader.Read())
+                    connection.Dispose();
+                    return;
+                    txt_Username.Text = "Username";
+                    txt_Password.Text = "Password";
+                    txt_Email.Text = "example@gmail.com";
+                }
+                else
+                {
+                    try
                     {
-                        count++;
 
-                        UserID = (int)reader["UsersID"];
-                        Username = (String)reader["Username"];
-                        Password = (String)reader["Password"];
-                        if (!DBNull.Value.Equals(reader["Email"]))
-                        { Email = (String)reader["Email"]; }
-                        if (!DBNull.Value.Equals(reader["FirstName"]))
-                        { FirstName = (String)reader["FirstName"]; }
-                        if (!DBNull.Value.Equals(reader["LastName"]))
-                        { LastName = (String)reader["LastName"]; }
-                        if (!DBNull.Value.Equals(reader["Location"]))
-                        { Location = (String)reader["Location"]; }
-                    }
-                    reader.Close();
-                    if (count == 1)
-                    {
+                        //Dimiourgia tou xristi
+                        OleDbCommand command = new OleDbCommand();
+                        command.CommandType = CommandType.Text;
+                        command.CommandText = "INSERT INTO Users ([Username] , [Password] , [Email])" + " VALUES (@Username,@Password,@Email)";
+                        command.Parameters.AddWithValue("@Username", txt_Username.Text);
+                        command.Parameters.AddWithValue("@Password", txt_Password.Text);
+                        command.Parameters.AddWithValue("@Email", txt_Email.Text);
+                        command.Connection = connection;
+                        command.ExecuteNonQuery();
+
                         Login.username = txt_Username.Text;
                         Login.password = txt_Password.Text;
-                        connection.Close();
+                        MessageBox.Show("The account was created! ");
                         connection.Dispose();
                         this.Hide();
                         Login f2 = new Login();
                         f2.Show();
                         connection.Close();
+
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error " + ex);
-                }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error " + ex);
+                        connection.Close();
+                    }
 
+                }
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + " ");
+                connection.Close();
+            }
+            finally
+            {
+                txt_Username.Text = "Username";
+                txt_Password.Text = "Password";
+                txt_Email.Text = "example@gmail.com";
+            }
         }
 
         private void txt_Username_Click(object sender, EventArgs e)

@@ -19,10 +19,8 @@ namespace EventApp
     public partial class HomePage : Form
 
     {
-
+        
         static HomePage _obj;
-
-
         public static HomePage Instance
         {
             get
@@ -40,6 +38,7 @@ namespace EventApp
             get { return panelContainer; }
             set { panelContainer = value; }
         }
+
         private OleDbConnection connection = new OleDbConnection();
         Timer t = new Timer(); // Dilwsh tou timer
         Connect con = new Connect();
@@ -66,7 +65,7 @@ namespace EventApp
                 managerBtn.Visible = true;
             }
 
-            //Elegxos gia to ama iparxei Location i oxi kai analoga tha trexei
+            //Elegxos gia to ama iparxei Location i oxi kai analoga tha trexei to alert
             if (Login.Location == "")
             {
                 //nothing
@@ -78,6 +77,7 @@ namespace EventApp
                 t.Tick += new EventHandler(OnTimerTicked);
                 t.Start();
             }
+            //Telos
 
         }
 
@@ -88,9 +88,9 @@ namespace EventApp
             AlertForm formdois = new AlertForm();
             formdois.Show();
         }
+        //Telos
 
         //Start Properties button
-
         private void Home_MouseHover(object sender, EventArgs e)
         {
             Home.BackColor = Color.FromArgb(85, 61, 69);  //allagei xrwma otan pernas to pontiki panw apto koumpi 
@@ -191,7 +191,7 @@ namespace EventApp
         //Arxi Click Method gia na allazei panel
         private void Home_Click(object sender, EventArgs e)
         {
-            PnlContainer.Controls.Clear(); ////////
+            PnlContainer.Controls.Clear(); 
             SidePanel.Height = Home.Height;
             SidePanel.Top = Home.Top;
             UserControlΗοme uc = new UserControlΗοme();
@@ -285,11 +285,10 @@ namespace EventApp
             AlertForm uc = new AlertForm();
             uc.Show();
         }
-
         //Telos Click Method gia na allazei panel
 
-        //Arxi Exit, Log Out    
 
+        //Arxi Exit, Log Out    
         private void exitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -305,26 +304,17 @@ namespace EventApp
             Login lgform = new Login();
             lgform.Show();
         }
-
         //Telos Exit, Log Out  
 
-        //Arxi Alla Properties 
 
+        //Arxi Alla Properties 
         private void searchTxt_Click(object sender, EventArgs e)
         {
             searchTxt.Clear();
         }
+        //Telos Alla Properties 
 
-        Image icon;
-
-        private Image byteArrayToImage(byte[] byteArrayIn)
-        {
-            MemoryStream ms = new MemoryStream(byteArrayIn);
-            Image returnImage = Image.FromStream(ms);
-            return returnImage;
-        }
-
-        //search box
+        //Search elegxei analoga me to Location kai to Category kai to emfanizei sto showEvent
         private void searchBtn_Click(object sender, EventArgs e)
         {
             UserControlShowEvents uc = new UserControlShowEvents();
@@ -344,9 +334,7 @@ namespace EventApp
                 uc.BringToFront();
             }
             
-
         }
-
-        //Telos Alla Properties 
+        //Telos
     }
 }

@@ -39,6 +39,7 @@ namespace EventApp
         public static string Subject = "";
         public static string Body = "";
 
+        //Pairnei tis plirofories pou vazoume wste na tis emfanisei sto Authendication
         private void sendBtn_Click(object sender, EventArgs e)
         {
             Username = emailTxt.Text;

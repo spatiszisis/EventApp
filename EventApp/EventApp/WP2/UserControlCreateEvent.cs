@@ -25,6 +25,27 @@ namespace EventApp
             connection.ConnectionString = con.ConnectString;
         }
 
+        private void UserControlCreateEvent_Load(object sender, EventArgs e)
+        {
+            //Dark Mode
+            int c = (int)UserControlSettingsApp.color;
+            if (c == 0)
+            {
+                this.BackColor = UserControlSettingsApp.darkmodecolor;
+                label1.ForeColor = System.Drawing.Color.White;
+                panel1.BackColor = System.Drawing.Color.White;
+                label2.ForeColor = System.Drawing.Color.White;
+                panel2.BackColor = System.Drawing.Color.White;
+                label3.ForeColor = System.Drawing.Color.White;
+                panel3.BackColor = System.Drawing.Color.White;
+            }
+            else if (c == 1)
+            {
+                this.BackColor = Color.White;
+            }
+        }
+
+
         //Arxi Clear Method gia ta text
 
         private void title_txt_Click(object sender, EventArgs e)
@@ -45,14 +66,16 @@ namespace EventApp
 
         //Telos Clear Method gia ta text
 
+        //Metatropi tou Image
         private byte[] ImageToByte(Image image, System.Drawing.Imaging.ImageFormat format)
         {
             MemoryStream ms = new MemoryStream();
             image.Save(ms, format);
             return ms.ToArray();
         }
+        //Tellos
 
-
+        //Button gia na kanei Save to event sti vasi
         private void save_btn_Click(object sender, EventArgs e)
         {
             Bitmap bm = new Bitmap(picBox.Image);
@@ -98,7 +121,9 @@ namespace EventApp
                 picBox.Image = null;
             }
         }
+        //Tellos
 
+        //Button wste na dei pws tha fainetai to event sto preview
         private void preview_btn_Click(object sender, EventArgs e)
         {
             if (!HomePage.Instance.PnlContainer.Controls.ContainsKey("UserControlShowEventPreview"))
@@ -109,7 +134,9 @@ namespace EventApp
             }
             HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
         }
+        //Tellos
 
+        //Button gia kanei load tn eikona apo ta arxeia 
         private void loadimage_btn_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
@@ -120,25 +147,7 @@ namespace EventApp
                 picBox.ImageLocation = imgpath;
             }
         }
+        //Tellos
 
-        private void UserControlCreateEvent_Load(object sender, EventArgs e)
-        {
-            //Dark Mode
-            int c = (int)UserControlSettingsApp.color;
-            if (c == 0)
-            {
-                this.BackColor = UserControlSettingsApp.darkmodecolor;
-                label1.ForeColor = System.Drawing.Color.White;
-                panel1.BackColor = System.Drawing.Color.White;
-                label2.ForeColor = System.Drawing.Color.White;
-                panel2.BackColor = System.Drawing.Color.White;
-                label3.ForeColor = System.Drawing.Color.White;
-                panel3.BackColor = System.Drawing.Color.White;
-            }
-            else if (c == 1)
-            {
-                this.BackColor = Color.White;
-            }
-        }
     }
 }

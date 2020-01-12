@@ -68,7 +68,7 @@ namespace EventApp
                 this.BackColor = Color.White;
             }
 
-            //diavazei to event kai to emfanizei
+            //Diavazei to event kai to emfanizei
             try
             {
                 connection.Open();
@@ -104,8 +104,9 @@ namespace EventApp
                 connection.Close();
 
             }
+            //Telos
 
-            //Emfanisi Asteriwn
+            //Emfanisei osa asteria exei dwsei apo proigoumeno insert
             try
             {
                 connection.Open();
@@ -116,7 +117,7 @@ namespace EventApp
                 command1.CommandText = query1;
 
                 OleDbDataReader reader1 = command1.ExecuteReader();
-                
+
                 while (reader1.Read())
                 {
                     ratingBol = true;
@@ -165,6 +166,7 @@ namespace EventApp
                 connection.Close();
 
             }
+            //Telos
 
 
             //Emfanisis tha paw/den tha paw koumpi analoga me to ti eixe dhlwsei prin o xrhsths
@@ -207,8 +209,9 @@ namespace EventApp
                 connection.Close();
 
             }
+            //Telos
 
-            //posoi tha pane
+            //Emfanisei posoi tha pane sto antistoixo event
             try
             {
                 connection.Open();
@@ -235,8 +238,9 @@ namespace EventApp
             {
                 connection.Close();
             }
+            //Telos
 
-            //na tsekarei ean iparxei sigkekrimeno event sti FavList
+            //Na tsekarei ean iparxei sigkekrimeno event sti FavList
             try
             {
 
@@ -275,11 +279,13 @@ namespace EventApp
             {
                 connection.Close();
             }
+            //Telos
         }
-       
+
+        //Button wste na kanei insert to event sti FavList
         private void favlist_button_Click(object sender, EventArgs e)
         {
-            
+
             if (favlist)
             {
                 try
@@ -333,120 +339,65 @@ namespace EventApp
             }
 
         }
+        //Telos
 
         private void backBtn_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
+        //Button gia ta asteria analoga posa pataei na allazei kai img
         private void star1Btn_Click(object sender, EventArgs e)
         {
             int num = 1;
-            if (numRating > 0)
-            {
-                DeleteRating();
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-            }
-            else
-            {
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-            }
+            InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star2Btn_Click(object sender, EventArgs e)
         {
             int num = 2;
-            if (numRating >0)
-            {
-                DeleteRating();
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-            }
-            else
-            {
-                
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-            }
-            
+
+            InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star3Btn_Click(object sender, EventArgs e)
         {
             int num = 3;
-            if (numRating > 0)
-            {
-                DeleteRating();
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-                this.star3Btn.Image = new Bitmap(Resources.star);
 
-            }
-            else
-            {
-              
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-                this.star3Btn.Image = new Bitmap(Resources.star);
-            }
-            
+            InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
+            this.star3Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star4Btn_Click(object sender, EventArgs e)
         {
             int num = 4;
-            if (numRating > 0)
-            {
-                DeleteRating();
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-                this.star3Btn.Image = new Bitmap(Resources.star);
-                this.star4Btn.Image = new Bitmap(Resources.star);
 
-            }
-            else
-            {
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-                this.star3Btn.Image = new Bitmap(Resources.star);
-                this.star4Btn.Image = new Bitmap(Resources.star);
-            }
-           
+            InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
+            this.star3Btn.Image = new Bitmap(Resources.star);
+            this.star4Btn.Image = new Bitmap(Resources.star);
         }
 
         private void star5Btn_Click(object sender, EventArgs e)
         {
             int num = 5;
-            if (numRating > 0)
-            {
-                DeleteRating();
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-                this.star3Btn.Image = new Bitmap(Resources.star);
-                this.star4Btn.Image = new Bitmap(Resources.star);
-                this.star5Btn.Image = new Bitmap(Resources.star);
-            }
-            else
-            {
-                InsertRating(num);
-                this.star1Btn.Image = new Bitmap(Resources.star);
-                this.star2Btn.Image = new Bitmap(Resources.star);
-                this.star3Btn.Image = new Bitmap(Resources.star);
-                this.star4Btn.Image = new Bitmap(Resources.star);
-                this.star5Btn.Image = new Bitmap(Resources.star);
-            }
-            
-        }
 
+            InsertRating(num);
+            this.star1Btn.Image = new Bitmap(Resources.star);
+            this.star2Btn.Image = new Bitmap(Resources.star);
+            this.star3Btn.Image = new Bitmap(Resources.star);
+            this.star4Btn.Image = new Bitmap(Resources.star);
+            this.star5Btn.Image = new Bitmap(Resources.star);
+        }
+        //Telos
+
+        //Methodos gia na kanei insert ta asteria sti vasi
         public void InsertRating(int ratingNum)
         {
             try
@@ -470,29 +421,9 @@ namespace EventApp
                 connection.Close();
             }
         }
+        //Telos
 
-        public void DeleteRating()
-        {
-            try
-            {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.CommandType = CommandType.Text;
-                command.CommandText = "delete * from Rating where [UserID] = @Userid and [EventID] = @Eventid";
-                command.Connection = connection;
-                command.Parameters.AddWithValue("@Userid", Login.UserID);
-                command.Parameters.AddWithValue("@Eventid", EventId);
-
-                command.ExecuteNonQuery();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error " + ex);
-                connection.Close();
-            }
-        }
-
+        //Button gia to tha paei dn tha paei antistoixa
         private void dontgo_btn_Click(object sender, EventArgs e)
         {
             try
@@ -556,7 +487,6 @@ namespace EventApp
             goBtn.Visible = false;
             dontgo_btn.Visible = true;
         }
-
-
+        //Telos
     }
 }

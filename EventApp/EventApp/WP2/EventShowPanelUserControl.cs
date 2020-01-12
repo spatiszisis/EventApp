@@ -69,12 +69,10 @@ namespace EventApp
         public int userid = 0;
         public static int eventid = 0;
 
+        //Kanei anazitisi gia na parei to EventID kai to UserID wste na ta emfanizei sta Recomended
         private void EventShowPanelUserControl_Click(object sender, EventArgs e)
         {
-
             title = Title;
-
-            //Kanei anazitisi gia na parei to EventID kai to UserID wste na ta emfanizei sta Recomended
 
             try
             {
@@ -123,6 +121,7 @@ namespace EventApp
             }
             HomePage.Instance.PnlContainer.Controls["UserControlShowEventPreview"].BringToFront();
         }
+        //Telos
 
     }
 }

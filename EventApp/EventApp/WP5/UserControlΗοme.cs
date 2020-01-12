@@ -24,7 +24,7 @@ namespace EventApp
         public static string SetValueLocation = "";
         public static string SetValueCategory = "";
 
-
+        //Pairnei tis times wste na tis xrisimopioisei sto EventShow
         private void searchBtn_Click(object sender, EventArgs e)
         {
             SetValueDay      = dateTimePicker1.Value.ToString("dd-MM-yyyy");
@@ -42,6 +42,7 @@ namespace EventApp
             HomePage.Instance.PnlContainer.Controls["UserControlShowEvents"].BringToFront();
             
         }
+        //Telos
 
         private void UserControlΗοme_Load(object sender, EventArgs e)
         {

@@ -21,6 +21,7 @@ namespace EventApp
             InitializeComponent();
         }
 
+        //CheckBox gia tn dimiourgia tou DarkMode
         private void onvalue_CheckedChanged(object sender, EventArgs e)
         {
             if(onvalue.Checked == true)
